@@ -17,8 +17,8 @@
   }
 
   .post{
-    margin-top: 20px;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
     color: #ccc;
 
     h2{
@@ -28,6 +28,14 @@
         font-weight: 400;
         display: block;
       }
+    }
+
+    p > a{
+      font-weight: bold;
+    }
+
+    p > a, h2:hover{
+      text-decoration: underline;
     }
   }
 }
@@ -42,12 +50,31 @@
   .box-sizing();
   .box-shadow(0 0 10px rgba(0,0,0,.12));
 
+  h1,h2,h3,h4{
+    color: #000;
+  }
+
   .post-header{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
 
     figure{
-      margin: -20px -20px 0;
-      height: 400px;
+      margin: -20px -20px 20px;
+      height: 450px;
       overflow: hidden;
+    }
+
+    h1, p{
+      margin: 0.5em 0px;
+    }
+
+    h1{
+      text-transform: uppercase;
+      font-size: 2.5em;
+    }
+
+    p{
+      font-size: 1.4em;
     }
   }
 

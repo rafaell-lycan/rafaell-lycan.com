@@ -3,13 +3,25 @@ layout: post
 title:  "Primeiro Post no Jekyll!"
 date:   2014-05-02 10:29:48
 categories: jekyll update
-image: assets/img/lobo.jpg
+image: assets/img/posts/lobo.jpg
+
+author_link: http://twitter.com/RafaellLycan
+author_profile: https://plus.google.com/113755365039926065548
+
 tags: lifestyle produtividade
-comments: false
+comments: true
 keywords: foco, sucesso, fracasso, minimalismo, objetivo, planejamento, carreira
 resumo: >
    Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor <3. Fácil não?
 ---
+
+##Que venha o Jekyll!
+
+Agora estou usando o jekyll como ferramenta para blog. Além de ser simples estimula algumas habilitades como desenvolvedor.
+
+** ex: ** Escrever Markdown /o/
+
+##Load test
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
@@ -23,6 +35,8 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+##Hello World!
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 

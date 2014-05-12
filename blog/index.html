@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+menu_current: blog
 ---
 
 <!-- Header -->
@@ -18,6 +19,7 @@ title: Blog
     <time datetime="{{ site.time | date_to_xmlschema }}">{{ post.date | date: '%d/%m/%Y'}}</time>
     <h2><a href="{{ post.url }}" class="blue">{{ post.title }}</a></h2>
     <p>{{ post.resumo }}</p>
+    <p><a href="{{ post.url }}" class="blue">Continue lendo →</a></p>
   </article>
   {% endfor %}
 </section>
