@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="RSS Feed for website"/>
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
+<!--[if lt IE 7]>      <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="pt-BR" dir="ltr" class="no-js"> <!--<![endif]-->
+{% include head.html %}
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+        {% include menu.html %}
+
+        <!-- Initial container for content -->
+        <div class="container body hidden">
 
           {{ content }}
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+            <footer class="footer">
+                <ul class="social">
+                    <li class="linkedin">
+                        <a href="#">Linkedin</a>
+                    </li>
+                    <li class="github">
+                        <a href="#">GitHub</a>
+                    </li>
+                    <li class="twitter">
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li class="facebook">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="email">
+                        <a href="#">Email</a>
+                    </li>
+                </ul>
+                <div class="copy">© 2013 Rafaell Lycan. All rights reserved.</div>
+                <p>Build with HTML5, Coffe and Love <span>&lt;3</span></p>
+                <p>Resize your screen =)</p>
+            </footer>
+        </div> <!-- /container -->
 
-    </body>
-</html>
+{% include scripts.html %}

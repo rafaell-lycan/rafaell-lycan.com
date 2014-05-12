@@ -1,0 +1,51 @@
+{% if page.title %}
+    {% capture title %}{{ page.title | strip_html }} – Rafaell Lycan{% endcapture %}
+{% else %}
+    {% capture title %}Rafaell Lycan{% endcapture %}
+{% endif %}
+{% if page.resumo %}
+    {% capture description %}{{ page.resumo }}{% endcapture %}
+{% else %}
+    {% capture description %}Rafaell Lycan a Brazilian Web Developer, front-end lover and Geek. Likes HTML5, CSS3, JavaScript, PHP and other stuffs.{% endcapture %}
+{% endif %}
+{% if page.image %}
+    {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}
+{% else %}
+    {% capture image %}{{ site.url }}/shield.png{% endcapture %}
+{% endif %}
+    <head>
+        <meta charset="utf-8">
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ title }}</title>
+        <link rel="alternate" type="application/rss+xml" href="{{site.url}}/feed.xml" title="RSS Feed for website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Behavioral Meta Data -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="icon" href="{{site.url}}/assets/favicon.ico" type="image/x-icon" />
+
+        <!-- Core Meta Data -->
+        <meta name="language" content="pt" />
+        <meta name="author" content="Rafaell Lycan">
+        <meta name="description" content="{{ description }}" />
+        {% if page.keywords %}
+            <meta name="keywords" content="{{ page.keywords }}" />
+        {% else %}
+            <meta name="keywords" content="html5, css, css3, javascript, jquery, web, development, frontend, portfolio, web developer, rafael almeida, rafaell lycan" />
+        {% endif %}
+        <meta name="language" content="pt" />
+        <meta name="content-language" content="pt-BR" />
+        <meta name="robots" content="all" />
+        <meta name="distribution" content="Global" />
+
+        {% include open-graph.html %}
+        {% include twitter-cards.html %}
+
+        <!-- syntax highlighting CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{site.url}}/assets/css/style.css">
+
+    </head>

@@ -1,9 +1,42 @@
 ---
 layout: default
+author_link: http://twitter.com/caio_gondim
+author_profile: https://plus.google.com/109656206006790732674/
+image: assets/img/lobo.jpg
+tags: lifestyle produtividade
+comments: true
+keywords: foco, sucesso, fracasso, minimalismo, objetivo, planejamento, carreira
+resumo: >
+  Foco nos leva ao sucesso. Sucesso nos traz mais oportunidades.
+  E essas oportunidades podem nos tirar o foco que uma vez nos levou ao sucesso.
+  Abraçar todas as oportunidades que o sucesso irá nos proporcionar só irá
+  distribuir nossos esforços e, por consequência, nos levar ao fracasso.
+  Dizer não é essencial.
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+<div class="blog blog-post">
+
+<!-- Header -->
+<header class="post-header">
+  {% if page.image %}
+    <figure>
+      <img src="{{ site.url }}/{{ page.image }}" alt="{{page.title}}">
+      <figcaption>{{ image }}</figcaption>
+    </figure>
+  {% endif %}
+    <h1>{{ page.title }}</h1>
+    <time datetime="{{ site.time | date_to_xmlschema }}">{{ page.date | date: '%d/%m/%Y'}}</time>
+</header>
+
 {{ content }}
+
+{% include disqus.html %}
 </div>
+
+<!--{% highlight javascript linenos %}
+
+// Variables
+var menu = $('.menu');
+var body = $('.body');
+var time = 500;
+{% endhighlight %}-->

@@ -1,8 +1,14 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Primeiro Post no Jekyll!"
 date:   2014-05-02 10:29:48
 categories: jekyll update
+image: assets/img/lobo.jpg
+tags: lifestyle produtividade
+comments: false
+keywords: foco, sucesso, fracasso, minimalismo, objetivo, planejamento, carreira
+resumo: >
+   Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor <3. Fácil não?
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

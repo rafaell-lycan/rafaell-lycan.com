@@ -1,6 +1,10 @@
-name: Your New Jekyll Site
+name: Rafaell Lycan
 markdown: redcarpet
-pygments: true
+#permalink: pretty
 permalink: /:title
+pygments: true
+future: true
+#url: 'http://rafaell.cc'
 destination: ./_publish
-paginate: 1
+paginate: 5
+baseurl: '/'
