@@ -28,12 +28,14 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+{% highlight javascript %}
+// Function is called, return value will end up in x
+var x = myFunction(4, 3);
+
+// Function returns the product of a and b
+function myFunction(a, b) {
+    return a * b;
+}
 {% endhighlight %}
 
 ##Hello World!

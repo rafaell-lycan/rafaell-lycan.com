@@ -20,6 +20,7 @@ img{
   width: 100%;
   border: none;
 }
+
 a{
   color: #ddd;
   font-weight: 300;
@@ -27,6 +28,11 @@ a{
   &:hover{
     color: @azul;
   }
+}
+
+.sprites{
+  background-image: url(../img/social-icons.png);
+  background-repeat: no-repeat;
 }
 .container{
   max-width: 960px;
@@ -196,6 +202,7 @@ a{
 .jobs{
   margin: 0 auto;
   color: #ccc;
+
 }
 .job{
   margin-top: 80px;
@@ -285,7 +292,7 @@ a{
       margin-left: 10px;
       width: 48px;
       height: 48px;
-      .opacity(0.6);
+      .opacity(0.45);
 
       &:hover{
         .opacity(1);
@@ -295,29 +302,15 @@ a{
       &:first-child{
         margin-left: 0;
       }
+
     }
 
-    .linkedin a{
-      background-image: url(../img/icon-linkedin.png);
-    }
-    .github a{
-      background-image: url(../img/icon-github.png);
-    }
-    .behance a{
-      background-image: url(../img/icon-behance.png);
-    }
-    .twitter a{
-      background-image: url(../img/icon-twitter.png);
-    }
-    .facebook a{
-      background-image: url(../img/icon-facebook.png);
-    }
-    .google a{
-      background-image: url(../img/icon-google.png);
-    }
-    .email a{
-      background-image: url(../img/icon-email.png);
-    }
+    .linkedin{ background-position: -52px -2px;}
+    .github{ background-position: -152px -2px;}
+    .twitter{ background-position: -2px -2px;}
+    .facebook{ background-position: -202px -2px;}
+    .google{ background-position: -102px -2px;}
+    .email{ background-position: -252px -2px;}
 
 
     a{
