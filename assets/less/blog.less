@@ -1,0 +1,68 @@
+/*
+  ### Rafaell Lycan Website ###
+  Document    : blog.less
+  Author      : Rafaell Lycan
+*/
+
+/* BLOG */
+.blog{
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding:10px 0;
+
+  time{
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .post{
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    color: #ccc;
+
+    h2{
+      margin: 0;
+      a{
+        font-size: 1.4em;
+        font-weight: 400;
+        display: block;
+      }
+    }
+  }
+}
+.blog-post{
+  margin-top: 100px;
+  background: #fff;
+  color: #555;
+  border: 1px solid #333;
+  padding: 20px;
+  overflow: hidden;
+  .border-radius();
+  .box-sizing();
+  .box-shadow(0 0 10px rgba(0,0,0,.12));
+
+  .post-header{
+
+    figure{
+      margin: -20px -20px 0;
+      height: 400px;
+      overflow: hidden;
+    }
+  }
+
+  .highlight{
+    min-width: 100%;
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+
+  time{
+    font-size: 0.8em;
+  }
+}
+#disqus_thread{
+  margin-top: 100px;
+}

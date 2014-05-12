@@ -1,0 +1,333 @@
+/*
+  ### Rafaell Lycan Website ###
+  Document    : base.less
+  Author      : Rafaell Lycan
+*/
+
+/* DEFAULT */
+body{
+  // background: #101615;
+  background: #0a1026;
+  background-image: url(../img/bg_center2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  // color: #ccc;
+  min-height: 100%;
+  font-family:'Lato', sans-serif;
+  font-weight: 300;
+}
+img{
+  width: 100%;
+  border: none;
+}
+a{
+  color: #ddd;
+  font-weight: 300;
+  text-decoration: none;
+  &:hover{
+    color: @azul;
+  }
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  .transition(all 500s ease-in-out);
+}
+.hidden{
+  .opacity(0);
+}
+.divisor{
+  width: 160px;
+  margin: 0 auto;
+  border-bottom: 2px solid @azul;
+}
+.btn{
+  padding: 10px 30px;
+  border: 2px solid #ccc;
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: bold;
+  display: inline-block;
+  .transition(all 300ms linear);
+
+  &:hover{
+    color: @azul;
+    border-color: @azul;
+    .transition(all 500ms linear);
+  }
+}
+
+.blue{ color: @azul;}
+.toupper{ text-transform: uppercase;}
+.center{ text-align: center;}
+.italic{font-style: italic;}
+.font-normal{font-weight: normal;}
+
+/* MENU */
+.menu{
+  position: fixed;
+  top: -75px;
+  background: #0a1026 url(../img/bg_center.png) no-repeat center top;
+  .opacity(0);
+  width: 100%;
+  border-top: 5px solid @azul;
+  border-bottom: 1px solid #1f4c66;
+  z-index: 99;
+  .transition(all 500s ease-in-out);
+
+  ul{
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    border-left: 1px solid rgba(255,255,255,.12);
+    padding: 0 15px;
+    text-transform: uppercase;
+
+    &:first-child{
+      border: none;
+    }
+
+    a{
+       color: #fff;
+       font-weight: 400;
+       .text-shadow(0 0 5px rgba(0,0,0,.6));
+
+       &:hover{
+        color: @azul;
+       }
+    }
+  }
+}
+/* LANGUAGES NAV */
+.languages{
+  list-style: none;
+  display: block;
+  background: #f9f9f9;
+  padding: 10px;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 99;
+  .box-shadow(1px 2px 4px rgba(0,0,0,0.42));
+
+  li:first-child{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  a{
+    display: block;
+    padding: 5px 3px;
+    text-align: center;
+    color: @azul - #999;
+    font-weight: 400;
+  }
+
+  a:hover{color: #CDA827;}
+
+  &.pt-br li:last-child a{
+    color: #CDA827;
+    cursor: default;
+  }
+  &.eng li:first-child a{
+    color: #CDA827;
+    cursor: default;
+  }
+}
+
+/* HEADER */
+.header{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  .transition(all 300ms linear);
+
+  .logo{
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+  }
+
+  h1{
+    font-size: 3.5em;
+    font-weight: normal;
+  }
+  h2, h3, h4{
+    font-weight: 300;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h1, h2, h3, h4, .social{
+    text-transform: uppercase;
+  }
+  h1, h2, .social{
+    margin: 0;
+  }
+  p{
+    font-size: 1.16em;
+    font-weight: 300;
+  }
+  .social{
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline;
+    }
+
+    a{
+      margin: 0 7.5px;
+    }
+  }
+}
+
+/* JOBS - List of Jobs in Index page */
+.jobs{
+  margin: 0 auto;
+}
+.job{
+  margin-top: 80px;
+  width: 100%;
+  float: left;
+  .opacity(0);
+
+  figure{
+    float: left;
+    width: 55%;
+    margin: 0;
+  }
+  .info{
+    margin-top: 20px;
+    float: right;
+    width: 43%;
+
+    h2, h3{
+      text-transform: uppercase;
+      margin: 0;
+    }
+    h2{
+      font-size: 1.8em;
+      color: #fff;
+      font-weight: normal;
+    }
+    h3{
+      font-size: 1em;
+      font-weight: 300;
+    }
+    .role{
+      text-transform: uppercase;
+      margin-top: 20px;
+      font-size: 0.75em;
+      color: #777;
+      font-weight: normal;
+    }
+    p{
+      line-height: 1.4em;
+      text-align: justify;
+    }
+    .btn{
+      margin-top: 10px;
+    }
+  } //info
+  .divisor{
+    width: 100%;
+    border-width: 1px;
+    border-color: #1f4c66;
+    margin: 60px 0 0;
+    float: left;
+    height: 10px;
+
+    a{
+      width: 45px;
+      height: 10px;
+      display: block;
+      text-decoration: none;
+      background: #0a1026 url(../img/arrow.png) no-repeat center;
+      margin: 5px auto 0;
+      text-indent: -9999px;
+
+    }
+  }
+
+  &:nth-child(2n){
+    figure{float: right;}
+    .info{float: left;}
+  }
+} // job
+
+/* FOOTER */
+.footer{
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  color: #999;
+  font-weight: 300;
+
+  .social{
+    list-style: none;
+    padding: 0;
+
+    li{
+      display: inline-block;
+      margin-left: 10px;
+      width: 48px;
+      height: 48px;
+      .opacity(0.6);
+
+      &:hover{
+        .opacity(1);
+        .transition(opacity 300ms linear);
+      }
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+
+    .linkedin a{
+      background-image: url(../img/icon-linkedin.png);
+    }
+    .github a{
+      background-image: url(../img/icon-github.png);
+    }
+    .behance a{
+      background-image: url(../img/icon-behance.png);
+    }
+    .twitter a{
+      background-image: url(../img/icon-twitter.png);
+    }
+    .facebook a{
+      background-image: url(../img/icon-facebook.png);
+    }
+    .google a{
+      background-image: url(../img/icon-google.png);
+    }
+    .email a{
+      background-image: url(../img/icon-email.png);
+    }
+
+
+    a{
+      background: transparent 0 0 no-repeat;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+
+  .copy{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    // border-bottom: 1px solid #505050;
+  }
+  span{
+    color: #e9013c;
+  }
+}
