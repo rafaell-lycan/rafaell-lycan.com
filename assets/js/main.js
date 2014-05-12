@@ -53,7 +53,7 @@ $(".divisor a").on("click", function() {
 });
 
 $('.job').waypoint(function() {
-  $(this).fadeTo(time, 1);
+  $(this).fadeTo((time/2), 1);
 }, { offset: '80%' });
 
 $(document).ready(function($) {
