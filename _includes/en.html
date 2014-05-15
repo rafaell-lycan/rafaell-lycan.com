@@ -1,0 +1,10 @@
+<!-- Menu -->
+<nav class="menu">
+   <div class="container">
+       <ul>
+           <li><a href="{{post.url}}/" {% if page.menu_current == null %}class="active" {% endif %}>Projects</a></li>
+           <li><a href="{{post.url}}/about" {% if page.menu_current == 'about' %}class="active" {% endif %}>About-me</a></li>
+           <li><a href="{{post.url}}/blog" {% if page.menu_current == 'blog' %}class="active" {% endif %}>Blog</a></li>
+       </ul>
+   </div>
+</nav>

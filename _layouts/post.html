@@ -3,26 +3,31 @@ layout: default
 menu_current: blog
 ---
 
-<div class="blog blog-post">
+<section class="blog blog-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<!-- Header -->
-<header class="post-header">
-  {% if page.image %}
-    <figure>
-      <img src="{{ site.url }}/{{ page.image }}" alt="{{page.title}}">
-      <figcaption>{{ image }}</figcaption>
-    </figure>
-  {% endif %}
-    <time datetime="{{ site.time | date_to_xmlschema }}">{{ page.date | date: '%d/%m/%Y'}}</time>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.resumo }}</p>
-</header>
+   <article>
+      <!-- Header -->
+      <header class="post-header">
+        {% if page.image %}
+          <figure>
+            <img src="{{ site.url }}/{{ page.image }}" with="700" height="450" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
+            <figcaption>{{ image }}</figcaption>
+          </figure>
+        {% endif %}
+          <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y'}}</time>
+          <h1 itemprop="headline">{{ page.title }}</h1>
+          <p>{{ page.resumo }}</p>
+          <span class="keywords hidden" itemprop="keywords">
+            {{page.keywords}}
+          </span>
+      </header>
+      {{ content }}
 
+      {% include author.html %}
 
-{{ content }}
-
-{% include disqus.html %}
-</div>
+      {% include disqus.html %}
+   </article>
+</section>
 
 <!--{% highlight javascript linenos %}
 

@@ -1,15 +1,14 @@
 ---
 layout: post
 title:  "Primeiro Post no Jekyll!"
-date:   2014-05-02 10:29:48
-categories: jekyll update
+date:   2014-05-02
+categories: hello world
+tags: lifestyle produtividade
 image: assets/img/posts/lobo.jpg
+comments: true
 
 author_link: http://twitter.com/RafaellLycan
 author_profile: https://plus.google.com/113755365039926065548
-
-tags: lifestyle produtividade
-comments: true
 keywords: foco, sucesso, fracasso, minimalismo, objetivo, planejamento, carreira
 resumo: >
    Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor <3. Fácil não?

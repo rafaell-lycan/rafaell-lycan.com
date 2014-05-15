@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" dir="ltr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" class="no-js"> <!--<![endif]-->
+{% include head.html %}
+    <body>
+
+        {% include menu.html %}
+
+        <!-- Initial container for content -->
+        <div class="container body hidden">
+
+          {{ content }}
+
+            <footer class="footer">
+                <ul class="social">
+                    <li class="sprites linkedin">
+                        <a href="http://www.linkedin.com/in/rafaelllycan" rel="me" target="_blank">Linkedin</a>
+                    </li>
+                    <li class="sprites github">
+                        <a href="https://github.com/rafaell-lycan/" rel="me" target="_blank">GitHub</a>
+                    </li>
+                    <li class="sprites twitter">
+                        <a href="https://twitter.com/RafaellLycan" rel="me" target="_blank">Twitter</a>
+                    </li>
+                    <li class="sprites google">
+                        <a href="https://plus.google.com/113755365039926065548" rel="author" target="_blank">Google+</a>
+                    </li>
+                    <li class="sprites facebook">
+                        <a href="https://www.facebook.com/rafaell.lycan" rel="me" target="_blank">Facebook</a>
+                    </li>
+                    <li class="sprites email">
+                        <a href="mailto:hi@rafaell.cc" rel="me" target="_blank">Email</a>
+                    </li>
+                </ul>
+                <div class="copy">© 2013 Rafaell Lycan. All rights reserved.</div>
+                <p>Build with HTML5, Coffe and Love <span>&lt;3</span></p>
+                <p>Resize your screen =)</p>
+            </footer>
+        </div> <!-- /container -->
+
+{% include scripts.html %}
