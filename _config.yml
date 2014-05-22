@@ -4,7 +4,6 @@ markdown: redcarpet
 permalink: /:title
 pygments: true
 future: true
-#url: 'http://rafaell.cc'
 destination: ./_publish
 paginate: 5
 baseurl: '/'

@@ -4,10 +4,12 @@ module.exports = function (grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-   //'use strict';
+
+   // Project configuration
    grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
-      concat: {
+
+      concat: { // Concat JS files
          js: {
             options: {
                separator: ';'
@@ -15,8 +17,9 @@ module.exports = function (grunt){
             src: ['assets/js/plugins.js','assets/js/main.js'],
             dest: 'assets/js/main.min.js'
          },
-      },
-      uglify: {
+      }, // end Concat
+
+      uglify: { // Minify JS files
          options: {
            mangle: false
          },
@@ -25,19 +28,21 @@ module.exports = function (grunt){
              'assets/js/main.min.js': ['assets/js/main.min.js']
            }
          }
-       },
-      less: {
+       }, // end Uglify
+
+      less: { // Compile LESS files
         default: {
           options: {
             paths: ['assets/css/'],
             compress: true,
           },
-          files: {
+          files: { // Dest : Origin
             "assets/css/style.css": "assets/less/style.less"
           }
         }
-      },
-      watch: {
+      }, // end less
+
+      watch: { // Watch JS and LESS folder
         js: {
           files: ['assets/js/*.js'],
           tasks: ['concat:js', 'uglify:js'],
@@ -52,8 +57,10 @@ module.exports = function (grunt){
               livereload: true,
             },
          },
-      }
+      }, // end watch
+
    });
 
-   grunt.registerTask('default', ['concat','uglify', 'less','watch']);
+   grunt.registerTask('build', ['concat', 'uglify', 'less', 'watch']);
+   grunt.registerTask('default', ['build']);
 };
