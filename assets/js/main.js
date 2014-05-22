@@ -45,7 +45,6 @@ function activeNav(){
 
 }
 
-
 // Events
 $(".divisor a").on("click", function() {
     $('html, body').animate({scrollTop:0}, time * 2);
@@ -58,8 +57,6 @@ $('.job').waypoint(function() {
 
 $(document).ready(function($) {
   init();
-
-  // window.onscroll = activeNav;
 
   $('.menu-toggle').on('click', function(e) {
     event.preventDefault();
