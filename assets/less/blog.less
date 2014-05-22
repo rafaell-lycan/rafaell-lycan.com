@@ -11,7 +11,7 @@
   margin: 0 auto;
   padding:10px 0;
 
-  a{
+  > a{
     color: #999;
     text-decoration: underline;
 
@@ -56,7 +56,7 @@
 
   figure{
     margin: -20px -20px 20px;
-    height: 450px;
+    max-height: 450px;
     overflow: hidden;
   }
 
@@ -86,10 +86,21 @@
 
   h1,h2,h3,h4{
     color: #000;
+    text-transform: uppercase;
+  }
+
+  a{
+    color: #777;
+    text-decoration: underline;
+
+    &:hover{
+      color: darken(@azul,20%);
+    }
   }
 
   p{
     margin: 20px 0;
+    line-height: 150%;
     .hyphens();
   }
 
@@ -99,7 +110,32 @@
     margin-left: -20px;
     margin-right: -20px;
   }
-}
-#disqus_thread{
-  margin-top: 100px;
+
+  .author{
+    color: #fff;
+    background-color: #333;
+    margin: 50px -20px 20px;
+    padding: 20px 20px 50px;
+
+    img{
+      float: left;
+      margin-right: 20px;
+      .border-radius(50%);
+      border: 2px solid @azul;
+    }
+
+    h3{
+      color: @azul;
+      margin: 0;
+    }
+
+    p{
+      font-size: 1em;
+      margin-bottom: 0;
+    }
+
+    a{
+      color: @azul;
+    }
+  }
 }

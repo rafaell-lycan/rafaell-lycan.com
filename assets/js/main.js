@@ -61,4 +61,9 @@ $(document).ready(function($) {
 
   // window.onscroll = activeNav;
 
+  $('.menu-toggle').on('click', function(e) {
+    event.preventDefault();
+    $('.menu ul').toggleClass('active');
+  });
+
 });

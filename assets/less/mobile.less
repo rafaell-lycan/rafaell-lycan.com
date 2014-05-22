@@ -9,6 +9,38 @@
     background-image: none;
   }
 
+  .menu .menu-toggle{
+    display: block;
+    padding: 10px;
+    float: right;
+    font-size: 1.4em;
+  }
+
+  .menu ul{
+    display: none;
+    float: right;
+    width: 100%;
+    padding: 0;
+
+    &.active{
+      display: block;
+    }
+
+    li, li:first-child{
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: rgba(255,255,255,0.3) solid 1px;
+    }
+
+    a, a.active{
+      width: 100%;
+      display: block;
+      border: none;
+      margin: 0;
+    }
+  }
+
   .header{
     h1{
       font-size: 2.8em;
