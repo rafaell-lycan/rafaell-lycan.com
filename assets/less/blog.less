@@ -84,9 +84,15 @@
   .box-sizing();
   .box-shadow(0 0 10px rgba(0,0,0,.3));
 
-  h1,h2,h3,h4{
+  h1,h2,h3,h4,h5,h6{
     color: #000;
     text-transform: uppercase;
+
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: inherit;
+    }
   }
 
   a{
@@ -109,6 +115,15 @@
     padding: 20px;
     margin-left: -20px;
     margin-right: -20px;
+  }
+
+  .code{
+    background-color: #efefef;
+    padding: 2px 3px;
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 0.8em;
+    .border-radius();
   }
 
   .author{

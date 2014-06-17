@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2013-08-02
+date:   2013-11-02
 categories: hello world
 tags: hello world
-image: assets/img/posts/2013-11-05-hello-world.jpg
+image: assets/img/posts/hello-world.jpg
 comments: true
 
 author_link: http://twitter.com/RafaellLycan
