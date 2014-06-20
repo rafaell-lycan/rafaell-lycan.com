@@ -18,15 +18,15 @@ A um tempo atrás desenvolvendo websites e aplicações para web me deparei com 
 
 **Mas como?**
 
-Por um bom tempo fiquei lendo, procurando formas de desenvolver as coisas mais rapidas, como a base de quase tudo que faço é front-end então eu dependia da complexibilidade dos websites, interações, etc...
+Por um bom tempo fiquei lendo, procurando formas de desenvolver as coisas mais rápidas, como a base de quase tudo que faço é front-end então eu dependia da complexibilidade dos websites, interações, etc...
 
 Li diversos artigos falando que o ideal é desenvolver uma camada por vez:
 Primeiro o markup (HTML), depois se aplica o estilo e por fim é adicionado eventos JavaScript, mas pra mim não estava adiantando muito,
-eu continuava a escrever da mesma forma e as vezes me disperçava muito fácil com redes sociais, o antigo messenger, etc.
+eu continuava a escrever da mesma forma e as vezes me dispersava muito fácil com redes sociais, o antigo messenger, etc.
 
-Eu trabalhei por um tempo também com PHP, desenvolvendo pequenas aplicações, e tenho que adimitir que trabalhar com IDE's como [NetBeans](https://netbeans.org/) e [phpStorm](http://www.jetbrains.com/phpstorm/) eram realmente bom, mas quando eu ia para o front-end eu prefiria algo mais leve e tudo mudava já que na época o [Notepad++](http://notepad-plus-plus.org/) e ele não supria minha necessidade de ser mais produtivo.
+Eu trabalhei por um tempo também com PHP, desenvolvendo pequenas aplicações, e tenho que admitir que trabalhar com IDE's como [NetBeans](https://netbeans.org/) e [phpStorm](http://www.jetbrains.com/phpstorm/) eram realmente bom, mas quando eu ia para o front-end eu preferia algo mais leve e tudo mudava já que na época o [Notepad++](http://notepad-plus-plus.org/) e ele não supria minha necessidade de ser mais produtivo.
 
-Até que comecei a procurar uma ferramenta melhor para desenvolvimeto, algo que fosse bom, rápido e pratico de aprender os atalhos.
+Até que comecei a procurar uma ferramenta melhor para desenvolvimento, algo que fosse bom, rápido e pratico de aprender os atalhos.
 
 **Mas então minha vida mudou e encontrei algo divino... =)**
 
@@ -37,18 +37,18 @@ Na maioria das vezes os vídeos que via no [YouTube](https://www.youtube.com/) e
 ##Sublime Text
 Sem dúvidas um dos melhores editores de texto que já utilizei.
 
-Ele é muito leve, multiplataforma, possui varios temas diferentes e uma gama de plugins para acelerar e facilitar ainda mais o desenvolvimento que podem ser instalados através do seu [Package Control](https://sublime.wbond.net/installation).
+Ele é muito leve, multiplataforma, possui vários temas diferentes e uma gama de plugins para acelerar e facilitar ainda mais o desenvolvimento que podem ser instalados através do seu [Package Control](https://sublime.wbond.net/installation).
 
 Uma das coisas que me chamou muita a atenção além dos plugins é claro, foi a possibilidade de trabalhar com colunas, ou seja, você pode ter duas ou mais colunas e abrir arquivos diferentes nelas. Ex: HTML na esquerda e CSS na direita, o que pra mim é bem útil. Além disso também é possível deixa-lo em modo fullscreen o que é ótimo por questões de distração e coisas do tipo e te faz ficar focado no código.
 
-Uma outra coisa é que ele salva automaticamente a ultima coisa que você estava fazendo e quais documentos estavam abertos, o que é ótimo caso o programa pare do nada (algo comum no Windows). Outra coisa legal também é poder selecionar varias linhas diferentes em pontos especificos e poder alteralas ao menos tempo. Também é possível utilizar **code folding** através de atalhos o que facilida esconder coisas inuteis como conteúdo e focar no código HTML por exemplo.
+Uma outra coisa é que ele salva automaticamente a ultima coisa que você estava fazendo e quais documentos estavam abertos, o que é ótimo caso o programa pare do nada (algo comum no Windows). Outra coisa legal também é poder selecionar varias linhas diferentes em pontos específicos e poder altera-las ao menos tempo. Também é possível utilizar **code folding** através de atalhos o que facilita esconder coisas inúteis como conteúdo e focar no código HTML por exemplo.
 
 ##Plugins
 Como disse, um dos pontos fortes que achei no [Sublime](http://www.sublimetext.com/) foi essa flexibilidade de poder instalar novos plugins com o gerenciador de pacotes, o que realmente me fez optar pelo editor.
 
 Para instalar basta abrir o terminal do sublime em <code class="code">View->Show Console</code> e colar o código disponível no site do [Package Control](https://sublime.wbond.net/installation) e reiniciar o sublime.
 
-Para instalar um novo plugin ou procurar por algum basta digitar <code class="code">CTRL+SHIT+P</code> ou <code class="code">COMMAND+SHIT+P</code>, digite **install** e aperte <code>Enter</code>. Neste momento o sublime vai carregar uma lista de plugins disponiveis e você só precisa digitar o nome do que quer.
+Para instalar um novo plugin ou procurar por algum basta digitar <code class="code">CTRL+SHIT+P</code> ou <code class="code">COMMAND+SHIT+P</code>, digite **install** e aperte <code>Enter</code>. Neste momento o sublime vai carregar uma lista de plugins disponíveis e você só precisa digitar o nome do que quer.
 
 Depois de instalar o gerenciador de pacotes, além de instalar novos plugins ele te ajuda a descobrir novos plugins pelo autocomplete.
 
@@ -64,14 +64,14 @@ Se você esta por exemplo digitando uma imagem no html como <code class="code">s
 Este plugin aumenta as opções que você tem por padrão na SideBar do Sublime, adicionando varias opções para copiar, ou até abrir arquivos direto no browser.
 
 ###[SyncedSideBar](https://github.com/sobstel/SyncedSideBar)
-O [SyncedSideBar](https://github.com/sobstel/SyncedSideBar) tem uma única função: sincronicar a sua sidebar com tudo o que acontece com o diretório do projeto. As vezes num pull do projeto você já vê os novos arquivos que foram adicionados em um diretório especifico que você esta visualizando, etc...
+O [SyncedSideBar](https://github.com/sobstel/SyncedSideBar) tem uma única função: sincronizar a sua sidebar com tudo o que acontece com o diretório do projeto. As vezes num pull do projeto você já vê os novos arquivos que foram adicionados em um diretório especifico que você esta visualizando, etc...
 
 ###[Emmet](http://emmet.io/)
 Este sem dúvidas é um dos melhores plugins para o Sublime que já utilizei, encontrei em 2011 em um [post](http://blog.thiagobelem.net/zen-coding-criando-html-como-um-ninja/) do [@TiuTalk](https://twitter.com/TiuTalk) falando sobre [Zen Coding](http://en.wikipedia.org/wiki/Zen_Coding), um plugin que expande expressões para código HTML e CSS validos e organizados.
 
 Hoje o projeto se chama [Emmet](http://emmet.io/), um projeto de [@chikuyonok](https://twitter.com/chikuyonok) feito em 2009 e desde então evoluindo e sendo melhorado com o passar do tempo.
 
-Achei tudo muito mágico, e o mais incrível era que uma simples expressão nada dificild de se aprender como esta:
+Achei tudo muito mágico, e o mais incrível era que uma simples expressão nada difícil de se aprender como esta:
 {% highlight html %}
 div#page>div.logo+ul#navigation>li*5>a
 {% endhighlight %}
@@ -103,7 +103,7 @@ Sem dúvidas um plugin muito bom para comparar arquivos, eu sempre utilizei isso
 Este plugin cria uma marcação na lateral do editor junto ao números da linha para evitar que você se perca no escopo do código.
 
 ###[JavaScript Console snippets](https://github.com/caiogondim/js-console-sublime-snippets)
-Este plugin te da varios snippets para você utilizar o objeto console do javascript tais como <code class="code">console.log()</code>, etc...
+Este plugin te da vários snippets para você utilizar o objeto console do javascript tais como <code class="code">console.log()</code>, etc...
 
 Um print do que é possível fazer:
 ![JavaScript Console Snippets - by Caio Gondin](https://camo.githubusercontent.com/148623dfd43f825b4ff417f91d18418cebcce394/68747470733a2f2f7261772e6769746875622e636f6d2f6361696f676f6e64696d2f6a732d636f6e736f6c652d7375626c696d652d736e6970706574732f6d61737465722f736e6970706574732e676966)

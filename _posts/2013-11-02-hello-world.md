@@ -22,7 +22,7 @@ Por anos falava de fazer meu proprio website, blog, etc e nada. Como desculpa se
 2013 chegando ao fim, e como promessa pessoal aqui esta meu blog feito em Jekyll, um gerador de sites estáticos, leve, simples e que suporta markdown.
 
 ##Agora
-Sim, eu abandonei por um tempo o Wordpress por conta de querer fazer algo diferente (se bem que Jekyll esta virando um dos queridinhos :P), estou usando o [Github Pages](https://pages.github.com/) para hospedar e disponibizando o código fonte [neste repositório](https://github.com/rafaell-lycan/rafaell-lycan.github.com/), usando apenas HTML5, CSS3, JS e Markdown para desenvolver as páginas.
+Sim, eu abandonei por um tempo o Wordpress por conta de querer fazer algo diferente (se bem que Jekyll esta virando um dos queridinhos :P), estou usando o [Github Pages](https://pages.github.com/) para hospedar e disponibilizando o código fonte [neste repositório](https://github.com/rafaell-lycan/rafaell-lycan.github.com/), usando apenas HTML5, CSS3, JS e Markdown para desenvolver as páginas.
 
 Talvez eu migre o conteúdo anterior pra cá, mas só depois de enriquece-lo =)
 
@@ -30,4 +30,4 @@ Muito esta por vir, tutoriais e artigos sobre HTML5, JavaScript e mobile serão 
 
 **#Tudo pela causa!**
 
-2014 promete e eu também, e se o blog não der certo por questões de audiencia ao menos é um lugar para escrever minhas ideias.
+2014 promete e eu também, e se o blog não der certo por questões de audiência ao menos é um lugar para escrever minhas ideias.

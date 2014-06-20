@@ -19,7 +19,6 @@ menu_current: blog
     <time datetime="{{ site.time | date_to_xmlschema }}">{{ post.date | date: '%d/%m/%Y'}}</time>
     <h2><a href="{{ post.url }}" class="blue">{{ post.title }}</a></h2>
     <p>{{ post.resumo }}</p>
-    {{post.categories}}
     <p><a href="{{ post.url }}" class="blue">Continue lendo →</a></p>
   </article>
   {% endfor %}
