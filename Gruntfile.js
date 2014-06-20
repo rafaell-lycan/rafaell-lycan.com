@@ -4,6 +4,8 @@ module.exports = function (grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-jekyll');
 
    // Project configuration
    grunt.initConfig({
@@ -57,10 +59,45 @@ module.exports = function (grunt){
               livereload: true,
             },
          },
+         html: {
+            files: ['./**/*.html','!./node_modules/*.html'],
+            tasks: ['jekyll'],
+            options: {
+              livereload: true,
+            },
+         },
+         markdown: {
+            files: ['./_drafts/*.md','./_posts/*.md'],
+            tasks: ['jekyll'],
+            options: {
+              livereload: true,
+            },
+         },
       }, // end watch
+
+      jekyll: {
+        build: {
+          options: {
+            config: '_config.yml',
+            drafts: true,
+            dest: " ./_publish"
+          },
+        },
+      },
+
+      connect: { // Start a server in localhost:4000
+        server: {
+          options: {
+            port: 4000,
+            hostname: '*',
+            base: './_publish',
+            livereload: true
+          }
+        }
+      } // end connect
 
    });
 
-   grunt.registerTask('build', ['concat', 'uglify', 'less', 'watch']);
+   grunt.registerTask('build', ['concat', 'uglify', 'less', 'jekyll', 'connect', 'watch']);
    grunt.registerTask('default', ['build']);
 };

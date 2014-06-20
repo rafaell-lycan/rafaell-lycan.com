@@ -3,3 +3,4 @@ _publish
 _site
 Backup
 node_modules
+npm-debug.log

@@ -11,8 +11,10 @@
   "devDependencies": {
     "grunt-cli": "latest",
     "grunt-contrib-concat": "latest",
-    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-connect": "latest",
     "grunt-contrib-less": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-jekyll": "latest"
   }
 }
