@@ -29,7 +29,7 @@ module.exports = function (grunt){
            files: {
              'assets/js/main.min.js': ['assets/js/main.min.js']
            }
-         }
+         },
        }, // end Uglify
 
       less: { // Compile LESS files
@@ -40,21 +40,21 @@ module.exports = function (grunt){
           },
           files: { // Dest : Origin
             "assets/css/style.css": "assets/less/style.less"
-          }
+          },
         }
       }, // end less
 
       watch: { // Watch JS and LESS folder
         js: {
           files: ['assets/js/*.js'],
-          tasks: ['concat:js', 'uglify:js'],
+          tasks: ['concat:js', 'uglify:js','jekyll'],
           options: {
             livereload: true,
           }
         },
         less: {
             files: ['assets/less/*.less'],
-            tasks: ['less'],
+            tasks: ['less','jekyll'],
             options: {
               livereload: true,
             },

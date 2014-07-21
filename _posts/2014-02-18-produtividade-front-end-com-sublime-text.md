@@ -48,7 +48,7 @@ Como disse, um dos pontos fortes que achei no [Sublime](http://www.sublimetext.c
 
 Para instalar basta abrir o terminal do sublime em <code class="code">View->Show Console</code> e colar o código disponível no site do [Package Control](https://sublime.wbond.net/installation) e reiniciar o sublime.
 
-Para instalar um novo plugin ou procurar por algum basta digitar <code class="code">CTRL+SHIT+P</code> ou <code class="code">COMMAND+SHIT+P</code>, digite **install** e aperte <code>Enter</code>. Neste momento o sublime vai carregar uma lista de plugins disponíveis e você só precisa digitar o nome do que quer.
+Para instalar um novo plugin ou procurar por algum basta digitar <code class="code">Ctrl+Shift+p</code> ou <code class="code">Command+Shift+p</code>, digite **install** e aperte <code class="code">Enter</code>. Neste momento o sublime vai carregar uma lista de plugins disponíveis e você só precisa digitar o nome do que quer.
 
 Depois de instalar o gerenciador de pacotes, além de instalar novos plugins ele te ajuda a descobrir novos plugins pelo autocomplete.
 

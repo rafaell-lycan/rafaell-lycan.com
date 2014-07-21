@@ -6,7 +6,8 @@
 @media only screen and (max-width: 480px){
 
   body, .menu{
-    background-image: none;
+    background: #0a1026;
+    z-index: 99;
   }
 
   .menu .menu-toggle{
@@ -30,7 +31,7 @@
       width: 100%;
       text-align: center;
       padding: 10px 0;
-      border-bottom: rgba(255,255,255,0.3) solid 1px;
+      border-top: rgba(255,255,255,0.3) solid 1px;
     }
 
     a, a.active{
@@ -79,11 +80,16 @@
     }
   } //about-skills
 
-  .job img{
+  .jobs{
+    margin: 0 auto;
     width: 96%;
-  } // job
+  }
+  .job img{
+    width: 100%;
+  }
 
-  .blog .blog-post{
+
+  .blog .blog-post, .blog .post{
     width: 96%;
     margin-left:2%;
     margin-right:2%;

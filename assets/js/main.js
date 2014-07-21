@@ -3,7 +3,7 @@
   Document    : main.js
   Author      : Rafaell Lycan
 */
-
+/***
 // Variables
 var menu = $('.menu');
 var body = $('.body');
@@ -63,4 +63,18 @@ $(document).ready(function($) {
     $('.menu ul').toggleClass('active');
   });
 
+});
+***/
+
+function loader(el){
+  $(el).fadeOut("slow");
+}
+
+jQuery(document).ready(function($) {
+  loader('#loader-container');
+
+  $('.menu-toggle').on('click', function(e) {
+    event.preventDefault();
+    $('.menu ul').toggleClass('active');
+  });
 });
