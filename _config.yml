@@ -1,4 +1,5 @@
 name: Rafaell Lycan
+author: Rafaell Lycan
 markdown: redcarpet
 #permalink: pretty
 permalink: /blog/:title
@@ -9,5 +10,4 @@ paginate: 5
 baseurl: '/'
 sitemap:
    file: "/sitemap.xml"
-   exclude:
-        - "/feed.xml"
+exclude: ["/node_modules","/.gitignore","./CNAME","/Gruntfile.js","/package.json","/README.md"]

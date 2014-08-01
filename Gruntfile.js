@@ -67,7 +67,7 @@ module.exports = function (grunt){
             },
          },
          markdown: {
-            files: ['./_drafts/*.md','./_posts/*.md'],
+            files: ['_drafts/*.md','_posts/*.md'],
             tasks: ['jekyll'],
             options: {
               livereload: true,
