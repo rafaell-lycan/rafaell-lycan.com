@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
-date:   2013-11-02
+date:   2013-08-30
 categories: outros
 tags: hello world
 image: assets/img/posts/hello-world.jpg
@@ -28,6 +28,6 @@ Talvez eu migre o conteúdo anterior pra cá, mas só depois de enriquece-lo =)
 
 Muito esta por vir, tutoriais e artigos sobre HTML5, JavaScript e mobile serão as inspirações, mas para não ficar só em uma única coisa talvez coloque algumas coisinhas sobre [node.js](http://nodejs.org/) e [wordpress](http://wordpress.org/).
 
-**#Tudo pela causa!**
+###Tudo pela causa!
 
-2014 promete e eu também, e se o blog não der certo por questões de audiência ao menos é um lugar para escrever minhas ideias.
+2014 promete e eu também, o lance é tentar compartilhar tudo aquilo que eu achar interessante ou quando estiver aprendendo algo novo, e se o blog não der certo por questões de audiência ao menos é um lugar para escrever minhas ideias.

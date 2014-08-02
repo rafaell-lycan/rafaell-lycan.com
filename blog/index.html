@@ -16,6 +16,7 @@ menu_current: blog
 <section class="blog" itemscope itemtype="https://schema.org/Blog">
   {% for post in site.posts %}
   <article class="post" itemprop="blogPost" itemscope itemtype="BlogPosting">
+    <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.id}}" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'post_comments', 'Home View', '{{ post.url }}'])">Carregando...</a>
     <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%d/%m/%Y'}}</time>
     <h2 itemprop="headline"><a href="{{ post.url }}" class="blue">{{ post.title }}</a></h2>
     <p itemprop="about">{{ post.resumo }}</p>
