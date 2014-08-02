@@ -78,9 +78,7 @@ module.exports = function (grunt){
       jekyll: {
         build: {
           options: {
-            config: '_config.yml',
-            drafts: true,
-            dest: " ./_publish"
+            drafts: true
           },
         },
       },
