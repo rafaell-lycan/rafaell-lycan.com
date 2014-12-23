@@ -1,0 +1,77 @@
+/*
+  ### Rafaell Lycan Website ###
+  Document    : about.less
+  Author      : Rafaell Lycan
+*/
+
+/* ABOUT ME */
+.about{
+  margin-top: 50px;
+  padding-bottom: 20px;
+  color: #ccc;
+
+  a{
+    color: #ddd;
+    font-weight: 300;
+    text-decoration: none;
+    &:hover{
+      color: @azul;
+    }
+  }
+
+}
+.some-info{
+  .column{
+    width: 33.33%;
+    float: left;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .title{
+    font-style: italic;
+    // color: #ccc;
+    color: @azul - #333;
+    font-weight: 300;
+    font-size: 0.9em;
+  }
+  .description, .description a{
+    font-weight: normal;
+    color: #ccc;
+    margin-top: 0;
+  }
+  .description a:hover{
+    color: @azul;
+  }
+}
+.about-skills{
+
+  .column{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+  }
+
+  .title,.level{
+    font-weight: 300 !important;
+    margin: 20px 0;
+  }
+  .title{
+    font-size: 1.8em;
+    color: #ccc;
+  }
+  .level{
+    font-size: 0.875em;
+    text-transform: uppercase;
+    color: @azul - #333;
+  }
+}
+.history{
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 0 20px;
+
+  .title{
+    font-weight: 400;
+  }
+}

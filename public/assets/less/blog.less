@@ -1,0 +1,154 @@
+/*
+  ### Rafaell Lycan Website ###
+  Document    : blog.less
+  Author      : Rafaell Lycan
+*/
+
+/* BLOG */
+.blog{
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding:10px 0;
+
+  > a{
+    color: #999;
+    text-decoration: underline;
+
+    &:hover{
+      color: darken(@azul, 20%);
+    }
+  }
+
+  time{
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .post{
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+    color: #ccc;
+
+    h2{
+      margin: 0;
+      a{
+        font-size: 1.4em;
+        font-weight: 400;
+        display: block;
+      }
+    }
+
+    a{
+      color: @azul;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    p > a{
+      font-weight: bold;
+    }
+  }
+}
+.post-header{
+  border-bottom: 2px solid #ddd;
+
+  figure{
+    margin: -20px -20px 20px;
+    max-height: 450px;
+    overflow: hidden;
+  }
+
+  h1, p{
+    margin: 0.5em 0px;
+  }
+
+  h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
+
+  p{
+    font-size: 1.4em;
+  }
+}
+.blog-post{
+  margin-top: 100px;
+  background: #fff;
+  color: #555;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  .border-radius();
+  .box-sizing();
+  .box-shadow(0 0 10px rgba(0,0,0,.3));
+
+  h1,h2,h3,h4,h5,h6{
+    color: #000;
+    text-transform: uppercase;
+
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: inherit;
+    }
+  }
+
+  a{
+    color: #777;
+    text-decoration: underline;
+
+    &:hover{
+      color: darken(@azul,20%);
+    }
+  }
+
+  p{
+    margin: 20px 0;
+    line-height: 1.6em;
+    .hyphens();
+  }
+
+  .highlight{
+    min-width: 100%;
+    padding: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .code{
+    background-color: #efefef;
+    padding: 2px 3px;
+    border: 1px solid #ddd;
+    color: #555;
+    font-size: 0.8em;
+    .border-radius();
+  }
+
+  .author{
+    color: #fff;
+    background-color: #333;
+    margin: 50px -20px 20px;
+    padding: 20px 20px 50px;
+
+    img{
+      float: left;
+      margin-right: 20px;
+      .border-radius(50%);
+      border: 3px solid @azul;
+    }
+
+    h3, a{
+      color: @azul;
+    }
+
+    a:hover{
+      color: #fff;
+    }
+
+    p{
+      font-size: 1em;
+    }
+  }
+}
