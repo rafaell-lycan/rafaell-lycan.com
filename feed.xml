@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>My Jekyll Blog</title>
+  <title>Hi there, I'm Rafaell</title>
   <link href="http://rafaell-lycan.github.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://rafaell-lycan.github.com/atom.xml"/>
+  <link type="application/atom+xml" rel="self" href="http://rafaell-lycan.github.com/feed.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://rafaell-lycan.github.com/</id>
   <author>
-    <name>Your Name</name>
-    <email>you@rafaell-lycan.github.com</email>
+    <name>Rafaell Lycan</name>
+    <email>sonny.webdsg@gmail.com</email>
   </author>
 
   {% for post in site.posts %}

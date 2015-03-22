@@ -3,3 +3,5 @@ _site
 Backup
 node_modules
 npm-debug.logassets/css/style.css
+assets/css/
+assets/js/

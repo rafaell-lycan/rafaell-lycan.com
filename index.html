@@ -1,18 +1,12 @@
 ---
 layout: default
-title: Blog
 ---
-
 <section itemscope itemtype="https://schema.org/Blog">
   {% for post in paginator.posts %}
   <article class="posts" itemprop="blogPost" itemscope itemtype="BlogPosting">
     <header>
       <h2 itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="meta">
-        <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%-d %B %Y'}}</time>
-        |
-        <a href="{{ post.url }}/#disqus_thread" data-disqus-identifier="http://mostr.github.com/blog/2014/07/23/scalaval-simple-scala-validation/">Comments</a>
-      </p>
+      {% include meta.html %}
       <p class="resume" itemprop="about">{{ post.resumo }}</p>
       <p><a href="{{ post.url }}"itemprop="url">Continue lendo →</a></p>
     </header>
@@ -26,12 +20,9 @@ title: Blog
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="previous btn btn-light">← Older</a>
     {% endif %}
-    <a class="archives btn btn-light" href="/blog">Blog Archives</a>
+    <a class="archives btn btn-light" href="/archives">Blog Archives</a>
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="next btn btn-light">Newer →</a>
     {% endif %}
   </div>
-  <footer id="footer">
-    <p class="credit">Copyright © 2015 - Rafaell Lycan. All rights reserved.</p>
-  </footer>
 </section>

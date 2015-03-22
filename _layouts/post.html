@@ -1,6 +1,6 @@
 ---
 layout: default
-menu_current: blog
+post: true
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -12,11 +12,7 @@ menu_current: blog
         <figcaption>{{ image }}</figcaption>
       </figure>
     {% endif %}
-    <p class="meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y'}}</time>
-      |
-      <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
-    </p>
+    {% include meta.html %}
     <p>{{ page.resumo }}</p>
     <span class="keywords hidden" itemprop="keywords">
       {{page.keywords}}
