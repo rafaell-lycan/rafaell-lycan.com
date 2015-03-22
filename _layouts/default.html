@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="pt-BR" dir="ltr" class="no-js"> <!--<![endif]-->
-{% include head.html %}
-    <body>
+<!--[if IEMobile 7 ]><html lang="pt-BR" class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html lang="pt-BR" class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="pt-BR" dir="ltr" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <meta name="author" content="Michal Ostruszka">
 
-        <div id="loader-container"></div>
-
-        {% include menu.html %}
-
-        <!-- Initial container for content -->
-        <div class="container body">
-
-          {{ content }}
-
-            <footer class="footer">
-                <ul class="social">
-                    <li class="sprites linkedin">
-                        <a href="http://www.linkedin.com/in/rafaelllycan" rel="me" target="_blank">Linkedin</a>
-                    </li>
-                    <li class="sprites github">
-                        <a href="https://github.com/rafaell-lycan/" rel="me" target="_blank">GitHub</a>
-                    </li>
-                    <li class="sprites twitter">
-                        <a href="https://twitter.com/RafaellLycan" rel="me" target="_blank">Twitter</a>
-                    </li>
-                    <li class="sprites google">
-                        <a href="https://plus.google.com/113755365039926065548" rel="author" target="_blank">Google+</a>
-                    </li>
-                    <li class="sprites facebook">
-                        <a href="https://www.facebook.com/rafaell.lycan" rel="me" target="_blank">Facebook</a>
-                    </li>
-                    <li class="sprites email">
-                        <a href="mailto:hi@rafaell.cc" rel="me" target="_blank">Email</a>
-                    </li>
-                </ul>
-                <div class="copy">© 2013 Rafaell Lycan. All rights reserved.</div>
-                <p>Build with HTML5, Coffe and Love <span>&lt;3</span></p>
-                <p>Resize your screen =)</p>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" media="all">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <a href="#">
+                    <img src="http://placehold.it/200" alt="Rafael Almeida" title="Rafael Almeida" class="avatar">
+                </a>
+                <h1><a href="#">Hi there, I'm Rafaell</a></h1>
+                <h2 class="subtitle">And I love coding things to web</h2>
+                <h2 class="subtitle"><a href="#">+</a></h2>
+            </header>
+            <footer>
+                <p>
+                    <a href="#" class="btn btn-dark btn-github">Github</a>
+                    <a href="#" class="btn btn-dark btn-twitter">Twitter</a>
+                </p>
             </footer>
-        </div> <!-- /container -->
+        </aside>
 
-{% include scripts.html %}
+        <main class="main">
+            <div class="container">
+                {{content}}
+            </div>
+        </main>
+    </div>
+</body>
+</html>

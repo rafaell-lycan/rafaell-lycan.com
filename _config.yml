@@ -1,12 +1,11 @@
 name: Rafaell Lycan
 author: Rafaell Lycan
 markdown: redcarpet
-# permalink: :title
-permalink: /blog/:title
+permalink: /blog/:title/
 pygments: true
 future: true
 destination: ./_publish
-paginate: 10
+paginate: 5
 baseurl: '/'
 sitemap:
    file: "/sitemap.xml"
