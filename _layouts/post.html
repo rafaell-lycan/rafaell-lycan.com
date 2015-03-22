@@ -3,28 +3,30 @@ layout: default
 menu_current: blog
 ---
 
-<section class="blog blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+    {% if page.image %}
+      <figure>
+        <img src="{{ site.url }}/{{ page.image }}" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
+        <figcaption>{{ image }}</figcaption>
+      </figure>
+    {% endif %}
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y'}}</time>
+      |
+      <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
+    </p>
+    <p>{{ page.resumo }}</p>
+    <span class="keywords hidden" itemprop="keywords">
+      {{page.keywords}}
+    </span>
+  </header>
+  {{ content }}
+</article>
 
-   <article>
-      <!-- Header -->
-      <header class="post-header">
-        {% if page.image %}
-          <figure>
-            <img src="{{ site.url }}/{{ page.image }}" with="700" height="450" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
-            <figcaption>{{ image }}</figcaption>
-          </figure>
-        {% endif %}
-          <time datetime="{{ site.time | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%d/%m/%Y'}}</time>
-          <h1 itemprop="headline">{{ page.title }}</h1>
-          <p>{{ page.resumo }}</p>
-          <span class="keywords hidden" itemprop="keywords">
-            {{page.keywords}}
-          </span>
-      </header>
-      {{ content }}
+{% include disqus.html %}
 
-      {% include author.html %}
-
-      {% include disqus.html %}
-   </article>
-</section>
+<footer id="footer">
+  <p class="credit">Copyright © 2015 - Rafaell Lycan. All rights reserved.</p>
+</footer>
