@@ -16,7 +16,7 @@ module.exports = function (grunt){
             options: {
                separator: ';'
             },
-            src: ['src/js/plugins.js','src/js/main.js'],
+            src: 'src/js/main.js',
             dest: 'assets/js/main.min.js'
          },
       }, // end Concat
