@@ -31,6 +31,10 @@ body{
   text-align: center;
 }
 
+.to-upper{
+  text-transform: uppercase;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
@@ -126,6 +130,11 @@ img{
     padding: 80px 30px;
     margin: 0 auto;
     .box-sizing();
+  }
+
+  .column{
+    width: 33.33%;
+    float: left;
   }
 }
 
@@ -236,6 +245,47 @@ img{
     }
 }
 
+.about{
+  .info, .skills{
+    width: 100%;
+    float: left;
+  }
+  .info{
+    margin-bottom: 2em;
+    border-bottom: 1px solid #dedede;
+
+    .title{
+      margin: 0;
+      font-size: .9em;
+      font-style: italic;
+    }
+
+    .description{
+      margin-top: 0;
+    }
+  }
+  .skills{
+    margin-top: 2em;
+    padding: 1em 0;
+    border-top: 1px solid #dedede;
+
+    .skill{
+      margin: 20px 0;
+    }
+
+    .title{
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .level{
+      font-size: .7em;
+      margin: 0;
+    }
+  }
+}
+
 .post{
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -282,6 +332,8 @@ img{
 
 #footer{
   width: 100%;
+  float: left;
+  border-top: 1px solid #dedede;
   text-align: center;
   font-size: .9em;
 }

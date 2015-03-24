@@ -27,7 +27,7 @@
 
   .main{
     position: relative;
-    padding: 5%;
+    padding: 5% 5% 0;
     left: 0;
     right: 0;
     top: 0;
@@ -39,6 +39,10 @@
     }
   }
 
+  .about .skills .column{
+    width: 50%;
+  }
+
   .pagination{
     margin-left: 18px;
     margin-right: 18px;
@@ -47,5 +51,11 @@
 
   #footer{
     font-size: .9em;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .column{
+    width: 100% !important;
   }
 }
