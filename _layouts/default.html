@@ -1,45 +1,91 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="pt-BR" dir="ltr" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="pt-BR" dir="ltr" class="no-js"> <!--<![endif]-->
-{% include head.html %}
-    <body>
+<!--[if IEMobile 7 ]><html lang="pt-BR" class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html lang="pt-BR" class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="pt-BR" dir="ltr" class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    <meta charset="utf-8">
+    <!--[if lt IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-        <div id="loader-container"></div>
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="{{site.url}}/assets/favicon.ico" type="image/x-icon" />
 
-        {% include menu.html %}
+    <!-- Core Meta Data -->
+    <meta name="author" content="Rafaell Lycan">
+    <meta name="description" content="{{ description }}" />
+    <meta name="robots" content="index, follow" />
+    <link rel="alternate" type="application/rss+xml" href="{{site.url}}/feed.xml" title="RSS Feed for website"/>
+    <link rel="author" href="https://plus.google.com/u/1/+RafaellLycan/"/>
 
-        <!-- Initial container for content -->
-        <div class="container body">
+    <!-- Google webmaster tools verification code -->
+    <meta name="google-site-verification" content="x08xUXYXTQWjHPyl9M_w5VIF07UWLSi0XUTxxCSS7rQ" />
+    <meta name="apple-itunes-app" content="app-id=567264775">
 
-          {{ content }}
+    <!-- Open Graph Meta Data -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:site_name" content="Hi there, I'm Rafaell" />
 
-            <footer class="footer">
-                <ul class="social">
-                    <li class="sprites linkedin">
-                        <a href="http://www.linkedin.com/in/rafaelllycan" rel="me" target="_blank">Linkedin</a>
-                    </li>
-                    <li class="sprites github">
-                        <a href="https://github.com/rafaell-lycan/" rel="me" target="_blank">GitHub</a>
-                    </li>
-                    <li class="sprites twitter">
-                        <a href="https://twitter.com/RafaellLycan" rel="me" target="_blank">Twitter</a>
-                    </li>
-                    <li class="sprites google">
-                        <a href="https://plus.google.com/113755365039926065548" rel="author" target="_blank">Google+</a>
-                    </li>
-                    <li class="sprites facebook">
-                        <a href="https://www.facebook.com/rafaell.lycan" rel="me" target="_blank">Facebook</a>
-                    </li>
-                    <li class="sprites email">
-                        <a href="mailto:hi@rafaell.cc" rel="me" target="_blank">Email</a>
-                    </li>
-                </ul>
-                <div class="copy">© 2013 Rafaell Lycan. All rights reserved.</div>
-                <p>Build with HTML5, Coffe and Love <span>&lt;3</span></p>
-                <p>Resize your screen =)</p>
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="{{ site.url }}" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:image" content="{{ image }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta name="twitter:creator" content="@RafaellLycan" />
+
+    <!-- Syntax highlighting CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+    <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" media="all">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <a href="{{post.url}}/">
+                    <img src="{{site.url}}/assets/img/rafaell-lycan-nice-cat.jpg" alt="Rafael Almeida" title="Rafael Almeida" class="avatar">
+                </a>
+                <h1><a href="{{post.url}}/">Hi there, I'm Rafaell</a></h1>
+                <h2 class="subtitle">And I love coding things to web</h2>
+                <h2 class="subtitle"><a href="{{post.url}}/about">+</a></h2>
+            </header>
+            <footer>
+                <p>
+                    <a href="https://github.com/rafaell-lycan" class="btn btn-dark btn-github">Github</a>
+                    <a href="https://twitter.com/rafaelllycan" class="btn btn-dark btn-twitter">Twitter</a>
+                </p>
             </footer>
-        </div> <!-- /container -->
+        </aside>
 
-{% include scripts.html %}
+        <main class="main">
+            <div class="container">
+                {{content}}
+            </div>
+            <footer id="footer">
+              <p class="credit">Copyright © 2015 - Rafaell Lycan. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <!-- Google Analytics verification code -->
+    <script>
+        var _gaq=[['_setAccount','UA-16383035-5'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{site.url}}/assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script async src="{{site.url}}/assets/js/main.min.js"></script>
+</body>
+</html>

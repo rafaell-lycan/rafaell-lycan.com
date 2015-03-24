@@ -16,7 +16,7 @@ module.exports = function (grunt){
             options: {
                separator: ';'
             },
-            src: ['assets/js/plugins.js','assets/js/main.js'],
+            src: 'src/js/main.js',
             dest: 'assets/js/main.min.js'
          },
       }, // end Concat
@@ -35,32 +35,31 @@ module.exports = function (grunt){
       less: { // Compile LESS files
         default: {
           options: {
-            paths: ['assets/css/'],
             compress: true,
           },
           files: { // Dest : Origin
-            "assets/css/style.css": "assets/less/style.less"
+            "assets/css/style.css": ['src/less/style.less']
           },
         }
       }, // end less
 
       watch: { // Watch JS and LESS folder
         js: {
-          files: ['assets/js/*.js'],
+          files: ['src/js/*.js'],
           tasks: ['concat:js', 'uglify:js','jekyll'],
           options: {
             livereload: true,
           }
         },
         less: {
-            files: ['assets/less/*.less'],
+            files: ['src/less/**/*.less'],
             tasks: ['less','jekyll'],
             options: {
               livereload: true,
             },
          },
          html: {
-            files: ['./**/*.html','!./node_modules/*.html'],
+            files: ['./**/*.html','./**/*.md','!./node_modules/*.html'],
             tasks: ['jekyll'],
             options: {
               livereload: true,

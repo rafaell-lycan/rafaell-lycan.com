@@ -1,7 +1,7 @@
 {% if page.title %}
     {% capture title %}{{ page.title | strip_html }} – Rafaell Lycan{% endcapture %}
 {% else %}
-    {% capture title %}Rafaell Lycan - Web developer, front-end lover and Geek{% endcapture %}
+    {% capture title %}Hi there, I'm Rafaell{% endcapture %}
 {% endif %}
 {% if page.resumo %}
     {% capture description %}{{ page.resumo }}{% endcapture %}
@@ -11,41 +11,5 @@
 {% if page.image %}
     {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}
 {% else %}
-    {% capture image %}{{ site.url }}/shield.png{% endcapture %}
+    {% capture image %}{{ site.url }}/assets/img/shield.png{% endcapture %}
 {% endif %}
-    <head>
-        <meta charset="utf-8">
-        <!--[if lt IE 9]>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <script src="js/vendor/html5shiv.js"></script>
-        <![endif]-->
-        <title>{{ title }}</title>
-        <link rel="alternate" type="application/rss+xml" href="{{site.url}}/feed.xml" title="RSS Feed for website"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
-        <!-- Behavioral Meta Data -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="shortcut icon" href="{{site.url}}/assets/favicon.ico" type="image/x-icon" />
-
-        <!-- Core Meta Data -->
-        <meta name="author" content="Rafaell Lycan">
-        <meta name="description" content="{{ description }}" />
-        {% if page.keywords %}
-        <meta name="keywords" content="{{ page.keywords }}" />
-        {% else %}
-        <meta name="keywords" content="html5, css, css3, javascript, jquery, web, development, frontend, portfolio, web developer, rafael almeida, rafaell lycan" />
-        {% endif %}
-        <meta name="robots" content="index, follow" />
-
-        <!-- Google webmaster tools verification code -->
-        <meta name="google-site-verification" content="x08xUXYXTQWjHPyl9M_w5VIF07UWLSi0XUTxxCSS7rQ" />
-        <meta name="apple-itunes-app" content="app-id=567264775">
-
-        {% include open-graph.html %}
-        {% include twitter-cards.html %}
-
-        <!-- Syntax highlighting CSS -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" media="all">
-
-    </head>

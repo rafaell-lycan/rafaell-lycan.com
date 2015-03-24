@@ -1,8 +1,7 @@
 name: Rafaell Lycan
 author: Rafaell Lycan
 markdown: redcarpet
-# permalink: :title
-permalink: /blog/:title
+permalink: /:year/:title/
 pygments: true
 future: true
 destination: ./_publish
@@ -10,4 +9,12 @@ paginate: 10
 baseurl: '/'
 sitemap:
    file: "/sitemap.xml"
-exclude: ["/node_modules","/.gitignore","./CNAME","/Gruntfile.js","/package.json","/README.md"]
+exclude: [
+    "/node_modules",
+    "/.gitignore",
+    "./CNAME",
+    "/Gruntfile.js",
+    "/package.json",
+    "/README.md",
+    "/src"
+    ]

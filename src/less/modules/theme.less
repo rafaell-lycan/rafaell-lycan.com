@@ -1,0 +1,400 @@
+/*
+  ### Rafaell Lycan Website ###
+  Document    : base.less
+  Author      : Rafaell Lycan
+*/
+
+html{
+  height: 100%;
+}
+body{
+  position: relative;
+  min-height: 100%;
+  font: 300 1.15em/1.5em 'Lato', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  &>.container{
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.hidden{
+  display: none;
+  opacity: 0;
+}
+
+.center{
+  text-align: center;
+}
+
+.to-upper{
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+p{
+  margin-bottom: 1.5em;
+}
+
+a{
+  color: darken(#5ab3f6, 20%);
+  text-decoration: none;
+
+  &:hover{
+    color: #5ab3f6;
+    text-decoration: underline;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+.sidebar{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+  background-color: #292929;
+
+  &>header{
+    width: 90%;
+    margin: 100px auto 0;
+    text-align: center;
+
+    .avatar{
+      width: 130px;
+      height: auto;
+      .border-radius(50%);
+    }
+
+    h1{
+      letter-spacing: -1px;
+      margin-top: 0.2;
+      margin-bottom: 2em;
+    }
+
+    h2{
+      font-size: 0.9em;
+      color: #787878;
+      bottom: 20px;
+    }
+
+    a{
+      font-size: 30px;
+      color: #fff;
+      font-weight: 300;
+      text-decoration: none;
+    }
+  }
+
+  &>footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    a{
+      min-width: 100px;
+    }
+  }
+}
+
+.main{
+  box-sizing: content-box;
+  outline: 0;
+  position: absolute;
+  left: 30%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+
+  &>.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 80px 30px;
+    margin: 0 auto;
+    .box-sizing();
+  }
+
+  .column{
+    width: 33.33%;
+    float: left;
+  }
+}
+
+.standard{
+  display: block;
+
+  header{
+    position: relative;
+    padding: 2em 0 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #dedede;
+
+    h1{
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  .blog-archives{
+    color: #343434;
+
+    article{
+      padding: 1em 0 1em;
+      position: relative;
+      min-height: 60px;
+
+      padding-left: 4.5em;
+      padding-bottom: .7em;
+
+      margin-left: 5em;
+    }
+
+    h3{
+      margin-bottom: .3em;
+      font-weight: normal;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      float: left;
+    }
+    h2{
+      font-size: 1.5em;
+      color: #343434;
+      margin-top: 0.2em;
+      margin-bottom: .5em;
+
+      a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: normal;
+        display: inline-block;
+      }
+    }
+
+    time{
+      font-size: .9em;
+      line-height: 1.2em;
+
+      position: absolute;
+      text-align: right;
+      left: 0em;
+      top: 1.8em;
+    }
+  }
+}
+
+.posts{
+  display: block;
+  border-bottom: 1px solid #dedede;
+
+    header {
+      position: relative;
+      padding: 2em 0 1em;
+
+      h2{
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+
+      a{
+        color: #2f2b28;
+        text-decoration: none;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+      .resume{
+        color: #777;
+        font-size: 0.9em;
+      }
+
+      .meta{
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 0.8em;
+        top: 0;
+        width: 100%;
+        color: #4e4e4e;
+      }
+    }
+}
+
+.about{
+  .info, .skills{
+    width: 100%;
+    float: left;
+  }
+  .info{
+    margin-bottom: 2em;
+    border-bottom: 1px solid #dedede;
+
+    .title{
+      margin: 0;
+      font-size: .9em;
+      font-style: italic;
+    }
+
+    .description{
+      margin-top: 0;
+    }
+  }
+  .skills{
+    margin-top: 2em;
+    padding: 1em 0;
+    border-top: 1px solid #dedede;
+
+    .skill{
+      margin: 20px 0;
+    }
+
+    .title{
+      font-size: 1.2em;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .level{
+      font-size: .7em;
+      margin: 0;
+    }
+  }
+}
+
+.post{
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+
+  header{
+    position: relative;
+    padding: 2em 0 0;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #dedede;
+  }
+
+  figure{
+    max-height: 450px;
+    margin: 0;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+  }
+
+  p .code {
+    background-color: #eee;
+    padding: 2px 3px;
+    border: 1px solid #ddd;
+    color: #555;
+    .border-radius();
+  }
+
+  .meta{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 0.8em;
+    top: 0;
+    width: 100%;
+    color: #4e4e4e;
+  }
+}
+
+#footer{
+  width: 100%;
+  float: left;
+  border-top: 1px solid #dedede;
+  text-align: center;
+  font-size: .9em;
+}
+
+.pagination {
+  text-align: center;
+  font-size: .95em;
+  position: relative;
+  margin:20px 55px 0;
+
+  a.previous {
+    position: absolute;
+    left: 0;
+  }
+
+  a.next {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.comments{
+  padding: 20px 0;
+  border-top: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+}
+
+.btn{
+  padding: .4em .75em;
+  text-decoration: none !important;
+  margin: .5em .25em;
+  line-height: 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  .border-radius(3px);
+}
+.btn-dark{
+  color: #787878;
+  border: 1px solid #454545;
+
+  &:hover{
+    color: #fff;
+    background: #585858;
+    border: 1px solid #636363;
+  }
+}
+.btn-light{
+  color: #555;
+  border: 1px solid #dedede;
+
+  &:hover{
+    color: #2f2b28;
+    border: 1px solid #979797;
+  }
+}
+
+.btn-twitter:hover{
+  background: #5ab3f6;
+  border: 1px solid #2286d3;
+}
+.btn-github:hover{
+  background: #555555;
+  border: 1px solid #393939;
+}
