@@ -3,7 +3,7 @@ layout: default
 ---
 <section itemscope itemtype="https://schema.org/Blog">
   {% for post in paginator.posts %}
-  <article class="posts" itemprop="blogPost" itemscope itemtype="BlogPosting">
+  <article class="posts" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
     <header>
       <h2 itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {% include meta.html %}
