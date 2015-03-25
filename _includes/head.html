@@ -1,12 +1,12 @@
 {% if page.title %}
     {% capture title %}{{ page.title | strip_html }} – Rafaell Lycan{% endcapture %}
 {% else %}
-    {% capture title %}Hi there, I'm Rafaell{% endcapture %}
+    {% capture title %}{{site.title}}{% endcapture %}
 {% endif %}
 {% if page.resumo %}
     {% capture description %}{{ page.resumo }}{% endcapture %}
 {% else %}
-    {% capture description %}Rafaell Lycan a Brazilian Web Developer, front-end lover and Geek. Likes HTML5, CSS3, JavaScript, PHP and other stuffs.{% endcapture %}
+    {% capture description %}{{site.description}}{% endcapture %}
 {% endif %}
 {% if page.image %}
     {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}

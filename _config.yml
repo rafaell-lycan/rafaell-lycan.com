@@ -1,20 +1,28 @@
-name: Rafaell Lycan
+# Jekyll configuration
+title: "Hi there, I'm Rafaell"
+url: 'http://rafaell-lycan.github.io'
 author: Rafaell Lycan
-markdown: redcarpet
+twitter: 'RafaellLycan'
+github: 'rafaell-lycan'
+email: 'sonny.webdsg@gmail'
+description: 'Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan'
+
+category_title_prefix: ''
+category_dir: /
+
+# Basic configuration
 permalink: /:year/:title/
-pygments: true
-future: true
 destination: ./_publish
-paginate: 10
+
+# Use Pygments to highlight code blocks
 baseurl: '/'
-sitemap:
-   file: "/sitemap.xml"
-exclude: [
-    "/node_modules",
-    "/.gitignore",
-    "./CNAME",
-    "/Gruntfile.js",
-    "/package.json",
-    "/README.md",
-    "/src"
-    ]
+highlighter: pygments
+pygments: true
+paginate: 10
+exclude: ['/node_modules', '/.gitignore', './CNAME', '/Gruntfile.js', '/package.json', '/README.md', '/src']
+
+# Publish posts with future date.
+future: false
+
+# Compile posts in the _drafts directory.
+show_drafts: false
