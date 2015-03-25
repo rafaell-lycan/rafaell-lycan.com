@@ -28,7 +28,7 @@ Para que não sabe ainda `<audio>` e `<video>` são as novas tags de media com u
 O objetivo deste post é apresentar uma breve introdução a essas novas tags, então vamos lá.
 
 ##Audio
-Como o proprio nome já diz, a tag `<audio>` serve para incorporarmos e reproduzirmos medias de áudio:
+Como o proprio nome já diz, a tag `<audio>` serve para incorporarmos e reproduzirmos arquivos de áudio:
 
 {% highlight html %}
 <audio src="song.mp3" controls="controls">
@@ -44,8 +44,30 @@ Além desses podemos incluir também outras propriedades como o ***"autoplay"***
 Para mais informações veja a documentação [aqui](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
 
 ##Vídeo
+A tag `<video>` é utilizada para imcorporarmos e reproduzirmos arquivos de vídeos.
+{% highlight html %}
+<video width="320" height="240" src="movie.mp4" controls="controls">
+  Seu navegador não suporta HTML :(
+</video>
+{% endhighlight %}
+[Exemplo aqui](http://jsfiddle.net/rL95t064/).
+
+Não é nada diferente do que já vimos, exeto que desta vez eu adicionei as propriedades ***"width"*** e ***"height"*** para definir um tamanho especifico para o vídeo.
+
+Além de todas os atributos que o áudio possui, também podemos incluir algumas outras como ***"poster"*** que nada mais é do que uma imagem a ser apresentada enquanto o video é baixado.
+
+Para mais informações veja a documentação [aqui](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video).
 
 ##Multiplos formatos
+Como eu disse anteriormente nem tudo são rosas, e um dos problemas que precisamos ficar atentos é quanto ao formato suportado por cada browser. Sim! Não adianta ficar triste, mas também não é o fim do mundo, para isso usamos a tag `<source>`.
+
+| Browser | Version | Codec |
+| --- | --- | --- |
+|Internet Explorer |9.0+  |MP3, AAC|
+|Chrome            |6.0+  |Ogg Vorbis, MP3, WAV|
+|Firefox           |3.6+  |Ogg Vorbis, WAV|
+|Safari            |5.0+  |MP3, AAC, WAV|
+|Opera             |10.0+ |Ogg Vorbis, WAV|
 
 ##Controles customizados
 
