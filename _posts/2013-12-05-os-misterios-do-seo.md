@@ -12,6 +12,13 @@ author_profile: https://plus.google.com/113755365039926065548
 keywords: dicas de seo, site no google, como indexar sites, sitemap, metatags, keywords, description
 resumo: >
   Como indexar seu site no Google? Com apenas algumas boas práticas conseguimos um melhor resultado no queridinho das buscas.
+related:
+  - title: O que é SEO
+    url: http://www.agenciamestre.com/seo/o-que-e-seo/
+  - title: Checklist de SEO
+    url: http://www.agenciamestre.com/checklist-seo/
+  - title: 404 Error – Como Fazer o Erro 404 Trabalhar para Você
+    url: http://www.agenciamestre.com/seo/404-error
 ---
 Primeiro, gostaria de dizer que não sou especialista em marketing digital nem nada do tipo, então estas são epnas algumas dicas do que um desenvolvedor front-end deve fazer para uma página HTML tenha algum significado a mais para buscadores como Google, Bing, Yahoo entre outros.
 
@@ -201,10 +208,3 @@ O Google (o buscador mais utilizado no mundo), “lê” os rich snippets atrav�
 <cite>Snippets, as pequenas linhas de texto que aparecem embaixo de todo resultado da pesquisa, foram desenvolvidos para dar aos usuários uma noção sobre o conteúdo da página e por que ela é relevante para a consulta.</cite>
 
 **Fonte: [Sobre rich snippets e dados estruturados](https://support.google.com/webmasters/answer/99170?hl=pt-BR)**
-
-
-
-####Fontes
-* **[O que é SEO](http://www.agenciamestre.com/seo/o-que-e-seo/)**
-* **[Checklist de SEO](http://www.agenciamestre.com/checklist-seo/)**
-* **[404 Error – Como Fazer o Erro 404 Trabalhar para Você](http://www.agenciamestre.com/seo/404-error)**

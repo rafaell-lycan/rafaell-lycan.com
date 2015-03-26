@@ -19,6 +19,20 @@ post: true
     </span>
   </header>
   {{ content }}
+  {% if page.related %}
+    <aside class="fonte">
+      <h3>Fontes</h3>
+      <ul>
+        {% for rel in page.related %}
+        <li itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
+          <a itemprop="url" href="{{ rel.url }}" alt="{{ rel.title }}" title="{{ rel.title }}">
+            <span itemprop="name">{{ rel.title }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  {% endif %}
 </article>
 
 {% include disqus.html %}
