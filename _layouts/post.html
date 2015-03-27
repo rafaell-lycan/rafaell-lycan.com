@@ -21,11 +21,11 @@ post: true
   {{ content }}
   {% if page.related %}
     <aside class="fonte">
-      <h3>Fontes</h3>
+      <h3>Referências</h3>
       <ul>
         {% for rel in page.related %}
         <li itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
-          <a itemprop="url" href="{{ rel.url }}" alt="{{ rel.title }}" title="{{ rel.title }}">
+          <a itemprop="url" href="{{ rel.url }}" alt="{{ rel.title }}" title="{{ rel.title }}" target="_blank">
             <span itemprop="name">{{ rel.title }}</span>
           </a>
         </li>
