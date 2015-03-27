@@ -151,4 +151,4 @@ Um exeplo:
 })();
 {% endhighlight %}
 
-Da pra se divertir bastante, eu perdi alguns dias para fazer algo que visualmente me agrada e também me serviria para escutar musicas durante o dia. Veja meu exemplo [aqui]({{site.url}}music-player/)
+Da pra se divertir bastante, eu perdi alguns dias para fazer algo que visualmente me agrada e também me serviria para escutar musicas durante o dia. Veja meu exemplo [aqui]({{site.url}}/music-player/)
