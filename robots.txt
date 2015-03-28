@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 #site maps
-Sitemap: sitemap.xml
+Sitemap: http://rafaell.github.io/sitemap.xml
