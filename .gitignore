@@ -1,7 +1,6 @@
 _publish
 _site
-Backup
 node_modules
-npm-debug.logassets/css/style.css
+npm-debug.log
 assets/css/style.css
 assets/js/main.min.js

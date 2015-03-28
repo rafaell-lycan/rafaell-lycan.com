@@ -14,7 +14,7 @@
 
     <!-- Behavioral Meta Data -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="{{site.url}}/assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 
     <!-- Core Meta Data -->
     <meta name="author" content="{{ site.author }}">
@@ -46,21 +46,22 @@
 
     <!-- Syntax highlighting CSS -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
-    <link rel="stylesheet" href="{{site.url}}/assets/css/style.css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <header>
-                <a href="{{post.url}}/">
-                    <img src="{{site.url}}/assets/img/rafaell-lycan.jpg" alt="Rafaell Lycan Profile" title="Rafaell Lycan Profile" class="avatar">
+                <a href="/">
+                    <img src="/assets/img/rafaell-lycan.jpg" alt="Rafaell Lycan Profile" title="Rafaell Lycan Profile" class="avatar">
                 </a>
-                <h1><a href="{{post.url}}/">Hi there, I'm Rafaell</a></h1>
-                <h2 class="subtitle">And I love coding things to web</h2>
+                <h1><a href="/">Hi there, I'm Rafaell</a></h1>
+                <h2 class="subtitle">And I love coding things for the web</h2>
                 <nav class="menu">
                     <ul>
-                        <li><a href="{{site.url}}/about">About</a></li>
-                        <li><a href="{{post.url}}/">Blog</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/">Blog</a></li>
                         <!-- <li><a href="#">Projects</a></li> -->
                         <!-- <li><a href="#">Talks</a></li> -->
                     </ul>
@@ -90,6 +91,6 @@
         g.src='//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    <script async src="{{site.url}}/assets/js/main.min.js"></script>
+    <script async src="/assets/js/main.min.js"></script>
 </body>
 </html>

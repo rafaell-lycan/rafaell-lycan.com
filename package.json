@@ -1,20 +1,23 @@
 {
   "name": "rafaell-lycan",
   "version": "0.0.1",
+  "description": "Rafaell Lycan Jekyll site",
+  "homepage": "http://rafaell-lycan.github.com/",
+  "main": "index.html",
+  "author": "Rafaell Lycan <sonny.webdsg@gmail.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/rafaell-lycan/rafaell-lycan.github.com.git"
   },
-  "main": "index.html",
-  "author": "Rafaell Lycan",
-  "license": "BSD",
   "devDependencies": {
-    "grunt-cli": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-connect": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-jekyll": "latest"
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch" : "*",
+    "grunt-contrib-connect": "*",
+    "grunt-jekyll": "*",
+    "time-grunt": "*",
+    "load-grunt-tasks": "*"
   }
 }
