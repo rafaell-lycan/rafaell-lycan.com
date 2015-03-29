@@ -2,8 +2,7 @@
 layout: post
 title:  "Usando Áudio e Vídeo no HTML5"
 date:   2013-09-21
-categories: html5, audio, video, multimidia
-tags: audio video html
+tags: audio video html5
 image: assets/img/posts/html5-audio-video.jpg
 comments: true
 

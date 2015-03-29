@@ -2,8 +2,7 @@
 layout: post
 title:  "Os mistérios do SEO"
 date:   2013-12-05
-categories: seo, google, dicas
-tags: seo google
+tags: seo google dicas
 image: assets/img/posts/os-misterios-do-seo.jpg
 comments: true
 

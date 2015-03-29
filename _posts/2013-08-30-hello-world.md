@@ -2,8 +2,6 @@
 layout: post
 title:  "Hello World!"
 date:   2013-08-30
-categories: outros
-tags: hello world
 image: assets/img/posts/hello-world.jpg
 comments: true
 

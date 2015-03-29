@@ -71,7 +71,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 4000,
-          base: './_publish',
+          base: './_publish'
         }
       }
     },

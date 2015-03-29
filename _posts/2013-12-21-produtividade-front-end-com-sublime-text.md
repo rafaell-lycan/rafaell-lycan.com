@@ -2,7 +2,6 @@
 layout: post
 title:  "Produtividade Front-End com Sublime Text"
 date:   2013-12-21
-categories: produtividade, dicas sublime
 tags: sublime produtividade dicas front-end
 image: assets/img/posts/produtividade-front-end.jpg
 comments: true

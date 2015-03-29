@@ -2,8 +2,7 @@
 layout: post
 title:  "Usando o pré-processador LESS CSS para um CSS mais dinâmico"
 date:   2013-10-06
-categories: less, css, css3
-tags: less css css3
+tags: less css
 image: assets/img/posts/css-dinamico-com-less.jpg
 comments: true
 
