@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 #site maps
-Sitemap: http://rafaell-lycan.github.io/sitemap.xml
+Sitemap: http://rafaell.cc/sitemap.xml
