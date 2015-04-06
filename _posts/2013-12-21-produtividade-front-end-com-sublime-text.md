@@ -2,12 +2,8 @@
 layout: post
 title:  "Produtividade Front-End com Sublime Text"
 date:   2013-12-21
-tags: sublime produtividade dicas front-end
+tags: sublime-text produtividade dicas
 image: assets/img/posts/produtividade-front-end.jpg
-comments: true
-
-author_link: http://twitter.com/RafaellLycan
-author_profile: https://plus.google.com/113755365039926065548
 keywords: html5 api, web storage, html5 sql, html5 tags
 resumo: >
   Precisamos de produtividade, cada vez mais o mercado nos cobra mais agilidade no desenvolvimento de aplicações seja front-end ou back-end. Sabia que também é possível ser produtivo no mundo front-end?

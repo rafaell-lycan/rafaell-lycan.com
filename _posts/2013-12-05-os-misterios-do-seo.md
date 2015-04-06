@@ -4,10 +4,6 @@ title:  "Os mistérios do SEO"
 date:   2013-12-05
 tags: seo google dicas
 image: assets/img/posts/os-misterios-do-seo.jpg
-comments: true
-
-author_link: http://twitter.com/RafaellLycan
-author_profile: https://plus.google.com/113755365039926065548
 keywords: dicas de seo, site no google, como indexar sites, sitemap, metatags, keywords, description
 resumo: >
   Como indexar seu site no Google? Com apenas algumas boas práticas conseguimos um melhor resultado no queridinho das buscas.

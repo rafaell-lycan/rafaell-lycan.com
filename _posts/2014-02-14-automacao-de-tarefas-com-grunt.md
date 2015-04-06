@@ -2,12 +2,8 @@
 layout: post
 title:  "Automação de tarefas com Grunt.js"
 date:   2014-02-14
-tags: grunt automação tools dicas
+tags: automação tools dicas
 image: assets/img/posts/automacao-de-tarefas-com-grunt.jpg
-comments: true
-
-author_link: http://twitter.com/RafaellLycan
-author_profile: https://plus.google.com/113755365039926065548
 keywords: grunt js, automação front-end, tools, ferramentas front-end
 resumo: >
   Já imaginou poder automatizar tarefas simples como concatenar arquivos, minificar, testar e até mesmo atualizar o navegador a cada Ctrl+S? Conheça o Grunt.js.

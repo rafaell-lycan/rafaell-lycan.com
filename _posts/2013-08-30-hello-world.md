@@ -3,10 +3,6 @@ layout: post
 title:  "Hello World!"
 date:   2013-08-30
 image: assets/img/posts/hello-world.jpg
-comments: true
-
-author_link: http://twitter.com/RafaellLycan
-author_profile: https://plus.google.com/113755365039926065548
 keywords: hello world, objetivo, blog novo
 resumo: >
   Hello World! Chega de falar e não fazer, 2014 promete e a meta é compartilhar conhecimento com todos.
