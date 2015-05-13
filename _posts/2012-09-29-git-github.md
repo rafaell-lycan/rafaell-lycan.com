@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git e Github - Você deveria estar usando"
+title:  "Git e Github - Porque FTP é coisa do passado!"
 date:   2012-09-29
 categories: outros
 tags: git github
