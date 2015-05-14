@@ -11,9 +11,9 @@ resumo: >
 related:
   - title: Documentação Oficial
     url: https://developer.mozilla.org/en-US/Firefox_OS
-    title: Kickstart Firefox OS Apps Development (Slides)
+  - title: Kickstart Firefox OS Apps Development (Slides)
     url: http://shafiul.github.io/slides/kickstart_fxos.html
-    title: CPBR6 - Firefox OS. Web é a plataforma (Video)
+  - title: CPBR6 - Firefox OS. Web é a plataforma (Video)
     url: https://www.youtube.com/watch?v=faWICMGHwsw
 ---
 ##Firefox OS
