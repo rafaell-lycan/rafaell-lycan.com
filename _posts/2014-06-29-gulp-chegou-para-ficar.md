@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gulp - O Task Runner para preguiçosos como eu"
+title:  "Gulp - O Task Runner que chegou para ficar"
 date:   2014-06-29
 tags: automação tools dicas
 image: assets/img/posts/gulp.jpg
