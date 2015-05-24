@@ -59,7 +59,7 @@ Uma outra grande mudança foi a inclusão do [Flysystem](https://github.com/thep
 Isso quer dizer que é muito mais fácil fazer upload de arquivos para qualquer serviço disponível neste componente.
 
 ##Muito mais
-Bem, acredito que essas foram as grandes mudanças, mas ainda assim tivemos [algumas mudanças](http://laravel.com/docs/5.0/templates#other-blade-control-structures) no Blade principalmente quando se trata de Form, também alguns novos comandos no **artisan**, novos atalhos como **view()** ao invés de **new View()** implementados como novos Facedes e Helpers, Controller Method Inject que nos permite colocar qualquer dependencia definida pelo tipo em nossos métodos como ***public function store(Request $request)***, detecção de ambiente através de `$_ENV` e `$_SERVER`, [Elixir](http://laravel.com/docs/master/elixir) que nada mais é do que o Gulp compilando nossos assets, [Scheduler](http://laravel.com/docs/master/scheduling) que é uma espécie de CRON e muito mais.
+Bem, acredito que essas foram as grandes mudanças, mas ainda assim tivemos também alguns novos comandos no **artisan**, novos atalhos como **view()** ao invés de **new View()** implementados como novos Facedes e Helpers, Controller Method Inject que nos permite colocar qualquer dependencia definida pelo tipo em nossos métodos como **public function store(Request $request)**, detecção de ambiente através de `$_ENV` e `$_SERVER`, [Elixir](http://laravel.com/docs/master/elixir) que nada mais é do que o Gulp compilando nossos assets, [Scheduler](http://laravel.com/docs/master/scheduling) que é uma espécie de CRON e muito mais.
 
 ##Upgrade
 Fazer upgrade não é tão simples, afinal mudamos a versão major do framework, então não tente `composer update`.
