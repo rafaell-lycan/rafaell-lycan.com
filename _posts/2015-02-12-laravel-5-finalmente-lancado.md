@@ -43,6 +43,28 @@ Para mais informações sobre essa nova estrutura de diretórios, leia [este pos
 ##Contratos
 Bem, os contratos podemos são um conjunto de interfaces, que define alguns serviços dentro do core do framework. Pelo que entendi, isso serve apenas como uma documentação para as features do framework, embora que isso também possibilite a criação de classes abstratas e a utilização direta de alguns serviços.
 
+##Blade
+Bem, para aquele como eu que gostam de usar Blade, bem, ele não passou por uma série de mudanças como o restante do framework, mas tivemos [algumas mudanças](http://laravel.com/docs/5.0/templates#other-blade-control-structures) no Blade principalmente quando se trata de Form e dados brutos (raw), que realmente você vai precisar saber.
+
+Como todos sabem, no Laravel 4 o Blade Template incluiu dois tipos de "sintax" para utilizarmos os colchetes duplos `{{ }}` e triplos `{{{ }}}`.
+
+Bem, agora ambas servem apenas para escapar variáveis, e uma nova forma para dados brutos utilizando `{!! $ var !!}` como sempre utilizamos em forms por exemplo.
+
+{% highlight php %}
+{!! Form::open() !!}
+{% endhighlight %}
+
+##Eventos
+Bem, não é novidade trabalhar com programação orientada a eventos com PHP, mas o que eu posso dizer é que na versão 5, ficou ainda mais fácil trabalhar com eventos no padrão [Pub/Sub](http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern). É claro que pra tudo existe limites e cuidados, você não vai sair disparando eventos por toda a sua aplicação, a não ser que isso seja realmente necessário; e caso você achar isso necessário provavelmente você modelou o seu sistema errado.
+
+Particularmente eu nunca utilizei eventos do Laravel em casos reais, até porque os sistemas que faço e mantenho são de pequeno porte, então não tenho necessidade de sair disparando eventos pela aplicação.
+
+Você pode ver alguns exemplos de como isso funciona nos seguintes links:
+
+- [Laravel 5 Events - Laracasts](https://laracasts.com/lessons/laravel-5-events);
+- [Laravel 5.0 - Events & Handlers](https://mattstauffer.co/blog/laravel-5.0-events-and-handlers);
+- [Events - Laravel Docs](http://laravel.com/docs/5.0/events);
+
 ##Socialite
 [Socialite](http://laravel.com/docs/master/authentication#social-authentication) é um pacote opcional de integração com redes sociais abstraindo [OAuth](http://en.wikipedia.org/wiki/OAuth) de maneira ridiculamente simples, o que é muito melhor que ficar utilizando SDK's do Facebook e Twitter por exemplo.
 
