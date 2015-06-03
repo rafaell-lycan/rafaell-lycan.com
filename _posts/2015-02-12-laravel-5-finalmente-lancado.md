@@ -46,7 +46,7 @@ Bem, os contratos podemos são um conjunto de interfaces, que define alguns serv
 ##Blade
 Bem, para aquele como eu que gostam de usar Blade, bem, ele não passou por uma série de mudanças como o restante do framework, mas tivemos [algumas mudanças](http://laravel.com/docs/5.0/templates#other-blade-control-structures) no Blade principalmente quando se trata de Form e dados brutos (raw), que realmente você vai precisar saber.
 
-Como todos sabem, no Laravel 4 o Blade Template incluiu dois tipos de "sintax" para utilizarmos os colchetes duplos `{{ }}` e triplos `{{{ }}}`.
+Como todos sabem, no Laravel 4 o Blade Template incluiu dois tipos de "sintax" para utilizarmos os colchetes duplos {% raw %} `{{ $var }}` e triplos `{{{ $var }}}` {% endraw %}.
 
 Bem, agora ambas servem apenas para escapar variáveis, e uma nova forma para dados brutos utilizando `{!! $ var !!}` como sempre utilizamos em forms por exemplo.
 
