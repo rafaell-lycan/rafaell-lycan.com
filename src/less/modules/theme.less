@@ -1,4 +1,3 @@
-
 /*
   ### Rafaell Lycan Website ###
   Document    : base.less
@@ -42,12 +41,29 @@ p{
 
 a{
   color: darken(#5ab3f6, 20%);
+  font-weight: 400;
   text-decoration: none;
 
   &:hover{
     color: #5ab3f6;
     text-decoration: underline;
   }
+}
+
+hr, input[type=checkbox]{
+  .box-sizing();
+}
+
+input[type=search]{
+  .appearance(textfield);
+}
+
+input[type=search]::-webkit-search-cancel-button{
+  .appearance(none);
+}
+
+button{
+  .appearance(button);
 }
 
 img{
@@ -139,7 +155,7 @@ blockquote{
 }
 
 .main{
-  box-sizing: content-box;
+  .box-sizing(content-box);
   outline: 0;
   position: absolute;
   left: 30%;

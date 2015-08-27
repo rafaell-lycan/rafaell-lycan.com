@@ -8,6 +8,7 @@
   -webkit-border-radius: @arguments;
   -moz-border-radius: @arguments;
   -o-border-radius: @arguments;
+  -ms-border-radius: @arguments;
   border-radius: @arguments;
 }
 .box-sizing(@type: border-box) {
@@ -17,10 +18,18 @@
   -ms-box-sizing: @type;
   box-sizing: @type;
 }
+.appearance(@type) {
+  -webkit-appearance: @type;
+  -moz-appearance: @type;
+  -o-appearance: @type;
+  -ms-appearance: @type;
+  appearance: @type;
+}
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
   -moz-box-shadow: @shadow;
   -o-box-shadow: @shadow;
+  -ms-box-shadow: @shadow;
   box-shadow: @shadow;
 }
 .text-shadow(@shadow) {
