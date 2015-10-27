@@ -22,7 +22,7 @@ related:
 
 Bem, nas ultimas semanas me deparei com alguns tutoriais utilizando ES6 (tambem conhecido como ECMAScript 2015 ou Harmony) como exemplo. Sim achei algumas coisas divinas, já outras são coisas que temos no Node.js por exemplo. Outras são coisas que alguns queriam a muito tempo para aproximar desenvolvedores back-end da linguagem JavaScript como classes.
 
-Pois bem, este pode ser um post inútil para alguns, mas foi o que absorvi no ultimo mês e estou começando a utilizar em projetos pessoais com [Browserify](http://browserify.org/) e [Browserify](https://github.com/babel/babelify).
+Pois bem, este pode ser um post inútil para alguns, mas foi o que absorvi no ultimo mês e estou começando a utilizar em projetos pessoais com [Browserify](http://browserify.org/) e [Babelify](https://github.com/babel/babelify).
 
 Na ultima semana terminei de assistir a um [workshop](http://howtocode.com.br/cursos/organizando-javascript) realizado pelo [@fnando](https://twitter.com/fnando) mostrando alguns goodies de JS já utilizando ES6. Confesso que fiquei perplexo no início já que o compilador ficava cuspindo um monte de código sem sentido ES5, porem tudo funcionando. Então percebi assim duas coisas:
 
