@@ -6,7 +6,7 @@ categories: javascript
 tags: javascript react
 keywords:
 resumo: >
-   Vamos entneder qual é a proposta do Framework, pra que serve e como começar.
+   Vamos entender qual é a proposta do React, pra que serve e como começar a utilizar.
 related:
   - title : React Docs - Getting Started
     url: http://facebook.github.io/react/docs/getting-started.html
@@ -33,21 +33,21 @@ O legal é que nos traz um conceito diferente sobre o que é, pois além de não
 
 Não isso não é uma coisa ruim, acredite.
 
+<div class="center">
+  <script type="text/javascript" src="//www.google.com.br/trends/embed.js?hl=pt-BR&q=ReactJS&date=1/2012+37m&cmpt=q&tz=Etc/GMT%2B3&tz=Etc/GMT%2B3&tz=Etc/GMT%2B3&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=330"></script>
+</div>
+
+A biblioteca é relativamente nova, tendo como criador o Facebook e uma comunidade fora do normal, ele vem ganhando força e crescendo a cada dia. Não posso falar nada quanto a isso, mas não acho que será apenas uma moda passageira. Na verdade acho que coisas muito boas como o [Vue.js](http://vuejs.org/) criado pelo [@youyuxi](https://twitter.com/youyuxi) que é do core team do [Meteor.js](https://www.meteor.com/), e outros frameworks/libs que estão por vim, vão se inspirar cada vez mais em novos conceitos e em como isso pode se aplicar a necessidade dos desenvolvedores.
+
 A primeira vez que olhei mais de perto o código de uma aplicação em React, foi o no final de 2014 com o [GithubPulse](https://github.com/tadeuzagallo/GithubPulse), desenvolvido pelo meu colega [@tadeuzagallo](https://twitter.com/tadeuzagallo).
 
 Eu era apenas <del>(e continuo me julgando)</del> um simples desenvolvedor, que conhecia apenas Backbone e Angular, e toda a ideia do React me parecia um tanto turva.
 
 No inicio de 2015 por conta de algumas coisas que estavam acontecendo na [Rocket](https://www.rocket-internet.com/), comecei a estudar mais sobre [Node.js](http://nodejs.org/), JavaScript e outras coisas, incluindo React.
 
-Logo, quero deixar que vou passar boa parte do conhecimento que tenho, mas estou longe, muito longe mesmo de ser um expert.
+Logo, quero deixar claro que vou passar boa parte do conhecimento que adquiri, mas estou longe, muito longe mesmo de ser um expert.
 
 Nas ultimas semanas eu desenvolvi um player utilizando React e a [API do SoundCloud](https://developers.soundcloud.com/) que você pode ver [funcionando aqui](http://player-rafaell18.rhcloud.com/), ou simplesmente ver o código <del>(o qual preciso melhorar)</del> no meu [Github](https://github.com/rafaell-lycan/estudos-react/tree/master/mini-player-webpack).
-
-<div class="center">
-  <script type="text/javascript" src="//www.google.com.br/trends/embed.js?hl=pt-BR&q=ReactJS&date=1/2012+37m&cmpt=q&tz=Etc/GMT%2B3&tz=Etc/GMT%2B3&tz=Etc/GMT%2B3&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=330"></script>
-</div>
-
-O framework é relativamente novo, tendo como criador o Facebook e uma comunidade fora do normal, ele vem ganhando força e crescendo a cada dia. Não posso falar nada quanto a isso, mas não acho que o framework é uma moda passageira. Na verdade acho que coisas muito boas como o [Vue.js](http://vuejs.org/) criado pelo [@youyuxi](https://twitter.com/youyuxi) que é do core team do [Meteor.js](https://www.meteor.com/), e outros frameworks que estão por vim, vão se inspirar cada vez mais em novos conceitos e em como isso pode se aplicar a necessidade dos desenvolvedores.
 
 ##Uma jornada inesperada
 Depois de ler boa parte da documentação, e fazer uma analogia com os frameworks que já vinha utilizando, finalmente consegui entender o conceito da coisa, seus benefícios e também que ele não é bala de prata como todos os outros. <del>Sim, quero ver sangue e ameaças nos comentários :)</del>
@@ -56,7 +56,7 @@ A primeira parte que foi complicada entender foi o **conceito**, já que ele **n
 
 Além disso, React usa um conceito chamado de **Virtual DOM**, que é a camada que renderiza nossos componentes na [DOM Tree](https://en.wikipedia.org/wiki/Document_Object_Model) baseado em mudanças de estados (states), com o minimo de mudanças possíveis. Não entendeu? Se você entendeu meus parabéns, eu levei algumas horas pra processar essa informação e resumir neste parágrafo.
 
-Ainda segunda a documentação, podemos também renderizar a partir do servidor, não testei ainda, mas pelo que li deve ser algo bem interessante, principalmente tratando-se de escala.
+Ainda segundo a documentação, podemos também renderizar a partir do servidor, não testei ainda, mas pelo que li deve ser algo bem interessante, principalmente tratando-se de escala.
 
 ##Meh...Conceitos:
 
@@ -242,53 +242,293 @@ Composição é a parte mais legal da coisa. É quando criamos um novo component
 
 O que precisamos ter cuidado é com a direção do Flow, pois o mesmo é unidirecional, totalmente diferente do two-way data biding do Angular, ou seja, com a base de componentes definida, o normal é sempre os componentes pais cuidarem de como gerenciar seus componentes filhos via propriedades/props. Isso também é chamado de **top-down**.
 
-Vamos a um exemplo que fiz bem simples utilizando listas:
+Vamos a um exemplo que fiz bem simples, primeiro vamos criar nosso arquivo `App.jsx`:
 
 {% highlight javascript %}
 /** @jsx React.DOM */
 
-var ListItem = React.createClass({
+var APP = React.createClass({
 
   render: function() {
-    return <div>{this.props.value}</div>
-  }
-
-});
-
-var List = React.createClass({
-
-  getInitialState: function () {
-    return {
-      todos : [
-        {value : 'Learn JavaScript'},
-        {value : 'Buy Milk'},
-        {value : 'Learn React'}
-      ]
-    }
-  },
-
-  render: function() {
-    var todos = this.state.todos.map(function (task, index) {
-      return(
-        <ListItem
-        key={index}
-        value={task.value}
-      /> )
-    });
-
     return (
-      <div className="todo-list">
-        {todos}
+      <div className="container">
+        <TodoList />
       </div>
     );
   }
 
 });
 
-React.render(<List />, document.body);
+React.render(<APP />, document.getElementById('main'));
 {% endhighlight %}
 
-[Veja este exemplo aqui](https://jsbin.com/duloqugaqe/edit?js,output)
+Este cara tem a unica responsabilidade de renderizar um componente que possui um componente filho dentro de um elemento com id **main**.
+
+Vamos ao nosso arquivo index.html, e sim, vou usar o Bootstrap só pra não ter que ficar fazendo todo CSS na mão:
+
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TodoList React</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="main"></div>
+  <script src="//fb.me/react-0.13.3.js"></script>
+  <!-- Arquivos JSX -->
+  <script type="text/jsx" src="app.jsx"></script>
+</body>
+</html>
+{% endhighlight %}
+
+Pronto, agora todos os arquivos JSX nós vamos inserir ali na área comentada.
+
+Bem, o comportamento default de uma TodoList é:
+
+- Apresentar a lista de Todos/Tasks;
+- Você pode marcar uma task como completa ou simplesmente deleta-la de sua lista;
+- Você pode adicionar novas tasks;
+
+Agora vamos imaginar a arquitetura dos componentes como **top-down**. Se o nosso `App` esta carregando apenas o componente `TodoList` tanto `App` quanto `TodoList` podem ser o componente pai da aplicação, ou seja, onde a lógica é armazenada. Vamos utilizar o `TodoList` e manter o `App` o mais limpo possível.
+
+A primeira coisa a se fazer é definir nosso componente, então vou criar uma `div` para ser o wrapper do componente e também vou criar dois métodos: `loadTasks` que retorna um array com as tasks da aplicação e `renderTasks`, que irá servir para parsear nossas tasks para um componente `Task` utilizando o [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var TodoList = React.createClass({
+  loadTasks: function () {
+    return [
+        {value : 'Learn JavaScript', done: false },
+        {value : 'Buy Milk', done: true },
+        {value : 'Learn React', done: false }
+      ]
+  },
+
+  renderTasks: function () {
+    var todos = this.loadTasks().map(function (task, index) {
+      return(
+        <Task
+        key={index}
+        value={task.value}
+        done={task.done}
+      /> )
+    });
+
+    return todos;
+  },
+
+  render: function() {
+    return (
+      <div className="col-xs-6 col-xs-offset-3 todo-list">
+        <h1 className="title">My Awesome TodoList</h1>
+        {this.renderTasks()}
+      </div>
+    );
+  }
+
+});
+{% endhighlight %}
+
+Um ponto interessante sobre o React, é que todo componente filho na composição (aquele que ira se repetir N vezes) deve receber uma chave **key** que seja única e fácil de identificar.
+
+Você pode ler mais sobre isso [aqui](https://facebook.github.io/react/docs/multiple-components.html#dynamic-children).
+
+Também vale resaltar que utilizei um método do componente para renderizar a lista de tasks usando `{this.renderTasks()}`.
+
+Por fim vamos criar nosso componente `Task`:
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var Task = React.createClass({
+
+  updateTodoClass : function () {
+    return (this.props.done) ? 'task task-success' : 'task task-info';
+  },
+
+  render: function() {
+    return (
+      <div className={this.updateTodoClass()}>
+        <i className="fa fa-check mark-done"></i>
+        <span>{this.props.value}</span>
+        <i className="fa fa-times close"></i>
+      </div>
+    );
+  }
+
+});
+{% endhighlight %}
+
+
+Perceba que inserimos a classe CSS do componente com o método `updateTodoClass` baseado na propriedade `done` que passamos como parametro, mas a titulo de curiosidade isso também poderia ser passado como propriedade vindo do componente pai.
+
+Ok, tudo bonito, funciona e tudo mais. Mas e quanto aos eventos?
+
+Perceba que temos dois icones em nosso componente `Task`, sendo um `mark-done` que ira alterar o estado da task e `close` que ira remover a task da nossa lista.
+
+Como disse anteriormente, a regra dos componentes seguem **top-down**, logo um componente não tem que ter essa lógica, ele precisa fazer uma coisa e fazer bem feita, que é renderizar o componente, logo vamos passar como argumentos para nosso componente os métodos `markTaskDone` e `removeTask` que serão criamos posteriormente no componente pai.
+
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var Task = React.createClass({
+  /* ... */
+  render: function() {
+    return (
+      <div className={this.updateTodoClass()}>
+        <i className="fa fa-check mark-done" onClick={this.props.markTaskDone}></i>
+        <span>{this.props.value}</span>
+        <i className="fa fa-times close" onClick={this.props.removeTask}></i>
+      </div>
+    );
+  }
+
+  /* ... */
+{% endhighlight %}
+
+Agora a implementação dos métodos no `TodoList`, mas agora utilizando **state** para armazenar nossos **todos**:
+
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var TodoList = React.createClass({
+  /* ... */
+  getInitialState: function () {
+    return{
+      todos: this.loadTasks()
+    };
+  },
+
+  markTaskDone: function (index) {
+    var todos = this.state.todos;
+    var task = todos[index];
+
+    todos.splice(index,1);
+    task.done = !task.done;
+
+    task.done ? todos.push(task) : todos.unshift(task);
+
+    this.setState({
+      todos: todos
+    });
+  },
+
+  removeTask: function (index) {
+    this.state.todos.splice(index, 1);
+
+    this.setState({
+      todos: this.state.todos
+    });
+  },
+
+  renderTasks: function () {
+    var todos = this.loadTasks().map(function (task, index) {
+      return(
+        <Task
+        key={index}
+        value={task.value}
+        done={task.done}
+        markTaskDone={this.markTaskDone.bind(this, index)}
+        removeTask={this.removeTask.bind(this, index)}
+      /> )
+    }.bind(this));
+
+    return todos;
+  },
+
+  /* ... */
+{% endhighlight %}
+
+Pronto, agora todos os elementos funcionam, já que além de passarmos como parametro para o elemento `Task`, também fizemos `.bind()` da chave/index do elemento para nossa função. Agora ta fácil ;)
+
+Por fim precisamos adicionar uma nova task certo? Nada mais justo do que criarmos um componente que é especializado em fazer apenas isso. Vamos chama-lo de `TaskInput`:
+
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var TaskInput = React.createClass({
+
+  render: function() {
+    return (
+      <form className="form-group col-xs-8 col-xs-offset-2 task-input" onSubmit={this.props.addTask}>
+        <div className="input-group">
+          <input type="text" name="task" value={this.props.inputValue} className="form-control" placeholder="Todo..." autocomplete="off" onChange={this.props.triggerChange} />
+          <span className='input-group-btn'>
+            <button className='btn btn-primary'>Add</button>
+          </span>
+        </div>
+      </form>
+    );
+  }
+
+});
+{% endhighlight %}
+
+Pronto, nosso elemento `TaskInput` recebe como propriedades:
+
+- `inputValue`: Que é o valor default do nosso input;
+- `addTask`: Que é disparado no evento `onSubmit` de nosso formulário;
+- `triggerChange`: Que é disparado toda vez que o valor do nosso input muda.
+
+Por fim, vamos criar esses médotos em nosso componente `TodoList` e também adicionar no `render` o nosso `TaskInput`:
+
+{% highlight javascript %}
+/** @jsx React.DOM */
+
+var TaskInput = React.createClass({
+  /* ... */
+  getInitialState: function () {
+    return{
+      todos: this.loadTasks(),
+      inputValue: ''
+    };
+  },
+
+  triggerChange: function (e) {
+    this.setState({
+      inputValue: e.target.value
+    });
+  },
+
+  addTask : function (e) {
+    e.preventDefault();
+
+    var todos = this.state.todos;
+
+    todos.push({
+      value: this.state.inputValue,
+      done: false
+    });
+
+    this.setState({
+      todos: todos,
+      inputValue: ''
+    })
+  },
+
+  render: function() {
+    return (
+      <div className="col-xs-6 col-xs-offset-3 todo-list">
+        <h1 className="title">My Awesome TodoList</h1>
+        {this.renderTasks()}
+        <TaskInput
+        inputValue={this.state.inputValue}
+        addTask={this.addTask}
+        triggerChange={this.triggerChange}
+        />
+      </div>
+    );
+  }
+  /* ... */
+{% endhighlight %}
+
+É isso, `triggerChange` atualiza o **state** `inputValue` e `addTask` além de interromper a ação default do formulário, também adiciona uma nova task a lista de **todos** e por fim atualiza o **state**.
+
+[Veja este exemplo aqui](https://jsbin.com/xiyuxaqege/edit?output).
 
 ##Conclusão
 Agora que apresentei o básico do funcionamento do React, você pode começar a estudar mais a fundo e fazer pequenos projetos pra colocar a mão na massa. Tudo dando certo vou postar um pouco mais sobre React, mas não vou parar de falar sobre Angular, podem ficar tranquilos =)
