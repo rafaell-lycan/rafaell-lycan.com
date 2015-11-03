@@ -215,7 +215,7 @@ Criamos um componente simples, que incrementa um valor a cada vez que clicamos n
 
 - A cada vez que clicamos no botão o método `increment` é chamado através de um listener;
 - O estado `count` muda e é renderizado novamente dentro do elemento h1;
-- O React renderiza novamente utilizando o Virutal DOM;
+- O React renderiza novamente utilizando o Virtual DOM;
 - O React compara o novo DOM virtual com o DOM que ele possui em nossa view;
 - O React isola o que mudou e atualiza apenas essas mudanças diretamente em nosso DOM.
 
@@ -339,7 +339,7 @@ Um ponto interessante sobre o React, é que todo componente filho na composiçã
 
 Você pode ler mais sobre isso [aqui](https://facebook.github.io/react/docs/multiple-components.html#dynamic-children).
 
-Também vale resaltar que utilizei um método do componente para renderizar a lista de tasks usando `{this.renderTasks()}`.
+Também vale ressaltar que utilizei um método do componente para renderizar a lista de tasks usando `{this.renderTasks()}`.
 
 Por fim vamos criar nosso componente `Task`:
 {% highlight javascript %}
