@@ -1,4 +1,4 @@
-{%if page.post %}
+{%if page.date %}
     <p class="meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %B %Y'}}</time> | <a href="{{ site.url }}{{ page.url }}index.html#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a>
     </p>
