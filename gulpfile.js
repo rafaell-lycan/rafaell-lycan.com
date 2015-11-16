@@ -13,7 +13,7 @@ var gulp = require('gulp'),
  * Build the Jekyll Site
  */
 gulp.task('jekyll-build', function (done) {
-  return cp.spawn('jekyll', ['build', '-D'], {stdio: 'inherit'})
+  return cp.spawn('jekyll', ['build', '-D', '-I', '-q'], {stdio: 'inherit'})
     .on('close', done);
 });
 
