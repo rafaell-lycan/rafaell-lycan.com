@@ -20,7 +20,7 @@ related:
 ---
 No [post anterior](/2015/comecando-com-react/), dei uma breve introdução sobre [React.js](https://facebook.github.io/react/), mas chega a hora de deixar a brincadeira mais interessante ;)
 
-Vamos falar sobre [Flux](https://facebook.github.io/flux/), um **padrão de arquitetura** criado/inventado pelo Faceboook para lidar com um problema na construção de aplicações front-end baseadas em componentes. Sim, isso é meio confuso (e muito) a primeira vista, mas vamos a algumas explicações.
+Vamos falar sobre [Flux](https://facebook.github.io/flux/), um **padrão de arquitetura** criado/inventado pelo Facebook para lidar com um problema na construção de aplicações front-end baseadas em componentes. Sim, isso é meio confuso (e muito) a primeira vista, mas vamos a algumas explicações.
 
 Você pode ler toda a parte técnica a seguir<del>(aka blablabla)</del>, ou ir direto para a [parte do código](#estruturando-nossa-aplicao).
 
@@ -42,7 +42,7 @@ São os métodos para auxiliar o envio de informações ao *dispatcher*.
 ####Dispatcher
 É o **ponto central da arquitetura**, responsável por gerenciar/transmitir todo o fluxo de dados para todos os que devem receber aquela informação.
 
-O Dispatcher é um [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern), porem foi baseado no padrão [Publish Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) e é um ponto de **registro de callbacks** para as *stores*. Cada *store* se registrta e fornece um callback, e quando o *dispatcher* responder a uma ação, todas as *stores* registradas recebem os dados fornecidos pela ação.
+O Dispatcher é um [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern), porem foi baseado no padrão [Publish Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) e é um ponto de **registro de callbacks** para as *stores*. Cada *store* se registra e fornece um callback, e quando o *dispatcher* responder a uma ação, todas as *stores* registradas recebem os dados fornecidos pela ação.
 
 **Utilizamos apenas um *dispatcher*** na aplicação justamente pelo fato dele ser o pilar da aplicação, logo **sua aplicação deve ter apenas um único *dispatcher*.**
 
