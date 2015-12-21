@@ -1,6 +1,8 @@
-var gulp = require('gulp'),
+'use strict';
+
+let gulp = require('gulp'),
     less = require('gulp-less'),
-    sass = require('gulp-sass'),
+    // sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -95,7 +97,7 @@ gulp.task('watch', function () {
 });
 
 /**
- * Default task, running just `gulp` will compile the sass,
+ * Default task, running just `gulp` will compile the less,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
