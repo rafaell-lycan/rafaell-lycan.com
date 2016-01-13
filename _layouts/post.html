@@ -19,19 +19,34 @@ post: true
     </span>
   </header>
   {{ content }}
+
+
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="fa fa-twitter-square" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="fa fa-facebook-square" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="fa fa-google-plus-square" href="https://plus.google.com/share?url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+
   {% if page.related %}
-    <aside class="fonte">
-      <h3>Referências</h3>
-      <ul>
-        {% for rel in page.related %}
-        <li itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
-          <a itemprop="url" href="{{ rel.url }}" title="{{ rel.title }}" target="_blank">
-            <span itemprop="name">{{ rel.title }}</span>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </aside>
+  <section class="fonte">
+    <h3>Referências</h3>
+    <ul>
+      {% for rel in page.related %}
+      <li itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
+        <a itemprop="url" href="{{ rel.url }}" title="{{ rel.title }}" target="_blank">
+          <span itemprop="name">{{ rel.title }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 </article>
 
