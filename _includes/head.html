@@ -13,7 +13,7 @@
 {% if page.image %}
     {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}
 {% else %}
-    {% capture image %}''{% endcapture %}
+    {% capture image %}{% endcapture %}
 {% endif %}
 
 {%if page.date %}
