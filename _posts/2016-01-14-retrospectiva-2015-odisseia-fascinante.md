@@ -33,7 +33,7 @@ Achei surreal que pessoas me conheciam, seja por palestras, pelo blog e por cont
 
 > Ow, você que é o Rafaell Lycan né? Da API Sabesp? Como você fez?
 
-Acho que alguem me reconhecer por isso foi a coisa mais engraçada, e num meetup de Android realizado pelo [@ubiratanfsoares](https://twitter.com/ubiratanfsoares) utilizando a API, duas pessoas vieram tirar dúvidas sobre Node e JavaScript.
+Acho que alguém me reconhecer por isso foi a coisa mais engraçada, e num meetup de Android realizado pelo [@ubiratanfsoares](https://twitter.com/ubiratanfsoares) utilizando a API, duas pessoas vieram tirar dúvidas sobre Node e JavaScript.
 
 Achei simplesmente fantástico a experiência, e espero continuar podendo colaborar.
 
@@ -62,7 +62,7 @@ Dessa vez palestrei bem menos também, apenas no [TDC São Paulo](http://www.the
 Conheci muita gente e também reencontrei muita gente <del>acho que é padrão</del>, além é claro de ter aprendido muito.
 
 ##Projetos Open Source
-Sempre gostei de ver código dos outros na web, mas tinha preguiça de fazer algumas coisas como resolver issues, etc. Hoje estou com um pensamento um pouco diferênte, não estou dizendo que vou ser virar o senhor troubleshooter, nem nada do tipo, mas que vou me dedicar um pouco mais, colaborando com módulos de terceiros para **Angular** e alguns outros projetos mais pontuais utilizando **Node** e **React**.
+Sempre gostei de ver código dos outros na web, mas tinha preguiça de fazer algumas coisas como resolver issues, etc. Hoje estou com um pensamento um pouco diferente, não estou dizendo que vou ser virar o senhor troubleshooter, nem nada do tipo, mas que vou me dedicar um pouco mais, colaborando com módulos de terceiros para **Angular** e alguns outros projetos mais pontuais utilizando **Node** e **React**.
 
 <div class="center">
   <img src="/assets/img/posts/github-contributions-2015.png" alt="Gráfico de contribuições no Github">
@@ -72,7 +72,7 @@ Sempre gostei de ver código dos outros na web, mas tinha preguiça de fazer alg
 
 ***Não, não vou brincar de fazer desenhos no gráfico através de commits;***
 
-Mas sim, pretendo e vou continuar a criar coisas legais no Github, tanto apra estudo quando por diversão.
+Mas sim, pretendo e vou continuar a criar coisas legais no Github, tanto para estudo quando por diversão.
 
 **Recentes:**
 
@@ -86,7 +86,7 @@ Esse ano vou investir algum tempo para **aprender fotografia**, que é uma outra
 
 Trocar alguns **livros técnicos por algo mais humano** <del>já tenho uma lista</del>, **terminar alguns jogos** que comprei e estão empoeirados, **viajar mais** pelo Brasil <del>também tenho lista</del>, e também aprender a **cozinhar** de verdade, chega de apenas o bom e velho arroz, feijão e bife. :P
 
-Sério, sei tenho que melhorar muito em quesito técnico, NodeJS, Testes, Design Patterns, React, etc... mas se eu me focar apenas nisso, que graça terá?
+Sério, sei tenho que melhorar muito em quesito técnico, NodeJS, Testes, Design Patterns, React, etc... mas se eu me focar apenas nisso, que graça vai ter?
 
 Enfim, meu 2015 foi simplesmente animal! E sem sombra de dúvidas 2016 vai ser melhor, com mais eventos, com mais pessoas para conhecer e alguns projetos que vão rolar. Fiquem ligados.
 
