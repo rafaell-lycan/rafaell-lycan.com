@@ -2,7 +2,7 @@
 
 let gulp = require('gulp'),
     less = require('gulp-less'),
-    // sass = require('gulp-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -39,7 +39,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['less', 'scripts', 'jekyll-build'], function() {
   browserSync({
     server: {
       baseDir: '_publish'
