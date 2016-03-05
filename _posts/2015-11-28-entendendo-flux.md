@@ -52,7 +52,7 @@ O Dispatcher é um [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern),
 *Stores* tem o papel pouco semelhante a um *model* no **MVC** tradicional, mas além disso elas gerenciam o **estado** de muitos objetos e não instâncias de um único objeto.
 
 ####Views
-São os componentes em React que trazem os estados das *stores* e passam para os componentes filhos através de suas **"props"**, onde temos um ou mais componentes **root** que escutam eventos de suas próprias *stores*. Poremos chamar isso de uma **view-controller** ainda que um pouco diferente de *controller* no modelo *MVC*, já que uma vez que obtem os dados das *stores*, atualiza seus componentes dependentes seguindo a estrutura **top-down**, podendo assim controlar qualquer parte significativa da página.
+São os componentes em React que trazem os estados das *stores* e passam para os componentes filhos através de suas **"props"**, onde temos um ou mais componentes **root** que escutam eventos de suas próprias *stores*. Podemos chamar isso de uma **view-controller** ainda que um pouco diferente de *controller* no modelo *MVC*, já que uma vez que obtem os dados das *stores*, atualiza seus componentes dependentes seguindo a estrutura **top-down**, podendo assim controlar qualquer parte significativa da página.
 
 ##Flux !== MVC
 Como disse anteriormente, Flux não deve ser confundido com *MVC*, pois suas actions são acionadas diretamente de suas respectivas *stores* através do *dispatcher*. Mas para isso não ficar uma completa bagunça, imagine que *stores* são proximas a camada *model*, mas é muito complicado comparar a camada *view* pois ela é também o próprio controller de uma aplicação Flux.
