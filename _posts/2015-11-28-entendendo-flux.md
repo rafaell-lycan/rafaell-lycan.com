@@ -449,7 +449,7 @@ class CartStoreFactory extends EventEmitter{
     return _products;
   }
 
-  // Retrurn amount of items in cart
+  // Return amount of items in cart
   getCartAmount () {
     return Object.keys(_products).length;
   }
