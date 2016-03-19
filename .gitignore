@@ -4,3 +4,4 @@ node_modules
 npm-debug.log
 assets/css/style.css
 assets/js/main.min.js
+.jekyll-metadata
