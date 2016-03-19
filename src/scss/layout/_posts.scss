@@ -1,0 +1,39 @@
+.posts{
+  display: block;
+  border-bottom: 1px solid #dedede;
+
+  header {
+    position: relative;
+    padding: 2em 0 1em;
+
+    h2{
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+
+    a{
+      color: #2f2b28;
+      text-decoration: none;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    .resume{
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    .meta{
+      text-transform: uppercase;
+      position: absolute;
+      font-size: 0.8em;
+      top: 0;
+      width: 100%;
+      color: #4e4e4e;
+    }
+  }
+}

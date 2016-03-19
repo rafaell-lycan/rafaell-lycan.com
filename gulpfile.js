@@ -9,6 +9,16 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     cp = require('child_process');
 
+var sassOptions = {
+  errLogToConsole: true,
+  outputStyle: 'expanded'
+};
+
+var autoprefixerOptions = {
+    browsers: ['last 2 versions', '> 5%', 'Firefox ESR'],
+    cascade: true
+};
+
 /**
  * Build the Jekyll Site
  */
@@ -27,7 +37,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['less', 'scripts', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
   browserSync({
     server: {
       baseDir: '_publish'
@@ -50,6 +60,16 @@ gulp.task('less', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+gulp.task('sass', function () {
+    return gulp.src('src/scss/style.scss')
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(autoprefixer(['last 2 versions', '> 5%', 'Firefox ESR'], {cascade: true}))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('_publish/assets/css'))
+        .pipe(gulp.dest('assets/css'))
+        .pipe(browserSync.stream());
+});
+
 /**
  * Compile files from assets/js into both _publish/js (for live injecting) and assets (for future jekyll builds)
  */
@@ -70,7 +90,7 @@ gulp.task('scripts', function() {
  */
 gulp.task('watch', function () {
     gulp.watch('src/js/**/*.js', ['scripts']);
-    gulp.watch('src/less/**/*.less', ['less']);
+    gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch(['*.{html,md}', '_layouts/*.{html,md}', '_posts/*', '_drafts/*', '!assets', '!_publish'], ['jekyll-rebuild']);
 });
 

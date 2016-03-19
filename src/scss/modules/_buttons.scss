@@ -1,0 +1,37 @@
+.btn{
+  padding: .4em .75em;
+  text-decoration: none !important;
+  margin: .5em .25em;
+  line-height: 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btn-dark{
+  color: #787878;
+  border: 1px solid #454545;
+
+  &:hover{
+    color: #fff;
+    background: #585858;
+    border: 1px solid #636363;
+  }
+}
+.btn-light{
+  color: #555;
+  border: 1px solid #dedede;
+
+  &:hover{
+    color: #2f2b28;
+    border: 1px solid #979797;
+  }
+}
+
+.btn-twitter:hover{
+  background: #5ab3f6;
+  border: 1px solid #2286d3;
+}
+.btn-github:hover{
+  background: #555555;
+  border: 1px solid #393939;
+}

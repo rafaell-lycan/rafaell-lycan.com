@@ -1,0 +1,68 @@
+.sidebar{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  max-width: 500px;
+  background: #292929;
+  background: url('../img/bg-triangles-black.svg') repeat 0;
+  overflow: hidden;
+
+  & > header{
+    width: 90%;
+    margin: 100px auto 0;
+    text-align: center;
+
+    .avatar{
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    h1{
+      letter-spacing: -1px;
+      margin-bottom: 1em;
+    }
+
+    h2{
+      font-size: 0.9em;
+      color: #787878;
+      bottom: 20px;
+    }
+
+    h1 a, h2 a{
+        font-size: 30px;
+    }
+
+    a{
+      color: #fff;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    ul{
+      padding: 0;
+      list-style: none;
+
+      a{
+        padding: 10px;
+        display: block;
+      }
+    }
+  }
+
+  & > footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    a{
+      min-width: 100px;
+    }
+  }
+}
