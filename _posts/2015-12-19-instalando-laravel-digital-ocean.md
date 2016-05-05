@@ -29,7 +29,7 @@ Não irei passar por nenhuma parte de segurança, (Firewall, acesso, etc), apena
 - **Databases:** MySQL;
 - **Outros:** Git;
 
-##Setup
+## Setup
 A primeira coisa que precisamos fazer antes de instalar o Laravel, é configurar nosso ambiente, lembre-se que a instancia vem sem nada, precisamos configurar tudo do zero.
 
 Precisamos atualizar os pacotes locais para atualizar a lista de pacotes disponíveis, só então adicionar os pacotes necessários:
@@ -44,7 +44,7 @@ Nesse post vamos utilizar o [Nginx](http://nginx.org/) juntamente com os pacotes
 Durante a instalação o MySQL irá fazer algumas perguntas relacionadas a *senha do root* (root password), mas caso você perca a chance de configurar uma senha nesta etapa, não se preocupe, é bem fácil faze-lo depois.
 
 
-####Configurando o MySQL
+#### Configurando o MySQL
 Bom, vou começar explicando pelo [MySQL](https://www.mysql.com/) porque é o mais fácil de se configurar.
 
 Depois de tudo instalado, vamos habilita-lo através do comando:
@@ -72,7 +72,7 @@ Nessa hora você vai definir se quer mudar a senha de root novamente e outras v�
 
 Feito isso vamos a configuração do PHP.
 
-####Configurando o PHP
+#### Configurando o PHP
 Com o PHP e as demais ferramentas instaladas, precisamos abilitar o PHP-FPM já que estamos utilizando o **nginx**:
 
 {% highlight text %}
@@ -102,7 +102,7 @@ sudo service php5-fpm restart
 
 Feito isso vamos ao servidor.
 
-####Configurando o Servidor Nginx
+#### Configurando o Servidor Nginx
 Agora vem a parte legal da coisa, a configuração do nosso servidor de aplicação.
 
 A primeira coisa que vamos fazer é definir o diretório **root** da aplicação. Nossa aplicação vai ficar localizada em `/var/www/laravel`. Coloquei Laravel apenas como convenção, mas você pode mudar para qualquer outro nome de sua preferência.
@@ -162,7 +162,7 @@ Salve o arquivo quando terminar estas edições e reinicie o servidor com o coma
 sudo service nginx restart
 {% endhighlight %}
 
-##Instalando o Laravel via Composer
+## Instalando o Laravel via Composer
 Agora sim, com tudo configurado e rodando direito, vamos a instação. Primeiro volte para o diretório home do seu usuário. Vamos a instalação do *Composer*:
 
 {% highlight text %}
@@ -204,5 +204,5 @@ Por fim, como Laravel é um framework PHP, o que deixa claro que não precisamos
 http://<server domain / IP>
 {% endhighlight %}
 
-##Conclusão
+## Conclusão
 Tudo o que foi mostrado aqui pode ser encontrado facilmente na internet visitando algumas páginas do Google e até mesmo os tutoriais no [site da Digital Ocean](https://www.digitalocean.com/community/tutorials).

@@ -23,7 +23,7 @@ Por outro lado, as vezes me sentia um pouco incomodado com a complexidade de faz
 
 O Grunt sem dúvidas é uma ferramenta fantástica, com uma grande comunidade, flexível <del>até certo ponto</del>, e provavelmente se você usa ou já viu a [palestra](https://speakerdeck.com/almirfilho/esse-cara-e-o-grunt) do [@almirfilho](https://twitter.com/almirfilho) sobre Grunt, provavelmente deve restar se perguntando "Porque eu deveria mudar?". Bem, eu vou deixar alguns pontos do porque estou mudando e talvez isso possa te ajudar a ver as coisas como eu as vejo:
 
-##Gulp e Grunt
+## Gulp e Grunt
 Ambos são os automatizadores, famosos, feitos em JS e possuem várias coisas em comum, tais como:
 
 - Rodam em cima do [Node](https://nodejs.org/) <3;
@@ -31,10 +31,10 @@ Ambos são os automatizadores, famosos, feitos em JS e possuem várias coisas em
 - Possuem uma [CLI](http://en.wikipedia.org/wiki/Command-line_interface);
 - Open source <3;
 
-##Gulp x Grunt
+## Gulp x Grunt
 Bem agora chega a parte em que talvez <del>com certeza</del> serei um pouco chato, já que eu tenho uma perspectiva sobre os dois automatizadores.
 
-####Tio Grunt
+#### Tio Grunt
 
 O Grunt sem dúvidas me ajudou muito, principalmente porque tudo o que eu precisava em quesito de **plugins** já estava no [NPM](https://www.npmjs.com/) e a **comunidade é bizarramente grande**.
 
@@ -47,7 +47,7 @@ Em contra partida alguns pontos que me deixam #chateado com o Grunt:
 
 Não te convenci? Então perá lá...
 
-####Tio Gulp
+#### Tio Gulp
 Uma das coisas que me surpreendeu foi a **simplicidade** e a **elegância** ou escrever uma task no Gulp, normalmente são **pequenas**, **idiomáticas** e **rápidas** na execução.
 
 Primeiro vamos criar um novo projeto, instalar nossas dependências e criar um arquivo chamado **Gulpfile.js**.
@@ -107,12 +107,12 @@ Em contra partida algumas vantagens sem ser as mencionadas que me fizeram mudar 
 - Plugins mais simples e bem menores
 - Utilização de libs padrão via API ao invés de utilizar plugins para tudo
 
-##Mas porque você fala tanto de performance? Precisa?
+## Mas porque você fala tanto de performance? Precisa?
 Então, como eu sei que meu ambiente na [AWS](http://aws.amazon.com/) é totalmente diferente do meu Macbook Pro (i7, 8GB, SSD, etc), eu fiz o teste com algumas tasks como **Less**, **Jade**, **Imagemin** e **Uglify**.
 
 No Grunt, todas as tarefas exatamente nessa sequencia demorou em média **2.813** na minha maquina e **3.420** na AWS, enquanto o Gulp demorou **1.82** na minha maquina e milagrosos **2.13** na AWS.
 
-##Conclusão
+## Conclusão
 O Gulp sem dúvidas veio para ficar, principalmente nos meus novos projetos, mas isso não quer dizer que você deve mudar os seus projetos de Grunt para Gulp, só se for realmente viável.
 
 Se você estiver confortável para mudar e não ver nenhum problema nisso OK, apesar de tudo o Grunt não é ruim e tem uma comunidade fantástica quando falamos de plugins, correção de bugs, etc... mas o que realmente importa é: O que você quer? Qual o melhor para o seu projeto?

@@ -19,7 +19,7 @@ CSS é o padrão para estilização visual de páginas Web, então não temos mu
 
 > É um mecanismo simples para adicionar estilos (p.ex., fontes, cores, espaçamentos) aos documentos Web.
 >
-> <footer>- Maujor</footer>
+> Maujor
 
 Eu os apresento o [LESS](http://lesscss.org/), um pré-processador para as CSS.
 
@@ -34,16 +34,16 @@ A sintaxe das CSS é browser-friendly, já os pré-processadores CSS são human-
 
 > I want to work faster and more efficiently. That's what CSS preprocessors really do.
 >
-> <footer>- Chris Coyier (CSS Tricks)</footer>
+> Chris Coyier (CSS Tricks)
 
-##Sobre o LESS
+## Sobre o LESS
 O LESS é uma linguagem baseada em CSS (mesma ideia, sintaxe familiar) com recursos que fazem falta no CSS em algumas situações. É também chamado de pré-processador pois, na verdade, é usado para gerar um arquivo CSS no final.
 
 Existem duas maneiras de se utilizar o LESS em sua página: Compilando ou utilizando o interpretador JS.
 
-##Principais Features:
+## Principais Features:
 
-####Variáveis:
+#### Variáveis:
 {% highlight css %}
 /*LESS*/
 @color: #557B10;
@@ -68,7 +68,7 @@ article header{
 }
 {% endhighlight %}
 
-####Operadores:
+#### Operadores:
 {% highlight css %}
 /*LESS*/
 @desktop-width: 960px;
@@ -86,7 +86,7 @@ section.main{
 }
 {% endhighlight %}
 
-####Aninhamento:
+#### Aninhamento:
 {% highlight css %}
 /*LESS*/
 #nav{
@@ -115,7 +115,7 @@ section.main{
 }
 {% endhighlight %}
 
-####Mixins:
+#### Mixins:
 {% highlight css %}
 /*LESS*/
 .radius ( @radius ) {

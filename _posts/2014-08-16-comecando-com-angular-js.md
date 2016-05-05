@@ -24,7 +24,7 @@ related:
 
 Confesso que sair de **[Backbone.js](https://angularjs.org/)** e ir para um framework com um paradigma totalmente diferente foi uma completa bagunça no inicio, mas depois de um tempo e tendo prazos para entregar um projeto, achei o resultado muito bom.
 
-##O Hello World Obrigatório
+## O Hello World Obrigatório
 Vamos criar um arquivo `index.html` onde vamos rodar a nossa aplicação.
 {% highlight html %}
 <html ng-app>
@@ -63,7 +63,7 @@ Você pode ver este exemplo rodando **[aqui](http://jsfiddle.net/5mfL4zfz/)**, a
 
 Agora chega de coisinhas simples, vamos ao que realmente interessa. Que tal criarmos uma estrutura inicial de um projeto de Todo List e vamos vendo como fazer as coisas passo a passo.
 
-##Estrutura Inicial
+## Estrutura Inicial
 Bem, como o projeto é de uma TodoList, vamos começar com um markup inicial bem simples, neste caso vou utilizar o **[Bootstrap](http://getbootstrap.com/)** apenas para o visual não ficar simples de mais, mas sinta-se a vontade para escrever sua própria interface, o importante aqui é mostrar como as coisas podem ser realmente simples desenvolvendo com Angular.js.
 
 {% highlight html %}
@@ -146,7 +146,7 @@ h1{
 
 Beleza! Agora que temos um visual mais OK para nosso formulário, chegou a hora da verdade <del>ou não</del>. Vamos escrever nossas primeiras linhas de código JavaScript.
 
-##Módulos
+## Módulos
 O Angular trabalha com a ideia módulos para definir uma parte da aplicação, mas esses módulos não tem nada haver com Models do **modelo MVC**, para definir um módulo precisamos informar dois parâmetros: O primeiro parametro é o **nome do módulo**; O segundo é um **Array** especificando as dependências do projeto. No nosso caso não temos nenhuma, então basta passar um array vazio.
 
 {% highlight javascript %}
@@ -160,7 +160,7 @@ Pronto, criamos nosso primeiro módulo, mas mesmo assim ainda falta informarmos 
 <!-- Código omitido -->
 {% endhighlight %}
 
-##Controllers
+## Controllers
 Como toda aplicação baseada no conceito **MVC** temos nossos **Controllers**, com angular não é diferente pois ele tem o conceito de **MVVM** (Model-View-ViewModel) ou **MVW** (Model-View-Whatever) o que torna possível modularizar a aplicação da forma que quisermos. Mas enfim, vamos criar nosso primeiro controller com alguma lógica simples assumindo o comportamento e ações baseados em algumas coisas que temos em nosso HTML.
 
 {% highlight javascript %}
@@ -262,7 +262,7 @@ Bem, apenas criei uma função construtora que me devolve um objeto do tipo **Ta
 
 Agora que tal exibir nossas tasks?
 
-##Exibindo nossas Tasks
+## Exibindo nossas Tasks
 {% highlight html %}
 <!-- Código omitido -->
 <ul class="list-container">
@@ -308,7 +308,7 @@ $scope.deleteTasks = function() {
 
 Além de atribuir o método `deleteTasks` ao evento de click do botão, fiz um **forEach** em nosso array e atribui a  variável `newList` apenas os items que ainda não foram completados e por fim retornei a mesma variável. Sim, é um código extremamente simples, e a ideia é justamente essa.
 
-##Bônus: Validando nosso Formulário
+## Bônus: Validando nosso Formulário
 Apenas para fecharmos esse overview sobre Angular.js, vamos fazer uma validação simples em nosso formulário de forma que não queremos habilitar o botão para adicionar novas tasks se os critérios não forem válidos, nesse caso vamos apenas continuar utilizando o validador do HTML5 com o atributo `required` que colocamos em nosso input:
 
 {% highlight html %}

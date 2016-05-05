@@ -21,7 +21,7 @@ No [Angular.js](https://angularjs.org/) temos dois serviços para enviar e recup
 
 Meh... ambos retornam uma [promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) então porque eu deveria escolher um ao invés do outro?
 
-##$http Service
+## $http Service
 Vamos utilizar um simples código de exemplo:
 
 {% highlight javascript %}
@@ -55,7 +55,7 @@ Agora vamos pensar de uma outra forma: Imagine que você vai criar um serviço i
 
 Logo somos obrigados a escrever novos métodos, e isso se resume em mais código que as vezes pode ser considerado desnecessário. Porque não utilizamos isso de uma forma otimizada?
 
-##$resource Service
+## $resource Service
 O Serviço `$resource` nada mais é do que uma fabrica que nos permite interagir com API's RESTful facilmente e é construido sobre o serviço `$http`.
 
 Talvez seja mais simples apenas mostrar um exemplo de código:

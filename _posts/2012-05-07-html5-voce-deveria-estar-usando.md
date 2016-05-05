@@ -20,7 +20,7 @@ resumo: >
 
 Mas, **o que mudou? E o que preciso saber para usar HTML5 hoje?**
 
-##Sintaxe simplificada
+## Sintaxe simplificada
 Esta é uma das diferenças mais notáveis entre HTML4 e HTML5, e que certamente faz os programadores web adorarem simplementes por ser uma coisa **decorável**.
 
 A sintaxe HTML5 é compativel com HTML4 mas há bastantes melhorias. A declaração **doctype** é muito mais curta:
@@ -43,7 +43,7 @@ E para declarar o **charset**? Quem lembra?
 <meta charset="UTF-8">
 {% endhighlight %}
 
-##Novos Elementos
+## Novos Elementos
 Os novos elementos em HTML5 é a diferença mais notável, têm como propósito a simplificar o desenvolvimento do website e torná-los mais semânticos. Você pode consultar a lista essas novas tags e outras modificações [aqui](https://rawgit.com/whatwg/html-differences/master/Overview.html).
 
 Deixo agora alguns elementos aqui descritos <del>que eu particuparmente já estou usando</del>:
@@ -88,7 +88,7 @@ Além dos novos elementos introduzidos, foram também introduzidos novos atribut
 
 É `<div>`, perdeu playboy!
 
-##Elementos e atributos eliminados
+## Elementos e atributos eliminados
 Além de novos elementos e atributos, também alguns destes foram apagados. Embora muitos deles não venham a fazer falta, porque muito raramente eram utilizados, alguns podiam ter ficado.
 
 - O primeiro grupo de elementos que foram utilizados e que serão melhor utilizados através de **CSS** são o `<center>`, `<big>` e `<u>`. Agora o seu lugar é na folha de estilos.
@@ -99,7 +99,7 @@ Além de novos elementos e atributos, também alguns destes foram apagados. Embo
 
 Como pode constatar, há de facto algumas diferenças entre o HTML5 e o HTML4, mas elas não são diferenças muito profundas. Quero com isto dizer que não terá de reaprender HTML da estaca zero. De qualquer das formas irá levar o seu tempo até se habituar ás novas regras, etc... no que toca aos atributos e elementos alterados. A boa notícia é que o HTML5 veio para simplificar, e isto é o suficiente para justificar a actualização.
 
-##HTML5, Formulários e você!
+## HTML5, Formulários e você!
 De longe, algumas coisas que achei super legais no HTML5 foi de cara os novos tipos de input no formulário, que veio para facilitar a vida de nós desenvolvedores (Sem a necessidade de libs JavaScript). São eles:
 
 - **tel:** Entrada de um número de telefone.
@@ -111,7 +111,7 @@ De longe, algumas coisas que achei super legais no HTML5 foi de cara os novos ti
 - **color:** entrada de uma cor em haxadecimal como #FF00FF.
 - **datetime, date, month, week, time:** Entradas é uma data e/ou hora especifica.
 
-##HTML5, ao infinito e além
+## HTML5, ao infinito e além
 Além de tudo o que já foi dito neste post como novos elementos mais semânticos para cabeçalhos, rodapés, menus, seções, artigos e a melhoria com novos atributos e inputs de formulários, ainda ganhamos total suporta ao **CSS3**, novas APIs JavaScript e muito mais como:
 
 - **Gráficos:** com **canvas** e **svg**;
@@ -124,18 +124,18 @@ Além de tudo o que já foi dito neste post como novos elementos mais semântico
 No fim das contas, com o cenário que essa mundança nos trouxe, podemos dizer que HTML5 seria representado dessa forma:
 !['Explicação de como HTML5 funciona'](/assets/img/posts/html5-houses.png)
 
-##Como usar o HTML5 hoje, sem enrolação?
+## Como usar o HTML5 hoje, sem enrolação?
 Antes de qualquer coisa mesmo, você precisa saber algo quase que crucial: **HTML**, **CSS** e **JavaScript**. Pronto agora só depende de você.
 
 Entenda o principio das coisas. A base continua sendo a mesma (HTML/CSS/JS), então em tese não precisamos pensar muito e ver que isso é sem dúvidas o primeiro passo.
 
-####Mas e o IE?
+#### Mas e o IE?
 É, mesmo com novas versões de navegadores, o mercado (principalmente corporativo) ainda utilizam versões que não suporte ao HTML5 mas para resolver isso use o **[Modernizr](http://modernizr.com/)** para lhe dar suporte ao menos a novas tags em browsers antigos.
 
-####Mas e o Google?
+#### Mas e o Google?
 Acredito que utilizando da forma certa, pode ter certeza que os gigantes vão amar seu código mais bem organizado e semântico (o que vai fazer muito mais sentido aos motores de busca não?).
 
-##Conclusão
+## Conclusão
 Os tempos são outros, o mercado esta mudando e crescendo. Eu lembro muito bem de quando comecei a estudar mais sobre HTML para fazer *"sitezinhos"* e blablabla. Antes o menino do HTML fazia básicamente **email marketing** e **PSD para HTML**.
 
 Pois bem, eu comecei básicamente nessa geração lá por 2009, e mesmo assim estou achando um máximo essa mudança. Mas isso sou eu.

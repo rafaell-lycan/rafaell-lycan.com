@@ -16,7 +16,7 @@ related:
   - title: CPBR6 - Firefox OS. Web é a plataforma (Video)
     url: https://www.youtube.com/watch?v=faWICMGHwsw
 ---
-##Firefox OS
+## Firefox OS
 Eu recentemente ganhei um [Keon (Firefox OS Developer Preview)](http://www.geeksphone.com/) e hoje estou fazendo meu primeiro experimento.
 
 **Você não precisa ter um device para desenvolver**, basta ter o [Firefox OS simulator](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/) instalado na sua maquina e esta tudo cero.
@@ -27,19 +27,19 @@ O Firefox OS **não veio para competir** com o mercado de smartphones como iPhon
 
 Além de ter a Mozilla como principal responsável, o Firefox OS conta com apoio de outras empresas como a Vivo e uma vasta comunidade de voluntários em todo o mundo.
 
-##Entendendo o sistema
+## Entendendo o sistema
 O sistema é bastante simples, voltado para aparelhos econômicos, e baseado no projeto open-source da Mozilla, chamado [Boot to Gecko (B2G)](https://github.com/mozilla-b2g/B2G) que é composta por três módulos: Gonk, Gecko e Gaia.
 
-####Gonk
+#### Gonk
 É o ***sistema operacional*** de baixo nível. Essencialmente é o [kernel Linux](https://www.kernel.org/) e a camada de abstração de hardware. O kernel é baseado no kernel da versão open source do Android, o [Android Open Source Project (AOSP)](http://source.android.com/).
 
-####Gecko
+#### Gecko
 Essa camada é uma versão do mesmo motor de layout utilizado no navedor Firefox. Ela permite que as interfaces e apps funcionem no próprio Firefox OS e em outros sistemas operacionais nos quais o navegador é utilizado.
 
-####Gaia
+#### Gaia
 É a camada da interface gráfica do sistema operacional. Nela está implementados tudo que aparece quando o sistema operacional é carregado. Ou seja, tela de bloqueio, barra de notificações, discador, gerenciador de mensagens de texto, câmera e demais aplicações A interface é totalmente escrita em **padrões abertos da Web**: HTML, CSS e JavaScript.
 
-##Começando com Firefox OS
+## Começando com Firefox OS
 Vale lembrar que os aplicativos são construídos a partir de padrões como HTML5, CSS e JavaScript, mas não exige acesso à Internet para que os usuários rodem programas. Em todos os aparelhos, os apps são salvos na memória interna, e depois executados normal, como em qualquer outro smartphone.
 
 Depois de instalar o [Firefox OS simulator](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/), vá em `Ferramentas -> Desenvolvedor Web` para abrir o simulador. Na lateral esqueda **ligue o simulador**.
@@ -97,5 +97,5 @@ Vale lembrar para aqueles que tem um dispositivo Firefox OS que as instruções 
   <img src="/assets/img/posts/firefox_os004.png" alt="Firefox OS Simulator">
 </div>
 
-##Conclusão
+## Conclusão
 Espero que esse simples tutorial tenha lhe ajudado, sei que não fui muito a fundo detalhando camadas, utiliazndo JavaScript, etc... mas o objetivo é mostrar o quão simples é desenvolver para a plataforma, ou seja, um simples  "Getting started". No futuro, talvez eu faça algo mais avançado, integrando com algum framework JS como [Backbone](http://backbonejs.org/) ou [Angular.js](https://angularjs.org/), talvez trabalhando com dados com as [APIs de Storage do HTML5]({{site.url}}/2014/web-storage-html5/), geolocalização, etc... mas eu acredito que tudo o que você precisarem estará na documentação.

@@ -31,14 +31,14 @@ Na ultima semana terminei de assistir a um [workshop](http://howtocode.com.br/cu
 
 Pois bem, agora chegou a hora de passar o pouco que aprendi adiante, não se preocupe se você é um back-end developer, eu acredito que este pode ser o melhor momento para você aprender ES6, já que ele é muito mais clean e possui uma sintaxe um pouco mais bonita (Sugar syntax).
 
-###GOALS
+### GOALS
 - Modules;
 - Arrow Functions;
 - Classes;
 - let & const;
 - Template strings.
 
-##Modules
+## Modules
 Porque não utilizar módulos hoje? Nós já fazemos isso no **Node** utilizando o padrão **CommonJS** ou até mesmo no front-end utilizando [Browserify](http://browserify.org/) e [RequireJS](http://requirejs.org/).
 
 {% highlight javascript %}
@@ -106,7 +106,7 @@ import * from 'calculator';
 
 São algumas outras opções do que se pode fazer com módulos no ES6. Acredito que para alguns isso não será grande coisa, mas achei interessante ter isso nativo no lado cliente.
 
-##Arrow Functions
+## Arrow Functions
 Bom, muita gente que eu vi falar de ES6, estavam completamente apaixonados pela **arrow functions**, e não é pra menos, já que além de diminuir a quantidade de código também te da "de graça" o escopo pai, sem precisar de `.bind(this)` nem nada do tipo.
 
 Vamos a um exemplo utilizando coisas que já fazemos no JavaScript.
@@ -181,7 +181,7 @@ promise.then((result) => {
 
 Existem **N** partes que você pode utilizar Arrow Functions, basta ver se faz sentido e, utilizar em seu projeto.
 
-##Classes
+## Classes
 Agora vem a parte legal, eu particularmente conheço muita gente que fala que JavaScript não suporta Orientação a Objetos, que isso, que aquilo.
 
 Certa vez, lendo o livro [Secrets of the JavaScript Ninja](https://www.manning.com/books/secrets-of-the-javascript-ninja) do [@jeresig](https://twitter.com/jeresig), ele cita algumas vezes no começo sobre **funções serem objetos de primeira classe** e uma parte sobre **funções construtoras**. Depois que li isso tive certeza quanto ao JavaScript supoartar OO mesmo sendo baseada no que é chamado de `prototype`.
@@ -322,7 +322,7 @@ ContaCorrente.parent = Conta.prototype;
 
 Funciona, mas realmente é algo um pouco mais cansativo para se ler e/ou escrever.
 
-## let & const
+##  let & const
 Uma coisa interessante que veio com ES6 mas me deixou confuso no inicio foi `let` e o **block scope**.
 
 O `let` funciona parecido como o `var` porem ele corrige o problema que temos quanto ao escopo e [hoisting](http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/), ou seja, ela ira apenas existir quando definida em um bloco (`{}`) onde sera criado seu escopo.
@@ -388,7 +388,7 @@ const PI = 3.141593;
 PI = 3.14; // throws “PI” is read-only
 {% endhighlight %}
 
-##Template strings
+## Template strings
 Depois de muito tempo, agora temos **template strings** nativo com ES6.
 
 **WAT?!**
@@ -416,7 +416,7 @@ Não é lindo? Simples? Quase uma obra divina?
 
 E o melhor, apenas utilizando <code>`</code>
 
-##Conclusão
+## Conclusão
 ES6 não é pra ser usado no futuro, etc... é pra ser aprendido e se possível utilizado hoje!
 
 Você pode aprender lendo sobre isso em blogs ou vendo vídeos como eu fiz, ou procurar alguma documentação.

@@ -11,7 +11,7 @@ Em resumo: 2015 pra mim foi **sensacional** em praticamente todos os sentidos!
 
 Eu gostei muito do estilo que o [@Willian_justen](https://twitter.com/Willian_justen) fez no [blog dele](http://willianjusten.com.br/meu-ano-de-2015/), então vou copiar. :)
 
-##O meu eu profissional
+## O meu eu profissional
 Comecei o ano bem, trabalhando na [Tripda](https://www.tripda.com.br/), onde aprendi muito com caras como [@nelson_senna](https://twitter.com/nelson_senna), [@dannjesus](https://twitter.com/dannjesus) e [@marcelioleal](https://twitter.com/marcelioleal), o que me permitiu crescer tanto profissionalmente, quanto pessoalmente.
 
 Lá eu vi como valores são levados a sério, pessoas comprometidas trabalhando juntas com um único propósito: **Fazer o usuário feliz!**
@@ -26,7 +26,7 @@ Hoje estou trabalhando como Sênior Front End Developer na [Oi Internet](http://
 
 Também acabei me envolvendo com a Novatec, onde agora também estou ministrando cursos, onde incentivei meu amigo [@wbrunom](https://twitter.com/wbrunom) a fazer o mesmo no início de 2015.
 
-##Reconhecimento: Sou quase conhecido
+## Reconhecimento: Sou quase conhecido
 Além do blog, ocasionalmente eu crio coisas no Github, projetos Open Source, etc.
 
 Achei surreal que pessoas me conheciam, seja por palestras, pelo blog e por conta de projetos como o [Sabesp API](https://github.com/rafaell-lycan/sabesp-mananciais-api) <del>(o qual precisa de refactor e alguns testes)</del>.
@@ -37,7 +37,7 @@ Acho que alguém me reconhecer por isso foi a coisa mais engraçada, e num meetu
 
 Achei simplesmente fantástico a experiência, e espero continuar podendo colaborar.
 
-##Estatísticas do Blog
+## Estatísticas do Blog
 Por mais que eu não tenha, feito muitos posts durante o ano, tive uma média razoável de acessos, principalmente quando arrumei algumas coisas quanto **seo**, e comecei a falar sobre [AngularJS](http://rafaell-lycan.com/2015/angular-consumindo-servicos-restful/) e mais recentemente sobre [React](http://rafaell-lycan.com/2015/comecando-com-react/).
 
 <div class="center">
@@ -54,14 +54,14 @@ Posso dizer que o resultado de escrever pouco, mas algo que realmente eu julgue 
 - [Começando com ES6](http://rafaell-lycan.com/2015/comecando-com-es6/)
 - [AngularJS: Definindo rotas com com ngRoute e UI-Router](http://rafaell-lycan.com/2015/angular-definindo-rotas/)
 
-##Eventos
+## Eventos
 Olha, esse ano foi um tanto quanto interessante quanto a eventos pra mim; Fui em vários eventos e meetups, gostaria de ter ido até em mais, mas por falta de tempo/planejamento não consegui ir em alguns como o [Front-end Carioca](http://frontendcarioca.com.br/), [Front in Aracaju](http://www.frontinaracaju.com.br/), [DevFest](http://sp.devfest.com.br/) e a [RubyConf](http://www.rubyconf.com.br/),
 
 Dessa vez palestrei bem menos também, apenas no [TDC São Paulo](http://www.thedevelopersconference.com.br/tdc/2015/saopaulo/trilhas) e em meetups sobre Laravel e JavaScript. Em contra partida, passei por alguns lugares como Porto de Galinhas, Porto Alegre e São José dos Campos.
 
 Conheci muita gente e também reencontrei muita gente <del>acho que é padrão</del>, além é claro de ter aprendido muito.
 
-##Projetos Open Source
+## Projetos Open Source
 Sempre gostei de ver código dos outros na web, mas tinha preguiça de fazer algumas coisas como resolver issues, etc. Hoje estou com um pensamento um pouco diferente, não estou dizendo que vou ser virar o senhor troubleshooter, nem nada do tipo, mas que vou me dedicar um pouco mais, colaborando com módulos de terceiros para **Angular** e alguns outros projetos mais pontuais utilizando **Node** e **React**.
 
 <div class="center">
@@ -79,7 +79,7 @@ Mas sim, pretendo e vou continuar a criar coisas legais no Github, tanto para es
 - [Star Wars Crawl](http://rafaell-lycan.com/star-wars-crawl/)
 - [Webplayer: React + Webpack](http://player-rafaell18.rhcloud.com/)
 
-##Vida, Hobbies, etc
+## Vida, Hobbies, etc
 Esse ano não pretendo investir apenas na área técnica, pois tenho alguns objetivos como morar fora embora esteja em dúvida entre Canadá e a Europa, o que também me leva a aprender um novo idioma o quem tem sido planos bem interessantes ultimamente.
 
 Esse ano vou investir algum tempo para **aprender fotografia**, que é uma outra área que realmente gosto e acho interessante no ponto de vista criativo.

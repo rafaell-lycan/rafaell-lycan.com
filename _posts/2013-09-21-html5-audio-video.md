@@ -15,21 +15,21 @@ related:
   - title: HTML5 Audio and Video - What you Must Know
     url: http://code.tutsplus.com/tutorials/html5-audio-and-video-what-you-must-know--net-15545/
 ---
-##Porque nativo?
+## Porque nativo?
 A primeira vez que eu ouvi sobre áudio e vídeo no HTML5 eu pensei **"Uauuu"** mas não me liguei ao ponto do porque. Algum tempo depois comecei a ler alguns artigos no [HTML5 Rocks](http://www.html5rocks.com/) e alguns outros blogs e cheguei a uma conclusão simples: Você provavelmente assiste vídeos no [Youtube](http://youtube.com/) ou ouve músicas certo? Antigamente era necessário utilizar um plugin de terceiros como o QuickTime, talvez o WMP e normalmente o Flash.
 
 Esses plugins se integram com seu browser <del>as vezes não</del> e execultam em background sendo que você não é nem avisado que ele está rodando. Mas e se você esta em uma plataforma que não suporta algum deles?
 
 Pois é, cade seu deus agora? Tirando o que penso ser um certo abuso no consumo de memória quanto você execulta por exemplo umas 5 abas no seu navegador favorito.
 
-##Multimídia no HTML5
+## Multimídia no HTML5
 Com a chegada do HTML5 temos inumeras novidades, entre elas vamos destacar multimídia.
 
 Para que não sabe ainda `<audio>` e `<video>` são as novas tags de media com um proposito maravilhoso: ***"acabar com a dependencia de plugins"*** para a reprodução de áudio e vídeo nas páginas, e também beneficiar os desenvolvedores que estarão livres de plugins de terceiros. Claro que nem tudo são rosas, já que o IE8 não suporta HTML5 apenas o IE9 e posteriores. <del>IE Must Die</del>.
 
 O objetivo deste post é apresentar uma breve introdução a essas novas tags, então vamos lá.
 
-##Audio
+## Audio
 Como o proprio nome já diz, a tag `<audio>` define o som, como uma música ou outras fontes de áudio.
 
 {% highlight html %}
@@ -45,7 +45,7 @@ Além desses podemos incluir também outras propriedades como o `autoplay` que e
 
 Para mais informações veja a documentação [aqui](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio).
 
-##Vídeo
+## Vídeo
 A tag `<video>` define o vídeo, como um clipe, filme ou outros tipos de vídeo
 {% highlight html %}
 <video width="320" height="240" src="movie.mp4" controls="controls">
@@ -60,7 +60,7 @@ Além de todas os atributos que o áudio possui, também podemos incluir algumas
 
 Para mais informações veja a documentação [aqui](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video).
 
-##Multiplos formatos
+## Multiplos formatos
 Um dos problemas que precisamos ficar atentos é quanto ao formato suportado por cada browser já que cada um implementa a funcionalidade de uma forma. Em um mundo perfeito, seria muito fácil implementar uma aplicação de uma forma que todos eles conseguissem interpretar sem precisar de alguma alteração.
 
 Não adianta ficar triste, mas também não é o fim do mundo, para isso usamos a tag `<source>`.
@@ -69,23 +69,23 @@ Para os formatos de multimídia não é diferente, cada browser suporta um tipo 
 
 É importante lembrar que a extensão do arquivo não é informação relevante para isso, pelo contrário, não significa nada já que uma URL pode não ter extensão de arquivo e pode levar a um redirecionamento.
 
-###Google Chrome
+### Google Chrome
 **Audio:** Ogg Vorbis, MP3, WAV, ACC. <br>
 **Video:** Ogg/Theora, H.264 / MP4, WebM.
 
-###Mozilla Firefox
+### Mozilla Firefox
 **Audio:** Ogg Vorbis, WAV. <br>
 **Video:** Ogg/Theora, WebM.
 
-###Internet Explorer 9
+### Internet Explorer 9
 **Audio:** MP3, WAV. <br>
 **Video:** H.264 / MP4.
 
-###Safari
+### Safari
 **Audio:** MP3, WAV, ACC. <br>
 **Video:** H.264 / MP4.
 
-###Opera
+### Opera
 **Audio:** Ogg Vorbis, WAV. <br>
 **Video:** Ogg/Theora, WebM.
 
@@ -109,7 +109,7 @@ Utilizando a tag `<source>` precisamos informar 2 atributos como `src` que espec
 
 **Dica:** Colocar .MP3 e .MP4 é uma das poucas formas de fazer seu player funcionar no iPad e iPhone.
 
-##Controles customizados
+## Controles customizados
 Como **nada é tão bom, que não possa melhorar** também temos uma API JavaScript para a manipulação de multimídia, ou seja, com um conhecimento prévio de JavaScript e CSS podemos fazer um player todo personalizado, desabilitando os controles (controls) para que tenhamos o controle apenas pelo nosso próprio player.
 
 Um exeplo:

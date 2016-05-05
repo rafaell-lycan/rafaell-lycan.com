@@ -38,10 +38,10 @@ Quando se está trabalhando em uma empresa pequena, onde as pessoas não veem ou
 
 Isso foi meio frustante, mas eu não estou aqui para falar de coisas chatas e sim de como é simples você não passar pelo mesmo que eu.
 
-##Um pouco sobre Git
+## Um pouco sobre Git
 O git foi desenvolvido inicialmente por [Linus Torvalds](http://pt.wikipedia.org/wiki/Linus_Torvalds) (Criador do Linux), pela necessidade de ter um software capaz de controlar a versão do kernel linux.
 
-##Alguns termos usados no Git
+## Alguns termos usados no Git
 - **Repository:** Local onde fica todos os arquivos do projeto, inclusive os históricos e versões;
 - **Commit:** Coleção de alterações realizadas, é como se fosse um "checkpoint" do seu projeto. Sempre que necessário, você pode retroceder até algum commit especifico.
 - **Branch:** É uma ramificação do seu projeto, cada branch representa uma versão do seu projeto ou uma feature criada isoladamente. Podemos seguir o desenvolvimento a partir de um branch. (Default: master)
@@ -75,7 +75,7 @@ Talvez isso não seja tão útil agora, mas foi o que consegui entender até o p
 
 11. Depois de tudo feito, podemos utilizar o comando `git push` para submeter as nossas modificações para o repositório do Github, e `git pull` para baixar as modificações feitas neste repositório.
 
-##Conclusão
+## Conclusão
 Eu estou utilizando Git e o Github a pouco tempo, mas provavelmente vou trazer mais coisas sobre isso pra vocês. O mais importante é: Livre-se da bagunça de utilizar FTP. Hoje mesmo depois de provar por A+B que seria muito melhor utilizar isso na agencia, ainda não veem necessidade. A questão é, eu estou correndo atrás do que o mercado quer e o que pode ajudar na minha produtividade. Dou o conselho a quem quiser ouvir (no seu caso ler). Atualmente estou utilizando para guardar coisas que faço na faculdade, criar um portfólio de código, etc.
 
 Se serve de dica, dois lugares que mandei meu me entrevistaram pediram meu perfil do Github por email, que passei com o maior prazer.

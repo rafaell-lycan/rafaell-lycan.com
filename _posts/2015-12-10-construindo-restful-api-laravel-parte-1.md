@@ -25,7 +25,7 @@ Se você já entende bem os conceitos de como o Laravel funciona, como utilizar 
 
 ***Mas sinta-se a vontade para me dar feedback de onde posso melhorar.***
 
-##Objetivo
+## Objetivo
 
 Construir uma API RESTful para armazenar vagas de emprego cadastradas por uma empresa. Simples não?
 
@@ -42,7 +42,7 @@ Vamos a um Roadmap do que irei abordar nesta série:
 
 Se der tempo <del>e coragem</del>, eu posso colocar testes também.
 
-##Instalação
+## Instalação
 Vamos utilizar o [Composer](https://getcomposer.org/) para criar nosso novo projeto, nada de clonar o repositório nem nada do tipo.
 
 {% highlight text %}
@@ -101,18 +101,18 @@ CREATE DATABASE laravel
 
 Por ultimo, mas não menos importante, em `/config/app.php` vamos alterar o **timezone** da nossa aplicação para `America/Sao_Paulo`. Eu particularmente não gosto de utilizar UTC na aplicação, a não ser que seja realmente necessário.
 
-##HTTP e o RESTful
+## HTTP e o RESTful
 Antes de ir mais além em nível de código, vamos ver rapidamente uma abordagem sobre HTTP e RESTful, porque se vamos falar de APIs, acho válido também citar a base da coisa.
 
-####Porque REST/RESTful?
+#### Porque REST/RESTful?
 REST é uma maneira simples de realizar e permitir interações entre sistemas independentes que ganhou força nos últimos anos inspirado pelo HTTP.
 
 Nossa *app* utiliza o conteito **RESTful** sob o protocólo **HTTP**, ou seja, utilizando *URLs*, *verbos HTTP* e *status code*.
 
-####HTTP
+#### HTTP
 HTTP é o protocolo que nos permite enviar e receber documentos através da web. No conceito do HTTP temos o **servidor** e o **cliente** que em linhas gerais se comunicam através do protocolo através de mensagens de texto, ou bits de texto mesmo que no corpo da mensagem possa existir algum tipo de mídia, tudo isso é transferido através de trocas de mensagens utilizando bits de texto.
 
-####URLS
+#### URLS
 São as responsáveis por serem os identificadores para obter algum recurso, assim como páginas na web, como a página de contato, artista, entre muitas outras que um site possa ter.
 
 Seguindo esse pensamento, cada URL é um tipo de recurso, vamos considerar a nossa aplicação com algumas URLs simples:
@@ -131,7 +131,7 @@ No padrão *RESTful* utilizamos por convenção nossas URLs (também chamados de
 
 Simples meu caro, para isso utilizamos os verbos HTTP.
 
-####Verbos HTTP
+#### Verbos HTTP
 A cada requisição realizada, é utilizado um tipo de verbo HTTP no cabeçalho da requisição. Exemplo:
 
 {% highlight text %}
@@ -153,7 +153,7 @@ Se você cria formulários com HTML, você já deve estar familiarizado com os d
 - **DELETE** é utilizado quando queremos remover algum recurso passado por uma URL especifica; <br>
 **Ex:** Deletar um Job. `DELETE /api/jobs/1`
 
-####Status Code
+#### Status Code
 Eu particularmente acho essa parte como uma das mais importantes e também uma das mais discutidas.
 
 **Status Code / Response Codes** é a forma padrão de informar ao cliente sobre o resultado de uma requisição feita ao servidor. Essas informações ficam contidas nas **headers** das requisições HTTP que por padrão carregam alguns tipos de dados como o **status code**, **encode**, **content type**, etc.
@@ -192,7 +192,7 @@ Em geral, devemos assumir que as respostas HTTP devem ser utilizadas para melhor
 
 Aos que gostam de cachorros, existe um site que mostra todos os HTTP Status Code [bem aqui](http://httpstatusdogs.com/).
 
-##Models e Migrations
+## Models e Migrations
 Nossa App será bem simples, vai consistir em duas models: **Company** que sera referente as empresas(usuários) cadastrados em nossa app, e **Job** referente as vagas cadastradas.
 
 

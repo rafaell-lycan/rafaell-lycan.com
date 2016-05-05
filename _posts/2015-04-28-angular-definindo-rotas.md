@@ -34,7 +34,7 @@ Vamos aos objetivos desse tutorial (ou ao menos o que vou tentar exemplificar):
 
 A primeira coisa que devemos fazer é definir nossa estrutura de arquivos e carregar a view padrão da nossa aplicação.
 
-##Estrutura de arquivos
+## Estrutura de arquivos
 {% highlight javascript %}
 - script.js          // Onde sera armazenado nossa aplicação
 - index.html         // Layout principal
@@ -44,7 +44,7 @@ A primeira coisa que devemos fazer é definir nossa estrutura de arquivos e carr
 ----- contact.html
 {% endhighlight %}
 
-##Criando nosso HTML
+## Criando nosso HTML
 Em nosso arquivo `index.html`, vou utilizar o [Bootstrap](http://getbootstrap.com/) apenas para termos uma cara mais amigável:
 {% highlight html %}
 <!DOCTYPE html>
@@ -79,7 +79,7 @@ Em nosso arquivo `index.html`, vou utilizar o [Bootstrap](http://getbootstrap.co
 
 Até aqui temos apenas uma coisa nova, o `ng-view` que é o container onde o nosso conteúdo será renderizado, ele funciona como um include gerenciando nossas páginas de acordo com a URL atual. Em outras palavras ele carrega a view baseada na configuração do nosso router e injeta no lugar da diretiva. Você também deve ter percebido que adicionamos mais uma script a nossa aplicação, o `angular-route.js`. Nas primeiras versões do Angular, todos os componentes era acoplados no mesmo arquivo, o que fazia ele ficar muito grande para aplicações simples. A partir da versão 1.2 cada módulo é um script separado, o que nos permite injetar apenas o que realmente iremos utilizar em nossa aplicação.
 
-##Nossa aplicação Angular
+## Nossa aplicação Angular
 {% highlight javascript %}
 var app = angular
   .module('myapp', [
@@ -193,7 +193,7 @@ Sim, é estranho utilizar esse `#` também conhecido como **hash** ou **hashbang
 
 Eu sei que pode parecer um tanto estranho utilizar desta forma, mas existe um modo para desabilitarmos o **hashbang** de nossa aplicação:
 
-## Habilitando o Modo HTML5
+##  Habilitando o Modo HTML5
 Sem dúvidas a primeira coisa e a mais simples para se fazer em nossa aplicação é configurar o `$locationProvider`. Isso vai permitir ativar `html5Mode`, o que também nos força a trocar nossos links da navbar para urls relativas e adicionar `<base>` tag a nossa `<head>`.
 
 {% highlight javascript %}
@@ -223,7 +223,7 @@ Isso força o browser a entender qual é a URL base da aplicação que o documen
 
 Não se preocupe, pois o **$location service** gera fallback para browsers que não suportam o History API utilizando **hashbang** novamente. Você pode verificar isso na [documentação oficial](http://docs.angularjs.org/guide/dev_guide.services.$location).
 
-##Configurando Rewrite no Apache
+## Configurando Rewrite no Apache
 Agora basta direcionarmos o acesso da nossa aplicação para o index de nossa página, para isso podemos apenas criar um arquivo `.htaccess` na raiz da nossa aplicação e pronto!
 
 {% highlight bash %}
@@ -239,7 +239,7 @@ RewriteEngine On
 
 O mesmo pode ser feito na configuração de um Virtual Host no [Apache](http://httpd.apache.org/) ou no [Nginx](http://nginx.org/).
 
-##Mudando as coisas com UI-Router
+## Mudando as coisas com UI-Router
 Agora chegou a hora de falar de coisa legal, mesmo que o **ngRoute** faça muito bem o papel dele, as vezes vamos precisar de um plus de configuração, ou de algumas outras coisas imbutidas que esse módulo não pode nos fornecer. **#chatiado**
 
 Quando falamos de SPA's, roteamento sem dúvidas é uma das partes mais importantes da nossa aplicação. Mas esta na hora de colocarmos alguns esteroides usando o [UI-Router](https://github.com/angular-ui/ui-router).
@@ -390,10 +390,10 @@ Nem preciso citar vantagens certo? Ok, vamos listar alguns pontos:
 - Se for utilizar nested views, esqueça sobre **templateUrl** fora do contexto do objeto **views**;
 - Caso na hora de rodar no browser você receber um erro no console, não se preocupe, isso aconteceu comigo também, provavelmente foi algo fora do que esta definido acima, mas você pode dar uma olhada na [documentação oficial](https://github.com/angular-ui/ui-router/wiki/Nested-States-%26-Nested-Views).
 
-##Conclusão
+## Conclusão
 Estes foram exemplos bem simples, mas acredito que possa ajudar você. Conceitos básicos de views e router utilizando o **ngRoute** e **UI-Router** por mais que sejam superficiais, servem como norte para aprender cada vez mais, basta correr atrás. Existem muitas outras coisas bem mais avançadas no mundo Angular.
 
 Se alguem quiser sugerir algum tópico sobre Angular ou até mesmo tenha alguma dúvida em que eu possa ajudar, basta informar nos comentários que irei formular algo para poder te ajudar.
 
-##--UPDATE--
+## --UPDATE--
 Os exemplos de código utilizados neste post estão disponíveis neste [Plunker](http://plnkr.co/edit/6UnFgWMUU21ANuvCib3T) utilizando **ngRoute** e [aqui](http://plnkr.co/edit/3QTdYSLCiPTIKiTmhbd3) utilizando **UI-Router**, porem eles não funcionam no modo HTML5 por conta do base path, porem você pode baixa-los sem problemas.

@@ -23,7 +23,7 @@ O Angular vem com diversos módulos de serviços, cada um com seus tipos de uso 
 
 Os serviços são sempre padrão **[singleton](http://en.wikipedia.org/wiki/Singleton_pattern)**, mas enfim, chega de enrolação e bora pro que realmente interessa.
 
-##Factory
+## Factory
 O **Factory** é sem dúvidas o tipo mais comum utilizado no mundo Angular e provavelmente o mais fácil e simples de entender.
 
 Um **Factory** pode retornar qualquer tipo de dado, não existe uma maneira ou padrão explicito que você deva seguir para criar esses dados, você precisa somente retornar algo.
@@ -53,7 +53,7 @@ app.controller('MyController', ['$scope', 'todoListService', function($scope, to
 {% endhighlight %}
 **[Veja o exemplo neste link](http://jsfiddle.net/ya1ewy78/)**
 
-##Service
+## Service
 O **Service** trabalha muito parecido com o **Factory**, porem a direfença é que o **Service** nos da como retorno uma uma instancia dele mesmo ao invés de retornar um novo objeto como em **Factory**, em outras palavras é como se estivese-mos utilizando um `new ServiceName()`.
 
 {% highlight javascript %}
@@ -73,7 +73,7 @@ app.controller('MyController', ['$scope', 'todoListService', function($scope, to
 {% endhighlight %}
 **[Veja o exemplo neste link](http://jsfiddle.net/L2dydeq5/)**
 
-##Provider
+## Provider
 **Providers** são muito parecidos com **Services** e **Factories**, porem são completamente configuraveis, o que pode tornalos um pouco mais complexos. Você só precisa retornar seu serviço em uma função chamada `$get` que nos dá a API publica daquele serviço, em outras palavrás o que vier dentro do nosso retorno em `$get` funciona exatamente como um **factory** por exemplo.
 
 Mas porque devemos utilizar um **provider** ao invés de um **factory** então? **Providers** por si mesmos tem a caracteristica de serem configuráveis na **etapa de configuração**, em outras palavras podemos implementar o mesmo serviço desta maneira:
@@ -122,7 +122,7 @@ No Angular, temos diversos providers para configurar alguns serviços como `$rou
 
 Providers provavelmente são os serviços mais chatos de entender, depois de algum tempo desenvolvendo eu consegui entender seu papel dentro do ecossistema Angular.
 
-##Bonus
+## Bonus
 Uma ultima coisa que não tem muito haver com o título do post, mas achei interessante mencionar é que **Values** e **Constantes** também podem ser considerados como serviços dentro do ecossistema Angular. Curioso não?
 
 {% highlight javascript %}

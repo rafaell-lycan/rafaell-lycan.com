@@ -29,7 +29,7 @@ Com o aumento da complexidade das aplicações baseadas em web, duas ***grandes 
 
 Além é claro de uma interface mais complexa e outros limites.
 
-##O que é Web Storage
+## O que é Web Storage
 É um banco de dados simples do lado cliente baseado em chave/valor.
 
 Possui uma [API](http://dev.w3.org/html5/webstorage/) bastante simples para escrever ou recuperar dados no armazenamento local e pode armazenar até 10MB de dados por domínio. Ao contrario dos cookies, os dados armazenados não são incluidos a cada solicitação HTTP.
@@ -41,13 +41,13 @@ A API de Web Storage se divide em ***dois tipos de objetos***, que estão dispon
 - **Local storage:** que armazena dados sem data de validade, que ficam disponíveis mesmo quando a aba de navegação/navegador é fechado ou reaberto;
 - **Session storage:** que armazena dados para uma sessão, que serão apagados assim que o usuário fechar o navegador.
 
-####Métodos disponíveis em um objeto Storage:
+#### Métodos disponíveis em um objeto Storage:
 - **getItem(key):** obtém um valor armazenado no Storage;
 - **setItem(key,value):** guarda um valor no Storage;
 - **removeItem(key):** exclui um valor do Storage;
 - **clear():** limpa o Storage;
 
-####Exemplos
+#### Exemplos
 {% highlight javascript %}
 localStorage.setItem('user','rafaell');
 localStorage.getItem('user'); // rafaell
@@ -58,5 +58,5 @@ sessionStorage.getItem('sessionID'); // 81dc9bdb52
 sessionStorage.clear();
 {% endhighlight %}
 
-##Conclusão
+## Conclusão
 Agora você pode começar a usar a API de Web Storage do HTML5 para armazenar por exemplo as preferencias do usuário, informações sobre a sessão, etc. Você também pode tentar criar aplicativos que podem ser utilizados off-line e seus dados off-line serem enviados ao servidor como uma atualização quando o usuário se conectar novamente. Apenas lembre-se de nunca colocar dados senssíveis em storage ou cookies.

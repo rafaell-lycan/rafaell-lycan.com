@@ -24,7 +24,7 @@ Vamos falar sobre [Flux](https://facebook.github.io/flux/), um **padrão de arqu
 
 Você pode ler toda a parte técnica a seguir<del>(aka blablabla)</del>, ou ir direto para a [parte do código](#estruturando-nossa-aplicao).
 
-##O que é?
+## O que é?
 Atualmente está surgindo um novo paradigma no mundo de desenvolvimento de web apps. Esses aplicativos são **quebrados** em **componentes reutilizáveis** e **combináveis/agregáveis** e como consequência desse conceito é que os aplicativos seguem hierarquias baseadas em componentes. A grande vantagem de se utilizar componentes é que eles são desacoplados e isolados, o que não só facilita a manutenção, mas também pode impactar positivamente na sua produtividade ou a do seu time.
 
 Para aqueles que estão acostumados com o **data-binding** convencional como eu, vão sem dúvidas ter **"problemas"** com o fluxo de dados nesse padrão de arquitetura.
@@ -33,31 +33,31 @@ Quando os desenvolvedores do Faceboook começaram a utilizar **React** dentro de
 
 Porem, **Flux** esta mais para um novo **conjunto de padrões** do que um framework, e você pode utilizar em seus projetos sem ter que escrever/reescrever muito código.
 
-##Conceitos arquitetônicos
+## Conceitos arquitetônicos
 Não vamos pensar em **React** por hora, porque agora que começa a parte legal, já que Flux é um pattern que não deve ser confundido com *MVC*, pois os conceitos que são necessários para entender o funcionamento das coisas é um paradigma diferente do que estamos acostumados:
 
-####Actions
+#### Actions
 São os métodos para auxiliar o envio de informações ao *dispatcher*.
 
-####Dispatcher
+#### Dispatcher
 É o **ponto central da arquitetura**, responsável por gerenciar/transmitir todo o fluxo de dados para todos os que devem receber aquela informação.
 
 O Dispatcher é um [Singleton](https://en.wikipedia.org/wiki/Singleton_pattern), porem foi baseado no padrão [Publish Subscribe](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) e é um ponto de **registro de callbacks** para as *stores*. Cada *store* se registra e fornece um callback, e quando o *dispatcher* responder a uma ação, todas as *stores* registradas recebem os dados fornecidos pela ação.
 
 **Utilizamos apenas um *dispatcher*** na aplicação justamente pelo fato dele ser o pilar da aplicação, logo **sua aplicação deve ter apenas um único *dispatcher*.**
 
-####Stores
+#### Stores
 É o lugar onde fica armazenada toda a lógica e o estado de sua aplicação e a implementação dos callbacks registrados para o *dispatcher*.
 
 *Stores* tem o papel pouco semelhante a um *model* no **MVC** tradicional, mas além disso elas gerenciam o **estado** de muitos objetos e não instâncias de um único objeto.
 
-####Views
+#### Views
 São os componentes em React que trazem os estados das *stores* e passam para os componentes filhos através de suas **"props"**, onde temos um ou mais componentes **root** que escutam eventos de suas próprias *stores*. Podemos chamar isso de uma **view-controller** ainda que um pouco diferente de *controller* no modelo *MVC*, já que uma vez que obtem os dados das *stores*, atualiza seus componentes dependentes seguindo a estrutura **top-down**, podendo assim controlar qualquer parte significativa da página.
 
-##Flux !== MVC
+## Flux !== MVC
 Como disse anteriormente, Flux não deve ser confundido com *MVC*, pois suas actions são acionadas diretamente de suas respectivas *stores* através do *dispatcher*. Mas para isso não ficar uma completa bagunça, imagine que *stores* são proximas a camada *model*, mas é muito complicado comparar a camada *view* pois ela é também o próprio controller de uma aplicação Flux.
 
-##Fluxo
+## Fluxo
 Já que ele não segue o modelo *MVC*, o flow também é diferente por ser unidirecional seguindo: <br>
 **Actions -> Dispatcher -> Stores -> React Views.**
 
@@ -66,7 +66,7 @@ Já que ele não segue o modelo *MVC*, o flow também é diferente por ser unidi
 
 Sempre será esse o fluxo da sua aplicação, caso um componente React (View-Controller) realizar alguma ação, uma nova action será executada enviando informações ao *dispatcher* que irá atualizar as *stores* registradas que atualizará todas as views que precisarem ser afetadas.
 
-##Estruturando nossa aplicação
+## Estruturando nossa aplicação
 Nossa aplicação será um simples **Shopping Cart**, onde temos duas principais áreas, sendo a **vitrine** de produtos, e nosso **carrinho** em sí.
 
 Você pode dar uma olhada neste [Tutorial](https://facebook.github.io/flux/docs/todo-list.html) oficial do Facebook fazendo um Todo List.
@@ -128,7 +128,7 @@ Feito, vamos atualizar nosso `package.json` com os seguintes modulos:
 }
 {% endhighlight %}
 
-##HTML
+## HTML
 Sim, utilizei o [Bootstrap](http://getbootstrap.com/) porque não estava com saco pra fazer algo do zero, e não estou nem ai se as classes dele não fazem o menor sentido.
 
 Mas por favor, adicione também [este arquivo CSS](https://github.com/rafaell-lycan/estudos-react/blob/master/shopping-cart/css/style.css). Sua loja vai ficar mais *cool*. É sério, adiciona!
@@ -150,7 +150,7 @@ Mas por favor, adicione também [este arquivo CSS](https://github.com/rafaell-ly
 </html>
 {% endhighlight %}
 
-##Mock
+## Mock
 Como não temos um servidor para solicitar os produtos com chamadas AJAX, vamos criar [objeto mock](https://en.wikipedia.org/wiki/Mock_object) de retorno com alguns produtos.
 
 {% highlight javascript %}
@@ -203,7 +203,7 @@ Pense que em **/utils** você ira jogar toda e qualquer parte do seu sistema que
 
 Claro que você pode utilizar outros nomes, mas normalmente **utils** e **helpers** são mais genéricos <del>as vezes até de mais</del>.
 
-##Actions & Constants
+## Actions & Constants
 Actions são coleções de métodos que são chamadas pelas nossas **"views"** que enviam ações para o *dispatcher* contendo **payloads** que serão entregues as *stores*.
 
 Um ponto interessante é que o Facebook as usa em conjunto com as *constantes* da aplicação, passando via payload o `actionType` usando assim as *constants*.
@@ -284,7 +284,7 @@ Perceba que nossas *actions* são bem simples. Nós **carregamos os produtos**, 
 
 Utilizamos o método `handleViewAction` que iremos implementar em nosso *dispatcher* que recebe um objeto como parametro onde por default adicionamos a propriedade `actionType` que utiliza nossas *constants* como recurso.
 
-##O Dispatcher
+## O Dispatcher
 Falamos muito sobre o *Dispatcher*, mas vamos ver na prática como utilizar esse cara.
 
 O Dispatcher é o cara que gerencia basicamente todo o processo da nossa aplicação, e a grande mágica que o faz ser o ponto central são os métodos `register` e `dispatch`, que são nossos **triggers** de eventos a entre a ação que disparou o evento e as *stores* registradas. Ele simplesmente recebe a **action** e propaga para as *stores* que ira identifica-la e disparar um evento caso registrado.
@@ -313,7 +313,7 @@ Note que criei uma instancia do Dispatcher e também o método `handleViewAction
 
 O método utiliza o método `dispatch` que faz toda a mágica de emitir o evento contendo em nossa propriedade `action` o payload com a ação/action e nosso dados.
 
-####Gotchas / Tricks
+#### Gotchas / Tricks
 Sua aplicação pode depender da execução/atualização de alguma outra *store* antes de renderizar novamente um componente, etc. Isso é possível utilizando o método `waitFor` que me foi muito útil quando passei por isso.
 
 **Exemplo:**
@@ -338,7 +338,7 @@ AppDispatcher.register(function(payload) {
 
 Quando o *dispatcher* transmitir a *action* `PURSHASE_ITEMS` no `CartStore`, antes de executar o método `checkout`, ele deve aguardar a execução dos eventos em `ProductsStore`.
 
-##Stores
+## Stores
 Falamos muito sobre **stores**, e agora que temos nossas actions definidas, chegou a hora de criar nossas *stores*.
 
 Cada *Store* gerencia o estado de um dominio especifico da aplicação, nesse caso vamos criar nossa primeira *store* que sera responsável por gerenciar os produtos da loja, a `ProductStore.js`.
@@ -528,7 +528,7 @@ A cada vez que um produto é adicionado, nosso método verifica se o mesmo **id*
 
 Agora que temos nossas *stores* criadas, vamos criar nossos Views e os respectivos componentes.
 
-##View Controller
+## View Controller
 Apenas recaptulando que **"view-controller"** não tem nada haver com o padrão *MVC*, são apenas componentes que irão  escutar por mudanças baseadas no **estado* da aplicação vindas de nossas *stores*.
 
 Vamos começar pelo simples, o `app.js`.
@@ -774,7 +774,7 @@ Também bem auto-explicativo, com pequenas diferença devido a função exercida
 
 E é isso, só rodar e ser feliz. LoL
 
-##Conclusão
+## Conclusão
 
 Eu deveria ter escrito este post logo na sequência, mas tive alguns imprevistos e acabei deixando-o de lado por algumas semanas.
 

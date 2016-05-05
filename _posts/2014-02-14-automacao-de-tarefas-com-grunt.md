@@ -21,7 +21,7 @@ Quando estamos desenvolvendo é normal procurarmos ferramentas que facilitem nos
 
 A questão é: Você vai precisar juntar os arquivos, depois concatenar, provavelmente você deve estar utilizando algum pré-processador entre outras coisas que colocam a prova a nossa sanidade? É ai que precisamos pensar em automatização.
 
-##Porque automatizar?
+## Porque automatizar?
 Automação é a **aplicação de técnicas** computadorizadas ou mecânicas para **diminuir o uso de mão-de-obra** em qualquer processo, especialmente o uso de robôs nas linhas de produção.
 
 Em desenvolvimento de software automação é o processo de escrita de um programa de computador para executar uma série de tarefas automaticamente. <br>
@@ -33,17 +33,17 @@ A complexidade não está só nas linguagens, que evoluíram muito nos últimos 
 
 No meu caso, algumas tarefas que são "padrão" em todo o projeto são:
 
-* Concatenar e comprimir os arquivos CSS e JavaScript;
-* CSS Pré-processado ([Sass](http://sass-lang.com/) e [Less](http://lesscss.org/));
-* Testes de JavaScript ([Jasmine](http://jasmine.github.io/));
-* Validar qualidade do código (JSHint);
+- Concatenar e comprimir os arquivos CSS e JavaScript;
+- CSS Pré-processado ([Sass](http://sass-lang.com/) e [Less](http://lesscss.org/));
+- Testes de JavaScript ([Jasmine](http://jasmine.github.io/));
+- Validar qualidade do código (JSHint);
 
 Uso até mesmo no meu blog esse padrão de tarefas, acho que é o minimo, mas fazer isso na "unha" é insano. Antes eu utilizava o [CodeKit](https://incident57.com/codekit/) para compilar [LESS]({{site.url}}/2013/css-dinamico-com-less/) e JavaScript, já hoje vejo que não preciso mais ficar dependendo de ferramentas gráficas.
 
-##Grunt
+## Grunt
 O [Grunt](http://gruntjs.com/) é uma ferramenta automação de tarefas (Task Runner) feita totalmente em JavaScript. A grande vantagem de se usar o Grunt ao meu ver é a grande quantidade de plugins disponíveis.
 
-##Começando
+## Começando
 O Grunt é baseado no Node.js, você vai ter que instala-lo primeiro. Para utilizarmos precisamos instalar o pacote `grunt-cli` através do [NPM](https://npmjs.org/) (Node Package Manager).
 
 {% highlight bash %}
