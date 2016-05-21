@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html lang="pt-BR" class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html lang="pt-BR" class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="pt-BR" dir="ltr" class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Syntax highlighting CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Ubuntu:400,400italic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+</head>
+<body>
+    <main class="wrap">
+        <aside class="sidebar">
+            <header class="sidebar__header author">
+                <div class="author__info">
+                    <img
+                    src="/assets/img/rafaell-lycan.jpg"
+                    alt="Rafaell Lycan Profile"
+                    title="Rafaell Lycan Profile"
+                    class="author__avatar">
+
+                    <h1 class="author__title">Hi, I'm <strong>Rafaell.</strong></h1>
+                    <h4 class="author__subtitle">Front-end Developer</h4>
+
+                    <p>I help to build products at <a href="#">BankFacil</a> and also speak about front-end stuff. Coffee enthusiast.</p>
+
+                    <p>Follow me on <a href="#">Twitter</a> and <a href="#">Github</a>.</p>
+                </div>
+            </header>
+
+            <footer class="sidebar__links">
+                <nav class="menu-list menu-list--inline">
+                    <ul class="default-list">
+                    <li class="menu-list__item"><a href="#">About me</a></li>
+                    <li class="menu-list__item"><a href="#">Blog</a></li>
+                    <li class="menu-list__item"><a href="#">Talks</a></li>
+                    <li class="menu-list__item"><a href="#">Projects</a></li>
+                </ul>
+                </nav>
+            </footer>
+        </aside>
+        <section class="main-content">
+            {{content}}
+        </section>
+    </main>
+</body>
+</html>

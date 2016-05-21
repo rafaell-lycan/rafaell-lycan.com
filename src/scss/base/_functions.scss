@@ -16,7 +16,6 @@
 * It returns the current percent of a context on a reference using pixels
 * Thanks Ethan Marcotte
 */
-
 @function calc-percent($target, $container) {
   @return ($target / $container) * 100%;
 }
@@ -25,7 +24,6 @@
 * It returns flexible value using 'target / context' formula.
 * Returns 'em' by default, accepts '%' as format.
 */
-
 @function flex($target, $context, $unit: "em") {
   $size: strip-unit($target) / strip-unit($context);
 
@@ -34,13 +32,11 @@
 }
 
 /* Alias to 'flex' functions, using '%' as format. */
-
 @function perc($target, $context: $default-font-size) {
   @return flex($target , $context, "%");
 }
 
 /* Alias to 'flex' functions, using 'em' as format. */
-
 @function em($target, $context: $default-font-size) {
   @return flex($target , $context, "em");
 }

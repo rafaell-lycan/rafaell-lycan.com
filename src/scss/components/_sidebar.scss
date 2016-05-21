@@ -1,0 +1,52 @@
+.sidebar {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  z-index: 999;
+  overflow: hidden;
+
+  //Medium
+  width: 40%;
+  min-height: 100%;
+  text-align: center;
+
+  &__header{
+    display: table-row;
+  }
+
+  &__links{
+    display: table-row;
+    height: 10%;
+  }
+}
+
+.author {
+
+  &__info {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 50px;
+  }
+
+  &__avatar {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #999;
+  }
+
+  &__title{
+    font-weight: normal;
+  }
+
+  &__subtitle{
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+}

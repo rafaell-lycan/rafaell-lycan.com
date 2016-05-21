@@ -66,7 +66,7 @@ gulp.task('sass', function () {
     return gulp.src('src/scss/style.scss')
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(autoprefixer(['last 2 versions', '> 5%', 'Firefox ESR'], {cascade: true}))
-        .pipe(minifyCSS())
+        // .pipe(minifyCSS())
         .pipe(gulp.dest('_publish/assets/css'))
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.stream());

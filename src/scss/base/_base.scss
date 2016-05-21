@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html, body{ height: 100%; }
+
+body{
+  position: relative;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+}
+
+img { max-width: 100%; }
+
+a {
+  color: #60b2ff;
+  text-decoration: none;
+
+  &:hover { border-bottom: 1px dotted #60b2ff; }
+}
+
+.default-list{
+  list-style: none;
+  padding: 0;
+}

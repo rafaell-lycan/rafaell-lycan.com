@@ -13,23 +13,23 @@ $azul: #04e4ff;
 /* Sizes */
 $default-font-size : 16px;
 
-
 $small-screen-size: 320px;
 $medium-screen-size: 640px;
 $large-screen-size: 940px;
 
+$breakpoints: (small: 0, medium: 48em, large: 60em);
+
 /* Typography */
-$font-family: 'Lato', sans-serif;
+$font-base: 'Georgia', monospace;
+$font-title: 'Lato', sans-serif;
 
-$font-size-base:    1em;
+$font-size-base:    16px;
 
-$line-height-base:  em(20px);
+$line-height-base:  1.4em;
 
-$default-font: $font-size-base/$line-height-base $font-family;
-
-$font-size-h1:      em(56px);
-$font-size-h2:      em(36px);
-$font-size-h3:      em(22px);
-$font-size-h4:      em(20px);
-$font-size-h5:      em(18px);
-$font-size-h6:      em(16px);
+// $font-size-h1:      em(56px);
+// $font-size-h2:      em(36px);
+// $font-size-h3:      em(22px);
+// $font-size-h4:      em(20px);
+// $font-size-h5:      em(18px);
+// $font-size-h6:      em(16px);
