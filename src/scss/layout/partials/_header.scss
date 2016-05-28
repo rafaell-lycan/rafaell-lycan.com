@@ -1,6 +1,15 @@
 .header {
-  width: 100%;
+  position: relative;
+  min-height: 50px;
   padding: 20px;
+  text-align: center;
   background-color: $snow;
   border-bottom: 1px solid $light-gray;
+
+  .author {
+
+    &__avatar {
+      width: 100px;
+    }
+  }
 }
