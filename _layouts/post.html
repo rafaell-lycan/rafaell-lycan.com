@@ -1,9 +1,54 @@
 ---
-layout: default
 post: true
 ---
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+  {% include head.html %}
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <!-- Syntax highlighting CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic">
+  <link rel="stylesheet" href="/assets/css/style.css" media="all">
+</head>
+<body>
+  <main class="wrap">
+    {% include header.html %}
+    <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="blog-post__header">
+
+        <h1 class="blog-post__title" itemprop="headline">{{ page.title }}</h1>
+        <div class="blog-post__meta">
+          <span>This post is filed under</span> <a class="h6 post-tag" href="#">PROCESS</a><span> • Published</span>{% include date.html %}<span> • {% include read-time.html %}</span>
+        </div>
+
+        {% if page.image %}
+          <figure class="blog-post__banner">
+            <img src="/{{ page.image }}" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
+          </figure>
+        {% endif %}
+
+        <p class="hidden" itemprop="keywords">{{page.keywords}}</p>
+      </header>
+
+      <div class="blog-post__content">
+        {{content}}
+      </div>
+    </article>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="/assets/js/main.min.js"></script>
+</body>
+</html>
+
+<!-- <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 itemprop="headline">{{ page.title }}</h1>
     {% if page.image %}
@@ -12,7 +57,6 @@ post: true
         <figcaption>{{ image }}</figcaption>
       </figure>
     {% endif %}
-    {% include meta.html %}
     <p>{{ page.resumo }}</p>
     <span class="keywords hidden" itemprop="keywords">
       {{page.keywords}}
@@ -48,6 +92,6 @@ post: true
     </ul>
   </section>
   {% endif %}
-</article>
+</article> -->
 
 {% include disqus.html %}
