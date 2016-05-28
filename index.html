@@ -1,15 +1,14 @@
 ---
 layout: index
 ---
-<section itemscope itemtype="https://schema.org/Blog">
+<section class="post post-list" itemscope itemtype="https://schema.org/Blog">
   {% for post in paginator.posts %}
-  <article class="posts" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-    <header>
-      <h2 itemprop="headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {% include meta.html %}
-      <p class="resume" itemprop="about">{{ post.resumo }}</p>
-      <p><a href="{{ post.url }}" class="btn btn-dark" itemprop="url">Continue lendo →</a></p>
-    </header>
+  <article class="post__item load-right" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h6>{% include date.html %}• <a class="post-tag" href="#">PROCESS</a> • {% include read-time.html %}</h6>
+    <a href="{{ post.url }}"><h2 class="post__title" itemprop="headline">{{ post.title }}</h2></a>
+    <p class="post__description" itemprop="about">{{ post.resumo }}</p>
+    <p class="h6"><a href="{{ post.url }}" class="post__btn" itemprop="url">Continue reading →</a></p>
+
     <p class="hidden" rel="author" itemprop="author">Rafaell Lycan</p>
     <p class="hidden" itemprop="publisher">Rafaell Lycan</p>
     <p class="hidden" itemprop="keywords">{{ post.keywords }}</p>
@@ -18,13 +17,17 @@ layout: index
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="previous btn btn-light">← Older</a>
+      <a href="{{ paginator.next_page_path }}" class="pagination__link">← Older</a>
+    {% else %}
+      <a class="pagination__link disabled">← Older</a>
     {% endif %}
-    <a class="archives btn btn-light" href="/archive">Blog Archives</a>
+    <!-- <a class="archives btn btn-light" href="/archive">Blog Archives</a> -->
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="next btn btn-light">Newer →</a>
+      <a href="{{ paginator.previous_page_path }}" class="pagination__link">Newer →</a>
+    {% else %}
+      <a class="pagination__link disabled">Newer →</a>
     {% endif %}
   </div>
 </section>
 
-{% include disqus-preview.html %}
+<!-- {% include disqus-preview.html %} -->
