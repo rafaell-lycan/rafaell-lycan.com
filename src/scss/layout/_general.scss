@@ -5,10 +5,15 @@
 }
 
 .main-content {
-  position: absolute;
-  top: 0;
-  left: 40%;
-  padding: 50px;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  display: block;
+  float: left;
+  width: 100%;
+
+  @include media(medium) {
+    width: 60%;
+  }
+}
+
+.post-tag {
+  color: $orange;
 }

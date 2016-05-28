@@ -1,11 +1,27 @@
 .highlight {
+   margin: 20px 0;
    background: #232323;
-   margin: 1em auto;
-   font-size: 1rem;
+
+   @include media(medium) {
+      word-wrap: break-word;
+   }
 
    pre{
-      margin: 0;
-      padding:1em;
+      background: #222;
+      width: 100%;
+      padding: 20px;
+      color: $white;
+      margin: 30px 0;
+      display: block;
+   }
+
+   code {
+      float: none;
+      display: block;
+   }
+
+   span {
+      line-height: 1.4em;
    }
 
    .hll { background-color: #ffffcc; }

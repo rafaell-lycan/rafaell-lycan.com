@@ -1,17 +1,27 @@
 .sidebar {
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  background-color: #333;
-  color: #fff;
-  z-index: 999;
-  overflow: hidden;
+  display: none;
 
-  //Medium
-  width: 40%;
-  min-height: 100%;
-  text-align: center;
+  @include media(medium) {
+    width: 40%;
+    display: block;
+    float: left;
+  }
+
+  .menu-list__item {
+    color: $white;
+  }
+}
+
+.cover {
+  @include media(medium) {
+    display: table;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    position: initial;
+    text-align: center;
+    background: url('../img/bg-triangles-black.svg') repeat 0;
+  }
 
   &__header{
     display: table-row;
@@ -38,15 +48,24 @@
   }
 
   &__title{
-    font-weight: normal;
+    font-weight: 300;
+    color: $white;
+    font-size: 3em;
   }
 
   &__subtitle{
     text-transform: uppercase;
-    color: #999;
+    color: $gray;
+    font-size: 1em;
+  }
+
+  img {
+    display: inline-block;
   }
 
   p {
-    margin-top: 40px;
+    max-width: 440px;
+    margin: 40px auto 0;
+    color: $white;
   }
 }

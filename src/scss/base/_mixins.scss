@@ -8,11 +8,23 @@
 **************************************************************************/
 
 /* Breakpoint mixin */
-@mixin media($size, $until) {
-  @if $until {
-    @media only screen and (min-width: #{$size}-screen-size) and (max-width: #{$size}-screen-size - 1) { @content; }
-  }
-  @else {
-    @media only screen and (min-width: #{$size}-screen-size) { @content; }
+@mixin media($media) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media == $name {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+
+    @if not $breakpoint-found {
+      @warn "Breakpoint '#{$media}' does not exist";
+    }
   }
 }

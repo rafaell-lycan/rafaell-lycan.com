@@ -1,0 +1,17 @@
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+
+  &__item {
+    float: left;
+    display: block;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  &__full {
+    margin-left: 0;
+  }
+}
