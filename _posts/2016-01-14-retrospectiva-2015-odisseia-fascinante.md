@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Retrospectiva 2015: Uma Odisseia Fascinante"
-date:   2016-01-14
+tags: life
+date: 2016-01-14
 <!-- image: assets/img/posts/hello-world.jpg -->
 keywords: 2016, retrospectiva, meus objetivos, o que teve de bom em 2015
 resumo: >

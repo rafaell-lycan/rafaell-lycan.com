@@ -2,8 +2,7 @@
 layout: post
 title:  "Hello World Firefox OS"
 date:   2014-06-14
-categories: outros mobile
-tags: mobile firefox-os
+tags: mobile firefox_os
 image: assets/img/posts/hello-world-firefox-os.jpg
 keywords: mobile firefox os hello world
 resumo: >

@@ -2,8 +2,7 @@
 layout: post
 title:  "Entendendo Flux"
 date:   2015-11-28
-categories: javascript
-tags: javascript react flux
+tags: react javascript
 image: assets/img/posts/entendendo-flux.jpg
 keywords:
 resumo: >

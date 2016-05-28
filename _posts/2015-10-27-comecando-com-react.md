@@ -2,8 +2,7 @@
 layout: post
 title:  "Começando com React.js"
 date:   2015-10-27
-categories: javascript
-tags: javascript react
+tags: react javascript
 image: assets/img/posts/comecando-com-react.jpg
 keywords:
 resumo: >

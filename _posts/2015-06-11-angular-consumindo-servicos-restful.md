@@ -2,8 +2,7 @@
 layout: post
 title:  "AngularJS: Consumindo Serviços RESTful"
 date:   2015-06-11
-categories: javascript
-tags: javascript angular
+tags: angular
 image: assets/img/posts/angularjs-restful.jpg
 keywords:
 resumo: >

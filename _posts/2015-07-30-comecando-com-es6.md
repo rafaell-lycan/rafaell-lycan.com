@@ -31,7 +31,7 @@ Na ultima semana terminei de assistir a um [workshop](http://howtocode.com.br/cu
 
 Pois bem, agora chegou a hora de passar o pouco que aprendi adiante, não se preocupe se você é um back-end developer, eu acredito que este pode ser o melhor momento para você aprender ES6, já que ele é muito mais clean e possui uma sintaxe um pouco mais bonita (Sugar syntax).
 
-### GOALS
+#### GOALS
 - Modules;
 - Arrow Functions;
 - Classes;

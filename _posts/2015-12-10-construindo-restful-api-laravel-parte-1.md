@@ -2,7 +2,6 @@
 layout: post
 title:  "Construindo uma API RESTful com Laravel - Parte 1"
 date:   2015-12-10
-categories: laravel
 tags: laravel php
 image: assets/img/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
@@ -145,11 +144,11 @@ Se você cria formulários com HTML, você já deve estar familiarizado com os d
 
 
 - **GET** é o método HTTP mais simples. Utilizado toda vez que você clica em um link ou digita uma URL no browser. Uma requisição *GET* não deve modificar nenhum recurso em seu sistema, ou seja, deve apenas recuperar informações; <br>
-**Ex:** Listagem das vagas. `GET /api/jobs` <br><br><br>
+**Ex:** Listagem das vagas. `GET /api/jobs` <br>
 - **POST** é utilizado quando precisamos processar algo no servidor, adicionar informações a um recurso ou criar um novo recurso. Quando enviamos um formulário de cadastro para o servidor, que envia um corpo em seu request a uma URL especifica; <br>
-**Ex:** Criação de um Job ou uma Empresa. `POST /api/jobs` <br><br><br>
+**Ex:** Criação de um Job ou uma Empresa. `POST /api/jobs` <br>
 - **PUT** é utilizado quando queremos criar ou atualizar um recurso existente através de um *endpoint* especifico. A grande diferença entre *PUT* e *POST* é que além utilizarem *endpoints* diferentes, o *POST* utiliza uma URL onde vai ser tratada a informação e o *PUT* utiliza o *endpoint* em que a informação será armazenada/atualizada em sí; <br>
-**Ex:** Atualizar dados da Empresa ou Job. `PUT /api/jobs/1` <br><br><br>
+**Ex:** Atualizar dados da Empresa ou Job. `PUT /api/jobs/1` <br>
 - **DELETE** é utilizado quando queremos remover algum recurso passado por uma URL especifica; <br>
 **Ex:** Deletar um Job. `DELETE /api/jobs/1`
 

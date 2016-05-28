@@ -2,7 +2,7 @@
 layout: post
 title:  "Automação de tarefas com Grunt.js"
 date:   2014-02-14
-tags: automação tools dicas
+tags: produtividade tools
 image: assets/img/posts/automacao-de-tarefas-com-grunt.jpg
 keywords: grunt js, automação front-end, tools, ferramentas front-end
 resumo: >

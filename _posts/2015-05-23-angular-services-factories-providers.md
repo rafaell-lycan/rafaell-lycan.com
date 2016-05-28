@@ -2,8 +2,7 @@
 layout: post
 title:  "AngularJS: Services, Factories e Providers"
 date:   2015-05-23
-categories: javascript
-tags: javascript angular
+tags: angular
 image: assets/img/posts/angularjs-services.jpg
 keywords:
 resumo: >

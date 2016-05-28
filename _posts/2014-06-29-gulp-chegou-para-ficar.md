@@ -2,7 +2,7 @@
 layout: post
 title:  "Gulp - O Task Runner que chegou para ficar"
 date:   2014-06-29
-tags: automação tools dicas
+tags: produtividade tools
 image: assets/img/posts/gulp.jpg
 keywords:
 resumo: >
