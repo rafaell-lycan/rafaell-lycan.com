@@ -6,3 +6,5 @@ npm-debug.log
 assets/css/style.css
 src/scss/layout_old/
 src/scss/layout_old
+assets/css/style.css
+assets/js/main.min.js
