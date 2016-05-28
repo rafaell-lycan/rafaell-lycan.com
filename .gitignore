@@ -3,3 +3,8 @@ _site
 node_modules
 npm-debug.log
 .jekyll-metadata
+assets/css/style.css
+src/scss/layout_old/
+src/scss/layout_old
+assets/css/style.css
+assets/js/main.min.js

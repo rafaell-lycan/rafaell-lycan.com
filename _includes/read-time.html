@@ -34,16 +34,4 @@
   {% endif %}
 {% endif %}
 
-{%if page.date %}
-    <p class="meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %B %Y'}}</time> |
-        <a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}" itemprop="interactionCount">Comments</a> |
-        Reading time {{ reading_time }}
-    </p>
-{% else %}
-    <p class="meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%-d %B %Y'}}</time> |
-        <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}" itemprop="interactionCount">Comments</a> |
-        Reading time {{ reading_time }}
-    </p>
-{% endif %}
+Reading time {{ reading_time }}

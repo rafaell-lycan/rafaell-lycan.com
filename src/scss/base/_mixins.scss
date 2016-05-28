@@ -7,23 +7,24 @@
 *
 **************************************************************************/
 
-/* Border Radius */
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
 /* Breakpoint mixin */
-@mixin breakpoint($media) {
-  @if $media == mobile {
-    @media only screen and (max-width: $small-screen-size) { @content; }
-  }
-  @else if $media == tablet {
-    @media only screen and (min-width: $small-screen-size + 1) and (max-width: $medium-screen-size - 1) { @content; }
-  }
-  @else if $media == desktop {
-    @media only screen and (min-width: $large-screen-size) { @content; }
+@mixin media($media) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media == $name {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+
+    @if not $breakpoint-found {
+      @warn "Breakpoint '#{$media}' does not exist";
+    }
   }
 }

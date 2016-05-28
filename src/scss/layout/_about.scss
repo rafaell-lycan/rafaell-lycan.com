@@ -1,40 +1,64 @@
-.about{
-  .info, .skills{
-    width: 100%;
+.about {
+  margin: 0 auto;
+  max-width: $max-width;
+
+  @include media(medium) {
+    padding: 0 0 50px;
+  }
+
+  @include media(large) {
+    padding: 0 0 100px;
+  }
+
+  &__header {
+    border-bottom: 1px solid $light-gray;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 80px 0 40px;
+  }
+
+  &__info {
     float: left;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid $light-gray;
   }
-  .info{
-    margin-bottom: 2em;
-    border-bottom: 1px solid #dedede;
 
-    .title{
-      margin: 0;
-      font-size: .9em;
-      font-style: italic;
-    }
+  &__column {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
 
-    .description{
-      margin-top: 0;
+    @include media(medium) {
+      width: 33.3%;
     }
   }
-  .skills{
-    margin-top: 2em;
-    padding: 1em 0;
-    border-top: 1px solid #dedede;
 
-    .skill{
-      margin: 20px 0;
-    }
+  &__small-title,
+  &__text {
+    margin: 0;
+    padding: 0;
+  }
 
-    .title{
-      font-size: 1.2em;
-      margin: 0;
-      font-weight: bold;
-    }
+  &__small-title {
+    font-size: 0.75em;
+    font-style: italic;
+  }
 
-    .level{
-      font-size: .7em;
-      margin: 0;
-    }
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.875em;
+  }
+
+  &__content {
+    padding: 0 20px;
+    width: 100%;
+    max-width: $post-width;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

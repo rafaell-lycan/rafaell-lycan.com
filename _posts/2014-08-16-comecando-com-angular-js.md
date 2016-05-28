@@ -2,8 +2,7 @@
 layout: post
 title:  "Começando com Angular.JS"
 date:   2014-08-16
-categories: javascript
-tags: javascript angular
+tags: angular
 image: assets/img/posts/comecando-com-angular.jpg
 keywords:
 resumo: >

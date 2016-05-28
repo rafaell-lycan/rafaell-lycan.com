@@ -2,8 +2,7 @@
 layout: post
 title:  "Laravel 5 é finalmente lançado!"
 date:   2015-02-12
-categories: php
-tags: php laravel
+tags: laravel php
 image: assets/img/posts/whats-new-laravel5.jpg
 keywords:
 resumo: >

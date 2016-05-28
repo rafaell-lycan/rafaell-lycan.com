@@ -2,7 +2,7 @@
 layout: post
 title:  "Produtividade Front-End com Sublime Text"
 date:   2013-12-21
-tags: sublime-text produtividade dicas
+tags: sublime_text produtividade
 image: assets/img/posts/produtividade-front-end.jpg
 keywords: html5 api, web storage, html5 sql, html5 tags
 resumo: >

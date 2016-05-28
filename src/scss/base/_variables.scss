@@ -8,28 +8,34 @@
 **************************************************************************/
 
 /* Colors */
-$azul: #04e4ff;
+$white: #fff;
+$snow: #FAFAFA;
+$light-blue: #9dc8f1;
+$blue: #5aa3e8;
+$orange: #f5a623;
+$yellow: #fffc00;
+$gray: #6b7674;
+$light-gray: #dce3ef;
+$dark-gray: #4f5a63;
 
 /* Sizes */
 $default-font-size : 16px;
+$max-width: 65em;
+$post-width: 48em;
 
-
-$small-screen-size: 320px;
-$medium-screen-size: 640px;
-$large-screen-size: 940px;
+$breakpoints: (
+    'x-small' '(max-width: 30em)',
+    'small' '(min-width: 0em)',
+    'medium' '(min-width: 48em)',
+    'large' '(min-width: 60em)',
+    'x-large' '(min-width: 75em)'
+) !default;
 
 /* Typography */
-$font-family: 'Lato', sans-serif;
+$font-base: 'Open Sans', sans-serif;
+$font-title: 'Open Sans', sans-serif;
+$font-code: 'Monaco','Consolas','Menlo', monospace;
 
-$font-size-base:    1em;
+$font-size-base: 16px;
 
-$line-height-base:  em(20px);
-
-$default-font: $font-size-base/$line-height-base $font-family;
-
-$font-size-h1:      em(56px);
-$font-size-h2:      em(36px);
-$font-size-h3:      em(22px);
-$font-size-h4:      em(20px);
-$font-size-h5:      em(18px);
-$font-size-h6:      em(16px);
+$line-height-base: 1.4em;

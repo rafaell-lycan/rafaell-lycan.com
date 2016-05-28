@@ -1,18 +1,20 @@
 @import "base/variables";
 @import "base/functions";
 @import "base/mixins";
-@import "base/typography";
 @import "base/normalize";
 @import "base/base";
+@import "base/fonts";
 
-@import "modules/hightlight";
-@import "modules/buttons";
-@import "modules/comments";
-@import "modules/more-info";
-@import "modules/sidebar";
-@import "modules/table";
+@import "components/sidebar";
+@import "components/author";
+@import "components/menu";
+@import "components/posts";
+@import "components/related";
+@import "components/comments";
+@import "components/pagination";
+@import "components/highlight";
 
 @import "layout/general";
+@import "layout/blog-post";
 @import "layout/about";
-@import "layout/posts";
-@import "layout/post";
+@import "layout/partials/header";

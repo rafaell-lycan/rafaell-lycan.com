@@ -2,7 +2,7 @@
 layout: post
 title:  "Os mistérios do SEO"
 date:   2013-12-05
-tags: seo google dicas
+tags: google seo
 image: assets/img/posts/os-misterios-do-seo.jpg
 keywords: dicas de seo, site no google, como indexar sites, sitemap, metatags, keywords, description
 resumo: >

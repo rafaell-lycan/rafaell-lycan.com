@@ -1,53 +1,35 @@
 ---
-layout: default
+layout: minimal
 post: true
 ---
+<article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="blog-post__header">
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <h1 itemprop="headline">{{ page.title }}</h1>
+    <h1 class="blog-post__title" itemprop="headline">{{ page.title }}</h1>
+    <div class="blog-post__meta">
+      <span>This post is filed under</span>
+      {% unless page.tags == empty %}
+        {% for tag in page.tags %}
+          <a class="h6 post-tag" href="/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      {% endunless %}
+      <span> • Published</span>{% include date.html %}<span> • {% include read-time.html %}</span>
+    </div>
+
     {% if page.image %}
-      <figure>
+      <figure class="blog-post__banner">
         <img src="/{{ page.image }}" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
-        <figcaption>{{ image }}</figcaption>
       </figure>
     {% endif %}
-    {% include meta.html %}
-    <p>{{ page.resumo }}</p>
-    <span class="keywords hidden" itemprop="keywords">
-      {{page.keywords}}
-    </span>
+
+    <p class="hidden" itemprop="keywords">{{page.keywords}}</p>
   </header>
-  {{ content }}
 
+  <div class="blog-post__content">
+    {{content}}
+  </div>
 
-  <section class="share">
-    <h4>Share this post</h4>
-    <a class="fa fa-twitter-square" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-      <span class="hidden">Twitter</span>
-    </a>
-    <a class="fa fa-facebook-square" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-      <span class="hidden">Facebook</span>
-    </a>
-    <a class="fa fa-google-plus-square" href="https://plus.google.com/share?url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-      <span class="hidden">Google+</span>
-    </a>
-  </section>
+  {% include related.html %}
 
-  {% if page.related %}
-  <section class="fonte">
-    <h3>Referências</h3>
-    <ul>
-      {% for rel in page.related %}
-      <li itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
-        <a itemprop="url" href="{{ rel.url }}" title="{{ rel.title }}" target="_blank">
-          <span itemprop="name">{{ rel.title }}</span>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
+  {% include disqus.html %}
 </article>
-
-{% include disqus.html %}

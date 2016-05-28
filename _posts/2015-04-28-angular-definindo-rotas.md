@@ -2,8 +2,7 @@
 layout: post
 title:  "AngularJS: Definindo rotas com com ngRoute e UI-Router"
 date:   2015-04-28
-categories: javascript
-tags: javascript angular
+tags: angular
 <!-- image: assets/img/posts/angularjs-restful.jpg -->
 keywords:
 resumo: >

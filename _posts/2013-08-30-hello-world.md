@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2013-08-30
+tags: life
 image: assets/img/posts/hello-world.jpg
 keywords: hello world, objetivo, blog novo
 resumo: >

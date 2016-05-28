@@ -1,98 +1,54 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html lang="pt-BR" class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html lang="pt-BR" class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="pt-BR" dir="ltr" class="no-js"><!--<![endif]-->
+<html lang="pt-BR" dir="ltr">
 <head>
-    {% include head.html %}
-    <meta charset="utf-8">
-    <!--[if lt IE 9]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <script src="js/vendor/html5shiv.js"></script>
-    <![endif]-->
-    <title>{{ title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  {% include head.html %}
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <!-- Behavioral Meta Data -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
-    <!-- Core Meta Data -->
-    <meta name="author" content="{{ site.author }}">
-    <meta name="description" content="{{ description }}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <link rel="publisher" href="https://plus.google.com/113755365039926065548">
-    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/rafaell-lycan" title="Rafaell Lycan RSS Feed">
-
-    <!-- Google webmaster tools verification code -->
-    <meta name="google-site-verification" content="x08xUXYXTQWjHPyl9M_w5VIF07UWLSi0XUTxxCSS7rQ" />
-
-    <!-- Open Graph Meta Data -->
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:type" content="{{ pageType }}">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="{{ image }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:site_name" content="{{site.title}}">
-    <meta property="article:publisher" content="https://www.facebook.com/rafaell.lycan">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="twitter:title" content="{{ title }}">
-    <meta name="twitter:image" content="{{ image }}">
-    <meta name="twitter:description" content="{{ description }}">
-    <meta name="twitter:creator" content="@{{site.twitter}}">
-    <meta property="twitter:account_id" content="50549691">
-
-    <!-- Syntax highlighting CSS -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Ubuntu:400,400italic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css" media="all">
+  <!-- Syntax highlighting CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic">
+  <link rel="stylesheet" href="/assets/css/style.css" media="all">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <header>
-                <a href="/">
-                    <img src="/assets/img/rafaell-lycan.jpg" alt="Rafaell Lycan Profile" title="Rafaell Lycan Profile" class="avatar">
-                </a>
-                <h1><a href="/">Hi there, I'm Rafaell</a></h1>
-                <h2 class="subtitle">And I love coding things for the web</h2>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/">Blog</a></li>
-                        <!-- <li><a href="#">Projects</a></li> -->
-                        <!-- <li><a href="#">Talks</a></li> -->
-                    </ul>
-                </nav>
-            </header>
-            <footer>
-                <p>
-                    <a href="https://github.com/rafaell-lycan" class="btn btn-dark btn-github">Github</a>
-                    <a href="https://twitter.com/rafaelllycan" class="btn btn-dark btn-twitter">Twitter</a>
-                </p>
-            </footer>
-        </aside>
+  <main class="wrap">
+    <aside class="sidebar">
+      <div class="cover">
+        <header class="cover__header author load">
+          <div class="author__info">
+            <a href="{{ site.baseurl }}">
+              <img
+                src="/assets/img/rafaell-lycan.jpg"
+                alt="Rafaell Lycan profile picture"
+                title="Back to home"
+                class="author__avatar">
+            </a>
 
-        <main class="main">
-            <div class="container">
-                {{content}}
-            </div>
-            <footer id="footer">
-              <p class="credit">Copyright © 2015 - {{ site.author }}.</p>
-            </footer>
-        </main>
-    </div>
-    <!-- Google Analytics verification code -->
-    <script>
-        var _gaq=[['_setAccount','UA-16383035-5'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-    <script async src="/assets/js/main.min.js"></script>
+            <h1 class="author__title">Hi, I'm <strong>Rafaell.</strong></h1>
+            <h4 class="author__subtitle">Front-end Developer</h4>
+
+            <p>I help to build products at <a href="#">BankFacil</a> and also speak about front-end stuff.
+              Coffee and beer enthusiast.</p>
+
+            <p>Follow me on <a href="#">Twitter</a> and <a href="#">Github</a>.</p>
+          </div>
+        </header>
+
+        <footer class="cover__links load">
+          {% include menu.html %}
+        </footer>
+      </div>
+    </aside>
+    <section class="main-content">
+      {{content}}
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="/assets/js/main.min.js"></script>
 </body>
 </html>
