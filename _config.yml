@@ -32,6 +32,11 @@ compress_html:
 category_title_prefix: ''
 category_dir: /
 
+# Tag Settings
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
 # Others
 future: false
 show_drafts: false
