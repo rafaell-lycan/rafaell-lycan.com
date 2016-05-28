@@ -6,11 +6,15 @@
 @import "base/fonts";
 
 @import "components/sidebar";
+@import "components/author";
 @import "components/menu";
 @import "components/posts";
+@import "components/related";
+@import "components/comments";
 @import "components/pagination";
 @import "components/highlight";
 
 @import "layout/general";
 @import "layout/blog-post";
+@import "layout/about";
 @import "layout/partials/header";

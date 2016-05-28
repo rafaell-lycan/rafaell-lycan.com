@@ -83,3 +83,11 @@ a {
   left: 100px;
   opacity: 0;
 }
+
+.container {
+  max-width: $max-width;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
