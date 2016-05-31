@@ -1,3 +1,4 @@
 _publish
 _site
 node_modules
+.jekyll-metadata

@@ -102,3 +102,11 @@ a {
     clear: both;
   }
 }
+
+.visible-small {
+  display: block;
+
+  @include media(medium) {
+    display: none;
+  }
+}
