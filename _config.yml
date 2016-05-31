@@ -9,6 +9,8 @@ author: Rafaell Lycan
 twitter: RafaellLycan
 github: rafaell-lycan
 
+google_analytics: UA-16383035-5
+
 # Build settings
 permalink: /:year/:title/
 markdown: kramdown
