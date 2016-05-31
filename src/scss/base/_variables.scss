@@ -12,6 +12,7 @@ $white: #fff;
 $snow: #FAFAFA;
 $light-blue: #9dc8f1;
 $blue: #5aa3e8;
+$red: #FF5252;
 $orange: #f5a623;
 $yellow: #fffc00;
 $gray: #6b7674;
@@ -32,6 +33,7 @@ $breakpoints: (
 ) !default;
 
 /* Typography */
+$font-default: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
 $font-base: 'Open Sans', sans-serif;
 $font-title: 'Open Sans', sans-serif;
 $font-code: 'Monaco','Consolas','Menlo', monospace;
