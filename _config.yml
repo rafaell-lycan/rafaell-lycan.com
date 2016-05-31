@@ -9,7 +9,9 @@ author: Rafaell Lycan
 twitter: RafaellLycan
 github: rafaell-lycan
 
-google_analytics: UA-16383035-5
+google_analytics: UA-16383035-5 # Google services
+
+disqus_shortname: rafaelllycan # Disqus post comments
 
 # Build settings
 permalink: /:year/:title/
