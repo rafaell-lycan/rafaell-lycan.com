@@ -1,0 +1,49 @@
+---
+layout: minimal
+title: "#Tags"
+permalink: /tags/index.html
+description: "Procure os assuntos pelas tags."
+---
+<div class="tags">
+    <header class="tags__header">
+        <h1 class="tags__title">Procure os assuntos pelas tags.</h1>
+    </header>
+
+    <ul class="tag-list default-list tag-list--bullets">
+        {% assign tags_list = site.tags %}
+          {% if tags_list.first[0] == null %}
+            {% for tag in tags_list %}
+                <li class="tag-list__item"><a href="#{{ tag | slugify }}">{{ tag }}</a></li>
+            {% endfor %}
+          {% else %}
+            {% for tag in tags_list %}
+                <li class="tag-list__item"><a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
+            {% endfor %}
+          {% endif %}
+        {% assign tags_list = nil %}
+    </ul>
+
+    <div class="clearfix"></div>
+
+    {% for tag in site.tags  %}
+        <h2 class="tags__subtitle" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+        <ul class="tag-list default-list">
+            {% assign pages_list = tag[1] %}
+            {% for post in pages_list reversed %}
+                {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                <li class="tag-list__item">
+                    <a href="{{ post.url }}">{{ post.title }}
+                        <span class="entry-date">
+                            {% include date.html %}
+                        </span>
+                    </a>
+                </li>
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </ul>
+    {% endfor %}
+</div>

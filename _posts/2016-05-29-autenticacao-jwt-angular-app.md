@@ -226,7 +226,7 @@ angular.module('app', [])
   });
 {% endhighlight %}
 
-Neste exemplo deixamos claro que além de verificar se a rota possui a propriedade `authorize`, também verifico uma informação adicional, nesse caso eu usei o `getToken()` mas você pode utilizar o que fizer sentido na sua aplicação. Talvez um nível de usuário ou algo do tipo. Quanto a forma de cancelar o evento, existem duas formas de se fazer a mesma coisa. A primeira que é mais simples é cancelar o evento através de `event.preventDefault()` e redirecionar o usuário. Uma forma mais elegante seria utilizar o `$evalAsync` que é um método existente nos escopos que em uma cadeia de eventos asincronos, ele tem prioridade sobre as outras, ou seja, ele precisa rodar para o evento vigente continuar, o que nesse caso cancela o evento default da rota e atualiza o escopo redirecionando o usuário.
+Neste exemplo deixamos claro que além de verificar se a rota possui a propriedade `authorize`, também verifico uma informação adicional, nesse caso eu usei o `getToken()` mas você pode utilizar o que fizer sentido na sua aplicação. Talvez um nível de usuário ou algo do tipo. Quanto a forma de cancelar o evento, existem duas formas de se fazer a mesma coisa. A primeira que é mais simples é cancelar o evento através de `event.preventDefault()` e redirecionar o usuário. Uma forma mais elegante seria utilizar o `$evalAsync` que é um método existente nos escopos que em uma cadeia de eventos assincronos, ele tem prioridade sobre as outras, ou seja, ele precisa rodar para o evento vigente continuar, o que nesse caso cancela o evento default da rota e atualiza o escopo redirecionando o usuário.
 
 ## Nota
 

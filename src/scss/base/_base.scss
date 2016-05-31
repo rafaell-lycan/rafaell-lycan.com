@@ -61,8 +61,6 @@ a {
   white-space: nowrap;
 }
 
-
-
 .default-list{
   list-style: none;
   padding: 0;
@@ -90,4 +88,17 @@ a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.clearfix {
+  zoom: 1;
+
+  &:after, &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
 }

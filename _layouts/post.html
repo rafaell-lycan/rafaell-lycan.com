@@ -10,7 +10,7 @@ post: true
       <span>This post is filed under</span>
       {% unless page.tags == empty %}
         {% for tag in page.tags %}
-          <span class="h6 post-tag">{{ tag }}</span>{% if forloop.last == false %},{% endif %}
+          <a class="h6 post-tag" href="/tags#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
         {% endfor %}
       {% endunless %}
       <span> • Published</span>{% include date.html %}<span> • {% include read-time.html %}</span>
