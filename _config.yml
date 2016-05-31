@@ -12,11 +12,12 @@ github: rafaell-lycan
 # Build settings
 permalink: /:year/:title/
 markdown: kramdown
-highlighter: pygments # Use pygments to highlight code blocks
+highlighter: rouge # Use rouge to highlight code blocks
 kramdown:
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
 gems: ['jekyll-paginate']
+
 paginate: 10
 
 destination: ./_publish
