@@ -17,7 +17,7 @@ var sassOptions = {
 };
 
 var autoprefixerOptions = {
-    browsers: ['last 2 versions', '> 5%', 'Firefox ESR'],
+    browsers: ['last 2 versions', 'Explorer >= 9', 'Firefox ESR', 'Opera 12.1', 'Android >= 4.1', 'Safari >= 7', 'iOS >= 7'],
     cascade: true
 };
 
