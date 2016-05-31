@@ -1,7 +1,3 @@
 _publish
 _site
 node_modules
-npm-debug.log
-.jekyll-metadata
-src/scss/layout_old/
-src/scss/layout_old
