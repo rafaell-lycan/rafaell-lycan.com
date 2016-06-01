@@ -76,7 +76,7 @@ gulp.task('sass', function () {
  * Compile files from assets/js into both _publish/js (for live injecting) and assets (for future jekyll builds)
  */
 gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src(['src/js/vendor/*.js','src/js/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.min.js'))
