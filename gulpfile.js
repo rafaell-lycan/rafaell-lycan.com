@@ -1,7 +1,6 @@
 'use strict';
 
 let gulp = require('gulp'),
-    less = require('gulp-less'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
@@ -39,7 +38,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['less', 'scripts', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
   browserSync({
     server: {
       baseDir: '_publish'
@@ -47,19 +46,6 @@ gulp.task('browser-sync', ['less', 'scripts', 'jekyll-build'], function() {
     host: 'localhost',
     open: false
   });
-});
-
-/**
- * Compile files from assets/less into both _publish/css (for live injecting) and assets (for future jekyll builds)
- */
-gulp.task('less', function () {
-    return gulp.src('src/less/style.less')
-        .pipe(less())
-        .pipe(autoprefixer(['last 2 version', 'ie 9'], { cascade: true }))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest('_publish/assets/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('sass', function () {
@@ -76,7 +62,10 @@ gulp.task('sass', function () {
  * Compile files from assets/js into both _publish/js (for live injecting) and assets (for future jekyll builds)
  */
 gulp.task('scripts', function() {
-  return gulp.src(['src/js/vendor/*.js','src/js/*.js'])
+  return gulp.src([
+      'src/js/vendors/jquery/dist/jquery.js',
+      'src/js/*.js'
+    ])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.min.js'))
@@ -97,7 +86,7 @@ gulp.task('watch', function () {
 });
 
 /**
- * Default task, running just `gulp` will compile the less,
+ * Default task, running just `gulp` will compile the Sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);

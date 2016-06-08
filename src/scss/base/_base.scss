@@ -20,8 +20,7 @@ body{
   overflow-x: hidden;
 }
 
-img, video {
-  display: block;
+img, video, iframe {
   margin: 0;
   max-width: 100%;
 }
@@ -29,7 +28,6 @@ img, video {
 img {
   border: 0;
   height: auto;
-  max-width: 100%;
   -ms-interpolation-mode: bicubic;
 }
 
@@ -101,6 +99,10 @@ a {
   &:after {
     clear: both;
   }
+}
+
+.center {
+  text-align: center;
 }
 
 .visible-small {
