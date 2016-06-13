@@ -104,10 +104,11 @@
 
     blockquote {
       margin: 2em 0;
-      padding-left: 30px;
+      padding: 10px 10px 10px 30px;
       font-size: 18px;
       font-style: italic;
       color: #999;
+      background-color: $snow;
       border-left: 3px solid $blue;
 
       p {
