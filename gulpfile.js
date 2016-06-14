@@ -82,7 +82,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function () {
     gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch(['*.{html,md}', '_layouts/*.{html,md}', '_posts/*', '_drafts/*', '!assets', '!_publish'], ['jekyll-rebuild']);
+    gulp.watch(['**/*.{html,md}', '!assets/**', '!_publish/**'], ['jekyll-rebuild']);
 });
 
 /**
