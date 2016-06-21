@@ -1,28 +1,31 @@
-# Site Settings
-title: Hi there, I'm Rafaell
-email: sonny.webdsg@gmail
-description: >
-  Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan
-baseurl: "/"
-url: "http://rafaell-lycan.com" # the base hostname & protocol for your site
+# Author Informations
 author: Rafaell Lycan
 twitter: RafaellLycan
 github: rafaell-lycan
+plus: https://plus.google.com/+RafaellLycan
+email: sonny.webdsg@gmail
 
+# Blog
+title: Hi there, I'm Rafaell
+meta_description: "Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan"
+meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software"
+lang: pt-br
+paginate: 10
+baseurl: /
+url: http://rafaell-lycan.com
+permalink: /:year/:title/
 google_analytics: UA-16383035-5 # Google services
-
 disqus_shortname: rafaelllycan # Disqus post comments
 
 # Build settings
-permalink: /:year/:title/
+jekyll-version: Jekyll v3.1.6
 markdown: kramdown
-highlighter: rouge # Use rouge to highlight code blocks
+highlighter: rouge
 kramdown:
-  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
-
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
 gems: ['jekyll-paginate']
-
-paginate: 10
 
 destination: ./_publish
 
@@ -41,6 +44,8 @@ category_dir: /
 tag_page_layout: tag_page
 tag_page_dir: tag
 tag_permalink_style: pretty
+
+# Compile
 
 # Others
 future: false
