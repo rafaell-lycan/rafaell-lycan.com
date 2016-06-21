@@ -18,45 +18,45 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 p, ol li, ul li {
   color: $dark-gray;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.75em;
   margin: 0 0 20px;
 }
 
 h1, .h1 {
-  font-size: 3em;
+  font-size: 3rem;
   line-height: 1.125em;
 
   @include media(large) {
-    font-size: 3.75em;
+    font-size: 3.75rem;
   }
 
   @include media(x-large) {
-    font-size: 4.5em;
+    font-size: 4.5rem;
   }
 }
 h2, .h2 {
-  font-size: 1.875em;
+  font-size: 1.875rem;
   line-height: 1.25em;
 
   @include media(medium) {
-    font-size: 2.625em;
+    font-size: 2.625rem;
   }
 }
 h3, .h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   line-height: 1.25em;
 }
 h4, .h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.5em;
 
   @include media(large) {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 h5, .h5, h6, .h6 {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.125em;
   text-transform: uppercase;
 }
