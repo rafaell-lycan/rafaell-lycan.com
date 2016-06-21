@@ -7,7 +7,13 @@
 {% if page.resumo %}
     {% capture description %}{{ page.resumo }}{% endcapture %}
 {% else %}
-    {% capture description %}{{site.description}}{% endcapture %}
+    {% capture description %}{{site.meta_description}}{% endcapture %}
+{% endif %}
+
+{% if page.keywords %}
+    {% capture keywords %}{{ page.keywords }}{% endcapture %}
+{% else %}
+    {% capture keywords %}{{site.meta_tag}}{% endcapture %}
 {% endif %}
 
 {% if page.image %}
