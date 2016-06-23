@@ -12,7 +12,7 @@ meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node,
 lang: pt-br
 paginate: 10
 baseurl: /
-url: http://rafaell-lycan.com
+url: https://rafaell-lycan.com
 permalink: /:year/:title/
 google_analytics: UA-16383035-5 # Google services
 disqus_shortname: rafaelllycan # Disqus post comments
