@@ -4,7 +4,7 @@
 
   <ul class="default-list">
     {% for rel in page.related %}
-    <li class="related__mention" itemprop="mentions" itemscope itemtype="http://schema.org/Thing">
+    <li class="related__mention" itemprop="mentions" itemscope itemtype="https://schema.org/Thing">
       <a itemprop="url" href="{{ rel.url }}" title="{{ rel.title }}" target="_blank">
         <span itemprop="name">{{ rel.title }}</span>
       </a>

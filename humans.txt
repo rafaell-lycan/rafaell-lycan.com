@@ -1,7 +1,7 @@
 /* TEAM */
 
 Developer & Designer: Rafaell Lycan
-Site: http://www.rafaell.cc, https://github.com/rafaell-lycan
+Site: https://www.rafaell-lycan.com, https://github.com/rafaell-lycan
 Twitter: @RafaellLycan
 Location: Brazil
 
@@ -9,5 +9,5 @@ Location: Brazil
 
 Last Update: 2013/10/6
 Standards: HTML5, CSS3
-Components: jQuery, Less
-Software: Sublime Text 2, CodeKit
+Components: jQuery, Sass
+Software: Sublime Text 3
