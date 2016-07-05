@@ -9,7 +9,17 @@
   &__avatar {
     width: 150px;
     border-radius: 50%;
-    border: 2px solid #999;
+    border: 3px solid $gray;
+
+    @include media(medium) {
+      box-shadow: 0 0 10px rgba(0,0,0,.45);
+    }
+
+    &:hover {
+      @include media(medium) {
+        animation: shake 0.8s ease-in-out;
+      }
+    }
   }
 
   &__title{
@@ -20,7 +30,7 @@
 
   &__subtitle{
     text-transform: uppercase;
-    color: $gray;
+    color: $light-gray;
     font-size: 1em;
   }
 
@@ -32,5 +42,25 @@
     max-width: 440px;
     margin: 40px auto 0;
     color: inherit;
+  }
+}
+
+
+/* Shake animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
