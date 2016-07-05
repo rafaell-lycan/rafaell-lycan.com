@@ -20,7 +20,11 @@
   position: initial;
   text-align: center;
   color: $white;
-  background: url('../img/bg-triangles-black.svg') repeat 0;
+
+  @include media(medium) {
+    background: url('../img/bg-grayscale-wolf.jpg') no-repeat 0 0;
+    background-size: cover;
+  }
 
   &__header{
     display: table-row;
