@@ -172,17 +172,21 @@ Indica que uma requisição foi feita com sucesso e que um recurso foi criado. N
 #### 400 Bad Request
 Infica que uma requisição não possuí um formato especifico. Normalmente utilizada quando alguma validação de dados não passa, ou quando esta faltando algum dado ou até mesmo um formato errado. Muito comum utilizar como erro de retorno para **POST** e **PUT**.
 
-#### 404 Not Found
-Indica que o recurso da requisição não existe. Normalmente utilizado quando um **endpoint** não corresponde com nenhuma rota registrada na aplicação.
-
 #### 401 Unauthorized
 Indica que o recurso ou *endpoint* precisa de um requisição autenticada antes de proseguir.
+
+
+#### 404 Not Found
+Indica que o recurso da requisição não existe. Normalmente utilizado quando um **endpoint** não corresponde com nenhuma rota registrada na aplicação.
 
 #### 405 Method Not Allowed
 Indica que o método HTTP utilizado não esta disponível para aquele *endpoint*.
 
 #### 409 Conflict
 Indica que um conflito ocorreu durante a requisição. Por exemplo, isso poderia ocorrer quando você utiliza **PUT** para atualizar o mesmo registro com dados duplicado, pode não ser um exemplo muito bom, mas não tenho nada melhor em mente.
+
+#### 422 Unprocessable Entity
+Indica que a request foi realizada e entendida pelo servidor, porem não foi possível proceguir devido a erros no formato/parâmetros informados. Por exemplo, o erro pode ser lançado caso você espere um XML como parâmetro mas ao invés disso o cliente envia um JSON, ou em um caso mais simplificado poreriam ser valores obrigatórios em um JSON que não correspondem com um modelo/validação.
 
 #### 500 Internal Server Error
 Indica uma falha do lado servidor, normalmente utilizamos quando algo inesperado acontece do lado servidor.
