@@ -1,12 +1,22 @@
 <section class="share">
-  <h4>Share this post</h4>
-  <a class="fa fa-twitter-square" href="https://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-    <span class="hidden">Twitter</span>
-  </a>
-  <a class="fa fa-facebook-square" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-    <span class="hidden">Facebook</span>
-  </a>
-  <a class="fa fa-google-plus-square" href="https://plus.google.com/share?url={{site.url}}{{page.url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-    <span class="hidden">Google+</span>
-  </a>
+  <h3>Share this post</h3>
+  <ul class="social-list">
+    <li class="social-list__item facebook hint--bottom" data-hint="Share on Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" target="share">
+        <span class="social-list__text">Like</span>
+      </a>
+    </li>
+
+    <li class="social-list__item twitter hint--bottom" data-hint="Share on Twitter">
+      <a href="https://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{page.url}}" target="share">
+        <span class="social-list__text">Tweet</span>
+      </a>
+    </li>
+
+    <li class="social-list__item gplus hint--bottom" data-hint="Share on Google Plus">
+      <a href="https://plus.google.com/share?url={{site.url}}{{page.url}}" target="share">
+        <span class="social-list__text">+1</span>
+      </a>
+    </li>
+  </ul>
 </section>
