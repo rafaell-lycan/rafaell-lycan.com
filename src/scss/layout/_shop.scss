@@ -1,0 +1,21 @@
+.shop {
+  width: 100%;
+  max-width: $post-width;
+  margin: 0 auto;
+
+  @include media(medium) {
+    padding: 0 0 20px;
+  }
+
+  &__banner {
+    width: 100%;
+    max-width: 100%;
+    margin: 40px 0;
+    border-radius: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 80px 0 40px;
+  }
+}
