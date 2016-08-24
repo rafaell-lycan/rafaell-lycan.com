@@ -1,6 +1,6 @@
 ---
 title: Macbook Pro Retina 15 I7 2.7ghz 16gb 512gb
-image_path: //nandovieira.com.br/media/vende-se/mesa.jpg
+image_path: /assets/img/store/macbook15.jpg
 status: price
 value: R$ 6.000
 ---

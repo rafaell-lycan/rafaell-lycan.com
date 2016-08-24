@@ -1,6 +1,6 @@
 ---
 title: Macbook Pro Retina 13 I5 2.5ghz 8gb 256gb
-image_path: //nandovieira.com.br/media/vende-se/mesa.jpg
+image_path: /assets/img/store/macbook13.jpg
 status: sold
 value: Vendido
 ---

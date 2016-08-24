@@ -1,6 +1,6 @@
 ---
 title: Apple Tv 3ª Geração
-image_path: //nandovieira.com.br/media/vende-se/mesa.jpg
+image_path: /assets/img/store/apple_tv.jpg
 status: price
 value: R$ 300
 ---

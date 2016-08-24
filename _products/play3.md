@@ -1,6 +1,6 @@
 ---
 title: Playstation 3 250gb c/ 2 Controles
-image_path: //nandovieira.com.br/media/vende-se/mesa.jpg
+image_path: /assets/img/store/ps3.jpg
 status: reserved
 value: Reservado (R$ 850)
 ---
