@@ -32,7 +32,7 @@ permalink: /vende-se/
 
   <ul class="product-list">
     {% for product in site.products %}
-      {% if product.status contains 'price' %}
+      {% if product.status contains 'price' and product.paused != true %}
       <li class="product">
         <figure class="product__picture">
           <img src="{{ product.image_path }}" alt="{{ product.title }}">
@@ -47,7 +47,7 @@ permalink: /vende-se/
 
   <ul class="product-list">
     {% for product in site.products %}
-      {% if product.status contains 'soon' %}
+      {% if product.status contains 'soon' and product.paused != true %}
       <li class="product">
         <figure class="product__picture">
           <img src="{{ product.image_path }}" alt="{{ product.title }}">
@@ -62,7 +62,7 @@ permalink: /vende-se/
 
   <ul class="product-list">
     {% for product in site.products %}
-      {% if product.status contains 'reserved' %}
+      {% if product.status contains 'reserved' and product.paused != true %}
       <li class="product">
         <figure class="product__picture">
           <img src="{{ product.image_path }}" alt="{{ product.title }}">
@@ -75,7 +75,7 @@ permalink: /vende-se/
     {% endfor %}
 
     {% for product in site.products %}
-      {% if product.status contains 'sold' %}
+      {% if product.status contains 'sold' and product.paused != true %}
       <li class="product">
         <figure class="product__picture">
           <img src="{{ product.image_path }}" alt="{{ product.title }}">
