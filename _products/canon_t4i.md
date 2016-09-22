@@ -3,7 +3,7 @@ title: Canon T4i cm lentes 18-135 e 50mm f/1.8 STM.
 image_path: /assets/img/store/canon_t4i.jpg
 status: soon
 value: Em breve
-<!-- value: R$ 43000 -->
+<!-- value: R$ 3500 -->
 ---
 Bem conservada e com pouco uso (menos de 10mil clicks) que veio com a objetiva 18-135. Acompanha caixa, manuais, carregador, bateria original e cabos.
 
