@@ -8,13 +8,15 @@ Super Nintendo com 2 controles e cabo AV. Caso tenha interesse por jogos os mesm
 
 <ul>
     <li><del>Mario World</del></li>
-    <li><del>Donkey Kong Country</del></li>
-    <li>Donkey Kong Country 2</li>
+    <li>Donkey Kong Country</li>
+    <li><del>Donkey Kong Country 2</del></li>
     <li>Donkey Kong Country 3</li>
     <li>Street Fighter 2</li>
     <li><del>Rock in Roll Racing</del></li>
-    <li>Samurai Shodown</li>
+    <li><del>Samurai Shodown</del></li>
     <li><del>Top Gear</del></li>
     <li>Killer Instinct</li>
+    <li>Mortal Kombat 2</li>
     <li><del>Contra 3</del></li>
+    <li>Tiny Toon Adventures</li>
 </ul>
