@@ -131,11 +131,13 @@ e um package.json muito pequeno:
 }
 {% endhighlight %}
 
-Você provavelmente notou que temos **três comandos** em scripts: `start`, `build`, e `eject`.
+Você provavelmente notou que temos **quatro comandos** em scripts: `start`, `build`, `test` e `eject`.
 
 **start** é o que você provavelmente esta familiar. Ele irá rodar a sua aplicação localmente no endereço `localhost:3000`.
 
 **build** como o nome já diz, vai preparar sua aplicação corretamente para produção (modificando NODE_ENV para "production"), minificando seu código e adicionando e adicionando **hash** da revisão onde tudo será disponibilizado na pasta **build**. Você pode disponibilizar os arquivos estáticos onde bem quiser (como o S3). Você pode levar mais sobre isso no repositório do projeto para saber mais.
+
+**test** assim como o nome diz, vai rodar a suite de testes criadas em sua aplicação utilizando Jest. 
 
 **eject** é o mais interessante. O time do react provavelmente são bem espertos, pois eles não querem que você fique preso em uma configuração especifica durante o desenvolvimento do seu projeto e por conta disso você pode "ejetar" a qualquer momento. Isso trás toda a parte que esta contida em `react-scripts` para a raiz do seu projeto, permitindo assim que você possa configurar toda a sua aplicação como bem entender.
 
