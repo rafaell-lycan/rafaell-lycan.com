@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Entendendo "create-react-app"'
+title:  'Entendendo create-react-app'
 date:   2016-12-07
 categories: javascript
 tags: react javascript
