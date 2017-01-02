@@ -19,7 +19,7 @@ Neste ultimo cenário, precisamos passar o `id` de serviço relevante para o con
 
 Para mapearmos os parâmetros de URL (query params) em nossa aplicação, precisamos declara-los na configuração de estado (state) de nossa rotas:
 
-```javascript
+{% highlight javascript %}
 state('new-process', {
   url: '/new?serviceId',
   templateUrl: '/templates/process/new.html',
@@ -27,19 +27,19 @@ state('new-process', {
      $scope.serviceId = $stateParams.serviceId;
   }
 })
-```
+{% endhighlight %}
 
 Você pode criar um link para esta rota utilizando o atributo `ui-sref`:
 
-```html
+{% highlight html %}
 <a ui-sref="new-process({ serviceId: 2 })">New Process</a>
-```
+{% endhighlight %}
 
 Isso irá navegar para a rota `/new?serviceId=2`.
 
 Se você tiver vários parâmetros opcionais, separe eles com um `&`:
 
-```javascript
+{% highlight javascript %}
 state('new-process', {
   url: '/new?serviceId&param1&param2',
   templateUrl: '/templates/process/new.html',
@@ -49,13 +49,13 @@ state('new-process', {
      $scope.param2 = $stateParams.param2;
   }
 })
-```
+{% endhighlight %}
 
 ## Parâmetros de Rota Opcionais
 
 Parâmetros de rota no UI Router são opcionais por padrão. Sim, isso quer dizer que tanto `/new/2` e `/new/` funcionam, mas não apenas `/new` sem a ultima barra `/`. O sufixo `?` que vimos no exemplo acima simplesmente informar ao UI Router a onde ele deve começar a busca de parâmetros de URL. ex: `/new/:serviceId?`.
 
-```javascript
+{% highlight javascript %}
 state('new-process', {
   url: '/new/:serviceId',
   templateUrl: '/templates/process/new.html',
@@ -63,7 +63,7 @@ state('new-process', {
      $scope.serviceId = $stateParams.serviceId;
   }
 })
-```
+{% endhighlight %}
 
 Atualizando o atributo `ui-sref` para `new-process({ serviceId: 2 })` iremos ter o link  `/new/2`.
 
@@ -75,7 +75,7 @@ Para rotas com múltiplos parâmetros como `/services/process/:process/step/:ste
 
 Recentemente descobri essa outra opção de passar parâmetros sem afetar a URL via o state do UI Router. No meu caso achei particularmente util pois não foi preciso nenhuma magia para solucionar o problema que tinha:
 
-```javascript
+{% highlight javascript %}
 state('new-process', {
   url: '/new',
   params: {
@@ -86,7 +86,7 @@ state('new-process', {
      $scope.serviceId = $stateParams.serviceId;
   }
 })
-```
+{% endhighlight %}
 
 Para utilizar isso apenas modifique o atributo `ui-sref` para `new-nonurl({ serviceId: 2 })` que isso vai gerar o link `/new` passando o parâmetro `serviceId`.
 
