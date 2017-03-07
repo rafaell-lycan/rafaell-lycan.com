@@ -3,3 +3,4 @@ _site
 node_modules
 .jekyll-metadata
 src/js/vendors/
+Gemfile.lock

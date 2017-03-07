@@ -5,6 +5,10 @@
   "homepage": "https://rafaell-lycan.com/",
   "main": "index.html",
   "author": "Rafaell Lycan <sonny.webdsg@gmail.com>",
+  "scripts": {
+    "postinstall": "bower cache clean && bower install",
+    "start": "gulp"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
