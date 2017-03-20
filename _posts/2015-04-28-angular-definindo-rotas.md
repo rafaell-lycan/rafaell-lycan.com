@@ -10,7 +10,7 @@ resumo: >
 
 related:
   - title : Routing & Multiple Views
-    url: https://docs.angularjs.org/tutorial/step_07
+    url: https://docs.angularjs.org/tutorial/step_09
   - title : Nested Views, Routing, And Deep Linking With AngularJS
     url: http://www.bennadel.com/blog/2441-nested-views-routing-and-deep-linking-with-angularjs.htm
   - title : Single Page Apps with AngularJS Routing and Templating
