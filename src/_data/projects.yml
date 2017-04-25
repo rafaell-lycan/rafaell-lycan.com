@@ -1,0 +1,27 @@
+- name: Sabesp API
+  description: A simple scraping application to visualize data about water in São Paulo
+  url: https://github.com/rafaell-lycan/sabesp-mananciais-api
+
+- name: 'React + Flux: Music Player'
+  description: An awesome player build with React and SoundCloud API
+  url: https://github.com/rafaell-lycan/estudos-react/tree/master/mini-player-webpack
+
+- name: Github Pulse
+  description: OS X StatusBar app to help you remember to contribute every day on Github
+  url: https://tadeuzagallo.com/GithubPulse
+
+- name: Kraken
+  description: A simple Jekyll template
+  url: https://github.com/rafaell-lycan/kraken
+
+- name: Skeleton-Sass
+  description: The (un)official Sass Version of Skeleton
+  url: https://github.com/WhatsNewSaes/Skeleton-Sass
+
+- name: Star Wars Opening Crawl
+  description: A awesome Star Wars opening crawl with CSS <3
+  url: https://github.com/rafaell-lycan/star-wars-crawl
+
+- name: Star Wars Scraping
+  description: '[DEMO] A simple web scraping from StarWars.com (TDC Talk).'
+  url: https://github.com/rafaell-lycan/star-wars-crawl

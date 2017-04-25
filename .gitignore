@@ -1,5 +1,4 @@
-_publish
-_site
+dist
 node_modules
 .jekyll-metadata
 src/js/vendors/
