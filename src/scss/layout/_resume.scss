@@ -1,0 +1,63 @@
+.resume {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $post-width;
+
+  @include media(medium) {
+    padding: 0 0 50px;
+  }
+
+  &__header {
+    border-bottom: 1px solid $light-gray;
+  }
+
+  &__heading {
+    text-align: center;
+    margin: 80px 0 40px;
+  }
+
+  &__title {
+    @extend .h3;
+    position: relative;
+    text-transform: uppercase;
+
+    &:before {
+      content: '';
+      border-left: 4px solid $orange;
+      position: absolute;
+      left: -15px;
+      height: 75%;
+      top: 12%;
+    }
+  }
+
+  &__title--green:before { border-color: $green; }
+
+  &__title--blue:before { border-color: $blue; }
+
+  &__title--ruby:before { border-color: $ruby; }
+
+  &__subtitle {
+    @extend .h4;
+    font-weight: normal;
+  }
+
+  &__description {
+    color: $gray;
+    margin: 0;
+  }
+
+  &__date {
+    color: $gray;
+    font-style: italic;
+  }
+
+  &__content {
+    padding: 50px 0;
+    border-bottom: 1px solid $light-gray;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

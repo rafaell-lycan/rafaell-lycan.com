@@ -1,0 +1,29 @@
+.pagination {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid $light-gray;
+  text-align: center;
+
+  @include media(large) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    border-right: 1px solid $light-gray;
+
+    &:hover:not(.disabled), &:active:not(.disabled) {
+      color: $white;
+      background-color: $gray;
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
