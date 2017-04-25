@@ -1,0 +1,44 @@
+.related {
+  margin: rem(30px) rem(-50px);
+  padding: rem(20px);
+
+  @include media(medium) {
+    border: 2px solid $base-light;
+  }
+
+  &__title {
+    margin: 0 0 rem(10);
+    padding-bottom: rem(20);
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 2px solid $hairline;
+  }
+
+  &__mention {
+    padding: rem(5px) 0;
+
+    &:before {
+      content: "→";
+      color: $black;
+      margin-right: rem(10px);
+      margin-left: rem(5px);
+    }
+
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+
+.comments {
+  margin: rem(30px) 0;
+  padding: 20px 0;
+
+  &__title {
+    margin: 0 0 rem(10);
+    padding-bottom: rem(20);
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 2px solid $hairline;
+  }
+}

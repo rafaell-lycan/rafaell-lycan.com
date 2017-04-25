@@ -1,0 +1,12 @@
+{% if site.smartlook_key %}
+<script>
+  if (window.location.hostname !== 'localhost') {
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},s=d.getElementsByTagName('script')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='//rec.getsmartlook.com/bundle.js';s.parentNode.insertBefore(c,s);
+    })(document);
+    smartlook('init', '{{ site.smartlook_key }}');
+  }
+</script>
+{% endif %}

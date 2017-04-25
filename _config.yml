@@ -1,59 +1,103 @@
-# Author Informations
-author: Rafaell Lycan
-twitter: RafaellLycan
-github: rafaell-lycan
-plus: https://plus.google.com/+RafaellLycan
-email: sonny.webdsg@gmail
-
-# Blog
-title: Hi there, I'm Rafaell
-meta_description: "Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan"
+# site settings
+title            : Hi there, I'm Rafaell
 meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software"
+description:     > # this means to ignore newlines until "baseurl:"
+  Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan!
+baseurl          : '' # the subpath of your site, e.g. /blog
+url              : 'https://rafaell-lycan.com' # the base hostname & protocol for your site
+logo             : site-logo.png
+rss              : 'http://feeds.feedburner.com/MikeFowler'
 lang: pt-br
-paginate: 10
-baseurl: /
-url: https://rafaell-lycan.com
-permalink: /:year/:title/
-google_analytics: UA-16383035-5 # Google services
-disqus_shortname: rafaelllycan # Disqus post comments
 
-# Build settings
-jekyll-version: Jekyll v3.1.6
-markdown: kramdown
-highlighter: rouge
+# user settings
+author:
+  name           : Rafaell Lycan
+  email          : sonny.webdsg@gmail.com
+  twitter        : RafaellLycan
+  github         : rafaell-lycan
+  avatar         : avatar.jpg # 160x160 px image for author byline
+  gravatar       : dd1c977c7a3e384a9cdae3b5ddd9b006 # Gravatar md5 hash
+  gplus          : RafaellLycan
+
+disqus_username  : rafaelllycan # Put your Disqus Username here
+smartlook_key    : 71b434ed5cffc14b8ccad3c50573871bcb972ef9
+theme_config:
+  google_analytics: UA-16383035-5 # Put your Google Analytics code
+  google_verify:    x08xUXYXTQWjHPyl9M_w5VIF07UWLSi0XUTxxCSS7rQ # Put your Google Verification here
+
+# Jekyll configuration
+permalink        : /:year/:title/ # default it's pretty
+paginate         : 10
+paginate_path    : '/page-:num/'
+highlighter      : rouge
+markdown         : kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   parse_block_html: true
-gems: ['jekyll-paginate']
 
-destination: ./_publish
+# default layout settings
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "default"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
+  -
+    scope:
+      path:         "tag"
+    values:
+      layout:       "tag"
+
+# build settings
+source           : src
+destination      : dist
+
+sass:
+  compressed: true
 
 # html minify
 compress_html:
   clippings: all
   comments: all
-  endings: []
   profile: false
+  startings: [body]
+  endings: all
 
-# Category Settings
-category_title_prefix: ''
-category_dir: /
+# plugins
+gems:
+  - jekyll-paginate
+  # - jekyll-sitemap
 
-# Tag Settings
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_permalink_style: pretty
+# exclude/include files on the build phase
+keep_files:
+  - .git
 
-# Shopping
-collections:
-  products:
-    output: true
-    permalink: /produto/:path/
+include:
+  - .htaccess
+  # - _pages
 
-# Others
-future: false
-show_drafts: false
-
-# exclude my node related stuff
-exclude: ['package.json', 'node_modules', 'src', '.gitignore', 'gulpfile.js', 'README.md']
+exclude:
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - Gemfile
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - package.json
+  - _assets
+  - README
+  - tmp

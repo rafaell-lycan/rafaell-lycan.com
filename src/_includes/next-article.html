@@ -1,0 +1,16 @@
+{% if page.previous.url %}
+<a
+  class="next-article {% if page.previous.cover %}next-article--with-cover{% endif %}"
+  {% if page.previous.cover %}style="background-image: url({{page.previous.cover}}) ;"{% endif %}
+  href="{{ page.previous.url | prepend: site.baseurl }}"
+  title="{{page.previous.title}}">
+  <span class="container">
+    <span class="next-article__heading">Next article:</span>
+    <span class="next-article__title">{{page.previous.title}}</span>
+    {% if page.previous.resumo %}
+      <span class="next-article__description">{{ page.previous.resumo }}</span>
+    {% endif %}
+    <button class="btn btn--outline">Read more &rarr;</button>
+  </span>
+</a>
+{% endif %}

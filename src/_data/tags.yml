@@ -1,0 +1,51 @@
+# Add an entry, where the key represents a slug.
+# Provide at least a `name` value and optionally `image`, `color` and `description`.
+# Markdown is enabled for `description`, however don't use more than one paragraph (enforced by `>`)
+#
+# Example:
+#
+# ~~~
+# mytag:
+#   name: My Tag
+#   description: >
+#     *My Tag* is an example of how to define a custom tag.
+# ~~~
+
+html5:
+  name: HTML5
+git:
+  name: Git
+github:
+  name: GitHub
+life:
+  name: Life
+less:
+  name: Less CSS
+tools:
+  name: Tools
+google:
+  name: Google
+seo:
+  name: Search Engine Optimization
+sublime-text:
+  name: Sublime Text
+sublime-text:
+  name: Sublime Text
+produtividade:
+  name: Produtividade
+mobile:
+  name: Mobile
+firefox-os:
+  name: Firefox OS
+angular:
+  name: AngularJS
+laravel:
+  name: Laravel
+php:
+  name: PHP
+javascript:
+  name: JavaScript
+react:
+  name: React
+development:
+  name: Development

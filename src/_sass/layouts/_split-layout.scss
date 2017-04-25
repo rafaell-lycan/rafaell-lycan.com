@@ -1,0 +1,93 @@
+.split-layout {
+
+  &__sidebar {
+    position: relative;
+    display: flex;
+    padding: rem(30);
+    background: $midnight;
+    background: url("../svgs/bg-triangles-black.svg");
+    font-family: $heading-font-family;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media('medium') {
+      position: fixed;
+      width: 40%;
+      height: 100%;
+      left: 0;
+    }
+
+    @include media('large') {
+      width: 30%;
+    }
+  }
+
+  &__avatar {
+    max-width: 120px;
+
+    @include media('small-only') {
+      display: none;
+    }
+  }
+
+&__title {
+  font-size: rem(30);
+  font-weight: 300;
+}
+
+&__subtitle {
+  font-size: rem(14);
+  margin-top: 0;
+  text-transform: uppercase;
+  opacity: .4;
+
+  @include media('small-only') {
+    padding-bottom: 2rem;
+  }
+}
+
+&__description {
+  padding: rem(30) 0 0;
+
+  @include media('small-only') {
+    display: none;
+  }
+}
+
+  &__content {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+
+    @include media('medium') {
+      margin-left: 40%;
+      width: auto;
+      max-width: 100%;
+    }
+
+    @include media('large') {
+      margin-left: 30%;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .nav__brand, .nav__github{
+    display: none;
+  }
+
+  .section-title {
+    display: none;
+  }
+
+  .post-list {
+    &:before, &:after {
+      display: none;
+    }
+  }
+}
