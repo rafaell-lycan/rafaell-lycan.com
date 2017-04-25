@@ -1,0 +1,17 @@
+<header class="header" role="banner">
+  {% include navigation.html %}
+
+  <section class="author animate">
+    <a href="{{ site.data.lang[lang].url_base | prepend: site.baseurl }}"
+      class="header__brand" itemscope itemtype="http://schema.org/Organization"
+      itemprop="url">
+      <img class="img-rounded"
+            src="http://gravatar.com/avatar/{{site.author.gravatar}}?s=150"
+            alt="{{site.title}}"
+            itemprop="image">
+    </a>
+    <p class="author__bio">
+      Hello there! I'm a brazilian software developer currently living on the beautiful Barcelona and this is where I (randomly) write about programming, the web, life and/or photography.
+    </p>
+  </section>
+</header>

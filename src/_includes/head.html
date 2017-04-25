@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="google-site-verification" content="{{ site.theme_config.google_verify }}"/>
+  <meta name="robots" content="index, follow">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Standard Stuff -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% if site.rss %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.rss }}" />
+  {% endif %}
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{site.baseurl}}/assets/img/icons/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Authorship Markup -->
+  <link rel="author" href="https://plus.google.com/+{{site.author.gplus}}?rel=author">
+
+  {% include dns-prefetch.html %}
+
+  {% include twitter-card.html %}
+  {% include open-graph.html %}
+  {% include smartlook.html %}
+
+  <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+  <link rel="apple-touch-icon" href="/assets/img/icon-96x96.png">
+  <link rel="icon" sizes="192x192" href="/assets/img/icon-192x192.png">
+  <link rel="shortcut icon" href="/assets/img/icon-192x192.png">
+
+  <style>
+    {% capture critical %}
+      {% include critical.scss %}
+    {% endcapture %}
+    {{ critical | scssify }}
+  </style>
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+</head>
