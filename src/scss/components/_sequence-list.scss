@@ -1,0 +1,69 @@
+.sequence-list {
+  padding: 0;
+
+  &__item {
+    list-style: none;
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    border-left: 5px solid black;
+
+    &:last-child {
+      border-color: transparent !important;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -5px;
+    left: -37px;
+    background-color: black;
+    border: 30px solid $white;
+    border-radius: 50%;
+    z-index: 1;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: -15px;
+      left: -15px;
+      z-index: 10;
+      border: 5px solid black;
+      border-radius: 50%;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &--green {
+    .sequence-list__item { border-color: $green; }
+    .sequence-list__dot { background-color: $green; }
+    .sequence-list__dot:after { border-color: $green; }
+  }
+
+  &--blue {
+    .sequence-list__item { border-color: $blue; }
+    .sequence-list__dot { background-color: $blue; }
+    .sequence-list__dot:after { border-color: $blue; }
+  }
+
+  &--ruby {
+    .sequence-list__item { border-color: $ruby; }
+    .sequence-list__dot { background-color: $ruby; }
+    .sequence-list__dot:after { border-color: $ruby; }
+  }
+
+  &--orange {
+    .sequence-list__item { border-color: $orange; }
+    .sequence-list__dot { background-color: $orange; }
+    .sequence-list__dot:after { border-color: $orange; }
+  }
+}
