@@ -1,0 +1,20 @@
+.footer {
+  display: block;
+  padding: 1em 0 0;
+  font-size: .75em;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid $light-gray;
+
+  .love {
+    display: inline-block;
+    color: $blue;
+    animation: love .5s infinite linear alternate-reverse;
+  }
+}
+
+@keyframes love {
+  to {
+    transform: scale(1.1);
+  }
+}
