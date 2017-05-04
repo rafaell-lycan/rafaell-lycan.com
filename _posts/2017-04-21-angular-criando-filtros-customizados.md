@@ -63,7 +63,7 @@ angular
 });
 {% endhighlight %}
 
-Agora podemos utilizar este filtro facilmente através de `{{ 'Rafaell' | reverse}}` e o output renderizado na expressão será **lleafaR**.
+Agora podemos utilizar este filtro facilmente através de `{% raw %}{{ 'Rafaell' | reverse}}{% endraw %}` e o output renderizado na expressão será **lleafaR**.
 
 Vamos utilizar algumas boas práticas para deixar o mesmo código melhor, levando em conta que o módulo foi declarado em um outro arquivo e estamos criando nosso `reverse.filter.js`:
 
@@ -139,17 +139,17 @@ angular
 
 Este filtro pode ser utilizado com ou sem o parâmetro opcional, já que o informamos um valor default de **10** caso nada seja informado.
 
-Filtro: `{{ 'Lorem ipsum dolor sit amet' | ellipsis }}`
+Filtro: `{% raw %}{{ 'Lorem ipsum dolor sit amet' | ellipsis }}{% endraw %}`
 Output: `Lorem ipsu...`
 
-Filtro: `{{ 'Lorem ipsum dolor sit amet' | ellipsis : 20 }}`
+Filtro: `{% raw %}{{ 'Lorem ipsum dolor sit amet' | ellipsis : 20 }}{% endraw %}`
 Output: `Lorem ipsum dolor si...`
 
 ## Filtros Aninhados
 
 Uma nota adicional sobre filtros é que você pode utilizá-los aninhados de maneira muito simples com nossos pipes (`|`), sempre lembrando que são utilizados da esquerda para direita.
 
-`{{ 'Rafaell' | lowercase | reverse | ellipsis }}`
+`{% raw %}{{ 'Rafaell' | lowercase | reverse | ellipsis }}{% endraw %}`
 
 Nesse caso o texto é transformado em **lowercase**, depois o valor será revertido com **reverse** e por fim será aplicado **ellipsis**.
 
@@ -166,7 +166,7 @@ Pensando em um cenário real, vamos dar uma olhada no filtro `translate` que per
 Vejamos o uso deste filtro:
 
 {% highlight html %}
-{{ 'TRANSLATION_KEY' | translate }}
+{% raw %}{{ 'TRANSLATION_KEY' | translate }}{% endraw %}
 {% endhighlight %}
 
 Pensando neste contexto, Angular cria um cache sobre o valor da expressão e não modifica o valor do output a não seja que a chave `'TRANSLATION_KEY'` seja alterada.
@@ -239,7 +239,7 @@ angular
   .filter('timeAgo', timeAgo);
 {% endhighlight %}
 
-E a utilização seria assim: `{{ date | timeAgo }}`.
+E a utilização seria assim: `{% raw %}{{ date | timeAgo }}{% endraw %}`.
 
 ## Conclusão
 
