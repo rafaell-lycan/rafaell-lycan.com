@@ -1,5 +1,5 @@
 ---
-title: AngularJS: Dicas sobre Promises e $http Service
+title: 'AngularJS: Dicas sobre Promises e $http Service'
 tags: angular
 resumo: >
    Um guia de boas praticas de como utilizar Promises junto a serviços dentro do ecossistema do AngularJS, em especial o $http Service.
