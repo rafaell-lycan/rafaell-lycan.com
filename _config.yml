@@ -11,7 +11,7 @@ meta_description: "Web development, front end stuff, tutorials for beginners and
 meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software"
 lang: pt-br
 paginate: 10
-baseurl: /
+baseurl: ''
 url: https://rafaell-lycan.com
 permalink: /:year/:title/
 google_analytics: UA-16383035-5 # Google services
