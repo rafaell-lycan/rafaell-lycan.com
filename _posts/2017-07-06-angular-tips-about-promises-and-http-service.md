@@ -41,7 +41,7 @@ function getData($http) {
 }
 {% endhighlight %}
 
-The `then()` function accepts three callback parameters: *successCallback, errorCallback, * and *notifyCallback*
+The `then()` function accepts three callback parameters: *successCallback, errorCallback,* and *notifyCallback*
 
 So, If you return a value on **successCallback** or **errorCallback**, the return will be used to resolve the **promise**. Yes, you don't need to explicitly `deferred.resolve(response.data)` every time to solve **promises**, instead, you can simply return **response.data** in `then()`'s callback.
 
