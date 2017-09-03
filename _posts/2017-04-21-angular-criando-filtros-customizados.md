@@ -28,7 +28,7 @@ Um filtro tem uma declaração bem próxima de um `.factory()` por exemplo mas c
 
 Vamos a um exemplo de código:
 
-{% highlight javascript %}
+```javascript
 angular
   .module('myAwesomeApp', [])
   .filter('customFilter', function () {
@@ -38,7 +38,7 @@ angular
       return newValue;
     }
 });
-{% endhighlight %}
+```
 
 Vamos analisar alguns pontos:
 

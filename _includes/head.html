@@ -1,29 +1,20 @@
-{% if page.title %}
-    {% capture title %}{{ page.title | strip_html }} – Rafaell Lycan{% endcapture %}
-{% else %}
-    {% capture title %}{{site.title}}{% endcapture %}
-{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% if page.resumo %}
-    {% capture description %}{{ page.resumo }}{% endcapture %}
-{% else %}
-    {% capture description %}{{site.meta_description}}{% endcapture %}
-{% endif %}
+  <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}">
+  {% if page.stylesheets %}
+    {% for stylesheet_url in page.stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet_url | absolute_url }}?{{site.time | date: '%s%N'}}">
+    {% endfor %}
+  {% endif %}
 
-{% if page.keywords %}
-    {% capture keywords %}{{ page.keywords }}{% endcapture %}
-{% else %}
-    {% capture keywords %}{{site.meta_tag}}{% endcapture %}
-{% endif %}
+  <link rel="manifest" href="/manifest.json">
 
-{% if page.image %}
-    {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}
-{% else %}
-    {% capture image %}{% endcapture %}
-{% endif %}
+  {% seo %}
 
-{%if page.date %}
-  {% capture pageType %} article {% endcapture %}
-{% else %}
-  {% capture pageType %} website {% endcapture %}
-{% endif %}
+  {% if site.tags != "" %}
+    {% include collecttags.html %}
+  {% endif %}
+</head>

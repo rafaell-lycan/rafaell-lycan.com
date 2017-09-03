@@ -1,6 +1,22 @@
-<footer class="footer">
-  <p>
-    Made with <a href="https://jekyllrb.com/" target="_blank" class=" externalLink">Jekyll</a> and
-    <span class="love">♥</span> by Rafaell Lycan.
-  </p>
+{% assign start_year = 2014 %}
+
+{% capture current_year %}{{ 'now' | date: "%Y" }}{% endcapture %}
+
+{% capture year %}
+  {% if start_year == current_year %}
+    {{ current_year }}
+  {% else %}
+    {{ start_year }}–{{ current_year }}
+  {% endif %}
+{% endcapture %}
+
+<footer class="footer {{ footer_class | strip }}">
+  <div class="container">
+    <div class="row center-xs">
+      <div class="footer__content col-xs-12">
+        <div class="rule"></div>
+        &copy; Copyright {{ year | strip }}, {{ site.author.name }}
+      </div>
+    </div>
+  </div>
 </footer>

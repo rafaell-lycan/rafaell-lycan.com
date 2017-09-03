@@ -1,0 +1,45 @@
+.toc {
+  background: #f7f8fb;
+  padding: 35px 15px;
+  margin: 0 0 25px;
+  border-radius: 4px;
+  border: 1px solid darken(#f7f8fb, 5%);
+  @include media(medium) {
+    padding: 35px;
+  }
+
+  p {
+    margin: 0;
+  }
+  ul {
+    li {
+      list-style: none;
+      position: relative;
+      padding: 4px 15px;
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: -14px;
+        content: '';
+        background: url(../img/icons/link.svg) no-repeat 0 0;
+        background-size: contain;
+        opacity: .3;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  span {
+    color: #545e6f;
+    font-family: 'tt-medium';
+    margin: 0 0 25px;
+    display: block;
+  }
+  a {
+    color: #3f4754;
+    transition: all .2s ease;
+    &:hover {
+      color: lighten(#3f4754, 25%);
+    }
+  }
+}

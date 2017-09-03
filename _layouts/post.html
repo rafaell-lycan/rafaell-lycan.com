@@ -1,37 +1,65 @@
 ---
-layout: minimal
-post: true
+layout: default
 ---
-<article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-  <header class="blog-post__header">
 
-    <h1 class="blog-post__title" itemprop="headline">{{ page.title }}</h1>
-    <div class="blog-post__meta">
-      <span>This post is filed under</span>
-      {% unless page.tags == empty %}
+<article class="post single" itemscope itemtype="http://schema.org/BlogPosting">
+
+  {% if page.cover %}
+  <header class="post__banner">
+    <h1 class="post__title" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+    <div class="post__image" style="background-image: url({{page.cover}}) ;"></div>
+    <div class="post__meta">
+      {% include meta.html %}
+
+      {% if page.tags.size > 0 %}
+      <ul class="meta-tag__list">
         {% for tag in page.tags %}
-          <a class="h6 post-tag" href="/tags#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
+          <li class="meta-tag__item">
+            <a href="{{ site.url }}/tags/{{ tag }}">{{ tag }}</a>
+          </li>
         {% endfor %}
-      {% endunless %}
-      <span> • Published</span>{% include date.html %}<span> • {% include read-time.html %}</span>
+      </ul>
+      {% endif %}
     </div>
+  </header>
+  {% else %}
 
-    {% if page.image %}
-      <figure class="blog-post__banner">
-        <img src="/{{ page.image }}" alt="{{page.title}}" title="{{page.title}}" itemprop="thumbnailUrl">
-      </figure>
+  <header class="post__header container">
+    {% if page.img %}
+    <figure class="post__image">
+      <img src="{{page.cover}}" alt="{{page.title}}" itemprop="thumbnailUrl">
+    </figure>
     {% endif %}
 
-    <p class="hidden" itemprop="keywords">{{page.keywords}}</p>
+    <h1 class="post__title" itemprop="name headline">
+      {{ page.title }}
+    </h1>
+    <div class="post__meta">
+
+      {% include meta.html %}
+
+      {% if page.tags.size > 0 %}
+      <ul class="meta-tag__list">
+        {% for tag in page.tags %}
+          <li class="meta-tag__item">
+            <a href="/tags/{{ tag }}">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="post__meta__divider"></div>
   </header>
+  {% endif %}
 
-  <div class="blog-post__content">
-    {{content}}
-  </div>
-  {% include share.html %}
+  <section class="post__content container">
+    {{ content }}
+  </section>
 
-  {% include related.html %}
+  <footer class="post__footer">
 
+  </footer>
 
-  {% include disqus.html %}
 </article>

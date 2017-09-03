@@ -1,0 +1,59 @@
+# Author Informations
+author: Rafaell Lycan
+twitter: RafaellLycan
+github: rafaell-lycan
+plus: https://plus.google.com/+RafaellLycan
+email: sonny.webdsg@gmail
+
+# Blog
+title: Hi there, I'm Rafaell
+meta_description: "Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan"
+meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software"
+lang: pt-br
+paginate: 10
+baseurl: ''
+url: https://rafaell-lycan.com
+permalink: /:year/:title/
+google_analytics: UA-16383035-5 # Google services
+disqus_shortname: rafaelllycan # Disqus post comments
+
+# Build settings
+jekyll-version: Jekyll v3.1.6
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
+gems: ['jekyll-paginate']
+
+destination: ./_publish
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Category Settings
+category_title_prefix: ''
+category_dir: /
+
+# Tag Settings
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+
+# Shopping
+collections:
+  products:
+    output: true
+    permalink: /produto/:path/
+
+# Others
+future: false
+show_drafts: false
+
+# exclude my node related stuff
+exclude: ['package.json', 'node_modules', 'src', '.gitignore', 'gulpfile.js', 'README.md']

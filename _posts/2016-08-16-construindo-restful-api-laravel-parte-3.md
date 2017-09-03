@@ -20,7 +20,7 @@ related:
   - title : Create REST API using Laravel
     url: https://www.youtube.com/playlist?list=PLpvpznviFFFJUWlHylwipLLr1iLYs-cft
 ---
-[No artigo anterior da série]({{site.baseurl}}2016/construindo-restful-api-laravel-parte-2/) criamos nossas rotas e adicionamos uma verificação básica de autenticação através de **middlewares**, mas enfim a jornada chega ao fim. Vamos trabalhar com **validações**, **autenticação** e tratamento de erros.
+[No artigo anterior da série]({{site.url}}/2016/construindo-restful-api-laravel-parte-2/) criamos nossas rotas e adicionamos uma verificação básica de autenticação através de **middlewares**, mas enfim a jornada chega ao fim. Vamos trabalhar com **validações**, **autenticação** e tratamento de erros.
 
 Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
@@ -32,7 +32,7 @@ Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
 Quando falamos de autenticação e sessão isso pode ser um assunto um tanto trivial para alguns, principalmente se pensarmos em aplicações web classicas, através de **forms de login** e sessão utilizando **cookies**. Mas desta vez estamos falando de uma API, a qual deveria ser **stateless** e com toda comunidação (request/response) simplificada utilizando JSON.
 
-Nós vamos utilizar **JWT** *(Json Web Token)* para a comunicação em nossas rotas privadas, o qual irá conter as informações básicas do usuário que esta pedindo a requisição. Eu não vou explicar em detalhes o que é um JWT, mas você pode ler sobre isso neste artigo sobre *[Autenticação com Tokens em uma aplicação AngularJS]({{site.baseurl}}2016/autenticacao-jwt-angular-app/)* e entender os 3 elementos que formam um JWT válido.
+Nós vamos utilizar **JWT** *(Json Web Token)* para a comunicação em nossas rotas privadas, o qual irá conter as informações básicas do usuário que esta pedindo a requisição. Eu não vou explicar em detalhes o que é um JWT, mas você pode ler sobre isso neste artigo sobre *[Autenticação com Tokens em uma aplicação AngularJS]({{site.url}}/2016/autenticacao-jwt-angular-app/)* e entender os 3 elementos que formam um JWT válido.
 
 Agora que estamos alinhados,vamos instalar o pacote `jwt-auth` em nosso `composer.json`. Atualize o bloco `require` incluindo o novo pacote:
 

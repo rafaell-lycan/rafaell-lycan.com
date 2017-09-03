@@ -1,59 +1,98 @@
+# Metadata
+title:          Hi there, I'm Rafaell
+description:    Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan
+keys:           desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
+logo:           /assets/icons/favicon-192x192.png
+url:            http://mikefowler.me
+repository:     mikefowler/mikefowler.github.io
+rss:            http://feeds.feedburner.com/MikeFowler
+
 # Author Informations
-author: Rafaell Lycan
-twitter: RafaellLycan
-github: rafaell-lycan
-plus: https://plus.google.com/+RafaellLycan
-email: sonny.webdsg@gmail
+author:
+  name:         Rafaell Lycan
+  first_name:   Rafaell
+  last_name:    Lycan
+  email:        sonny.webdsg@gmail
+  location:     barcelona
+  twitter:      rafaelllycan
+  github:       rafaell-lycan
+  gravatar:     dd1c977c7a3e384a9cdae3b5ddd9b006
+  plus:         https://plus.google.com/+RafaellLycan
 
-# Blog
-title: Hi there, I'm Rafaell
-meta_description: "Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan"
-meta_tag: "desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software"
-lang: pt-br
-paginate: 10
-baseurl: ''
-url: https://rafaell-lycan.com
-permalink: /:year/:title/
-google_analytics: UA-16383035-5 # Google services
-disqus_shortname: rafaelllycan # Disqus post comments
+# Config
+config:
+  g_analytics:  UA-16383035-5
+  g_verify:     Abc123Def456
+  disqus_name:  rafaelllycan
 
-# Build settings
-jekyll-version: Jekyll v3.1.6
-markdown: kramdown
-highlighter: rouge
+navigation:
+  - text: About
+    url: /about
+
+# Collections
+collections:
+  trips:
+    output: false
+    permalink: /trips/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "trips"
+    values:
+      layout: trip
+
+# Paths
+baseurl: ""
+asset_path:     "assets"
+
+# Conversion
+markdown:       kramdown
+highlighter:    rouge
 kramdown:
-  input: GFM
+  input:        GFM
   syntax_highlighter: rouge
   parse_block_html: true
-gems: ['jekyll-paginate']
 
-destination: ./_publish
+sass:
+  sass_dir:     _sass
+  style:        :compressed
 
-# html minify
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+# Output
+permalink:      /:year/:title/
+paginate:       100
+paginate_path:  "/page/:num/"
+livereload:     false
 
-# Category Settings
-category_title_prefix: ''
-category_dir: /
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-pagination
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-github-metadata
 
-# Tag Settings
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_permalink_style: pretty
+# Reading
+exclude:
+  - src
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - README.md
+  - _archive
+  - _scripts
 
-# Shopping
-collections:
-  products:
-    output: true
-    permalink: /produto/:path/
-
-# Others
-future: false
-show_drafts: false
-
-# exclude my node related stuff
-exclude: ['package.json', 'node_modules', 'src', '.gitignore', 'gulpfile.js', 'README.md']
+# compress_html:
+#   clippings: all
+#   comments: all
+#   endings: all
+#   profile: false
+#   startings: [body]

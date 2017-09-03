@@ -9,7 +9,7 @@ resumo: >
 ---
 A algum tempo venho estudando inglês sozinho, e de um tempo pra cá eu venho analisando o que eu poderia mudar para inglês, e nisso veio a idéia do blog em inglês.
 
-Não, eu não vou deixar de escrever em português pois meu objetivo é bem simples na verdade, fazer os posts em português e depois se possível em inglês pois como disse na minha [retrospectiva]({{site.baseurl}}2016/retrospectiva-2015-odisseia-fascinante/).
+Não, eu não vou deixar de escrever em português pois meu objetivo é bem simples na verdade, fazer os posts em português e depois se possível em inglês pois como disse na minha [retrospectiva]({{site.url}}/2016/retrospectiva-2015-odisseia-fascinante/).
 
 Talvez essa não seja a melhor estratégia, já que sou meio preguiçoso pra isso, o inverso pode funcionar também (fazendo inglês e depois convertendo para o português).
 

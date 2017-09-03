@@ -17,7 +17,7 @@ Another problem is always mixed `then()` and `catch()` with two callbacks in the
 
 The code below use the **$http service** to make a REST call and return only the **data** property of the response. This is a common implementation that I usually find in AngularJS code, and I know that works, but let's see how to improve it.
 
-{% highlight javascript %}
+```javascript
 function getData($q, $http) {
   var deferred = $q.defer();
   $http.get('...')
@@ -27,11 +27,11 @@ function getData($q, $http) {
 
   return $q.promise;
 }
-{% endhighlight %}
+```
 
 The code above could be simplified like this:
 
-{% highlight javascript %}
+```javascript
 // Better
 function getData($http) {
   return $http.get('...')
@@ -39,7 +39,7 @@ function getData($http) {
       return response.data;
     });
 }
-{% endhighlight %}
+```
 
 The `then()` function accepts three callback parameters: *successCallback, errorCallback,* and *notifyCallback*
 
@@ -51,7 +51,7 @@ The `then()` function returns a new **promise**, so isn't need to use `$q` to cr
 
 What about error handling? Let's use the example above, we can call `deferred.reject` as **errorCallback**.
 
-{% highlight javascript %}
+```javascript
 function getData($q, $http) {
   var deferred = $q.defer();
   $http.get('...')
@@ -64,11 +64,11 @@ function getData($q, $http) {
 
   return $q.promise;
 }
-{% endhighlight %}
+```
 
 Now we can think in a simplified solution and just return something instead of reject right? But by doing so, what we return? You probably think that we could return the error as in **successCallback**:
 
-{% highlight javascript %}
+```javascript
 function getData($http) {
   $http.get('...')
     .then(function(response) {
@@ -78,11 +78,11 @@ function getData($http) {
       return err; // Wrong
     });
 }
-{% endhighlight %}
+```
 
 As I said before, the returned values from the **successCallback** and **errorCallback** are considered values resolved for the **promise**. So the returned response in the **errorCallback** will solve the **promise** instead reject it. Even if you return a `false` value or nothing, the value will be considered resolved. You can use another way if necessary with `$q.reject(err)`:
 
-{% highlight javascript %}
+```javascript
 // Better
 function getData($q, $http) {
   $http.get('...')
@@ -93,11 +93,11 @@ function getData($q, $http) {
       return $q.reject(err);
     });
 }
-{% endhighlight %}
+```
 
 Besides the **errorCallback** as second parameter, the **promise** has another method called `catch()` to handle  errors. I personally prefer to use `then()` and `catch()` together over the two **callback** functions in `then()` because of readability.
 
-{% highlight javascript %}
+```javascript
 // Even Better
 function getData($q, $http) {
   $http.get('...')
@@ -108,13 +108,13 @@ function getData($q, $http) {
       return $q.reject(err);
     });
 }
-{% endhighlight %}
+```
 
 This way, `then()` is used only for **successCallback**, and `catch()` is basically used for errors applied as if it were `then()` without the **successCallback**  – `then(angular.noop, errorCallback)`
 
 The biggest advantage is that we can avoid **callback hell** by **chaining promises** using the `then()` and handle any errors that could happen during the process in a single `catch()`:
 
-{% highlight javascript %}
+```javascript
 function getData($q, $http) {
   $http.get('...')
     .then(function(response) {
@@ -127,7 +127,7 @@ function getData($q, $http) {
       return $q.reject(err);
     });
 }
-{% endhighlight %}
+```
 
 Chaining **promises** from services like the `DataService` above that returns us **promises**, make our code more elegant and simple to read and capturing any errors in a single point.
 
@@ -135,7 +135,7 @@ Chaining **promises** from services like the `DataService` above that returns us
 
 In old versions of AngularJS (1.3.x and earlier) **$http service** has two additional methods `success()` and `error()` that are similar to `then()`, but they have some differences :
 
-{% highlight javascript %}
+```javascript
 $http.get('...')
   .success(function(data) {
     ...
@@ -143,13 +143,13 @@ $http.get('...')
   .error(function(err) {
     ...
   })
-{% endhighlight %}
+```
 
 If you have remembered **jQuery** and how simple things were at that time, forget about it, since version 1.4.x these two methods have been obsolete because of the confusion they introduced.
 
 The **callback** you pass both `success()` and `error()` is not a response object, but the data itself (as in **jQuery**), and inside the callback is no longer necessary to return `response.data` to get only the data. An example:
 
-{% highlight javascript %}
+```javascript
 // Success
 $http.get('...')
   .success(function(data) {
@@ -161,7 +161,7 @@ $http.get('...')
   .then(function(response) {
     $log(response.data)
   });
-{% endhighlight %}
+```
 
 Yes, it's a silly difference, but neither`success()` or `error()` will return a new **promise**, so I strongly recommend adopt `then()` and `catch()` since they can be found in other Promise libraries as a convention.
 

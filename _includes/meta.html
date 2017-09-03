@@ -1,0 +1,28 @@
+{%if page.date %}
+  {% assign words = content | number_of_words %}
+  {% assign date = page.date %}
+{% else %}
+  {% assign words = post.content | number_of_words %}
+  {% assign date = post.date %}
+{% endif %}
+
+{% if words < 360 %}
+  {% assign reading_time = "1 minute" %}
+{% else %}
+  {% assign reading_time = words | divided_by:180 | append:" minutes" %}
+{% endif %}
+
+  <time
+    datetime="{{ date | date_to_xmlschema }}"
+    itemprop="datePublished"
+  >
+    {{ date | date: "%b %-d, %Y" }}
+  </time>
+
+  <span class="section-spacing">
+    {{ words }} words
+  </span>
+
+  <span>
+    {{ reading_time }} read
+  </span>

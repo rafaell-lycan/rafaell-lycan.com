@@ -1,0 +1,47 @@
+---
+title: Archives
+permalink: /archive
+
+layout: page
+---
+
+{% assign items = "" | split: "" %}
+
+{% for collection in site.collections %}
+  {% if collection.archive != false %}
+    {% assign collection_items = site[collection.label] %}
+    {% for collection_item in collection_items %}
+      {% assign items = items | push: collection_item %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign items = items | sort: 'date' | reverse %}
+
+{% for item in items %}
+
+  {% assign next_item = items[forloop.index] %}
+  {% capture year %}{{ item.date | date: '%Y' }}{% endcapture %}
+  {% capture next_year %}{{ next_item.date | date: '%Y' }}{% endcapture %}
+
+  {% if forloop.first %}
+    <h3>{{ year }}</h3>
+    <ul>
+  {% endif %}
+
+      <li>
+        <strong><time>{{ item.date | date: "%d %B" }}</time></strong>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+
+  {% if year != next_year %}
+    </ul>
+    <h3>{{ next_year }}</h3>
+    <ul>
+  {% endif %}
+
+  {% if forloop.last %}
+    </ul>
+  {% endif %}
+
+{% endfor %}

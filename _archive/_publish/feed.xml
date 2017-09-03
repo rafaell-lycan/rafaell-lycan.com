@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Hi there, I'm Rafaell</title>
+  <link href="https://rafaell-lycan.com"/>
+  <link type="application/atom+xml" rel="self" href="https://rafaell-lycan.com/feed.xml"/>
+  <updated>2017-08-12T00:55:34+02:00</updated>
+  <id>http://rafaell-lycan.github.com/</id>
+  <author>
+    <name>Rafaell Lycan</name>
+    <email>sonny.webdsg@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/angular-tips-about-promises-http-service</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/angular-tips-about-promises-http-service/"/>
+    <title>AngularJS: Tips about Promises and $http Service</title>
+    <published>2017-07-06T00:00:00+02:00</published>
+    <updated>2017-07-06T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">A good practices guide about how to use Promises along with services (especially the $http) in AngularJS world.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/angular-dicas-sobre-promises-http-service</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/angular-dicas-sobre-promises-http-service/"/>
+    <title>AngularJS: Dicas sobre Promises e $http Service</title>
+    <published>2017-07-06T00:00:00+02:00</published>
+    <updated>2017-07-06T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Um guia de boas praticas de como utilizar Promises junto a serviços dentro do ecossistema do AngularJS, em especial o $http Service.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/como-eu-aprendi-a-programar-licoes-aprendidas</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/como-eu-aprendi-a-programar-licoes-aprendidas/"/>
+    <title>Como eu aprendi a programar e que lições tirei disso</title>
+    <published>2017-05-11T00:00:00+02:00</published>
+    <updated>2017-05-11T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Será que programar é mesmo tão difícil? Saiba como comecei, meus desafios e mudanças e claro as lições que tirei disso.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/angular-criando-filtros-customizados</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/angular-criando-filtros-customizados/"/>
+    <title>AngularJS: Criando filtros customizados e além</title>
+    <published>2017-04-21T00:00:00+02:00</published>
+    <updated>2017-04-21T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Filtros são mal compreendidos no universo AngularJS, mas no geral eles são insanamente poderosos para transformar dados, e vão te ajudar muito no seu workflow de trabalho.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/2016-uma-retrospectiva-do-meu-ano</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/2016-uma-retrospectiva-do-meu-ano/"/>
+    <title>2016: Uma retrospectiva do meu ano — Mudança e Oportunidade</title>
+    <published>2017-03-07T00:00:00+01:00</published>
+    <updated>2017-03-07T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Um ano cheio de idas e vindas, escolhas dificeis, mudanças e muito mais.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2017/hora-de-seguir-em-frente-ola-barcelona</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2017/hora-de-seguir-em-frente-ola-barcelona/"/>
+    <title>Hora de seguir em frente... Olá Barcelona!</title>
+    <published>2017-01-20T00:00:00+01:00</published>
+    <updated>2017-01-20T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Normalmente eu não escrevo muito sobre minha vida pessoal, mas desta vez faz sentido escrever sobre isso pois minha vida acabou de ter uma grande mudança por conta da minha vida profissional e eu gostaria de compartilhar alguns detalhes aqui.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/angular-definindo-parametros-opcionais-ui-router</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/angular-definindo-parametros-opcionais-ui-router/"/>
+    <title>AngularJS: Definindo parâmetros opcionais com UI Router</title>
+    <published>2016-12-31T00:00:00+01:00</published>
+    <updated>2016-12-31T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">No passado nós vimos como utilizar o ngRoute e o UI Router para criar aplicações com Angular JS. Hoje vou explicar 3 formas que para definir rotas utilizando o UI Router e como isso pode ser útil para sua aplicação.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/entendendo-create-react-app</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/entendendo-create-react-app/"/>
+    <title>Entendendo create-react-app</title>
+    <published>2016-12-07T00:00:00+01:00</published>
+    <updated>2016-12-07T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Começar uma aplicação react sempre foi um pouco complicado. Eu poderia estar brincando dizendo isso no meu blog ou no meu twitter, mas é uma realidade. O time de desenvolvimento do React sabe que esta é uma dor para toda a comunidade e resolveram criar o create-react-app.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/porque-decidi-escrever-em-ingles</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/porque-decidi-escrever-em-ingles/"/>
+    <title>Por que decidi escrever em inglês?</title>
+    <published>2016-08-20T00:00:00+02:00</published>
+    <updated>2016-08-20T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">A algum tempo venho estudando inglês sozinho, e de um tempo pra cá eu venho analisando o que eu poderia mudar para inglês, e nisso veio a idéia do blog em inglês...
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/construindo-restful-api-laravel-parte-3</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/construindo-restful-api-laravel-parte-3/"/>
+    <title>Construindo uma API RESTful com Laravel - Parte 3</title>
+    <published>2016-08-16T00:00:00+02:00</published>
+    <updated>2016-08-16T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">No artigo anterior da série criamos nossas rotas e finalizamos nosso CRUD, mas enfim a jornada chega ao fim. Vamos trabalhar com validações, autenticação e tratamento de erros.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/construindo-restful-api-laravel-parte-2</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/construindo-restful-api-laravel-parte-2/"/>
+    <title>Construindo uma API RESTful com Laravel - Parte 2</title>
+    <published>2016-08-05T00:00:00+02:00</published>
+    <updated>2016-08-05T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">No artigo anterior da série nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e finalizar nosso CRUD.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/utilizando-laravel-valet</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/utilizando-laravel-valet/"/>
+    <title>Laravel Valet: Agilidade no seu ambiente local</title>
+    <published>2016-06-11T00:00:00+02:00</published>
+    <updated>2016-06-11T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Entenda como obter agilidade em um ambiente de desenvolvimento minimalista com essa alternativa ao Homestead mesmo se você não esta utilizando Laravel.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/autenticacao-jwt-angular-app</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/autenticacao-jwt-angular-app/"/>
+    <title>Autenticação com Tokens em uma aplicação AngularJS</title>
+    <published>2016-05-29T00:00:00+02:00</published>
+    <updated>2016-05-29T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Neste artigo vamos ver como desenvolver um exeplo de autenticação utilizando AngularJS Json Web Token.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2016/retrospectiva-2015-odisseia-fascinante</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2016/retrospectiva-2015-odisseia-fascinante/"/>
+    <title>Retrospectiva 2015: Uma Odisseia Fascinante</title>
+    <published>2016-01-14T00:00:00+01:00</published>
+    <updated>2016-01-14T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Vi algumas pessoas comemoram e outras reclamam sobre o ano de 2015. Quer saber como foi o meu? Vem comigo que te conto! ;)
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/instalando-laravel-digital-ocean</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/instalando-laravel-digital-ocean/"/>
+    <title>Instalando Laravel 5 na DigitalOcean</title>
+    <published>2015-12-19T00:00:00+01:00</published>
+    <updated>2015-12-19T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Saiba como instalar Laravel 5 na DigitalOcean utilizando Nginx em um server Ubuntu.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/construindo-restful-api-laravel-parte-1</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/construindo-restful-api-laravel-parte-1/"/>
+    <title>Construindo uma API RESTful com Laravel - Parte 1</title>
+    <published>2015-12-10T00:00:00+01:00</published>
+    <updated>2015-12-10T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Nesta série vamos criar uma pequena aplicação focando em desenvolver uma API RESTful para armazenar vagas de emprego e ver como o Laravel nos ajudará com isso.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/entendendo-flux</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/entendendo-flux/"/>
+    <title>Entendendo Flux</title>
+    <published>2015-11-28T00:00:00+01:00</published>
+    <updated>2015-11-28T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Conheça o Flux, a arquitetura do Facebook para o desenvolvimento Front-End.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/comecando-com-react</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/comecando-com-react/"/>
+    <title>Começando com React.js</title>
+    <published>2015-10-27T00:00:00+01:00</published>
+    <updated>2015-10-27T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Vamos entender qual é a proposta do React, pra que serve e como começar a utilizar.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/comecando-com-es6</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/comecando-com-es6/"/>
+    <title>Começando com ES6</title>
+    <published>2015-07-30T00:00:00+02:00</published>
+    <updated>2015-07-30T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Sinceramente estou ouvindo falar sobre ES6/ECMAScript 2015 a um bom tempo, mas nunca tinha parado para estudar mais a fundo. Sim isso realmente é novo mas não é o futuro, é o agora!
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/angular-consumindo-servicos-restful</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/angular-consumindo-servicos-restful/"/>
+    <title>AngularJS: Consumindo Serviços RESTful</title>
+    <published>2015-06-11T00:00:00+02:00</published>
+    <updated>2015-06-11T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Entender como o serviço $http funciona é algo bom e não envolve tantas surpresas no processo, porem, você pode se fascinar com o serviço $resource e o que ele pode proporcionar para a sua aplicação.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/angular-services-factories-providers</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/angular-services-factories-providers/"/>
+    <title>AngularJS: Services, Factories e Providers</title>
+    <published>2015-05-23T00:00:00+02:00</published>
+    <updated>2015-05-23T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Angular.js e suas drogas. Este post visa explicar as diferenças entre os tipos distintos de serviços no Angular, sejam eles Services, Factories ou Providers.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/angular-definindo-rotas</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/angular-definindo-rotas/"/>
+    <title>AngularJS: Definindo rotas com com ngRoute e UI-Router</title>
+    <published>2015-04-28T00:00:00+02:00</published>
+    <updated>2015-04-28T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Quando falamos em SPA's (Single page applications) quer dizer que temos uma aplicação única de diversas páginas que serão carregadas devido a ações do usuário. Mas afinal como fazer isso com AngularJS?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/laravel-5-finalmente-lancado</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/laravel-5-finalmente-lancado/"/>
+    <title>Laravel 5 é finalmente lançado!</title>
+    <published>2015-02-12T00:00:00+01:00</published>
+    <updated>2015-02-12T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Laravel 5 finalmente lançado! Vamos ver o que mudou, no que isso ajuda em nosso workflow, quais são os novas features para nós desenvolvedores, e como fazer upgrade sem quebrar sua aplicação.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2015/e-que-venha-2015</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2015/e-que-venha-2015/"/>
+    <title>E que venha 2015!</title>
+    <published>2015-01-30T00:00:00+01:00</published>
+    <updated>2015-01-30T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">2014 foi um ano muito bom por diversos motivos, muita coisa mudou no mundo, independente das coisas ruins que ocorreram globalmente, o que realmente me importa é o que evoluiu na tecnologia e em que eu evolui.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/comecando-com-angular-js</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/comecando-com-angular-js/"/>
+    <title>Começando com Angular.JS</title>
+    <published>2014-08-16T00:00:00+02:00</published>
+    <updated>2014-08-16T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Alguns meses estudando Angular.js e finalmente depois de começar um projeto utilizando-o, apresento a vocês os conceitos básicos do framework e como é fácil criar aplicações utilizando toda a simplicidade e melhorando nosso workflow.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/um-pouco-de-jekyll</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/um-pouco-de-jekyll/"/>
+    <title>Um pouco de Jekyll!</title>
+    <published>2014-07-02T00:00:00+02:00</published>
+    <updated>2014-07-02T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor &amp;lt;3. Fácil não?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/gulp-chegou-para-ficar</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/gulp-chegou-para-ficar/"/>
+    <title>Gulp - O Task Runner que chegou para ficar</title>
+    <published>2014-06-29T00:00:00+02:00</published>
+    <updated>2014-06-29T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Pouco mais de um ano, utilizando Grunt como task runner comecei a repensar várias coisas quando descobri um novo concorrente. Com vocês Gulp.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/command-line-para-devs</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/command-line-para-devs/"/>
+    <title>Command Line para Devs</title>
+    <published>2014-06-20T00:00:00+02:00</published>
+    <updated>2014-06-20T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor &amp;lt;3. Fácil não?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/hello-world-firefox-os</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/hello-world-firefox-os/"/>
+    <title>Hello World Firefox OS</title>
+    <published>2014-06-14T00:00:00+02:00</published>
+    <updated>2014-06-14T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Como começar com Firefox OS, o mais novo sistema mobile da Mozilla. Vamos criar o primeiro aplicativo e entender o sistema operacional Firefox OS e suas peculiaridades.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/web-storage-html5</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/web-storage-html5/"/>
+    <title>Trabalhando com Web Storage no HTML5</title>
+    <published>2014-03-12T00:00:00+01:00</published>
+    <updated>2014-03-12T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Web Storage com HTML5, como utilizar LocalStorage e SessionStorage.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2014/automacao-de-tarefas-com-grunt</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2014/automacao-de-tarefas-com-grunt/"/>
+    <title>Automação de tarefas com Grunt.js</title>
+    <published>2014-02-14T00:00:00+01:00</published>
+    <updated>2014-02-14T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Já imaginou poder automatizar tarefas simples como concatenar arquivos, minificar, testar e até mesmo atualizar o navegador a cada Ctrl+S? Conheça o Grunt.js.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2013/produtividade-front-end-com-sublime-text</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2013/produtividade-front-end-com-sublime-text/"/>
+    <title>Produtividade Front-End com Sublime Text</title>
+    <published>2013-12-21T00:00:00+01:00</published>
+    <updated>2013-12-21T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Precisamos de produtividade, cada vez mais o mercado nos cobra mais agilidade no desenvolvimento de aplicações seja front-end ou back-end. Sabia que também é possível ser produtivo no mundo front-end?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2013/os-misterios-do-seo</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2013/os-misterios-do-seo/"/>
+    <title>Os mistérios do SEO</title>
+    <published>2013-12-05T00:00:00+01:00</published>
+    <updated>2013-12-05T00:00:00+01:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Como indexar seu site no Google? Com apenas algumas boas práticas conseguimos um melhor resultado no queridinho das buscas.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2013/css-dinamico-com-less</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2013/css-dinamico-com-less/"/>
+    <title>Usando o pré-processador LESS CSS para um CSS mais dinâmico</title>
+    <published>2013-10-06T00:00:00+02:00</published>
+    <updated>2013-10-06T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Aumente sua produtividade e comece a trabalhar com LESS CSS, o pré-processador que é dinâmico, fácil e flexível para desenvolver suas Cascading Style Sheets.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2013/html5-audio-video</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2013/html5-audio-video/"/>
+    <title>Usando Áudio e Vídeo no HTML5</title>
+    <published>2013-09-21T00:00:00+02:00</published>
+    <updated>2013-09-21T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Como funciona o audio e vídeo no HTML5? Além das tags, vamos ver o que mais conseguimos fazer utilizando multimídia nativa na web.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2013/hello-world</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2013/hello-world/"/>
+    <title>Hello World!</title>
+    <published>2013-08-30T00:00:00+02:00</published>
+    <updated>2013-08-30T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Hello World! Chega de falar e não fazer, 2014 promete e a meta é compartilhar conhecimento com todos.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2012/git-github</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2012/git-github/"/>
+    <title>Git e Github - Porque FTP é coisa do passado!</title>
+    <published>2012-09-29T00:00:00+02:00</published>
+    <updated>2012-09-29T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Este artigo visa apresentar os conceito de uso básico sobre Git e Github para iniciantes.
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2012/mundo-cloud</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2012/mundo-cloud/"/>
+    <title>O Mundo Cloud - Você nas nuvens</title>
+    <published>2012-09-29T00:00:00+02:00</published>
+    <updated>2012-09-29T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor &amp;lt;3. Fácil não?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2012/css3-turbinando-seus-layouts</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2012/css3-turbinando-seus-layouts/"/>
+    <title>CSS3 - Turbinando seus layouts</title>
+    <published>2012-05-24T00:00:00+02:00</published>
+    <updated>2012-05-24T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">Meu Primeiro post no Jekyll! Este é um comentário feito com muito amor &amp;lt;3. Fácil não?
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://rafaell-lycan.github.com/2012/html5-voce-deveria-estar-usando</id>
+    <link type="text/html" rel="alternate" href="https://rafaell-lycan.com/2012/html5-voce-deveria-estar-usando/"/>
+    <title>HTML5 - Você deveria estar usando</title>
+    <published>2012-05-07T00:00:00+02:00</published>
+    <updated>2012-05-07T00:00:00+02:00</updated>
+    <author>
+      <name>Your Name</name>
+      <uri>http://rafaell-lycan.github.com/</uri>
+    </author>
+    <content type="html">A linguagem HTML5 ainda não está na sua versão final, mas a cada dia que passa mais e mais websites começam a usá-la. A linguagem aproxima-se dos requisitos da Web e torna-se mais fácil publicar conteúdos Web 2.0. Quando HTML4 reinava, a Web2.0 nem sequer tinha sido pensada, sendo assim pouco compatíveis. Mas com HTML5, é expectável que seja diferente.
+</content>
+  </entry>
+  
+
+</feed>

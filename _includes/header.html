@@ -1,15 +1,32 @@
-<header class="header">
-  <div class="container">
-    <div class="author">
-      <a href="{{ site.baseurl }}/">
-        <img
-          src="/assets/img/rafaell-lycan.jpg"
-          alt="Rafaell Lycan profile picture"
-          title="Back to home"
-          class="author__avatar">
-      </a>
-    </div>
+{% assign title = page.title %}
 
-    {% include menu.html %}
+{% capture masthead_class %}
+  {% if page.layout_options.hero %}masthead--floating{% endif %}
+{% endcapture %}
+
+{% capture writing_link_active %}
+  {% if title == "Essays" %}masthead__link--active{% endif %}
+{% endcapture %}
+
+<div class="masthead {{ masthead_class | strip }}">
+    <div class="container">
+      <nav class="row middle-xs center-xs">
+
+      {% for item in site.navigation %}
+
+        {% capture is_active %}
+          {% if title == item.text or page.url contains item.url %}
+            masthead__link--active
+          {% endif %}
+        {% endcapture %}
+
+        <div class="col-sm has-text-centered-sm {% if item.position == "left" %}first-sm{% endif %}">
+          <a href="{{ item.url }}" class="masthead__link {{ is_active | strip }}">
+            <span class="masthead__link-text">{{ item.text }}</span>
+          </a>
+        </div>
+      {% endfor %}
+
+    </nav>
   </div>
-</header>
+</div>

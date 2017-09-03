@@ -18,14 +18,16 @@ related:
   - title : Controller Middleware
     url: https://laravel.com/docs/5.0/controllers#controller-middleware
 ---
-[No artigo anterior da série]({{site.baseurl}}2015/construindo-restful-api-laravel-parte-1/) nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e a autenticação do usuário.
+[No artigo anterior da série]({{site.url}}/2015/construindo-restful-api-laravel-parte-1/) nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e a autenticação do usuário.
 
 Depois de muito tempo e alguns pedidos para continuar a série, resolvi dar uma olhada no que faltava para terminar. Resolvi então quebrar a série em 3 partes ao invés de duas.
 
 Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
-- [Controllers e Rotas](#controllers-e-rotas)
-- [Middlewares](#middlewares)
+{% include toc.html %}
+
+<!-- - [Controllers e Rotas](#controllers-e-rotas) -->
+<!-- - [Middlewares](#middlewares) -->
 
 ## Controllers e Rotas
 Para conseguirmos expor os dados do nosso banco de dados em nossa API, precisamos seguir dois passos muito simples:

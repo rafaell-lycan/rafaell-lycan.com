@@ -1,67 +1,22 @@
----
-layout: compress
----
+<!doctype html>
+<html>
 
-<!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
-<head>
   {% include head.html %}
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-  <!-- Behavioral Meta Data -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <body>
 
-  {% include metadata.html %}
-  {% include open-graph.html %}
-  {% include twitter-cards.html %}
-  {% include smartlook.html %}
-
-  <!-- Syntax highlighting CSS -->
-  <link rel="stylesheet" href="/assets/css/style.css" media="all">
-</head>
-<body>
-  <main class="wrap">
-    <div class="visible-small">
+    {% unless page.layout_options.hide_header %}
       {% include header.html %}
-    </div>
-    <aside class="sidebar">
-      <div class="cover">
-        <header class="cover__header author load">
-          <div class="author__info">
-            <a href="{{ site.baseurl }}">
-              <img
-                src="/assets/img/rafaell-lycan.jpg"
-                alt="Rafaell Lycan profile picture"
-                title="Back to home"
-                class="author__avatar">
-            </a>
+    {% endunless %}
 
-            <h1 class="author__title">Hi, I'm <strong>Rafaell.</strong></h1>
-            <h4 class="author__subtitle">Front-end Developer</h4>
+    <main class="wrapper">
+      {{ content }}
+    </main>
 
-            <p>I help to build products at <a href="https://www.rocket-internet.com/" target="_blank">Rocket Internet</a> and also speak about front-end stuff.
-              Coffee and beer enthusiast.</p>
+    {% unless page.layout_options.hide_footer %}
+      {% include footer.html %}
+    {% endunless %}
 
-            <p>Follow me on <a href="https://twitter.com/rafaelllycan" target="_blank">Twitter</a> and <a href="https://github.com/rafaell-lycan" target="_blank">Github</a>.</p>
-          </div>
-        </header>
-
-        <footer class="cover__links load">
-          {% include menu.html %}
-        </footer>
-      </div>
-    </aside>
-    <section class="main-content">
-      {{content}}
-    </section>
-  </main>
-
-  <script async src="/assets/js/main.min.js"></script>
-
-  {% include analytics.html %}
-
-</body>
+    {% include scripts.html %}
+  </body>
 </html>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://rafaell-lycan.github.io/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://rafaell-lycan.github.io/archive/</loc>
+  </url>
+  <url>
+    <loc>https://rafaell-lycan.github.io/music-player/</loc>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/angular-tips-about-promises-http-service/</loc>
+    
+      <lastmod>2017-07-06T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/angular-dicas-sobre-promises-http-service/</loc>
+    
+      <lastmod>2017-07-06T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/como-eu-aprendi-a-programar-licoes-aprendidas/</loc>
+    
+      <lastmod>2017-05-11T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/angular-criando-filtros-customizados/</loc>
+    
+      <lastmod>2017-04-21T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/2016-uma-retrospectiva-do-meu-ano/</loc>
+    
+      <lastmod>2017-03-07T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2017/hora-de-seguir-em-frente-ola-barcelona/</loc>
+    
+      <lastmod>2017-01-20T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/angular-definindo-parametros-opcionais-ui-router/</loc>
+    
+      <lastmod>2016-12-31T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/entendendo-create-react-app/</loc>
+    
+      <lastmod>2016-12-07T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/porque-decidi-escrever-em-ingles/</loc>
+    
+      <lastmod>2016-08-20T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/construindo-restful-api-laravel-parte-3/</loc>
+    
+      <lastmod>2016-08-16T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/construindo-restful-api-laravel-parte-2/</loc>
+    
+      <lastmod>2016-08-05T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/utilizando-laravel-valet/</loc>
+    
+      <lastmod>2016-06-11T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/autenticacao-jwt-angular-app/</loc>
+    
+      <lastmod>2016-05-29T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2016/retrospectiva-2015-odisseia-fascinante/</loc>
+    
+      <lastmod>2016-01-14T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/instalando-laravel-digital-ocean/</loc>
+    
+      <lastmod>2015-12-19T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/construindo-restful-api-laravel-parte-1/</loc>
+    
+      <lastmod>2015-12-10T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/entendendo-flux/</loc>
+    
+      <lastmod>2015-11-28T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/comecando-com-react/</loc>
+    
+      <lastmod>2015-10-27T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/comecando-com-es6/</loc>
+    
+      <lastmod>2015-07-30T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/angular-consumindo-servicos-restful/</loc>
+    
+      <lastmod>2015-06-11T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/angular-services-factories-providers/</loc>
+    
+      <lastmod>2015-05-23T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/angular-definindo-rotas/</loc>
+    
+      <lastmod>2015-04-28T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/laravel-5-finalmente-lancado/</loc>
+    
+      <lastmod>2015-02-12T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2015/e-que-venha-2015/</loc>
+    
+      <lastmod>2015-01-30T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/comecando-com-angular-js/</loc>
+    
+      <lastmod>2014-08-16T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/um-pouco-de-jekyll/</loc>
+    
+      <lastmod>2014-07-02T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/gulp-chegou-para-ficar/</loc>
+    
+      <lastmod>2014-06-29T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/command-line-para-devs/</loc>
+    
+      <lastmod>2014-06-20T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/hello-world-firefox-os/</loc>
+    
+      <lastmod>2014-06-14T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/web-storage-html5/</loc>
+    
+      <lastmod>2014-03-12T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2014/automacao-de-tarefas-com-grunt/</loc>
+    
+      <lastmod>2014-02-14T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2013/produtividade-front-end-com-sublime-text/</loc>
+    
+      <lastmod>2013-12-21T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2013/os-misterios-do-seo/</loc>
+    
+      <lastmod>2013-12-05T00:00:00+01:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2013/css-dinamico-com-less/</loc>
+    
+      <lastmod>2013-10-06T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2013/html5-audio-video/</loc>
+    
+      <lastmod>2013-09-21T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2013/hello-world/</loc>
+    
+      <lastmod>2013-08-30T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2012/git-github/</loc>
+    
+      <lastmod>2012-09-29T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2012/mundo-cloud/</loc>
+    
+      <lastmod>2012-09-29T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2012/css3-turbinando-seus-layouts/</loc>
+    
+      <lastmod>2012-05-24T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://rafaell-lycan.com/2012/html5-voce-deveria-estar-usando/</loc>
+    
+      <lastmod>2012-05-07T00:00:00+02:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>

@@ -1,10 +1,13 @@
-<!-- Google Analytics -->
-<script>
-    !function(v,i,n,k,l,a){v.GoogleAnalyticsObject=n;v[n]||(v[n]=function(){
-    (v[n].q=v[n].q||[]).push(arguments)});v[n].l=+new Date;l=i.createElement(k);
-    a=i.getElementsByTagName(k)[0];l.src='https://google-analytics.com/analytics.js';
-    a.parentNode.insertBefore(l,a)}(window,document,'ga','script');
-    ga('create', 'UA-16383035-5', 'auto');
+{% if site.google_analytics %}
+
+  <script defer="defer">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
-</script>
+  </script>
+
+{% endif %}

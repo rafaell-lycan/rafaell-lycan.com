@@ -1,0 +1,20 @@
+{
+  "name": "rafaell-lycan",
+  "description": "Rafaell Lycan Jekyll site",
+  "main": "index.html",
+  "authors": [
+    "Rafaell Lycan <sonny.webdsg@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rafaell-lycan/rafaell-lycan.github.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}
