@@ -1,39 +1,19 @@
 .footer {
-  position: relative;
   font-size: 0.8em;
-  padding: 2rem;
-  color: $gray;
+  padding-top: 2rem;
   background-color: $hairline;
   font-family: $heading-font-family;
-  // border-top: 1px solid #f3f3f3;
-  text-align: center;
+
 
   &__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    padding-bottom: 2rem;
+    text-align: center;
 
-  a {
-    color: $black;
-  }
-
-  li {
-    margin: 0 .75rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: rem(20);
-  }
-
-  .social-text {
-    display: none;
+    // @include media(large) {
+    //   padding-bottom: 4rem;
+    // }
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
   }
 }

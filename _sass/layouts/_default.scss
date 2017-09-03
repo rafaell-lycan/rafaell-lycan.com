@@ -1,6 +1,28 @@
+.website {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .wrapper {
   @extend %clearfix;
+  flex: 1;
   overflow: hidden;
+  padding-top: rem(120);
+  padding-bottom: rem(60);
+
+  @include media(medium) {
+    padding-top: rem(150);
+    padding-bottom: rem(90);
+  }
+
+  @include media(large) {
+    padding-top: rem(180);
+  }
+
+  @include media(x_large) {
+    padding-top: rem(210);
+  }
 }
 
 .container {
@@ -20,6 +42,7 @@
 }
 
 .section-title {
+  display: none;
   text-align: center;
   font-weight: normal;
   color: rgba(0,0,0,.12);

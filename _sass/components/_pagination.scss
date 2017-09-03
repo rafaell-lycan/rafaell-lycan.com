@@ -1,0 +1,45 @@
+.pagination {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+
+  // @include media(large) {
+  //   margin-top: 20px;
+  //   margin-bottom: 50px;
+  // }
+
+  &__item {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+
+    @include media(medium) {
+      margin: 0 40px;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding-bottom: 20px;
+    transition: all 300ms;
+    text-transform: uppercase;
+    color: $black;
+    font-size: rem(12);
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    font-family:  $heading-font-family;
+    display: inline-block;
+    border-bottom: 1px solid $black;
+
+    &:hover {
+      color: $blue;
+      border-color: $blue;
+    }
+  }
+}

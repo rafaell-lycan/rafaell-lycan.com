@@ -1,15 +1,3 @@
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin breakpoint($query-string) {
-  @media #{$query-string} {
-    @content;
-  }
-}
-
 /* Breakpoint mixin */
 @mixin media($breakpoint) {
 
@@ -44,5 +32,13 @@
   }
   @keyframes #{$animation-name} {
     @content;
+  }
+}
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat) {
+  background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
   }
 }

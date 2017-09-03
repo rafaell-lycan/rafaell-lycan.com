@@ -10,7 +10,7 @@ $spacing-unit:     30px;
 $content-width:    45rem;
 
 $base-font-family: 'Merriweather', 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
-$heading-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $breakpoints: (
     small_only: '(max-width: 30rem)',
@@ -24,14 +24,15 @@ $breakpoints: (
  * Colors
  */
 
-$black:            #4f5a63;
-$white:            #fff;
+$black:            #3e3e3e;
+$black:            #333333;
+$white:            #ffffff;
 
 $green:            #45c55f;
 
 $violet:           #a93ee5;
 
-$blue:             #0074d9;
+$blue:             #5fbffd;
 $cyan:             #1ea3ff;
 $navy:             #4c66a4;
 $season:           #2850f6;

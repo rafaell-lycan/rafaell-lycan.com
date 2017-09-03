@@ -1,77 +1,62 @@
-.nav {
+.main-nav {
   position: relative;
-  width: 100%;
-  text-align: center;
-  background-color: $midnight;
   font-family: $heading-font-family;
+  float: right;
+  text-align: center;
+  flex: 1;
+  order: 2;
+  flex-basis: 100%;
 
-  &__brand {
-    font-weight: 700;
-
-    @include media(medium) {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  &__github {
-    @include media(medium) {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+  @include media(medium) {
+    order: 0;
+    flex-basis: initial;
   }
 
   &__list {
-    max-width: $content-width;
-    margin: 0 auto;
     padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    margin: 0 rem(10);
     list-style: none;
-    overflow: hidden;
-    animation: fade 600ms ease;
-  }
+    display: inline-block;
 
-  &__item {
-    float: left;
-    width: 33.33%;
-  }
-
-  a {
-    display: block;
-    padding: rem(10) rem(30);
-    font-size: 13px;
-    color: #E2E6E7;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    transition: all 300ms ease-in-out;
-
-    &:hover {
-      color: $base-light;
+    @include media(medium) {
+      margin: 0 rem(20);
+      order: 0;
+      flex-basis: initial;
     }
   }
 
-  svg {
-    vertical-align: bottom;
-    width: 32px;
-    height: 32px;
-    fill: $white;
-  }
-}
+  &__link {
+    position: relative;
+    color: inherit;
+    letter-spacing: 3.8px;
+    // letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 600ms ease;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none !important;
 
-// NEW
-.main-nav {
-  position: relative;
-  padding: 35px 40px;
-  margin: 0 0 30px 0;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 0;
+      top: rem(24);
+      background: $blue;
+      transition: all 300ms ease;
+    }
 
-  &.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    border: none;
+    &:hover, &:active, &--active {
+      color: $blue;
+
+      &:after {
+        width: 100%;
+      }
+    }
   }
 }
