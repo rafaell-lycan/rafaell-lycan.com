@@ -6,7 +6,7 @@ categories: javascript
 tags: javascript
 image: assets/img/posts/comecando-com-es6.jpg
 keywords:
-resumo: >
+description: >
   Sinceramente estou ouvindo falar sobre ES6/ECMAScript 2015 a um bom tempo, mas nunca tinha parado para estudar mais a fundo. Sim isso realmente é novo mas não é o futuro, é o agora!
 
 related:

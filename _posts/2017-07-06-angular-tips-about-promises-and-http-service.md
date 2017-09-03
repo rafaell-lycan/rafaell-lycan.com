@@ -1,7 +1,7 @@
 ---
 title: 'AngularJS: Tips about Promises and $http Service'
 tags: angular
-resumo: >
+description: >
    A good practices guide about how to use Promises along with services (especially the $http) in AngularJS world.
 ---
 

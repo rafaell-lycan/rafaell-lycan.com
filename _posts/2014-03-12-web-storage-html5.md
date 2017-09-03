@@ -5,7 +5,7 @@ date:   2014-03-12
 tags: html5
 image: assets/img/posts/web-storage-html5.jpg
 keywords: html5 api, web storage, html5 sql, html5 tags
-resumo: >
+description: >
   Web Storage com HTML5, como utilizar LocalStorage e SessionStorage.
 
 related:

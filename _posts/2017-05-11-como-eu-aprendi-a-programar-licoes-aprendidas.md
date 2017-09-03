@@ -1,7 +1,7 @@
 ---
 title: Como eu aprendi a programar e que lições tirei disso
 tags: life
-resumo: >
+description: >
    Será que programar é mesmo tão difícil? Saiba como comecei, meus desafios e mudanças e claro as lições que tirei disso.
 ---
 

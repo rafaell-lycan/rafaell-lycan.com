@@ -5,7 +5,7 @@ date:   2015-06-11
 tags: angular
 image: assets/img/posts/angularjs-restful.jpg
 keywords:
-resumo: >
+description: >
   Entender como o serviço $http funciona é algo bom e não envolve tantas surpresas no processo, porem, você pode se fascinar com o serviço $resource e o que ele pode proporcionar para a sua aplicação.
 
 related:

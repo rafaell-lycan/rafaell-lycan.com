@@ -5,7 +5,7 @@ date:   2014-06-29
 tags: produtividade tools
 image: assets/img/posts/gulp.jpg
 keywords:
-resumo: >
+description: >
   Pouco mais de um ano, utilizando Grunt como task runner comecei a repensar várias coisas quando descobri um novo concorrente. Com vocês Gulp.
 related:
   - title: An Introduction to Gulp.js

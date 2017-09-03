@@ -5,7 +5,7 @@ date:   2016-08-05
 tags: laravel php
 image: assets/img/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
-resumo: >
+description: >
   No artigo anterior da série nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e finalizar nosso CRUD.
 
 related:

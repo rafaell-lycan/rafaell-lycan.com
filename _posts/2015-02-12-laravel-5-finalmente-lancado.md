@@ -5,7 +5,7 @@ date:   2015-02-12
 tags: laravel php
 image: assets/img/posts/whats-new-laravel5.jpg
 keywords:
-resumo: >
+description: >
   Laravel 5 finalmente lançado! Vamos ver o que mudou, no que isso ajuda em nosso workflow, quais são os novas features para nós desenvolvedores, e como fazer upgrade sem quebrar sua aplicação.
 related:
   - title: Laravel 5 Fundamentals (Laracasts)

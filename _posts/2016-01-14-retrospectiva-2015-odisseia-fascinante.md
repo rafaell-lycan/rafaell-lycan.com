@@ -5,10 +5,10 @@ tags: life
 date: 2016-01-14
 <!-- image: assets/img/posts/hello-world.jpg -->
 keywords: 2016, retrospectiva, meus objetivos, o que teve de bom em 2015
-resumo: >
+description: >
   Vi algumas pessoas comemoram e outras reclamam sobre o ano de 2015. Quer saber como foi o meu? Vem comigo que te conto! ;)
 ---
-Em resumo: 2015 pra mim foi **sensacional** em praticamente todos os sentidos!
+Em description: 2015 pra mim foi **sensacional** em praticamente todos os sentidos!
 
 Eu gostei muito do estilo que o [@Willian_justen](https://twitter.com/Willian_justen) fez no [blog dele](http://willianjusten.com.br/meu-ano-de-2015/), então vou copiar. :)
 

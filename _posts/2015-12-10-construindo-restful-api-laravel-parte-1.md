@@ -5,7 +5,7 @@ date:   2015-12-10
 tags: laravel php
 image: assets/img/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
-resumo: >
+description: >
   Nesta série vamos criar uma pequena aplicação focando em desenvolver uma API RESTful para armazenar vagas de emprego e ver como o Laravel nos ajudará com isso.
 
 related:

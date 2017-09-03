@@ -5,7 +5,7 @@ date:   2014-06-14
 tags: mobile firefox_os
 image: assets/img/posts/hello-world-firefox-os.jpg
 keywords: mobile firefox os hello world
-resumo: >
+description: >
   Como começar com Firefox OS, o mais novo sistema mobile da Mozilla. Vamos criar o primeiro aplicativo e entender o sistema operacional Firefox OS e suas peculiaridades.
 related:
   - title: Documentação Oficial

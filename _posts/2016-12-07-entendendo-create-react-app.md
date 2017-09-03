@@ -5,7 +5,7 @@ date:   2016-12-07
 categories: javascript
 tags: react javascript
 keywords:
-resumo: >
+description: >
   Começar uma aplicação react sempre foi um pouco complicado. Eu poderia estar brincando dizendo isso no meu blog ou no meu twitter, mas é uma realidade. O time de desenvolvimento do React sabe que esta é uma dor para toda a comunidade e resolveram criar o create-react-app.
 ---
 

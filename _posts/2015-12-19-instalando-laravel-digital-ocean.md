@@ -4,7 +4,7 @@ title:  "Instalando Laravel 5 na DigitalOcean"
 date:   2015-12-19
 tags: laravel php
 keywords: laravel, instalar laravel, laravel cloud, digital ocean
-resumo: >
+description: >
   Saiba como instalar Laravel 5 na DigitalOcean utilizando Nginx em um server Ubuntu.
 related:
   - title: How To Install Laravel with Nginx on an Ubuntu 12.04 LTS VPS

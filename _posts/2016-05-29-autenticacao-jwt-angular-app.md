@@ -5,7 +5,7 @@ tags: development angular
 date:   2016-05-29
 <!-- image: assets/img/posts/hello-world.jpg -->
 keywords: angular, jwt, auth, js
-resumo: >
+description: >
   Neste artigo vamos ver como desenvolver um exeplo de autenticação utilizando AngularJS Json Web Token.
 related:
   - title: JWT.IO

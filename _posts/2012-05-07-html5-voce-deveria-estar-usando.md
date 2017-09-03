@@ -13,7 +13,7 @@ related:
     url: http://zenorocha.com/como-usar-html5-sem-uma-maquina-do-tempo/
   - title: Biblioteca Modernizr para HTML5 e CSS3 (by Maujor)
     url: http://www.maujor.com/tutorial/css3-html5-modernizr.php
-resumo: >
+description: >
    A linguagem HTML5 ainda não está na sua versão final, mas a cada dia que passa mais e mais websites começam a usá-la. A linguagem aproxima-se dos requisitos da Web e torna-se mais fácil publicar conteúdos Web 2.0. Quando HTML4 reinava, a Web2.0 nem sequer tinha sido pensada, sendo assim pouco compatíveis. Mas com HTML5, é expectável que seja diferente.
 ---
 **HTML5** continua sendo HTML, mas ao contrário das versões anteriores agora ele fornece ferramentas para **CSS** e ao **JavaScript** para fazerem seu trabalho da melhor maneira possível, permitindo por meio de suas API's, a manipulação das caracteristicas destes elementos, de forma que o website ou aplicação continue leve e funcional.

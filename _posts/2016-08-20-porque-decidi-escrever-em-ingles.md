@@ -4,7 +4,7 @@ title:  "Por que decidi escrever em inglês?"
 date:   2016-08-20
 tags: life
 keywords: ingles, brasil, post, blog, desafios
-resumo: >
+description: >
   A algum tempo venho estudando inglês sozinho, e de um tempo pra cá eu venho analisando o que eu poderia mudar para inglês, e nisso veio a idéia do blog em inglês...
 ---
 A algum tempo venho estudando inglês sozinho, e de um tempo pra cá eu venho analisando o que eu poderia mudar para inglês, e nisso veio a idéia do blog em inglês.

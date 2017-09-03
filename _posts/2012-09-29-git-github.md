@@ -13,7 +13,7 @@ related:
     url: https://try.github.io/
   - title: The Perfect Work-flow with Git, GitHub, and SSH (by Net Tuts+)
     url: http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/
-resumo: >
+description: >
    Este artigo visa apresentar os conceito de uso básico sobre Git e Github para iniciantes.
 ---
 Primeiramente, **porque falar sobre versionamento?**

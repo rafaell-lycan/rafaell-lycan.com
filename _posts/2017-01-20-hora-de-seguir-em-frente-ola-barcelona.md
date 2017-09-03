@@ -1,7 +1,7 @@
 ---
 title: Hora de seguir em frente... Olá Barcelona!
 tags: life
-resumo: >
+description: >
    Normalmente eu não escrevo muito sobre minha vida pessoal, mas desta vez faz sentido escrever sobre isso pois minha vida acabou de ter uma grande mudança por conta da minha vida profissional e eu gostaria de compartilhar alguns detalhes aqui.
 ---
 Normalmente eu não escrevo muito sobre minha vida pessoal, mas desta vez faz sentido escrever sobre isso pois minha vida acabou de ter uma grande mudança por conta da minha vida profissional e eu gostaria de compartilhar alguns detalhes aqui.

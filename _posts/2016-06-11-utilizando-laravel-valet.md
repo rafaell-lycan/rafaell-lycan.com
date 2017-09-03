@@ -4,7 +4,7 @@ title:  "Laravel Valet: Agilidade no seu ambiente local"
 date:   2016-06-11
 tags: laravel tools
 keywords: laravel valet, valet, laravel environment, homestead alternative
-resumo: >
+description: >
   Entenda como obter agilidade em um ambiente de desenvolvimento minimalista com essa alternativa ao Homestead mesmo se você não esta utilizando Laravel.
 related:
   - title: Laravel Valet

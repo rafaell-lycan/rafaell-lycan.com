@@ -5,7 +5,7 @@ date:   2016-08-16
 tags: laravel php
 image: assets/img/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
-resumo: >
+description: >
   No artigo anterior da série criamos nossas rotas e finalizamos nosso CRUD, mas enfim a jornada chega ao fim. Vamos trabalhar com validações, autenticação e tratamento de erros.
 
 related:

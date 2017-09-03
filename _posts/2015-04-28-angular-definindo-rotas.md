@@ -5,7 +5,7 @@ date:   2015-04-28
 tags: angular
 <!-- image: assets/img/posts/angularjs-restful.jpg -->
 keywords:
-resumo: >
+description: >
   Quando falamos em SPA's (Single page applications) quer dizer que temos uma aplicação única de diversas páginas que serão carregadas devido a ações do usuário. Mas afinal como fazer isso com AngularJS?
 
 related:

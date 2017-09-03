@@ -5,7 +5,7 @@ date:   2013-12-21
 tags: sublime_text produtividade
 image: assets/img/posts/produtividade-front-end.jpg
 keywords: html5 api, web storage, html5 sql, html5 tags
-resumo: >
+description: >
   Precisamos de produtividade, cada vez mais o mercado nos cobra mais agilidade no desenvolvimento de aplicações seja front-end ou back-end. Sabia que também é possível ser produtivo no mundo front-end?
 ---
 ## Be Smart

@@ -5,7 +5,7 @@ date:   2013-10-06
 tags: less tools
 image: assets/img/posts/css-dinamico-com-less.jpg
 keywords: less, css, css3, pre processadores
-resumo: >
+description: >
   Aumente sua produtividade e comece a trabalhar com LESS CSS, o pré-processador que é dinâmico, fácil e flexível para desenvolver suas Cascading Style Sheets.
 related:
   - title: CSS fácil, flexível e dinâmico com LESS

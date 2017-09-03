@@ -2,7 +2,7 @@
 title: '2016: Uma retrospectiva do meu ano — Mudança e Oportunidade'
 tags: life
 image: assets/img/posts/2016-review.jpg
-resumo: >
+description: >
   Um ano cheio de idas e vindas, escolhas dificeis, mudanças e muito mais.
 ---
 

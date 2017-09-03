@@ -1,7 +1,7 @@
 ---
 title: 'Produtividade: Pequenas coisas que funcionam para mim'
 tags: productivity life
-resumo: >
+description: >
    Este não é um post de autoajuda, e talvez as minhas dicas não vão ajudar você, mas mesmo assim preciso compartilhar isso.
 ---
 

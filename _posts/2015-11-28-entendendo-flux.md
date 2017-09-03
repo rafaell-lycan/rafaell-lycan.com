@@ -5,7 +5,7 @@ date:   2015-11-28
 tags: react javascript
 image: assets/img/posts/entendendo-flux.jpg
 keywords:
-resumo: >
+description: >
    Conheça o Flux, a arquitetura do Facebook para o desenvolvimento Front-End.
 related:
   - title : Flux Docs - Overview

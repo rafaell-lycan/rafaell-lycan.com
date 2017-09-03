@@ -1,7 +1,7 @@
 ---
 title: 'AngularJS: Criando filtros customizados e além'
 tags: angular
-resumo: >
+description: >
   Filtros são mal compreendidos no universo AngularJS, mas no geral eles são insanamente poderosos para transformar dados, e vão te ajudar muito no seu workflow de trabalho.
 ---
 
