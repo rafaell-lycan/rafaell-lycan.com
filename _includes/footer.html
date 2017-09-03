@@ -1,4 +1,4 @@
-{% assign start_year = 2014 %}
+{% assign start_year = 2012 %}
 
 {% capture current_year %}{{ 'now' | date: "%Y" }}{% endcapture %}
 
@@ -10,13 +10,11 @@
   {% endif %}
 {% endcapture %}
 
-<footer class="footer {{ footer_class | strip }}">
+<footer class="footer">
   <div class="container">
-    <div class="row center-xs">
-      <div class="footer__content col-xs-12">
-        <div class="rule"></div>
-        &copy; Copyright {{ year | strip }}, {{ site.author.name }}
-      </div>
+    <div class="footer__content">
+      <div class="rule"></div>
+      &copy; Copyright {{ year | strip }}, {{ site.author.name }}
     </div>
   </div>
 </footer>

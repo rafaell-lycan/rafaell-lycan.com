@@ -1,16 +1,28 @@
 ---
 layout: default
 ---
-<article class="post single">
 
-  <header class="post__header container">
-    <h1 class="alpha post__title" itemprop="name headline">
-      {{ page.title }}
-    </h1>
-  </header>
 
-  <div class="page__content container">
+{% assign container = page.layout_options.container %}
+
+<article class="post page--{{ page.title | downcase | handleize }}">
+
+  {% unless page.layout_options.hide_page_title %}
+    {%
+      include page/header.html
+        title = page.title
+        subtitle = page.subtitle
+    %}
+  {% endunless %}
+
+  {% unless container == false %}
+    <div class="container">
+  {% endunless %}
+
     {{ content }}
-  </div>
+
+  {% unless container == false %}
+    </div>
+  {% endunless %}
 
 </article>

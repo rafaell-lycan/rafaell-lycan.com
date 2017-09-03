@@ -1,0 +1,13 @@
+<ul class="pagination">
+  {% if paginator.previous_page %}
+  <li class="pagination__item pagination__item--prev">
+    <a class="pagination__link" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" rel="prev">Previous page</a>
+  </li>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <li class="pagination__item pagination__item--next">
+    <a class="pagination__link" href="{{ site.baseurl }}{{ paginator.next_page_path }}" rel="next">Next page</a>
+  </li>
+  {% endif %}
+</ul>
