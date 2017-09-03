@@ -97,7 +97,7 @@ sass:
 permalink:      /:year/:title/
 paginate:       10
 paginate_path:  "/articles/page/:num/"
-livereload:     false
+livereload:     true
 
 # Plugins
 plugins:
