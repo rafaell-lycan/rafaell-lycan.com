@@ -4,9 +4,9 @@ description:    >
                 This is my localhost, where I (randomly) write about programming, the web, life and/or photography.
 keys:           desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
 logo:           https://avatars2.githubusercontent.com/u/499192
-url:            http://mikefowler.me
-repository:     mikefowler/mikefowler.github.io
-rss:            http://feeds.feedburner.com/MikeFowler
+url:            https://diplomat-lid-55184.netlify.com
+repository:     rafaell-lycan/rafaell-lycan.github.com
+rss:            https://feeds.feedburner.com/rafaell-lycan
 lang:           pt_BR
 
 # Author Informations
