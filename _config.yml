@@ -1,11 +1,13 @@
 # Metadata
-title:          Hi there, I'm Rafaell
-description:    Web development, front end stuff, tutorials for beginners and more by Rafaell Lycan
+title:          Rafaell Lycan
+description:    >
+                This is my localhost, where I (randomly) write about programming, the web, life and/or photography.
 keys:           desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
-logo:           /assets/icons/favicon-192x192.png
+logo:           https://avatars2.githubusercontent.com/u/499192
 url:            http://mikefowler.me
 repository:     mikefowler/mikefowler.github.io
 rss:            http://feeds.feedburner.com/MikeFowler
+lang:           pt_BR
 
 # Author Informations
 author:
@@ -17,17 +19,45 @@ author:
   twitter:      rafaelllycan
   github:       rafaell-lycan
   gravatar:     dd1c977c7a3e384a9cdae3b5ddd9b006
-  plus:         https://plus.google.com/+RafaellLycan
 
 # Config
 config:
   g_analytics:  UA-16383035-5
   g_verify:     Abc123Def456
   disqus_name:  rafaelllycan
+  theme_color:  "#5fbffd"
+
+webmaster_verifications:
+  google: Abc123Def456
 
 navigation:
+  - text: Home
+    url: /
+  - text: Articles
+    url: /articles
   - text: About
     url: /about
+
+
+social:
+  name:         Rafaell Lycan
+  links:
+    - https://twitter.com/RafaellLycan
+    - https://www.facebook.com/rafaell.lycan
+    - https://github.com/rafaell-lycan
+    - http://instagram.com/rafaelllycan
+    - https://www.linkedin.com/in/rafaelllycan/
+    - https://keybase.io/rafaell
+    - https://plus.google.com/+RafaellLycan
+
+twitter:
+  username:     RafaellLycan
+
+facebook:
+  app_id:       1160764874037367
+
+github:
+  url: http://rafaell-lycan.com
 
 # Collections
 collections:
@@ -65,8 +95,8 @@ sass:
 
 # Output
 permalink:      /:year/:title/
-paginate:       100
-paginate_path:  "/page/:num/"
+paginate:       10
+paginate_path:  "/articles/page/:num/"
 livereload:     false
 
 # Plugins
