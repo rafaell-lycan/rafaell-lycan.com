@@ -8,9 +8,9 @@ layout: page
 
 I'm Rafael, a brazilian software developer currently living on the beautiful Barcelona.
 
-I work at [GFT][gft], where I focus on web performance. In 2015 and 2016 I helped prototype and build what eventually became [Airbnb Experiences][experiences]. Before that I helped bring [Findery][findery] to life.
+I work at [GFT][gft], where I focus on web development and performance for financial apps. In 2016 I helped prototype and build [Creditas][creditas], one of the most exciting products of FinTech market in Brazil. Before that I helped bring [Tripda][tripda] to life.
 
-I’m also a speaker at local front end, **Angular.js**, and **Node.js** meetups, and I also presented a session at [The Developers Conference][tdc].
+I’m speak about front-end stuff at some meetup groups, and presented sessions at [The Developers Conference][tdc] in 2014 and 2015.
 
 Find me on [twitter][twitter], [github][github] or [linkedin][linkedin]
 
@@ -24,5 +24,5 @@ Find me on [twitter][twitter], [github][github] or [linkedin][linkedin]
 [twitter]: https://twitter.com/rafaelllycan
 [github]: https://github.com/rafaell-lycan
 [linkedin]: https://www.linkedin.com/in/rafaelllycan
-[experiences]: https://www.airbnb.com/experiences
-[findery]: https://findery.com
+[creditas]: https://www.creditas.com.br/
+[tripda]: https://www.crunchbase.com/organization/tripda

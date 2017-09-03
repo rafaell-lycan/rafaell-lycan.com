@@ -3,7 +3,7 @@ title:          Rafaell Lycan
 description:    >
                 This is my localhost, where I (randomly) write about programming, the web, life and/or photography.
 keys:           desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
-logo:           https://avatars2.githubusercontent.com/u/499192
+logo:           /assets/icons/favicon-192x192.png
 url:            https://diplomat-lid-55184.netlify.com
 repository:     rafaell-lycan/rafaell-lycan.github.com
 rss:            https://feeds.feedburner.com/rafaell-lycan
@@ -55,9 +55,6 @@ twitter:
 
 facebook:
   app_id:       1160764874037367
-
-github:
-  url: http://rafaell-lycan.com
 
 # Collections
 collections:
