@@ -107,15 +107,15 @@ plugins:
 
 # Reading
 exclude:
-  - src
-  - node_modules
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
+  - _scripts
   - package.json
   - gulpfile.js
+  - webpack.config.js
   - README.md
-  - _archive
-  - _scripts
 
 # compress_html:
 #   clippings: all
