@@ -6,12 +6,16 @@
 
   &__item {
     display: block;
-    margin-bottom: rem(30);
+    padding: rem(20) 0;
     border-bottom: 1px solid $hairline;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
 
     &:last-child {
       border: 0;
-      margin-bottom: 0;
       padding-bottom: 0;
     }
   }

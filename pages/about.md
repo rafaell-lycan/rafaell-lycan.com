@@ -10,7 +10,7 @@ I'm Rafael, a brazilian software developer currently living on the beautiful Bar
 
 I work at [GFT][gft], where I focus on web development and performance for financial apps. In 2016 I helped prototype and build [Creditas][creditas], one of the most exciting products of FinTech market in Brazil. Before that I helped bring [Tripda][tripda] to life.
 
-I’m speak about front-end stuff at some meetup groups, and presented sessions at [The Developers Conference][tdc] in 2014 and 2015.
+I speak about front-end stuff at some meetup groups, and I've presented sessions at [The Developers Conference][tdc] in 2014 and 2015.
 
 Find me on [twitter][twitter], [github][github] or [linkedin][linkedin]
 

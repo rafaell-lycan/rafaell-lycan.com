@@ -2,15 +2,20 @@
  * Variables
  */
 
-$base-font-size:   16px;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 $spacing-unit:     30px;
 $content-width:    45rem;
 
-$base-font-family: 'Merriweather', 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
 $heading-font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif-font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$console-font-family: 'Fira Mono', 'monaco', 'Consolas', 'Lucida Console', monospace;
+
+// $base-font-family: 'Merriweather', 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
+$base-font-family: $heading-font-family;
+$secundary-font-family: $serif-font-family;
 
 $breakpoints: (
     small_only: '(max-width: 30rem)',
@@ -32,7 +37,8 @@ $green:            #45c55f;
 
 $violet:           #a93ee5;
 
-$blue:             #5fbffd;
+// $blue:             #5fbffd;
+$blue:             #1ea3ff;
 $cyan:             #1ea3ff;
 $navy:             #4c66a4;
 $season:           #2850f6;

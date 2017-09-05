@@ -8,7 +8,7 @@
 }
 
 body {
-  font: normal 400 1rem/1.8rem $base-font-family;
+  font: normal 300 1.125em/1.8em $serif-font-family;
   letter-spacing: 0.01rem;
   color: $black;
   background: $white;
@@ -85,13 +85,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3rem;
-  letter-spacing: -2px;
+  // letter-spacing: -2px;
 }
 
 h2 {
   font-size: 2.25rem;
   margin-top: 3rem;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 
 h3 {
@@ -211,7 +211,7 @@ code {
 }
 
 code {
-  font-family: "Fira Mono", "monaco", "Consolas", "Lucida Console", monospace;
+  font-family: $console-font-family;
   font-size: 1rem;
   letter-spacing: -0.3px;
   padding: 1px 5px;

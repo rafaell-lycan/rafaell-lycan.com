@@ -31,6 +31,7 @@
     font-size: rem(36);
     line-height: rem(36);
 
+    // .Dot
     &:before {
       content: '';
       position: absolute;
@@ -38,7 +39,7 @@
       width: 8px;
       height: 8px;
       right: 0;
-      bottom: 9px;
+      bottom: 8px;
       background: $blue;
       border-radius: 50%;
     }

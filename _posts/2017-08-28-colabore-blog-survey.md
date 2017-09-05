@@ -21,7 +21,7 @@ O blog hoje tem mais de 3.000 visitas únicas mensais, e devo isso a vocês. Por
 
 A quem quiser participar:
 
-<div class="center">
+<div class="text-center">
 
 ## [Clique aqui](https://goo.gl/forms/ZFRV6ZVOV03ejMIh2)
 
