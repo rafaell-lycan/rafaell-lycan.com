@@ -31,17 +31,6 @@
     padding-top: rem(50);
     border-top: 1px solid $hairline;
 
-    a {
-      color: $black;
-      border-bottom: 1px solid $blue;
-      text-decoration: none;
-
-      &:hover {
-        color: $base-dark;
-        border-color: $base-dark;
-      }
-    }
-
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
       border: none;
     }

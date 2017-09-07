@@ -3,39 +3,41 @@
 ---
 
 {
-    "short_name": "{{ site.title }}",
-    "name": "{{ site.title }}",
-    "description": "{{ site.title }}",
-    "background_color": "#fff",
-    "theme_color": "{{ site.config.theme_color }}",
-    "display": "standalone",
-    "orientation": "portrait",
-    "start_url": "/?utm_source=homescreen",
-    "icons": [
-      {
-      "src": "assets/icons/icon-48x48.png",
-      "sizes": "48x48",
+  "short_name": "{{ site.title }}",
+  "name": "{{ site.title }}",
+  "description": "Front-end, JavaScript and more. By Rafaell Lycan",
+  "background_color": "#fff",
+  "theme_color": "{{ site.config.theme_color }}",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+    "src": "assets/icons/icon-48x48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+    },
+    {
+    "src": "assets/icons/icon-96x96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+    },
+    {
+    "src": "assets/icons/icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "sizes": "128x128",
       "type": "image/png"
-      },
-      {
-      "src": "assets/icons/icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-      },
-      {
-      "src": "assets/icons/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-      },
-      {
-        "src": "assets/icons/icon-128x128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-      "src": "assets/icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-      }
-    ]
+    },
+    {
+    "src": "assets/icons/icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }
+  ],
+  "splash_pages": null
 }

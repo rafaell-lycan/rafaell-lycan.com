@@ -308,17 +308,15 @@ pre {
  * Links
  */
 a {
-  color: $base-color;
+  color: $black;
+  border-bottom: 1px solid $blue;
   text-decoration: none;
   transition: all 300ms ease-in-out;
 
-  &:hover {
-    color: $base-dark;
-  }
-
   &:active,
   &:hover {
-    text-decoration: underline;
+    color: $base-dark;
+    border-color: $base-dark;
     outline: 0;
   }
 }

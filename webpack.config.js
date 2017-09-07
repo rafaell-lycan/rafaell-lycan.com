@@ -4,8 +4,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: path.join(__dirname, '_scripts/main.js'),
-    sw: path.join(__dirname, '_scripts/sw.js'),
+    main: path.join(__dirname, '_scripts/main.js')
   },
   output: {
     path: path.join(__dirname, 'assets/scripts/'),
