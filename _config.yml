@@ -120,9 +120,30 @@ exclude:
   - webpack.config.js
   - README.md
 
-# compress_html:
-#   clippings: all
-#   comments: all
-#   endings: all
-#   profile: false
-#   startings: [body]
+compress_html:
+  clippings: all
+  comments: all
+  endings:
+    - html
+    - head
+    - body
+    - li
+    - dt
+    - dd
+    - rt
+    - rp
+    - optgroup
+    - option
+    - colgroup
+    - caption
+    - thead
+    - tbody
+    - tfoot
+    - tr
+    - td
+    - th
+  profile: false
+  blanklines: false
+  startings: [body]
+  ignore:
+    envs: []

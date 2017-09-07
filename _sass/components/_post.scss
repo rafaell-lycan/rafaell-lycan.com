@@ -3,21 +3,8 @@
 
   &__header {
     text-align: center;
-    // position: relative;
     padding-bottom: rem(10);
 
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 50px;
-      height: 1px;
-      bottom: 0;
-      left: 50%;
-      margin-left:-25px;
-      background: $black;
-      user-select: none;
-    }
   }
 
   &__meta {
@@ -46,7 +33,7 @@
 
     a {
       color: $black;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $blue;
       text-decoration: none;
 
       &:hover {
