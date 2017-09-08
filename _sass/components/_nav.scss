@@ -33,12 +33,12 @@
     position: relative;
     color: inherit;
     letter-spacing: 3.8px;
-    // letter-spacing: 1.2px;
     text-transform: uppercase;
     transition: all 600ms ease;
     font-weight: 600;
     font-size: 12px;
     text-decoration: none !important;
+    border: none;
 
     &:after {
       content: '';
