@@ -1,0 +1,3 @@
+url:            localhost:4000
+livereload:     true
+compress_html:  false

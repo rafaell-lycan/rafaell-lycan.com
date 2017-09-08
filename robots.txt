@@ -1,0 +1,17 @@
+---
+# Jekyll, please transform this file.
+---
+
+#
+# What's all this then?#   \
+#
+#    -----
+#   | . . |
+#    -----
+#  \--|-|--/
+#     | |
+#  |-------|
+
+User-agent: *
+Allow: /
+Sitemap: {{ "/sitemap.xml" | absolute_url }}

@@ -1,0 +1,27 @@
+.page {
+  position: relative;
+
+  &__header {
+    text-align: center;
+    padding-bottom: rem(10);
+  }
+
+  &__title {
+    font-size: rem(60);
+    margin-bottom: rem(15);
+  }
+
+  &__subtitle {
+    font-family: $heading-font-family;
+    color: $gray;
+  }
+
+  &--split {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--split__column {
+    width: 50%;
+  }
+}

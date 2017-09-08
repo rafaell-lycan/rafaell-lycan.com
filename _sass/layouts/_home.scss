@@ -1,0 +1,41 @@
+.homepage {
+
+  // &__intro, &__articles {
+    // }
+
+  &__intro {
+    animation: fade 600ms ease;
+  }
+
+  &__title {
+    @include media(small_only) {
+      text-align: center;
+    }
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__description {
+    font-family: $serif-font-family;
+    color: gray;
+    font-weight: normal;
+    font-size: rem(24);
+    font-style: italic;
+
+    @include media(small_only) {
+      text-align: center;
+    }
+  }
+
+  em {
+    color: $black;
+  }
+
+  h5 {
+    @include media(small_only) {
+      text-align: center;
+    }
+  }
+}

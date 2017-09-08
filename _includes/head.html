@@ -1,11 +1,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
   <title>{% if page.title %}{{ page.title }} // {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}">
+  <!-- <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}"> -->
   {% if page.stylesheets %}
     {% for stylesheet_url in page.stylesheets %}
       <link rel="stylesheet" href="{{ stylesheet_url | absolute_url }}?{{site.time | date: '%s%N'}}">
@@ -18,13 +18,17 @@
   {% include head/icons.html %}
   {% include head/dns-prefetch.html %}
 
+  {% include head/critical-path.html %}
+
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  {% include head/fb-pixel.html %}
-  {% include head/hotjar.html %}
+  {% if jekyll.environment == "production" %}
+    {% include head/fb-pixel.html %}
+    {% include head/hotjar.html %}
+  {% endif %}
 
   {% if site.tags != "" %}
     {% include head/collecttags.html %}

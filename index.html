@@ -1,47 +1,39 @@
 ---
 title: Front-end, JavaScript and more. By Rafaell Lycan
 layout: page
-homepage: true
 image:
   src: /assets/images/location/fulfillment.jpg
   width: 1600
   height: 1289
 layout_options:
-  # container: false
   hide_page_title: true
+  <!-- container: false -->
+  class: homepage
 ---
 
-<section class="intro  section--pad">
+<section class="homepage__intro">
   <h5>Curious mind, developer and writer.</h5>
-  <h1>Hi there, I'm Rafaell.</h1>
+  <h1 class="homepage__title">Hi there, I'm Rafaell<span>.</span></h1>
 
-  <h2>
-    A brazilian <em>software developer</em> spending the majority of my time learning about product/web development.
+  <p class="homepage__description">
+    A brazilian <em>software developer</em> spending the majority of my time learning about product/web development. <br>
     I (randomly) write about programming, the web, life and/or photography.
-  </h2>
+  </p>
 
-  <h5>Elsewhere;</h5>
-  <p class="small homepage">
+  <h4 class="title-hero">Elsewhere;</h4>
+  <p class="homepage__links">
     <a href="https://twitter.com/RafaellLycan" class="alarming">Twitter</a>–my main cheese
     <br>
     <a href="- http://instagram.com/rafaelllycan" class="alarming">Instagram</a>–travel diary
   </p>
 </section>
 
-<section class="posts  section--pad">
-  <h2 class="section-title">Recent Articles</h2>
+<section class="homepage__intro">
+  <h4 class="title-hero">Recent Articles</h4>
 
   {% include page/post-list.html limit=5 collection=site.posts %}
 
-  <a href="/blog" class="btn">View all posts &rarr;</a>
+  <div class="text-center">
+    <a href="/articles" class="btn">View all posts</a>
+  </div>
 </section>
-
-<!--
-<section class="projects  section--pad">
-  <h2 class="section-title">Latest Projects</h2>
-
-  {% include page/project-list.html limit=3 collection=site.projects %}
-
-  <a href="/projects" class="btn">View all projects &rarr;</a>
-</section>
--->

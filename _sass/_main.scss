@@ -1,33 +1,19 @@
 @charset "utf-8";
 
 @import
-  "base/variables",
-  "base/functions",
-  "base/mixins",
-  "base/normalize",
-  //"base/fonts",
-  "base/base",
-  "base/syntax-highlighting",
 
-  "helpers/animations",
+  //--- Abstracts
+  "abstracts/__abstracts-dir",
 
-  "components/tables",
-  "components/btn",
+  //--- Base
+  "base/__base-dir",
 
-  "components/header",
-  "components/nav",
-  "components/footer",
-  "components/post",
-  "components/post-list",
-  "components/share",
-  "components/author",
-  "components/next-article",
-  "components/toc",
-  "components/related",
-  "components/pagination",
+  //--- Components
+  "components/__components-dir",
 
-  "components/browsehappy",
+  //--- Layouts
+  "layouts/__layouts-dir",
 
-  "layouts/default",
-  "layouts/split-layout"
+  //--- Themes
+  "themes/__themes-dir"
 ;

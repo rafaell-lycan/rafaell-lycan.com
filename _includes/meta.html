@@ -12,17 +12,17 @@
   {% assign reading_time = words | divided_by:180 | append:" minutes" %}
 {% endif %}
 
-  <time
-    datetime="{{ date | date_to_xmlschema }}"
-    itemprop="datePublished"
-  >
-    {{ date | date: "%b %-d, %Y" }}
-  </time>
-
-  <span class="section-spacing">
-    {{ words }} words
-  </span>
-
-  <span>
-    {{ reading_time }} read
-  </span>
+<time
+  datetime="{{ date | date_to_xmlschema }}"
+  itemprop="datePublished"
+>
+  {{ date | date: "%b %-d, %Y" }}
+</time>
+•
+<span class="section-spacing">
+  {{ words }} words
+</span>
+•
+<span>
+  {{ reading_time }} read
+</span>

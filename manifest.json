@@ -3,15 +3,13 @@
 ---
 
 {
-  "short_name": "{{ site.title }}",
   "name": "{{ site.title }}",
-  "description": "Front-end, JavaScript and more. By Rafaell Lycan",
+  "short_name": "{{ site.title }}",
+  "start_url": "./?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "{{ site.config.theme_color }}",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/",
-  "scope": "/",
   "icons": [
     {
     "src": "assets/icons/icon-48x48.png",

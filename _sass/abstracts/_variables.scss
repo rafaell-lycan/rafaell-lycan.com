@@ -1,0 +1,64 @@
+/**
+ * Variables
+ */
+
+$default-font-size:   16px;
+$base-font-size:      $default-font-size * 1.125;
+$small-font-size:     $default-font-size * .8125;
+
+$base-font-weight:    400;
+$base-line-height:    1.8;
+
+$spacing-unit:        30px;
+$content-width:       45rem;
+$wide-content-width:  75rem;
+
+$heading-font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif-font-family:   'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$console-font-family: 'Fira Mono', 'monaco', 'Consolas', 'Lucida Console', monospace;
+
+$breakpoints: (
+    small_only: '(max-width: 30rem)',
+    small: '(min-width: 0rem)',
+    medium: '(min-width: 48rem)',
+    large: '(min-width: 60rem)',
+    x_large: '(min-width: 75rem)'
+);
+
+/**
+ * Colors
+ */
+
+$black:               #3e3e3e;
+// $black:               #333333;
+$white:               #ffffff;
+
+$green:               #45c55f;
+
+$violet:              #a93ee5;
+
+// $blue:             #5fbffd;
+// $blue:             #1ea3ff;
+$blue:                #4299ff;
+$cyan:                #1ea3ff;
+$navy:                #4c66a4;
+$season:              #2850f6;
+
+$red:                 #da393f;
+$tomato:              #f53;
+
+// grays
+$gray:                #7a7a7a;
+$lightgray:           #c0d3da;
+$hairline:            #eef3fa;
+$midnight:            #1d2637;
+
+
+// base colors
+$base-color: $blue;
+$background-color:    #fdfdfd;
+$brand-color:         #2a7ae2;
+
+// base colors variations
+$base-light:          lighten($base-color, 10%);
+$base-dark:           darken($base-color, 10%);

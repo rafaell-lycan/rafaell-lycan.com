@@ -11,7 +11,7 @@
     "dev": "npm run clean && concurrently \"npm run webpack:dev\" \"npm run jekyll:dev\"",
     "build": "npm run clean && npm run webpack && npm run jekyll",
     "jekyll": "bundle exec jekyll build",
-    "jekyll:dev": "bundle exec jekyll serve --incremental",
+    "jekyll:dev": "bundle exec jekyll serve jekyll serve --config _config.yml,_config_dev.yml --incremental",
     "webpack": "webpack --progress --config webpack.config.js",
     "webpack:dev": "webpack --progress --config webpack.config.js --colors --watch"
   },

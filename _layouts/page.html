@@ -4,8 +4,9 @@ layout: default
 
 
 {% assign container = page.layout_options.container %}
+{% assign page_class = page.layout_options.class %}
 
-<article class="post page--{{ page.title | downcase | handleize }}">
+<article class="page {{ page_class }} page--{{ page.title | downcase | handleize }}">
 
   {% unless page.layout_options.hide_page_title %}
     {%

@@ -15,7 +15,7 @@ function setWebFontLoader() {
   });
 }
 function registerServiceWorker() {
-  if( 'serviceWorker' in navigator ){
+  if( 'serviceWorker' in navigator && location.hostname !== 'localhost'){
     navigator.serviceWorker.register('/sw.js')
       .then(reg => console.log('Service Worker magic! ❤️'))
       .catch(err => console.log('Service Worker failed to register 😔', err));
