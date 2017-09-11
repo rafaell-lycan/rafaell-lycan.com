@@ -35,10 +35,13 @@ webmaster_verifications:
 navigation:
   - text: Home
     url: /
+    active: false
   - text: Articles
     url: /articles
+    active: articles
   - text: About
     url: /about
+    active: about
 
 
 social:

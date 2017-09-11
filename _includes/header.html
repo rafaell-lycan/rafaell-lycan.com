@@ -4,10 +4,6 @@
   {% if page.layout_options.hero %}masthead--floating{% endif %}
 {% endcapture %}
 
-{% capture writing_link_active %}
-  {% if title == "Essays" %}masthead__link--active{% endif %}
-{% endcapture %}
-
 <header class="header {{ masthead_class | strip }}">
   <a href="/" class="logo">R</a>
 
@@ -16,7 +12,8 @@
     {% for item in site.navigation %}
 
       {% capture is_active %}
-        {% if title == item.text or page.url contains item.url %}
+        {% if title == item.text or page.url contains item.active
+          or page.homepage == true and item.text contains 'Home'  %}
           main-nav__link--active
         {% endif %}
       {% endcapture %}
