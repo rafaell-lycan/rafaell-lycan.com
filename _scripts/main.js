@@ -1,6 +1,7 @@
 const init = () => {
   registerServiceWorker();
   setWebFontLoader();
+  checkExternalLinks();
 };
 
 function setWebFontLoader() {
@@ -20,6 +21,16 @@ function registerServiceWorker() {
       .then(reg => console.log('Service Worker magic! ❤️'))
       .catch(err => console.log('Service Worker failed to register 😔', err));
   }
+}
+
+function checkExternalLinks(){
+  let links = document.querySelectorAll('a');
+
+  links.forEach(link => {
+    if (link.host != window.location.host) {
+      return link.target = "_blank"
+    }
+  });
 }
 
 window.addEventListener('load', init, false);

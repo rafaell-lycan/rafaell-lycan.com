@@ -1,0 +1,32 @@
+.meta-tags {
+  font-size: rem($small-font-size);
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  &--center {
+    text-align: center;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:after {
+      content: ",";
+      display: inline-block;
+      margin-left: rem(-1);
+      margin-right: rem(5);
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  a {
+    color: $blue;
+    border: none;
+    font-weight: 600;
+  }
+}

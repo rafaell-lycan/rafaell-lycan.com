@@ -27,28 +27,6 @@
     }
   }
 
-  .logo {
-    position: relative;
-    padding-right: 8px;
-    color: $black;
-    font-family: $heading-font-family;
-    font-size: rem(36);
-    line-height: rem(36);
-
-    // .Dot
-    &:before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 8px;
-      height: 8px;
-      right: 0;
-      bottom: 8px;
-      background: $blue;
-      border-radius: 50%;
-    }
-  }
-
   .github {
     svg {
       width: 36px;

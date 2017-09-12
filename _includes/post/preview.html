@@ -1,27 +1,45 @@
-<li class="post-list__item post-preview">
+{% assign minimal = include.minimal %}
+
+<li class="post-list__item">
   <header>
-    {% include meta.html %}
-    <a class="post-list__link" href="{{ post.url}}">
-      <h2 class="post-list__title">{{ post.title }}</h2>
-    </a>
+    {% if post.external %}
+    <span class="post-list__meta"></span>
+    Hosted by <span class="post-list__meta--decorated">{{ post.external.host }}</span>
+    </span>
+    {% else %}
+    <span class="post-list__meta">
+      <time
+        class="post-list__meta--decorated"
+        datetime="{{ post.date | date_to_xmlschema }}"
+      >
+        {{ post.date | date: "%b %-d, %Y" }}
+      </time>
+      {% unless minimal == true %}
+        {% include post/words.html %}
+      {% endunless %}
+    </span>
+    {% endif %}
+    <h2 class="post-list__title">
+      <a class="post-list__link"
+        href="{% if post.external %}{{ post.external.url }}{% else %}{{ post.url }}{% endif %}">
+        {{ post.title }}
+      </a>
+    </h2>
   </header>
 
-  <p>
-  {% if post.description %}
+  {% if post.description and minimal != true %}
+  <p class="post-list__description">
     {{ post.description }}
-  {% endif %}
   </p>
+  {% endif %}
 
-  <footer class="post-list__meta">
-    {% if post.tags.size > 0 %}
-    <ul class="meta-tag__list">
-      {% for tag in post.tags %}
-      <li class="meta-tag__item">
-        <a href="/tags/{{ tag }}">#{{ tag }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-
-  </footer>
+  {% if post.tags.size > 0 and minimal != true %}
+  <ul class="meta-tags meta-tags--center">
+    {% for tag in post.tags %}
+    <li class="meta-tags__item">
+      <a href="/tags/{{ tag }}">#{{ tag }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
 </li>

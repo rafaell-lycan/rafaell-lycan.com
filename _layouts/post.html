@@ -4,55 +4,36 @@ layout: default
 
 <article class="post single" itemscope itemtype="http://schema.org/BlogPosting">
 
-  {% if page.cover %}
-  <header class="post__banner">
-    <h1 class="post__title" itemprop="name headline">
-      {{ page.title }}
-    </h1>
-    <div class="post__image" style="background-image: url({{page.cover}}) ;"></div>
-    <div class="post__meta">
-      {% include meta.html %}
-
-      {% if page.tags.size > 0 %}
-      <ul class="meta-tag__list">
-        {% for tag in page.tags %}
-          <li class="meta-tag__item">
-            <a href="{{ site.url }}/tags/{{ tag }}">{{ tag }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-  </header>
-  {% else %}
-
   <header class="post__header container">
-    {% if page.img %}
-    <figure class="post__image">
-      <img src="{{page.cover}}" alt="{{page.title}}" itemprop="thumbnailUrl">
-    </figure>
-    {% endif %}
-
     <h1 class="post__title" itemprop="name headline">
       {{ page.title }}
     </h1>
+
     <div class="post__meta">
 
       {% include meta.html %}
 
       {% if page.tags.size > 0 %}
-      <ul class="meta-tag__list">
+      <ul class="meta-tags">
         {% for tag in page.tags %}
-          <li class="meta-tag__item">
+          <li class="meta-tags__item">
             <a href="/tags/{{ tag }}">#{{ tag }}</a>
           </li>
         {% endfor %}
       </ul>
       {% endif %}
     </div>
+
+    {% if page.image %}
+    <figure class="post__image">
+      <img src="{{page.image | absolute_url }}" alt="{{page.title}}" itemprop="thumbnailUrl">
+    </figure>
+    {% endif %}
+
+
+
     <div class="post__meta__divider"></div>
   </header>
-  {% endif %}
 
   <section class="post__content container">
     {{ content }}

@@ -1,7 +1,6 @@
 .post-list {
   @extend .default-list;
-  margin-top: rem(50);
-  margin-bottom: rem(50);
+  margin: rem(50) 0;
   animation: fade 600ms ease;
 
   &__item {
@@ -13,54 +12,55 @@
       padding-top: 0;
     }
 
-
     &:last-child {
       border: 0;
       padding-bottom: 0;
     }
+
+  }
+
+  &__title {
+    margin: rem($spacing-unit / 2) 0;
   }
 
   &__link {
     display: block;
     color: #333;
     border: 0;
-    text-decoration: none;
     transition: color 300ms ease-in-out;
 
     &:hover, &:active {
       color: $base-color;
-      text-decoration: none;
     }
+  }
+
+  &__description {
+    margin-bottom: rem($spacing-unit / 2);
   }
 
   &__meta {
-    text-align: center;
-  }
+    // font-family: $heading-font-family;
+    font-size: rem(16);
+    // letter-spacing: rem(-1);
+    text-transform: uppercase;
+    // font-style: italic;
 
-  &__title {
-    margin: rem(10) 0;
-  }
+    span {
+      margin-left: rem($spacing-unit / 2);
 
-  span, time {
-    color: #7a7a7a;
-    font-style: italic;
-  }
-
-  &--featured, &--inline {
-    .post-list__item {
-      padding-bottom: rem(30);
-    }
-
-    .post-list__title {
-
-
-      @include media(large) {
-        font-size: rem(42);
+      &:before{
+        content: '|';
+        margin-right: rem($spacing-unit / 2);
       }
+
     }
 
-    &:before, &:after {
-      margin-top: rem(30);
+    &--decorated {
+      // color: $blue;
+    }
+
+    &--center {
+      text-align: center;
     }
   }
 }

@@ -109,6 +109,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-github-metadata
+  - jemoji
 
 # Reading
 exclude:

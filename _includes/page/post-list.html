@@ -1,23 +1,5 @@
 <ul class="post-list">
   {% for post in include.collection limit: include.limit %}
-    <li class="post-list__item">
-      {% if post.external %}
-      Hosted by <span class="post-list__meta">{{ post.external.host }}</span>
-      {% else %}
-        <time
-          class="post-list__meta"
-          datetime="{{ post.date | date_to_xmlschema }}"
-        >
-          {{ post.date | date: "%b %-d, %Y" }}
-        </time>
-      {% endif %}
-      <h2 class="post-list__title">
-        <a
-          class="post-list__link"
-          href="{% if post.external %}{{ post.external.url }}{% else %}{{ post.url }}{% endif %}">
-          {{ post.title }}
-        </a>
-      </h2>
-    </li>
+    {% include post/preview.html minimal=true %}
   {% endfor %}
 </ul>

@@ -10,7 +10,7 @@
 * It returns flexible value using 'target / context' formula.
 * Returns 'rem' as format.
 */
-@function rem($target, $context: $base-font-size) {
+@function rem($target, $context: $default-font-size) {
   @if (unitless($target)) {
     $target: $target * 1px;
   }

@@ -1,11 +1,13 @@
 {% assign title = page.title %}
 
-{% capture masthead_class %}
-  {% if page.layout_options.hero %}masthead--floating{% endif %}
+{% capture header_class %}
+  {% if page.layout_options.hero %}header--floating{% endif %}
 {% endcapture %}
 
-<header class="header {{ masthead_class | strip }}">
-  <a href="/" class="logo">R</a>
+<header class="header {{ header_class | strip }}">
+  <a href="/" class="logo">
+    <img src="/assets/svgs/logo.svg" width="30px" alt="{{site.title}}">
+  </a>
 
   <nav class="main-nav">
     <ul class="main-nav__list">
