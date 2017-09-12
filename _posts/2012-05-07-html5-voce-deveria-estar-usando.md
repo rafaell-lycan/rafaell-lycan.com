@@ -4,7 +4,7 @@ title:  "HTML5 - Você deveria estar usando"
 date:   2012-05-07
 categories: outros
 tags: html5
-image: assets/img/posts/html5-voce-deveria-estar-usando.jpg
+image: assets/images/posts/html5-voce-deveria-estar-usando.jpg
 keywords:
 related:
   - title: Era uma vez uma referência chamada Dive into HTML5…
@@ -122,7 +122,7 @@ Além de tudo o que já foi dito neste post como novos elementos mais semântico
 - E muito, muito mais mesmo....
 
 No fim das contas, com o cenário que essa mundança nos trouxe, podemos dizer que HTML5 seria representado dessa forma:
-!['Explicação de como HTML5 funciona'](/assets/img/posts/html5-houses.png)
+!['Explicação de como HTML5 funciona'](/assets/images/posts/html5-houses.png)
 
 ## Como usar o HTML5 hoje, sem enrolação?
 Antes de qualquer coisa mesmo, você precisa saber algo quase que crucial: **HTML**, **CSS** e **JavaScript**. Pronto agora só depende de você.

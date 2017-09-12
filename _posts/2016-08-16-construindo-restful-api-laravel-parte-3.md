@@ -3,7 +3,7 @@ layout: post
 title:  "Construindo uma API RESTful com Laravel - Parte 3"
 date:   2016-08-16
 tags: laravel php
-image: assets/img/posts/laravel-api.jpg
+image: assets/images/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
 description: >
   No artigo anterior da série criamos nossas rotas e finalizamos nosso CRUD, mas enfim a jornada chega ao fim. Vamos trabalhar com validações, autenticação e tratamento de erros.
@@ -182,7 +182,7 @@ Você realmente não precisa seguir este padrão de resposta que eu coloquei, eu
 
 
 <div class="center">
-  ![Laravel Postman POST Authenticate](/assets/img/posts/laravel-api-postman-autenticate.png)
+  ![Laravel Postman POST Authenticate](/assets/images/posts/laravel-api-postman-autenticate.png)
 </div>
 
 Agora já conseguimos criar nossos tokens, mas e quanto a recupera-los e intercepta-los em nossos requests? Primeiramente eu gostaria de informar que o pacote que escolhemos já resolve esse problema para nós através dos middlewares `jwt.auth` e `jwt.refresh`, porem vamos precisar configurar nossa model `Company` para suportar as implementações do driver de `Auth` e modificar o arquivo de configuração em `config/auth.php` para utilizar a classe `Company` por padrão ao invés de `User`:

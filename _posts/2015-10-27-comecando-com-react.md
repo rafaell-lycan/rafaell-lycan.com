@@ -3,7 +3,7 @@ layout: post
 title:  "Começando com React.js"
 date:   2015-10-27
 tags: react javascript
-image: assets/img/posts/comecando-com-react.jpg
+image: assets/images/posts/comecando-com-react.jpg
 keywords:
 description: >
    Vamos entender qual é a proposta do React, pra que serve e como começar a utilizar.

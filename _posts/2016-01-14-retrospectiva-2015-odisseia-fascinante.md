@@ -3,7 +3,7 @@ layout: post
 title:  "Retrospectiva 2015: Uma Odisseia Fascinante"
 tags: life
 date: 2016-01-14
-<!-- image: assets/img/posts/hello-world.jpg -->
+<!-- image: assets/images/posts/hello-world.jpg -->
 keywords: 2016, retrospectiva, meus objetivos, o que teve de bom em 2015
 description: >
   Vi algumas pessoas comemoram e outras reclamam sobre o ano de 2015. Quer saber como foi o meu? Vem comigo que te conto! ;)
@@ -42,7 +42,7 @@ Achei simplesmente fantástico a experiência, e espero continuar podendo colabo
 Por mais que eu não tenha, feito muitos posts durante o ano, tive uma média razoável de acessos, principalmente quando arrumei algumas coisas quanto **seo**, e comecei a falar sobre [AngularJS](http://rafaell-lycan.com/2015/angular-consumindo-servicos-restful/) e mais recentemente sobre [React](http://rafaell-lycan.com/2015/comecando-com-react/).
 
 <div class="center">
-  <img src="/assets/img/posts/blog-analytics-2015.png" alt="Google Analytics em 2015">
+  <img src="/assets/images/posts/blog-analytics-2015.png" alt="Google Analytics em 2015">
 </div>
 
 Posso dizer que o resultado de escrever pouco, mas algo que realmente eu julgue como interessante foi realmente satisfatório. Foram mais de **15 mil** acessos durante o ano, onde o Brasil teve **89%**, seguido por **4%** de Portugal e o restante dividido entre USA, Itália, Irlanda e Índia, o que tem me **motivando a escrever em inglês** também, tanto para praticar quanto para tornar a informação mais acessível.
@@ -66,7 +66,7 @@ Conheci muita gente e também reencontrei muita gente <del>acho que é padrão</
 Sempre gostei de ver código dos outros na web, mas tinha preguiça de fazer algumas coisas como resolver issues, etc. Hoje estou com um pensamento um pouco diferente, não estou dizendo que vou ser virar o senhor troubleshooter, nem nada do tipo, mas que vou me dedicar um pouco mais, colaborando com módulos de terceiros para **Angular** e alguns outros projetos mais pontuais utilizando **Node** e **React**.
 
 <div class="center">
-  <img src="/assets/img/posts/github-contributions-2015.png" alt="Gráfico de contribuições no Github">
+  <img src="/assets/images/posts/github-contributions-2015.png" alt="Gráfico de contribuições no Github">
 </div>
 
 ***Não, não sou tão ativo quanto eu gostaria no Github;***

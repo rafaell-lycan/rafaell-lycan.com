@@ -3,7 +3,7 @@ layout: post
 title:  "Usando Áudio e Vídeo no HTML5"
 date:   2013-09-21
 tags: html5
-image: assets/img/posts/html5-audio-video.jpg
+image: assets/images/posts/html5-audio-video.jpg
 keywords: html5 tags, audio, video, multimidia
 description: >
   Como funciona o audio e vídeo no HTML5? Além das tags, vamos ver o que mais conseguimos fazer utilizando multimídia nativa na web.

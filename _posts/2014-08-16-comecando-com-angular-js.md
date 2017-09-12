@@ -3,7 +3,7 @@ layout: post
 title:  "Começando com Angular.JS"
 date:   2014-08-16
 tags: angular
-image: assets/img/posts/comecando-com-angular.jpg
+image: assets/images/posts/comecando-com-angular.jpg
 keywords:
 description: >
   Alguns meses estudando Angular.js e finalmente depois de começar um projeto utilizando-o, apresento a vocês os conceitos básicos do framework e como é fácil criar aplicações utilizando toda a simplicidade e melhorando nosso workflow.

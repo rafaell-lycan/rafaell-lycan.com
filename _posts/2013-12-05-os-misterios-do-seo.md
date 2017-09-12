@@ -3,7 +3,7 @@ layout: post
 title:  "Os mistérios do SEO"
 date:   2013-12-05
 tags: google seo
-image: assets/img/posts/os-misterios-do-seo.jpg
+image: assets/images/posts/os-misterios-do-seo.jpg
 keywords: dicas de seo, site no google, como indexar sites, sitemap, metatags, keywords, description
 description: >
   Como indexar seu site no Google? Com apenas algumas boas práticas conseguimos um melhor resultado no queridinho das buscas.

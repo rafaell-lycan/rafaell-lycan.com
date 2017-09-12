@@ -3,7 +3,7 @@ layout: post
 title:  "Construindo uma API RESTful com Laravel - Parte 2"
 date:   2016-08-05
 tags: laravel php
-image: assets/img/posts/laravel-api.jpg
+image: assets/images/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
 description: >
   No artigo anterior da série nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e finalizar nosso CRUD.
@@ -86,7 +86,7 @@ php artisan route:list
 Isso ira nos retornar uma lista das rotas definidas seguidas pelo verbo HTTP correspondente. No fim, teremos uma listagem como essa.
 
 <div class="center">
-  ![Laravel Route List](/assets/img/posts/laravel-route-list.png)
+  ![Laravel Route List](/assets/images/posts/laravel-route-list.png)
 </div>
 
 #### Listando registros
@@ -120,7 +120,7 @@ Para termos certeza de que esta tudo OK, podemos utilizar uma ferramente como o 
 Uma vez que você já tenha o **postman** instalado, vamos realizar um request do tipo `GET` no endpoint `/api/jobs` e ver o retorno:
 
 <div class="center">
-  ![Laravel Postman GET Jobs](/assets/img/posts/laravel-api-postman-get.png)
+  ![Laravel Postman GET Jobs](/assets/images/posts/laravel-api-postman-get.png)
 </div>
 
 Já resolvemos a listagem dos jobs, agora vamos fazer o mesmo para empresas:

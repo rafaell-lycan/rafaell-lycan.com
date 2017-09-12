@@ -3,7 +3,7 @@ layout: post
 title:  "Laravel 5 é finalmente lançado!"
 date:   2015-02-12
 tags: laravel php
-image: assets/img/posts/whats-new-laravel5.jpg
+image: assets/images/posts/whats-new-laravel5.jpg
 keywords:
 description: >
   Laravel 5 finalmente lançado! Vamos ver o que mudou, no que isso ajuda em nosso workflow, quais são os novas features para nós desenvolvedores, e como fazer upgrade sem quebrar sua aplicação.

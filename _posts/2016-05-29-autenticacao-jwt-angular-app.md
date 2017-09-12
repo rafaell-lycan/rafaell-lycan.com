@@ -3,7 +3,7 @@ layout: post
 title:  "Autenticação com Tokens em uma aplicação AngularJS"
 tags: development angular
 date:   2016-05-29
-<!-- image: assets/img/posts/hello-world.jpg -->
+<!-- image: assets/images/posts/hello-world.jpg -->
 keywords: angular, jwt, auth, js
 description: >
   Neste artigo vamos ver como desenvolver um exeplo de autenticação utilizando AngularJS Json Web Token.
