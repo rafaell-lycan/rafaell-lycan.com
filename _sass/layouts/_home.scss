@@ -1,8 +1,5 @@
 .homepage {
 
-  // &__intro, &__articles {
-    // }
-
   &__intro {
     animation: fade 600ms ease;
   }
@@ -21,7 +18,7 @@
     font-family: $serif-font-family;
     color: gray;
     font-weight: normal;
-    font-size: rem(24);
+    font-size: rem(20);
     font-style: italic;
 
     @include media(small_only) {

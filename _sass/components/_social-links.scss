@@ -1,0 +1,24 @@
+.social-links{
+  @extend .default-list;
+  text-align: center;
+  padding: rem(50) 0;
+
+  &__item {
+    margin: 0 rem(10);
+    display: inline-block;
+  }
+
+  a {
+    border: none;
+  }
+
+  svg {
+    width: rem(20);
+    fill: rgba($gray, .6);
+    transition: all 300ms ease;
+  }
+
+  a:hover svg {
+    fill: $base-dark;
+  }
+}

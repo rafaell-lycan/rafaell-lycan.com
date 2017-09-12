@@ -20,6 +20,11 @@ related:
   - title : Create REST API using Laravel
     url: https://www.youtube.com/playlist?list=PLpvpznviFFFJUWlHylwipLLr1iLYs-cft
 ---
+
+<p class="info-box">
+  **Atenção:** Este artigo utiliza a versão **5.2** do Laravel.
+</p>
+
 [No artigo anterior da série]({{site.url}}/2016/construindo-restful-api-laravel-parte-2/) criamos nossas rotas e adicionamos uma verificação básica de autenticação através de **middlewares**, mas enfim a jornada chega ao fim. Vamos trabalhar com **validações**, **autenticação** e tratamento de erros.
 
 Nesta parte vamos tocar os seguintes tópicos do roadmap:

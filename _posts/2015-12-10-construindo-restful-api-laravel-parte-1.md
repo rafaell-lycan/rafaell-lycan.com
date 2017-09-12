@@ -18,6 +18,11 @@ related:
   - title : Eloquent - Relationships
     url: http://laravel.com/docs/5.1/eloquent-relationships
 ---
+
+<p class="info-box">
+  **Atenção:** Este artigo utiliza a versão **5.2** do Laravel.
+</p>
+
 Primeiramente, quero deixar claro que não vou me aprofundar muito em padrões de projeto nem otimizações. O foco aqui é resolver pequenos problemas que tive e que gostaria de compartilhar com vocês, mesmo que existam materiais em inglês com mais detalhamentos, etc.
 
 Se você já entende bem os conceitos de como o Laravel funciona, como utilizar o `Route` de uma forma mais organizada, com **grupos**, **middlewares**, tipos de `response` como **json**, proteção contra [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery) e [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), talvez esse post não seja destinado a você.

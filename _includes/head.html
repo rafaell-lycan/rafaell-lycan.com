@@ -5,7 +5,6 @@
 
   <title>{% if page.title %}{{ page.title }} // {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <!-- <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}"> -->
   {% if page.stylesheets %}
     {% for stylesheet_url in page.stylesheets %}
       <link rel="stylesheet" href="{{ stylesheet_url | absolute_url }}?{{site.time | date: '%s%N'}}">

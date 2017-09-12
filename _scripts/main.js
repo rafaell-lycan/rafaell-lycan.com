@@ -2,12 +2,13 @@ const init = () => {
   registerServiceWorker();
   setWebFontLoader();
   checkExternalLinks();
+  startProgressBar();
 };
 
 function setWebFontLoader() {
   WebFont.load({
     google: {
-      families: ['PT Serif','Fira Mono']
+      families: ['Source Serif Pro','Fira Mono']
     },
     custom: {
 			families: ['Sofia Pro:n3,n4,n6,n9'],
@@ -33,43 +34,24 @@ function checkExternalLinks(){
   });
 }
 
+function startProgressBar() {
+  let bar = document.querySelector('.progress');
+
+  if (!bar) return;
+
+  let body = document.body,
+      element = document.documentElement,
+      st = 'scrollTop',
+      sh = 'scrollHeight',
+      scroll;
+
+  document.addEventListener('scroll', function() {
+    scroll = (element[st]||body[st]) / ((element[sh]||body[sh]) - element.clientHeight) * 100;
+    bar.style.setProperty('--progress', scroll + '%');
+  });
+}
+
 window.addEventListener('load', init, false);
-
-/* function startProgress() {
-  var h=document.documentElement,
-    topBtn=document.querySelector(".header");
-    b=document.body,
-    st="scrollTop",
-    sh="scrollHeight",
-    progress=document.querySelector(".progress"),
-    scroll;
-​
-  document.addEventListener("scroll",function(){
-    // scroll
-    scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-    console.log('scroll', scroll, (h[st] || b[st]) , (h[sh] || b[sh]) , h.clientHeight)
-​
-    progress.style.setProperty("--scroll", scroll + "%");
-
-    if(!topBtn) return;
-    var isActive = topBtn.classList.contains("top-active");
-    if(window.scrollY >= 1500 && !isActive) {
-      return topBtn.classList.add("top-active");
-    }
-
-
-​
-    if(topBtn && !topBtn.classList.contains("top-active")
-        && window.scrollY >= 1500) {
-      topBtn.classList.add("top-active")
-    } else if( topBtn && topBtn.classList.contains("top-active")
-        && window.scrollY < 1500) {
-      topBtn.classList.remove("top-active")
-    }
-  })
-} */
-
-// <div class="progress"></div>
 
 /* function hamburgMenu() {
 

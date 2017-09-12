@@ -1,0 +1,22 @@
+.info-box {
+  font-family: $heading-font-family;
+  padding: rem($spacing-unit / 2);
+  margin: rem($spacing-unit) 0;
+  background-color: rgba($yellow, .25);
+  border-left: rem(8) solid rgba($yellow, .6);
+
+  &.warning {
+    background-color: rgba($red, .25);
+    border-color: rgba($red, .6);
+  }
+
+  &.success {
+    background-color: rgba($green, .25);
+    border-color: rgba($green, .6);
+  }
+
+  &.info {
+    background-color: rgba($blue, .25);
+    border-color: rgba($blue, .6);
+  }
+}

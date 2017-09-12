@@ -14,7 +14,8 @@ $content-width:       45rem;
 $wide-content-width:  75rem;
 
 $heading-font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$serif-font-family:   'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$serif-font-family:   'Source Serif Pro', Georgia, Times, 'Times New Roman', serif;
+$serif-font-family:   'Source Serif Pro', Constantia, 'Lucida Bright', 'Lucida Serif', Lucida, 'Liberation Serif', Georgia, serif;
 $console-font-family: 'Fira Mono', 'monaco', 'Consolas', 'Lucida Console', monospace;
 
 $breakpoints: (
@@ -30,27 +31,27 @@ $breakpoints: (
  */
 
 $black:               #3e3e3e;
-// $black:               #333333;
 $white:               #ffffff;
 
 $green:               #45c55f;
-
 $violet:              #a93ee5;
+$yellow:              #f7e84f;
+$red:                 #da393f;
+$tomato:              #f53;
 
-// $blue:             #5fbffd;
-// $blue:             #1ea3ff;
+$blue:                #5fbffd;
+$blue:                #1ea3ff;
 $blue:                #4299ff;
 $cyan:                #1ea3ff;
 $navy:                #4c66a4;
 $season:              #2850f6;
 
-$red:                 #da393f;
-$tomato:              #f53;
 
 // grays
 $gray:                #7a7a7a;
 $lightgray:           #c0d3da;
 $hairline:            #eef3fa;
+$hairline:            #e2e2e2;
 $midnight:            #1d2637;
 
 

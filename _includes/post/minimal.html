@@ -1,0 +1,11 @@
+<li class="minimal__item">
+  <a href="{{ post.url | absolute_url }}">
+    <h2 class="minimal__title">{{ post.title }}</h2>
+    <time
+      class="minimal__date"
+      datetime="{{ post.date | date_to_xmlschema }}"
+    >
+      {{ post.date | date: "%b %-d, %Y" }}
+    </time>
+  </a>
+</li>
