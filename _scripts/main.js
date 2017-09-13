@@ -1,5 +1,5 @@
 const init = () => {
-  registerServiceWorker();
+  // registerServiceWorker();
   setWebFontLoader();
   checkExternalLinks();
   startProgressBar();

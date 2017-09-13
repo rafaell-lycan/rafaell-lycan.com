@@ -4,5 +4,4 @@ _site
 .jekyll-metadata
 package-lock.json
 npm-debug.log
-assets/scripts/bundle.js
 node_modules
