@@ -19,11 +19,11 @@ $serif-font-family:   'Source Serif Pro', Constantia, 'Lucida Bright', 'Lucida S
 $console-font-family: 'Fira Mono', 'monaco', 'Consolas', 'Lucida Console', monospace;
 
 $breakpoints: (
-    small_only: '(max-width: 30rem)',
+    small_only: '(max-width: 30rem)', // 480
     small: '(min-width: 0rem)',
-    medium: '(min-width: 48rem)',
-    large: '(min-width: 60rem)',
-    x_large: '(min-width: 75rem)'
+    medium: '(min-width: 48rem)',     // 768
+    large: '(min-width: 60rem)',      // 960
+    x_large: '(min-width: 75rem)'     // 1200
 );
 
 /**

@@ -8,7 +8,14 @@
 
   &__cover {
     width: auto;
-    margin: rem($spacing-unit * 2) rem(-$spacing-unit * 3);
+
+    @include media(medium) {
+      margin: rem($spacing-unit * 2) rem(-$spacing-unit * 2);
+    }
+
+    @include media(large) {
+      margin: rem($spacing-unit * 2) rem(-$spacing-unit * 3);
+    }
 
     img {
       width: 100%;
@@ -32,11 +39,14 @@
   }
 
   pre {
-    @include media(small_only) {
-      margin: rem($spacing-unit) 0;
-    }
+    margin: rem($spacing-unit) 0;
 
     @include media(medium) {
+      margin: rem($spacing-unit * 2) rem(-$spacing-unit * 2);
+      padding: rem($spacing-unit);
+    }
+
+    @include media(large) {
       margin: rem($spacing-unit * 2) rem(-$spacing-unit * 3);
       padding: rem($spacing-unit);
     }
