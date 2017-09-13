@@ -1,5 +1,6 @@
 .page {
   position: relative;
+  animation: fade 600ms ease;
 
   &__header {
     text-align: center;

@@ -29,8 +29,6 @@ Depois de muito tempo e alguns pedidos para continuar a série, resolvi dar uma 
 
 Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
-<!-- {% include toc.html %} -->
-
 - [Controllers e Rotas](#controllers-e-rotas)
 - [Middlewares](#middlewares)
 

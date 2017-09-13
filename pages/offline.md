@@ -1,8 +1,6 @@
 ---
 title: "Oops, you're offline..."
 permalink: /offline/
-redirects:
-- /offline.html
 layout: page
 ---
 
