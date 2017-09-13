@@ -5,7 +5,7 @@ description:    >
 keywords:       >
                 desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
 logo:           /assets/icons/favicon-192x192.png
-url:            https://diplomat-lid-55184.netlify.com
+url:            https://rafaell-lycan.com
 repository:     rafaell-lycan/rafaell-lycan.github.com
 rss:            https://feeds.feedburner.com/rafaell-lycan
 lang:           pt_BR
@@ -30,7 +30,7 @@ config:
   hotjar_id:    617230
 
 webmaster_verifications:
-  google: Abc123Def456
+  google: k0stkb4kdmJ6rf6o_WvHllT9IC4NGb6CpZC8BUvsUrA
 
 navigation:
   - text: Home
@@ -100,6 +100,8 @@ sass:
 permalink:      /:year/:title/
 paginate:       10
 paginate_path:  "/articles/page/:num/"
+future:         false
+show_drafts:    false
 
 # Plugins
 plugins:
