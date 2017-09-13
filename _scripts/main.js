@@ -35,7 +35,7 @@ function checkExternalLinks(){
 }
 
 function startProgressBar() {
-  let bar = document.querySelector('.progress');
+  let bar = document.querySelector('.post__progress');
 
   if (!bar) return;
 

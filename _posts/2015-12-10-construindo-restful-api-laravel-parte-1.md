@@ -11,12 +11,16 @@ description: >
 related:
   - title : Teach a Dog to REST
     url: https://vimeo.com/17785736
+    from: Apigee
   - title : Database - Migrations
     url: http://laravel.com/docs/5.1/migrations
+    from: Laravel Docs
   - title : Eloquent - Getting Started
     url: http://laravel.com/docs/5.1/eloquent
+    from: Laravel Docs
   - title : Eloquent - Relationships
     url: http://laravel.com/docs/5.1/eloquent-relationships
+    from: Laravel Docs
 ---
 
 <p class="info-box">
@@ -89,7 +93,7 @@ MAIL_PORT=2525
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
-{% endhighlight %}''
+{% endhighlight %}
 
 No caso eu apenas adicionei o usuário **root** do meu **MySQL** e a minha senha praticamente inquebravel.
 

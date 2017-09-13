@@ -39,11 +39,9 @@ Mesmo que eu tenha trabalhado como analista de suporte, eu sempre continuava a c
 
 Gosto de pensar que ter trabalhado como web designer e aprendido coisas como jQuery e PHP estruturado, eu passava mais tempo querendo estudar HTML e CSS do que qualquer outra coisa, até mesmo o próprio design em si. Foi então que que comecei a querer parar de fazer coisas como email marketing e começar a criar layouts apenas para codifica-los, ja que era isso o que me fazia acordar cedo para trabalhar.
 
-<figure>
-
-![Ejesa](http://orig05.deviantart.net/f9e7/f/2011/218/6/5/6577a5bfb64e7b19aa59c9b4a10d0acc-d45ox26.jpg)
-
-  <figcaption>Grupo Ejesa - 2011</figcaption>
+<figure class="post__cover" markdown="0">
+<img src="http://orig05.deviantart.net/f9e7/f/2011/218/6/5/6577a5bfb64e7b19aa59c9b4a10d0acc-d45ox26.jpg" alt="Ejesa"/>
+<figcaption>Grupo Ejesa 2011</figcaption>
 </figure>
 
 Na mesma época, comecei a estudar **Desenvolvimento de Jogos** pela [Fatec](http://www.fatecsaocaetano.edu.br/), um lugar onde eu tive que me esforçar e sofri para aprender algumas coisas, já que eu pensava que iria criar jogos em questão de meses, eu era e continuo muito ansioso, mas na verdade tive uma boa introdução a programação em [C++](https://isocpp.org/) e [Python](https://www.python.org/) e principalmente bons fundamentos de computação.

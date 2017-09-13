@@ -1,7 +1,7 @@
 .social-links{
   @extend .default-list;
   text-align: center;
-  padding: rem(50) 0;
+  padding-bottom: rem(50);
 
   &__item {
     margin: 0 rem(10);
