@@ -3,9 +3,9 @@ layout: post
 title:  "Hello World Firefox OS"
 date:   2014-06-14
 tags: mobile firefox_os
-image: assets/img/posts/hello-world-firefox-os.jpg
+image: assets/images/posts/hello-world-firefox-os.jpg
 keywords: mobile firefox os hello world
-resumo: >
+description: >
   Como começar com Firefox OS, o mais novo sistema mobile da Mozilla. Vamos criar o primeiro aplicativo e entender o sistema operacional Firefox OS e suas peculiaridades.
 related:
   - title: Documentação Oficial
@@ -44,7 +44,7 @@ Vale lembrar que os aplicativos são construídos a partir de padrões como HTML
 Depois de instalar o [Firefox OS simulator](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/), vá em `Ferramentas -> Desenvolvedor Web` para abrir o simulador. Na lateral esqueda **ligue o simulador**.
 
 <div class="center">
-  <img src="/assets/img/posts/firefox_os001.png" alt="Firefox OS Simulator">
+  <img src="/assets/images/posts/firefox_os001.png" alt="Firefox OS Simulator">
 </div>
 
 Para entendermos a estrutura basica do nosso app, precisamos de apenas alguns aquivos, entre eles o **manifest.webapp**, que é o arquivo de configuração para do app.
@@ -83,17 +83,17 @@ Vamos também criar um simples hello world apenas com HTML em nosso arquivo **in
 Agora que terminamos nosso demo, vamos tentar rodar em nosso simulador, indo até dashboard e clicando em "Add Directory". Quando a janela se abrir é só navegar até arquivo de **manifesto** e seleciona-lo. Você vai reparar que o aplicativo "Hello World" será inserido. Agora é só clicar em "Run" e seu aplicativo já estará rodando.
 
 <div class="center">
-  <img src="/assets/img/posts/firefox_os002.png" alt="Firefox OS Simulator">
+  <img src="/assets/images/posts/firefox_os002.png" alt="Firefox OS Simulator">
 </div>
 
 Vale lembrar para aqueles que tem um dispositivo Firefox OS que as instruções mudam de acordo com o tipo de aparelho, então eu sugiro que você olhe a [documentação da mozilla](https://developer.mozilla.org/en-US/Firefox_OS/Debugging/Connecting_a_Firefox_OS_device_to_the_desktop) para evitar perda de tempo e também ficar mais informado, mas basicamente você conecta o dispositivo via USB e ira notar que um icone "Push" vai aparecer no aplicativo para envia-lo ao dispositivo. Só apertar e visualizar no seu Firefox OS.
 
 <div class="center">
-  <img src="/assets/img/posts/firefox_os003.png" alt="Firefox OS Simulator">
+  <img src="/assets/images/posts/firefox_os003.png" alt="Firefox OS Simulator">
 </div>
 
 <div class="center">
-  <img src="/assets/img/posts/firefox_os004.png" alt="Firefox OS Simulator">
+  <img src="/assets/images/posts/firefox_os004.png" alt="Firefox OS Simulator">
 </div>
 
 ## Conclusão

@@ -1,0 +1,16 @@
+<ul class="post-list">
+  {% assign items = include.collection | reverse %}
+  {% for post in items limit: include.limit %}
+    <li class="post-list__item">
+      <h2 class="post-list__title  gamma">
+        {% if post.labs %}
+        <a class="post-list__link" href="{{ post.labs | prepend: site.url }}">{{ post.title }}</a>
+        {% else %}
+        <a class="post-list__link" href="{{ post.github }}">{{ post.title }}</a>
+        {% endif %}
+      </h2>
+
+      <span class="post-list__meta  post__meta">{{ post.excerpt }}</span>
+    </li>
+  {% endfor %}
+</ul>

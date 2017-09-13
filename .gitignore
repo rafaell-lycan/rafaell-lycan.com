@@ -1,6 +1,7 @@
-_publish
 _site
-node_modules
+.DS_Store
+.sass-cache
 .jekyll-metadata
-src/js/vendors/
-Gemfile.lock
+package-lock.json
+npm-debug.log
+node_modules

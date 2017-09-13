@@ -1,0 +1,32 @@
+/**
+ * Twitter Widget
+ */
+twitterwidget {
+  margin: 0 auto;
+}
+
+/**
+ * Iframe Wrapper
+ */
+.iframe-wrap {
+  position: relative;
+  height: 0;
+  padding-top: rem(30);
+  padding-bottom: 56.25%;
+  margin-bottom: rem(30);
+  overflow: hidden;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6),
+              0px 2px 10px rgba(0, 0, 0, 0.12);
+
+  > iframe {
+    border: none;
+    border-radius: 2px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+---
+title: "Articles"
+subtitle: "Random thoughts."
+redirects:
+  - /blog/
+layout: page
+robots: noindex
+---
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    {% include post/preview.html %}
+  {% endfor %}
+</ul>
+
+{% include page/pagination.html %}
+</div>

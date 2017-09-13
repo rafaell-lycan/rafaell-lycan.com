@@ -1,7 +1,7 @@
 ---
 title: 'AngularJS: Criando filtros customizados e além'
 tags: angular
-resumo: >
+description: >
   Filtros são mal compreendidos no universo AngularJS, mas no geral eles são insanamente poderosos para transformar dados, e vão te ajudar muito no seu workflow de trabalho.
 ---
 
@@ -28,7 +28,7 @@ Um filtro tem uma declaração bem próxima de um `.factory()` por exemplo mas c
 
 Vamos a um exemplo de código:
 
-{% highlight javascript %}
+```javascript
 angular
   .module('myAwesomeApp', [])
   .filter('customFilter', function () {
@@ -38,7 +38,7 @@ angular
       return newValue;
     }
 });
-{% endhighlight %}
+```
 
 Vamos analisar alguns pontos:
 

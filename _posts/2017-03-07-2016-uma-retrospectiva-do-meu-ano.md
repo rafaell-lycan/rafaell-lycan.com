@@ -1,8 +1,8 @@
 ---
 title: '2016: Uma retrospectiva do meu ano — Mudança e Oportunidade'
 tags: life
-image: assets/img/posts/2016-review.jpg
-resumo: >
+image: assets/images/posts/2016-review.jpg
+description: >
   Um ano cheio de idas e vindas, escolhas dificeis, mudanças e muito mais.
 ---
 
@@ -119,7 +119,7 @@ Este ano, eu vou começar de vagar. Eu caminho ao menos 3 vezes na semana e esto
 Sinceramente estou bem satisfeito com os resultados, pois mesmo sem escrever regularmente as visitar veem sempre aumentando, mesmo com apenas 8 posts no ano <del>que vergonha!</del>
 
 <div class="center">
-  <img src="/assets/img/posts/blog-analytics-2016.jpg" alt="Google Analytics em 2016">
+  <img src="/assets/images/posts/blog-analytics-2016.jpg" alt="Google Analytics em 2016">
 </div>
 
 Foram **23mil** acessos únicos durante o ano, e um total de **64mil** page views o que pra mim, é uma surpresa já que não tenho tantas páginas assim.

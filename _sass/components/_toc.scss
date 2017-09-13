@@ -1,0 +1,55 @@
+.toc {
+  font-family: $heading-font-family;
+  background: #f7f8fb;
+  padding: 0 rem(15);
+  margin: rem(30) 0;
+  border-radius: rem(3);
+  border: 1px solid darken(#f7f8fb, 5%);
+
+  @include media(medium) {
+    padding: 0 rem(30);
+  }
+
+  .title-hero {
+    color: $black;
+    // margin: 0 0 25px;
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: rem(10);
+    font-size: rem(16);
+  }
+
+  li {
+    position: relative;
+    padding: 4px 15px;
+
+    &:before {
+      position: absolute;
+      top: 5px;
+      left: -14px;
+      content: '';
+      @include background('/assets/svgs/link.svg');
+      background-size: contain;
+      opacity: .3;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  a {
+    color: #3f4754;
+    transition: all .2s ease;
+    border: none;
+
+    &:hover {
+      color: lighten(#3f4754, 25%);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{% assign title = include.title %}
+{% assign subtitle = include.subtitle %}
+
+<header class="page__header container">
+  {% if title %}
+  <h1 class="alpha page__title" itemprop="name headline">
+    {{ title }}
+  </h1>
+  {% endif %}
+
+  {% if subtitle %}
+  <p class="page__subtitle">
+    {{ subtitle }}
+  </p>
+  {% endif %}
+
+</header>

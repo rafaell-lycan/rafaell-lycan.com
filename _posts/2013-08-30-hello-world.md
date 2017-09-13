@@ -3,9 +3,9 @@ layout: post
 title:  "Hello World!"
 date:   2013-08-30
 tags: life
-image: assets/img/posts/hello-world.jpg
+image: assets/images/posts/hello-world.jpg
 keywords: hello world, objetivo, blog novo
-resumo: >
+description: >
   Hello World! Chega de falar e não fazer, 2014 promete e a meta é compartilhar conhecimento com todos.
 ---
 ## Hello World!

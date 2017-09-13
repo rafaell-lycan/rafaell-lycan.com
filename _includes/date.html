@@ -1,5 +1,0 @@
-{%if page.date %}
-  <time class="h6" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %b %Y'}}</time>
-{% else %}
-  <time class="h6" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%-d %b %Y'}}</time>
-{% endif %}

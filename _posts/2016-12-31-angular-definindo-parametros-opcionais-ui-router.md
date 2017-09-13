@@ -5,7 +5,7 @@ date:   2016-12-31
 categories: javascript angular
 tags: javascript angular
 keywords:
-resumo: >
+description: >
   No passado nós vimos como utilizar o ngRoute e o UI Router para criar aplicações com Angular JS. Hoje vou explicar 3 formas que para definir rotas utilizando o UI Router e como isso pode ser útil para sua aplicação.
 ---
 

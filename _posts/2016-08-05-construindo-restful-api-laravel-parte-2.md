@@ -3,9 +3,9 @@ layout: post
 title:  "Construindo uma API RESTful com Laravel - Parte 2"
 date:   2016-08-05
 tags: laravel php
-image: assets/img/posts/laravel-api.jpg
+image: assets/images/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
-resumo: >
+description: >
   No artigo anterior da série nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e finalizar nosso CRUD.
 
 related:
@@ -18,7 +18,12 @@ related:
   - title : Controller Middleware
     url: https://laravel.com/docs/5.0/controllers#controller-middleware
 ---
-[No artigo anterior da série]({{site.baseurl}}2015/construindo-restful-api-laravel-parte-1/) nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e a autenticação do usuário.
+
+<p class="info-box">
+  **Atenção:** Este artigo utiliza a versão **5.2** do Laravel.
+</p>
+
+[No artigo anterior da série]({{site.url}}/2015/construindo-restful-api-laravel-parte-1/) nós vimos o setup básico da nossa API, mas esta na hora de fazermos mais, esta na hora de configurarmos nossas rotas e a autenticação do usuário.
 
 Depois de muito tempo e alguns pedidos para continuar a série, resolvi dar uma olhada no que faltava para terminar. Resolvi então quebrar a série em 3 partes ao invés de duas.
 
@@ -84,7 +89,7 @@ php artisan route:list
 Isso ira nos retornar uma lista das rotas definidas seguidas pelo verbo HTTP correspondente. No fim, teremos uma listagem como essa.
 
 <div class="center">
-  ![Laravel Route List](/assets/img/posts/laravel-route-list.png)
+  ![Laravel Route List](/assets/images/posts/laravel-route-list.png)
 </div>
 
 #### Listando registros
@@ -118,7 +123,7 @@ Para termos certeza de que esta tudo OK, podemos utilizar uma ferramente como o 
 Uma vez que você já tenha o **postman** instalado, vamos realizar um request do tipo `GET` no endpoint `/api/jobs` e ver o retorno:
 
 <div class="center">
-  ![Laravel Postman GET Jobs](/assets/img/posts/laravel-api-postman-get.png)
+  ![Laravel Postman GET Jobs](/assets/images/posts/laravel-api-postman-get.png)
 </div>
 
 Já resolvemos a listagem dos jobs, agora vamos fazer o mesmo para empresas:

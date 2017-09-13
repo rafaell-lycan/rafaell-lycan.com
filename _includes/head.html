@@ -1,29 +1,35 @@
-{% if page.title %}
-    {% capture title %}{{ page.title | strip_html }} – Rafaell Lycan{% endcapture %}
-{% else %}
-    {% capture title %}{{site.title}}{% endcapture %}
-{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
-{% if page.resumo %}
-    {% capture description %}{{ page.resumo }}{% endcapture %}
-{% else %}
-    {% capture description %}{{site.meta_description}}{% endcapture %}
-{% endif %}
+  <title>{% if page.title %}{{ page.title }} // {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% if page.keywords %}
-    {% capture keywords %}{{ page.keywords }}{% endcapture %}
-{% else %}
-    {% capture keywords %}{{site.meta_tag}}{% endcapture %}
-{% endif %}
+  {% if page.stylesheets %}
+    {% for stylesheet_url in page.stylesheets %}
+      <link rel="stylesheet" href="{{ stylesheet_url | absolute_url }}?{{site.time | date: '%s%N'}}">
+    {% endfor %}
+  {% endif %}
 
-{% if page.image %}
-    {% capture image %}{{ site.url }}/{{ page.image }}{% endcapture %}
-{% else %}
-    {% capture image %}{% endcapture %}
-{% endif %}
+  <link rel="manifest" href="/manifest.json">
 
-{%if page.date %}
-  {% capture pageType %} article {% endcapture %}
-{% else %}
-  {% capture pageType %} website {% endcapture %}
-{% endif %}
+  {% seo %}
+  {% include head/icons.html %}
+  {% include head/dns-prefetch.html %}
+
+  {% include head/critical-path.html %}
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  {% if jekyll.environment == "production" %}
+    {% include head/fb-pixel.html %}
+    {% include head/hotjar.html %}
+  {% endif %}
+
+  {% if site.tags != "" %}
+    {% include head/collecttags.html %}
+  {% endif %}
+</head>

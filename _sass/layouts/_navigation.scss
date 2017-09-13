@@ -1,0 +1,61 @@
+.main-nav {
+  position: relative;
+  font-family: $heading-font-family;
+  float: right;
+  text-align: center;
+  flex: 1;
+  order: 2;
+  flex-basis: 100%;
+
+  @include media(medium) {
+    order: 0;
+    flex-basis: initial;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list-item {
+    margin: 0 rem(10);
+    list-style: none;
+    display: inline-block;
+
+    @include media(medium) {
+      margin: 0 rem(20);
+      order: 0;
+      flex-basis: initial;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: inherit;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    transition: all 600ms ease;
+    font-weight: 600;
+    font-size: $small-font-size;
+    text-decoration: none !important;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 0;
+      top: rem(30);
+      background: $blue;
+      transition: all 300ms ease;
+    }
+
+    &:hover, &:active, &--active {
+      color: $blue;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

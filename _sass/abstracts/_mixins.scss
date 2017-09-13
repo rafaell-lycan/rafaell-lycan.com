@@ -1,0 +1,44 @@
+/* Breakpoint mixin */
+@mixin media($breakpoint) {
+
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media only screen and  #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Breakpoint `#{$breakpoint}` does not exist";
+  }
+
+}
+
+/*
+* It create the current percent of a context on a reference using pixels
+* Thanks Ethan Marcotte
+*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin background($imgpath, $position:0 0, $repeat: no-repeat) {
+  background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
+  }
+}

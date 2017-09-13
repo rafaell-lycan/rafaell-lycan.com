@@ -5,7 +5,7 @@ date:   2016-12-07
 categories: javascript
 tags: react javascript
 keywords:
-resumo: >
+description: >
   Começar uma aplicação react sempre foi um pouco complicado. Eu poderia estar brincando dizendo isso no meu blog ou no meu twitter, mas é uma realidade. O time de desenvolvimento do React sabe que esta é uma dor para toda a comunidade e resolveram criar o create-react-app.
 ---
 
@@ -18,7 +18,7 @@ Mas eu venho acompanhando alguns projetos de "starter-kit" nos ultimos meses, e 
 Em uma comparação com o top 5 que temos disponiveis hoje para começar um novo projeto, o cenário atual é este:
 
 <div class="center">
-  <img src="/assets/img/posts/starter-star-trend.png" alt="Github Stars Graph">
+  <img src="/assets/images/posts/starter-star-trend.png" alt="Github Stars Graph">
 </div>
 
 1. [facebookincubator/create-react-app](https://github.com/facebookincubator/create-react-app) com **16241**
@@ -85,7 +85,7 @@ npm start
 Se você seguiu todas essas etapas você deve ver seu aplicativo rodando.
 
 <div class="center">
-  <img src="/assets/img/posts/create-react-app-hello-world.png" alt="React App running">
+  <img src="/assets/images/posts/create-react-app-hello-world.png" alt="React App running">
 </div>
 
 

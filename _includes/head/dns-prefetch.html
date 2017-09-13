@@ -1,0 +1,33 @@
+<!-- DNS Pre-fetch & Preconnect -->
+
+<!-- Domain -->
+<link rel="dns-prefetch" href="{{ absolute_url }}">
+
+<!-- Google CDN -->
+<link rel="dns-prefetch preconnect" href="//ajax.googleapis.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//google-analytics.com">
+<link rel="dns-prefetch preconnect" href="//www.google-analytics.com">
+<link rel="dns-prefetch preconnect" href="//ssl.google-analytics.com">
+<link rel="dns-prefetch preconnect" href="//apis.google.com" crossorigin>
+
+<!-- Facebook -->
+<link rel="dns-prefetch preconnect" href="//connect.facebook.net">
+
+<!-- Others -->
+<link rel="dns-prefetch preconnect" href="//use.fontawesome.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//s.gravatar.com" crossorigin>
+
+<link rel="dns-prefetch preconnect" href="//insights.hotjar.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//script.hotjar.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//static.hotjar.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//vars.hotjar.com" crossorigin>
+
+<!-- Preload -->
+<link rel="preload" as="style" href="{{ "/assets/styles/main.css" | absolute_url }}" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="{{ "/assets/styles/fonts.css" | absolute_url }}">
+<link rel="preload" as="image" href="{{ "/assets/svgs/bg-elements.svg" | absolute_url }}">
+<link rel="preload" as="script" href="{{ "/assets/scripts/main.bundle.js" | absolute_url }}">
+
+<!-- Preload -->
+<link rel="prerender" href="{{ "/offline" | absolute_url }}">

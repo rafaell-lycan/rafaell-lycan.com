@@ -1,0 +1,23 @@
+/*
+* It returns the current percent of a context on a reference using pixels
+* Thanks Ethan Marcotte
+*/
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+/*
+* It returns flexible value using 'target / context' formula.
+* Returns 'rem' as format.
+*/
+@function rem($target, $context: $default-font-size) {
+  @if (unitless($target)) {
+    $target: $target * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $target / $context * 1rem;
+}

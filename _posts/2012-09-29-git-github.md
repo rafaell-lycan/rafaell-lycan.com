@@ -4,7 +4,7 @@ title:  "Git e Github - Porque FTP é coisa do passado!"
 date:   2012-09-29
 categories: outros
 tags: git github
-image: assets/img/posts/git-github.jpg
+image: assets/images/posts/git-github.jpg
 keywords:
 related:
   - title: Git - Documentação oficial
@@ -13,7 +13,7 @@ related:
     url: https://try.github.io/
   - title: The Perfect Work-flow with Git, GitHub, and SSH (by Net Tuts+)
     url: http://net.tutsplus.com/tutorials/other/the-perfect-workflow-with-git-github-and-ssh/
-resumo: >
+description: >
    Este artigo visa apresentar os conceito de uso básico sobre Git e Github para iniciantes.
 ---
 Primeiramente, **porque falar sobre versionamento?**

@@ -1,0 +1,23 @@
+.btn {
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid $black;
+  cursor: pointer;
+  margin: 0;
+  padding-bottom: rem(20);
+  color: $black;
+  font: 700 $small-font-size $heading-font-family;
+  letter-spacing: 3.5px;
+  transition: all 300ms;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: normal;
+
+  &:hover, &:active {
+    color: $blue;
+    border-color: $blue;
+  }
+}

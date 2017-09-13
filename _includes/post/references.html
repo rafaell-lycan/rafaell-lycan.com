@@ -1,0 +1,27 @@
+{% if page.related %}
+<section class="references-box">
+  <h4 class="post__section-title">References</h4>
+
+  <ul class="references-box__list">
+    {% for rel in page.related %}
+    <li
+      class="related__mention"
+      itemprop="mentions"
+      itemscope
+      itemtype="https://schema.org/Thing">
+      <a
+        itemprop="url"
+        href="{{ rel.url }}"
+        title="{{ rel.title }}"
+        target="_blank"
+      >
+        <span itemprop="name">{{ rel.title }}</span>
+      </a>
+      {% if rel.from %}
+      <span class="comment">// {{ rel.from }}</span>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

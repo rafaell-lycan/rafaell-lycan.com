@@ -1,15 +1,41 @@
-<header class="header">
-  <div class="container">
-    <div class="author">
-      <a href="{{ site.baseurl }}/">
-        <img
-          src="/assets/img/rafaell-lycan.jpg"
-          alt="Rafaell Lycan profile picture"
-          title="Back to home"
-          class="author__avatar">
-      </a>
-    </div>
+{% assign title = page.title %}
 
-    {% include menu.html %}
-  </div>
+{% capture header_class %}
+  {% if page.layout_options.hero %}header--floating{% endif %}
+{% endcapture %}
+
+<header class="header {{ header_class | strip }}">
+  <a href="/" class="logo">
+    <img src="/assets/svgs/logo.svg" width="26px" alt="{{site.title}}">
+  </a>
+
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+    {% for item in site.navigation %}
+
+      {% capture is_active %}
+        {% if title == item.text or page.url contains item.active
+          or page.homepage == true and item.text contains 'Home'  %}
+          main-nav__link--active
+        {% endif %}
+      {% endcapture %}
+
+      <li class="main-nav__list-item">
+        <a href="{{ item.url }}" class="main-nav__link {{ is_active | strip }}">
+          {{ item.text }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  <a href="https://github.com/{{site.author.github}}" class="github" title="GitHub">
+      {% include icons/github.svg %}
+  </a>
+
+  <!-- <div class="menu-button">
+    <span class="menu-button__line"></span>
+    <span class="menu-button__line"></span>
+    <span class="menu-button__line"></span>
+  </div> -->
 </header>

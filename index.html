@@ -1,38 +1,40 @@
 ---
-layout: default
+title: Front-end, JavaScript and more. By Rafaell Lycan
+layout: page
+homepage: true
+image:
+  src: /assets/images/location/fulfillment.jpg
+  width: 1600
+  height: 1289
+layout_options:
+  hide_page_title: true
+  class: homepage
 ---
-<section class="post post-list" itemscope itemtype="https://schema.org/Blog">
-  {% for post in paginator.posts %}
-  <article class="post__item load-right" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-    <h6>
-      {% include date.html %} •
-      {% unless post.tags == empty %}
-        {% for tag in post.tags %}
-          <a class="h6 post-tag" href="/tags#{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},{% endif %}
-        {% endfor %}
-      {% endunless %}
-      • {% include read-time.html %}
-    </h6>
-    <a href="{{ post.url }}"><h2 class="post__title" itemprop="headline">{{ post.title }}</h2></a>
-    <p class="post__description" itemprop="about">{{ post.resumo }}</p>
-    <p class="h6"><a href="{{ post.url }}" class="post__btn" itemprop="url">Continue reading →</a></p>
 
-    <p class="hidden" rel="author" itemprop="author">Rafaell Lycan</p>
-    <p class="hidden" itemprop="publisher">Rafaell Lycan</p>
-    <p class="hidden" itemprop="keywords">{{ post.keywords }}</p>
-  </article>
-  {% endfor %}
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="pagination__link">← Older</a>
-    {% else %}
-      <a class="pagination__link disabled">← Older</a>
-    {% endif %}
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="pagination__link">Newer →</a>
-    {% else %}
-      <a class="pagination__link disabled">Newer →</a>
-    {% endif %}
+<section class="homepage__intro">
+  <h5>Curious mind, developer and writer.</h5>
+  <h1 class="homepage__title">Hi there, I'm Rafaell<span>.</span></h1>
+
+  <p class="homepage__description">
+    A brazilian <em>software developer</em> spending the majority of my time learning about product/web development.
+    <br><br>
+    I (randomly) write about programming, the web, life and/or photography.
+  </p>
+
+  <h4 class="title-hero">Elsewhere</h4>
+  <p class="homepage__links">
+    <a href="https://twitter.com/RafaellLycan" class="alarming">Twitter</a>–my main cheese
+    <br>
+    <a href="- http://instagram.com/rafaelllycan" class="alarming">Instagram</a>–travel diary
+  </p>
+</section>
+
+<section class="homepage__intro">
+  <h4 class="title-hero">Recent Articles</h4>
+
+  {% include page/post-list.html limit=5 collection=site.posts %}
+
+  <div class="text-center">
+    <a href="/articles" class="btn">View all posts</a>
   </div>
 </section>

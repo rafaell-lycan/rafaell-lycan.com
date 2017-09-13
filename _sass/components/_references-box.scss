@@ -1,0 +1,25 @@
+.references-box {
+  padding-bottom: rem(50);
+
+  &__list {
+    @extend .default-list;
+    padding: rem(20);
+    border: 3px solid $blue;
+  }
+
+  li {
+    font-size: rem(14);
+    margin-left: rem(10);
+
+    &:before {
+      content: "→";
+      color: $blue;
+    }
+  }
+
+  .comment {
+    color: $gray;
+    font-family: $console-font-family;
+    padding-left: 4px;
+  }
+}

@@ -1,0 +1,25 @@
+.pagination {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+
+  &__item {
+    display: inline;
+    padding: 0;
+    margin: 0 rem(20);
+
+    @include media(small_only) {
+      display: block;
+    }
+
+    @include media(medium) {
+      margin: 0 40px;
+    }
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

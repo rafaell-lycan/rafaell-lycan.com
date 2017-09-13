@@ -1,0 +1,5 @@
+<ul class="post-list">
+  {% for post in include.collection limit: include.limit %}
+    {% include post/preview.html minimal=true %}
+  {% endfor %}
+</ul>

@@ -1,0 +1,19 @@
+<script type="text/javascript" defer="defer">
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+    s.parentNode.insertBefore(wf, s);
+  })(document);
+</script>
+
+<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}" defer="defer"></script>
+
+{% if page.javascripts %}
+  {% for script_url in page.javascripts %}
+    <script src="{{ script_url | absolute_url }}">
+  {% endfor %}
+{% endif %}
+
+{% if jekyll.environment == "production" %}
+  {% include analytics.html %}
+{% endif %}

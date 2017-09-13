@@ -3,9 +3,9 @@ layout: post
 title:  "AngularJS: Services, Factories e Providers"
 date:   2015-05-23
 tags: angular
-image: assets/img/posts/angularjs-services.jpg
+image: assets/images/posts/angularjs-services.jpg
 keywords:
-resumo: >
+description: >
   Angular.js e suas drogas. Este post visa explicar as diferenças entre os tipos distintos de serviços no Angular, sejam eles Services, Factories ou Providers.
 
 related:

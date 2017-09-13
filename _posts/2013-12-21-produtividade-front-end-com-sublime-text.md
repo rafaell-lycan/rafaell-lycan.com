@@ -3,9 +3,9 @@ layout: post
 title:  "Produtividade Front-End com Sublime Text"
 date:   2013-12-21
 tags: sublime_text produtividade
-image: assets/img/posts/produtividade-front-end.jpg
+image: assets/images/posts/produtividade-front-end.jpg
 keywords: html5 api, web storage, html5 sql, html5 tags
-resumo: >
+description: >
   Precisamos de produtividade, cada vez mais o mercado nos cobra mais agilidade no desenvolvimento de aplicações seja front-end ou back-end. Sabia que também é possível ser produtivo no mundo front-end?
 ---
 ## Be Smart
@@ -53,7 +53,7 @@ O [JsMinifier](https://github.com/cgutierrez/JsMinifier) é um plugin que minifi
 ### [AutoFileName](https://github.com/BoundInCode/AutoFileName)
 O [AutoFileName](https://github.com/BoundInCode/AutoFileName) tem uma função simples: completar o nome dos diretórios e arquivos quando você esta digitando seu código.
 
-Se você esta por exemplo digitando uma imagem no html como <code class="code">src="/assets/images/"</code>, ele da dicas das imagens que existem naquele diretório incluindo largura (w) e altura (h). Funciona pra CSS também <code class="code">url('../img/')</code>
+Se você esta por exemplo digitando uma imagem no html como <code class="code">src="/assets/images/"</code>, ele da dicas das imagens que existem naquele diretório incluindo largura (w) e altura (h). Funciona pra CSS também <code class="code">url('../images/')</code>
 
 ### [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
 Este plugin aumenta as opções que você tem por padrão na SideBar do Sublime, adicionando varias opções para copiar, ou até abrir arquivos direto no browser.

@@ -3,9 +3,9 @@ layout: post
 title:  "Gulp - O Task Runner que chegou para ficar"
 date:   2014-06-29
 tags: produtividade tools
-image: assets/img/posts/gulp.jpg
+image: assets/images/posts/gulp.jpg
 keywords:
-resumo: >
+description: >
   Pouco mais de um ano, utilizando Grunt como task runner comecei a repensar várias coisas quando descobri um novo concorrente. Com vocês Gulp.
 related:
   - title: An Introduction to Gulp.js
@@ -90,7 +90,7 @@ gulp.task('watch', function(){
     gulp.watch('src/templates/**/*.jade', ['jade']);
     gulp.watch('src/less/**/*.less', ['less']);
     gulp.watch('src/js/**/*.js', ['js']);
-    gulp.watch('src/img/**/*.{jpg,png}', ['imagemin']);
+    gulp.watch('src/images/**/*.{jpg,png}', ['imagemin']);
 });
 
 gulp.task('default', ['js', 'jade', 'less', 'imagemin', 'watch', 'browser-sync']);

@@ -3,9 +3,9 @@ layout: post
 title:  "Construindo uma API RESTful com Laravel - Parte 3"
 date:   2016-08-16
 tags: laravel php
-image: assets/img/posts/laravel-api.jpg
+image: assets/images/posts/laravel-api.jpg
 keywords: laravel, construindo apis, api restful, laravel api, laravel cors
-resumo: >
+description: >
   No artigo anterior da série criamos nossas rotas e finalizamos nosso CRUD, mas enfim a jornada chega ao fim. Vamos trabalhar com validações, autenticação e tratamento de erros.
 
 related:
@@ -20,7 +20,12 @@ related:
   - title : Create REST API using Laravel
     url: https://www.youtube.com/playlist?list=PLpvpznviFFFJUWlHylwipLLr1iLYs-cft
 ---
-[No artigo anterior da série]({{site.baseurl}}2016/construindo-restful-api-laravel-parte-2/) criamos nossas rotas e adicionamos uma verificação básica de autenticação através de **middlewares**, mas enfim a jornada chega ao fim. Vamos trabalhar com **validações**, **autenticação** e tratamento de erros.
+
+<p class="info-box">
+  **Atenção:** Este artigo utiliza a versão **5.2** do Laravel.
+</p>
+
+[No artigo anterior da série]({{site.url}}/2016/construindo-restful-api-laravel-parte-2/) criamos nossas rotas e adicionamos uma verificação básica de autenticação através de **middlewares**, mas enfim a jornada chega ao fim. Vamos trabalhar com **validações**, **autenticação** e tratamento de erros.
 
 Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
@@ -32,7 +37,7 @@ Nesta parte vamos tocar os seguintes tópicos do roadmap:
 
 Quando falamos de autenticação e sessão isso pode ser um assunto um tanto trivial para alguns, principalmente se pensarmos em aplicações web classicas, através de **forms de login** e sessão utilizando **cookies**. Mas desta vez estamos falando de uma API, a qual deveria ser **stateless** e com toda comunidação (request/response) simplificada utilizando JSON.
 
-Nós vamos utilizar **JWT** *(Json Web Token)* para a comunicação em nossas rotas privadas, o qual irá conter as informações básicas do usuário que esta pedindo a requisição. Eu não vou explicar em detalhes o que é um JWT, mas você pode ler sobre isso neste artigo sobre *[Autenticação com Tokens em uma aplicação AngularJS]({{site.baseurl}}2016/autenticacao-jwt-angular-app/)* e entender os 3 elementos que formam um JWT válido.
+Nós vamos utilizar **JWT** *(Json Web Token)* para a comunicação em nossas rotas privadas, o qual irá conter as informações básicas do usuário que esta pedindo a requisição. Eu não vou explicar em detalhes o que é um JWT, mas você pode ler sobre isso neste artigo sobre *[Autenticação com Tokens em uma aplicação AngularJS]({{site.url}}/2016/autenticacao-jwt-angular-app/)* e entender os 3 elementos que formam um JWT válido.
 
 Agora que estamos alinhados,vamos instalar o pacote `jwt-auth` em nosso `composer.json`. Atualize o bloco `require` incluindo o novo pacote:
 
@@ -182,7 +187,7 @@ Você realmente não precisa seguir este padrão de resposta que eu coloquei, eu
 
 
 <div class="center">
-  ![Laravel Postman POST Authenticate](/assets/img/posts/laravel-api-postman-autenticate.png)
+  ![Laravel Postman POST Authenticate](/assets/images/posts/laravel-api-postman-autenticate.png)
 </div>
 
 Agora já conseguimos criar nossos tokens, mas e quanto a recupera-los e intercepta-los em nossos requests? Primeiramente eu gostaria de informar que o pacote que escolhemos já resolve esse problema para nós através dos middlewares `jwt.auth` e `jwt.refresh`, porem vamos precisar configurar nossa model `Company` para suportar as implementações do driver de `Auth` e modificar o arquivo de configuração em `config/auth.php` para utilizar a classe `Company` por padrão ao invés de `User`:

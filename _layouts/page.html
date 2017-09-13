@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+{% assign container = page.layout_options.container %}
+{% assign page_class = page.layout_options.class %}
+
+<article class="page {{ page_class }} page--{{ page.title | downcase | handleize }}">
+
+  {% unless page.layout_options.hide_page_title %}
+    {%
+      include page/header.html
+        title = page.title
+        subtitle = page.subtitle
+    %}
+  {% endunless %}
+
+  {% unless container == false %}
+    <div class="container">
+  {% endunless %}
+
+    {{ content }}
+
+  {% unless container == false %}
+    </div>
+  {% endunless %}
+
+</article>

@@ -1,0 +1,29 @@
+<footer class="post__share">
+  <h4 class="post__section-title">Share</h4>
+  <ul class="social-links">
+    <li class="social-links__item">
+      <a
+        class="twitter"
+        title="Share on Twitter"
+        href="https://twitter.com/intent/tweet?status={{ page.title }}+{{ site.url }}{{ page.url }} via @{{site.author.twitter}}">
+        {% include icons/twitter.svg %}
+      </a>
+    </li>
+    <li class="social-links__item">
+      <a
+        class="facebook"
+        title="Share on Facebook"
+        href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&title={{ page.title }}">
+          {% include icons/facebook.svg %}
+      </a>
+    </li>
+    <li class="social-links__item">
+      <a
+        class="linkedin"
+        title="Share on LinkedIn"
+        href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}&amp;source={{site.url}}">
+        {% include icons/linkedin.svg %}
+      </a>
+    </li>
+  </ul>
+</footer>

@@ -1,0 +1,14 @@
+---
+layout: page
+robots: noindex
+---
+
+<ul class="post-list">
+  {% for post in site.tags[page.tag] %}
+    {% include post/preview.html minimal=true %}
+  {% endfor %}
+</ul>
+
+<hr>
+
+{% include archive.html %}
