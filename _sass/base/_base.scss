@@ -233,7 +233,7 @@ code {
 }
 
 :not(pre)>code {
-    background: rgb(245, 247, 248);
+    background: $block-code-color;
     border: 1px solid rgb(228, 228, 228);
     margin: 0 0.05em;
     padding: 1px 5px;
@@ -241,12 +241,13 @@ code {
 }
 
 pre {
-  background: rgb(245, 247, 248);
+  background: $block-code-color;
   line-height: 1.35;
   overflow-x: auto;
   margin: rem(30) 0;
   white-space: pre;
   word-wrap: normal;
+  box-shadow: 0 1px 1px rgba($black, 0.12);
   -webkit-overflow-scrolling: touch;
 
   > code {
