@@ -31,6 +31,10 @@ layout: default
   </figure>
   {% endif %}
 
+  {% unless page.layout_options.hide_survey %}
+    {% include post/survey.html %}
+  {% endunless %}
+
   <section class="post__content">
     {{ content }}
   </section>

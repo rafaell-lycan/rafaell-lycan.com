@@ -3,6 +3,8 @@ title: 'Blog Survey'
 tags: life development
 description: >
    Olá, gostaria de ouvir o que vocês gostariam de ler. Isso levará apenas 2 minutos do seu tempo.
+layout_options:
+  hide_survey: true
 ---
 
 Olá todos.

@@ -1,0 +1,21 @@
+.survey {
+  padding: rem(10) rem($spacing-unit) rem(50);
+  margin: rem(50) 0;
+  background: $green;
+  font-family: $heading-font-family;
+  color: $white;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      color: $black;
+      border-color: $black;
+    }
+  }
+}
