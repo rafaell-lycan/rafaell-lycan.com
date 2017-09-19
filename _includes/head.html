@@ -13,7 +13,11 @@
 
   <link rel="manifest" href="/manifest.json">
 
+  {% if page.robots %}
+    <meta name="robots" content="{{page.robots}}" />
+  {% endif %}
   {% seo %}
+
   {% include head/icons.html %}
   {% include head/dns-prefetch.html %}
 
