@@ -13,5 +13,6 @@
 #  |-------|
 
 User-agent: *
-Allow: /
+Disallow: /offline
+Disallow: /404
 Sitemap: {{ "/sitemap.xml" | absolute_url }}

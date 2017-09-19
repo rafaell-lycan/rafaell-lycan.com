@@ -2,6 +2,7 @@
 title: "Oops, you're offline..."
 permalink: /offline/
 layout: page
+robots: noindex
 ---
 
 Thanks to Service Workers, you can still visit the pages you've visited already.
