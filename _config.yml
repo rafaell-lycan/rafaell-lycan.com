@@ -127,28 +127,8 @@ exclude:
 
 compress_html:
   clippings: all
-  comments: all
-  endings:
-    - html
-    - head
-    - body
-    - li
-    - dt
-    - dd
-    - rt
-    - rp
-    - optgroup
-    - option
-    - colgroup
-    - caption
-    - thead
-    - tbody
-    - tfoot
-    - tr
-    - td
-    - th
+  comments: ["<!--[if ", "<![endif]-->"]
+  endings: all
+  startings: [body]
   profile: false
   blanklines: false
-  startings: [body]
-  ignore:
-    envs: []
