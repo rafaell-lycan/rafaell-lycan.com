@@ -10,7 +10,7 @@
 
 {% if page.javascripts %}
   {% for script_url in page.javascripts %}
-    <script src="{{ script_url | absolute_url }}">
+    <script src="{{ script_url | absolute_url }}"></script>
   {% endfor %}
 {% endif %}
 
