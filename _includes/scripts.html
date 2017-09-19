@@ -6,11 +6,11 @@
   })(document);
 </script>
 
-<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}" defer="defer"></script>
+<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}?{{site.time | date: '%s%N'}}" defer="defer"></script>
 
 {% if page.javascripts %}
   {% for script_url in page.javascripts %}
-    <script src="{{ script_url | absolute_url }}"></script>
+    <script src="{{ script_url | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
   {% endfor %}
 {% endif %}
 

@@ -20,7 +20,7 @@
   {% include head/critical-path.html %}
 
   <!--[if IE]>
-    <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/styles/main.css" | absolute_url }}?{{site.time | date: '%s%N'}}">
   <![endif]-->
 
   <!--[if lt IE 9]>
