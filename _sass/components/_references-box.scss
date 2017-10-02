@@ -9,7 +9,7 @@
 
   li {
     font-size: rem(14);
-    margin-left: rem(10);
+    margin: rem(5) 0 rem(5) rem(10);
 
     &:before {
       content: "→";
