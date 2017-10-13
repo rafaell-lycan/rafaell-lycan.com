@@ -591,7 +591,7 @@ O que fizemos foi o seguinte, por padrão o middleware `Authenticate` faz dois n
 
 O que fizemos foi tirar a validação das requisições e retornar uma única mensagem em formato JSON com **erro** `401`, obviamente vamos precisar tratar tokens e outras coisas mas vamos um passo por vez.
 
-No próximo artigo vamos vamos cobrir os problemas criticos que deixamos para trás como **validações de entrada** para criação dos registros, criar  nossa **rota de autenticação** que retornará um token válido, **verificação e validação do token** em nosso middleware de autenticação.
+[No próximo artigo](/2016/construindo-restful-api-laravel-parte-3/) vamos vamos cobrir os problemas criticos que deixamos para trás como **validações de entrada** para criação dos registros, criar  nossa **rota de autenticação** que retornará um token válido, **verificação e validação do token** em nosso middleware de autenticação.
 
 Peço desculpas a todos pois este artigo teve início a mais de um mês, porem como eu queria terminar tudo de uma vez, ficou faltando algumas partes, portanto vou deixar a parte restante para uma terceira e última parte da série.
 

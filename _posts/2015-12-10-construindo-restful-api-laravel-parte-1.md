@@ -507,4 +507,4 @@ $company = App\Company::find(1);
 var_dump($company->jobs);
 {% endhighlight %}
 
-No proximo artigo desta série, vamos abordar os *Controllers*, *Rotas*, tipos e mensagens de *erro*  e retornar valores em JSON.
+[No proximo artigo desta série](/2015/construindo-restful-api-laravel-parte-1/), vamos abordar os *Controllers*, *Rotas*, tipos e mensagens de *erro*  e retornar valores em JSON.
