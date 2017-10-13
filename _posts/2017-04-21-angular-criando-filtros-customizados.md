@@ -46,7 +46,7 @@ Vamos analisar alguns pontos:
 2. O primeiro parâmetro é o nome do filtro, que no nosso caso é  `'customFilter'`, e depois uma função que retorna uma função, que na verdade é o funcionamento do nosso filtro.
 3. A função de retorno recebe por padrão o `input` que é o dado a ser filtrado e pode também receber parâmetros opcionais que retorna o output desejado seja ele uma string, um array com uma nova ordenação, um cálculo, etc.
 
- Para utilizarmos este filtro, seria preciso invoca-lo como `{{ value | customFilter: arg1:arg2...}}`.
+ Para utilizarmos este filtro, seria preciso invoca-lo como `{% raw %}{{ value | customFilter: arg1:arg2...}}{% endraw %}`.
  
  Legal? Não, né? Até agora de fato não estamos vendo nada útil.
  
