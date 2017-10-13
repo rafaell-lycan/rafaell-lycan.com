@@ -61,7 +61,7 @@ Quando a instalação terminar, vá ate a pasta criada e abra em seu editor de p
 
 Existe uma pequena coisa que precisamos resolver antes de começarmos a desenvolver nosso serviço RESTful, e se não resolvermos isso logo após a instalação, isso vai nos empacar no meio do desenvolvimento e provavelmente não vamos achar isso legal.
 
-Por padrão, a partir da versão 5, o Laravel usa por padrão um middleware para previnir CSRF. Porem, não estamos construindo websites, mas sim uma API, o que perde faz esse middleware perder completamente o sentido em nosso projeto.
+Por padrão, a partir da versão 5, o Laravel usa por padrão um middleware para previnir CSRF. Porem, não estamos construindo websites, mas sim uma API, o que pode faz esse middleware perder completamente o sentido em nosso projeto.
 
 Para remove-lo, e para fazer isso vamos até a pasta **app/Http** e abrir o arquivo **Kernel.php**. Nele, vamos remover a seguinte linha:
 
@@ -406,7 +406,7 @@ class Job extends Model
     protected $dates = ['deleted_at'];
 
     function company() {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Company');
     }
 }
 
