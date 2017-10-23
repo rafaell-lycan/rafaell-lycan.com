@@ -127,8 +127,8 @@ exclude:
 
 compress_html:
   clippings: all
-  comments: ["<!--[if ", "<![endif]-->"]
+  comments: all
   endings: all
-  startings: [body]
+  startings: [head, body]
   profile: false
   blanklines: false
