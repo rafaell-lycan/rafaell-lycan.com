@@ -1,5 +1,5 @@
 ---
-title: "Utilizando Laravel Valet no Ubuntu"
+title: 'Utilizando Laravel Valet no Ubuntu'
 date:  2017-10-23
 tags: laravel php tools
 description: >
