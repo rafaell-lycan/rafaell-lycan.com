@@ -1,9 +1,9 @@
 ---
 title: "JavaScript Morderno: O que você está esperando?"
-date:  2017-10-01
+date:  2017-10-25
 tags:  javascript
 description: >
-  Aprenda como usar TypeScript para escrever aplicações melhores, mais seguras e mais escalaveis. Veremos os benefícios de tipagem e interfaces nesta pequena introdoção ao TypeScript.
+  Aprenda a escrever JavaScript moderno e utilizar ferramentas sem se perder com uma infinidade de novos frameworks. Se você quer aprender mais sobre o que é possível fazer hoje, este post é para você.
 related:
   - title : "Using ES6 Modules with Webpack"
     url: http://www.zsoltnagy.eu/using-es6-modules-with-webpack/
@@ -68,7 +68,7 @@ $(document).ready(function() {
 });
 ```
 
-Sempre tínhamos que seguir as ordem dos arquivos e depois de um certo tempo tinhamos vários importes na página. Para deixarmos as coisas mais claras, vamos adicionar algumas bibliotecas a mais como [moment.js]() para formatarmos e manipularmos datas de uma forma simples e o [lodash]() que possui uma gama de helpers.
+Sempre tínhamos que seguir as ordem dos arquivos e depois de um certo tempo tinhamos vários importes na página. Para deixarmos as coisas mais claras, vamos adicionar algumas bibliotecas a mais como [moment.js](https://momentjs.com/) para formatarmos e manipularmos datas de uma forma simples e o [lodash](https://lodash.com/) que possui uma gama de helpers.
 
 ```html
 <!DOCTYPE html>
