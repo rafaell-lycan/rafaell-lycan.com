@@ -5,6 +5,7 @@ description:    >
 keywords:       >
                 desenvolvedor, front end, back end, developer, php, javascript, node, laravel, angular, react, software
 logo:           /assets/icons/favicon-192x192.png
+image:          /assets/images/me.jpg
 url:            https://rafaell-lycan.com
 repository:     rafaell-lycan/rafaell-lycan.github.com
 rss:            https://feeds.feedburner.com/rafaell-lycan
@@ -22,7 +23,7 @@ author:
   gravatar:     dd1c977c7a3e384a9cdae3b5ddd9b006
 
 # Config
-config:
+conf:
   g_analytics:  UA-16383035-5
   g_verify:     k0stkb4kdmJ6rf6o_WvHllT9IC4NGb6CpZC8BUvsUrA
   disqus_name:  rafaelllycan
