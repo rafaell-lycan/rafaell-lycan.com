@@ -6,12 +6,20 @@
   })(document);
 </script>
 
-<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}?{{site.time | date: '%s%N'}}" defer="defer"></script>
+<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}" defer="defer"></script>
 
 {% if page.javascripts %}
   {% for script_url in page.javascripts %}
-    <script src="{{ script_url | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
+    <script src="{{ script_url | absolute_url }}"></script>
   {% endfor %}
 {% endif %}
 
 {% include analytics.html %}
+
+<script type="text/javascript" defer="defer">
+  if( 'serviceWorker' in navigator && location.hostname !== 'localhost'){
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('Service Worker magic! ❤️'))
+      .catch(err => console.log('Service Worker failed to register 😔', err));
+  }
+</script>
