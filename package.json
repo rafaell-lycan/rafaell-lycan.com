@@ -32,5 +32,8 @@
   },
   "bugs": {
     "url": "https://github.com/rafaell-lycan/rafaell-lycan.github.com/issues"
+  },
+  "dependencies": {
+    "webfontloader": "^1.6.28"
   }
 }
