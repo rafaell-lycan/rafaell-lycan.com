@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const SWPrecache = require('sw-precache-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const path = require('path');
 
 const rootDir = "_site";
@@ -63,25 +64,32 @@ module.exports = {
       verbose: true,
       mergeStaticsConfig: true,
       navigateFallback: `/offline`,
-      staticFileGlobsIgnorePatterns: [
-        /\.map$/,
-        /manifest\.json$/,
-        /sw\.js$/
-      ],
+      staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/, /\.html$/],
       runtimeCaching: [
         {
-          urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
-          handler: 'cacheFirst'
+          handler: 'networkFirst',
+          urlPattern: /^https?.*/
         },
         {
-          urlPattern: /^https:\/\/ajax\.googleapis\.com\//,
-          handler: 'cacheFirst'
+          handler: 'cacheFirst',
+          urlPattern: /^https:\/\/fonts\.googleapis\.com\//
         },
         {
-          urlPattern: /^https:\/\/google-analytics\.com\//,
-          handler: 'cacheFirst'
+          handler: 'cacheFirst',
+          urlPattern: /^https:\/\/ajax\.googleapis\.com\//
+        },
+        {
+          handler: 'cacheFirst',
+          urlPattern: /^https:\/\/google-analytics\.com\//
         }
       ]
+    }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.json$|\.css$|\.html$|\.map$/,
+      threshold: 10240,
+      minRatio: 0,
     })
   ]
 };
