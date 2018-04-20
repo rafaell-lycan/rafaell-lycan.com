@@ -3,7 +3,9 @@ const checkExternalLinks = (d) => {
 
   links.forEach(link => {
     if (link.host != window.location.host) {
-      return link.target = "_blank"
+      link.target = "_blank";
+      link.rel = "noopener";
+      return link;
     }
   });
 }
