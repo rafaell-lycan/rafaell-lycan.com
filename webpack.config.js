@@ -46,7 +46,7 @@ module.exports = {
       },
     }),
     new SWPrecache({
-      cacheId: 'pwa-v1',
+      cacheId: `pwa-v1-${Date.now()}`,
       filename: 'sw.js',
       staticFileGlobs: [
         `${rootDir}/index.html`,
