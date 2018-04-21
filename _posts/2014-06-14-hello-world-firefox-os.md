@@ -59,7 +59,7 @@ O manifest.webapp é um arquivo JSON, por mais que a extensão não nos diga iss
   "launch_path": "/index.html",
   "developer": {
     "name": "Rafaell Lycan",
-    "url": "http://rafaell-lycan.github.io"
+    "url": "http://rafaell-lycan.com"
   }
 }
 {% endhighlight%}

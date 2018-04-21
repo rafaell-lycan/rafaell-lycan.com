@@ -5,3 +5,4 @@ _site
 package-lock.json
 npm-debug.log
 node_modules
+assets/scripts/*
