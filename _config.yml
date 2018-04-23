@@ -24,11 +24,10 @@ author:
 
 # Config
 conf:
-  g_analytics:  UA-16383035-5
   g_verify:     k0stkb4kdmJ6rf6o_WvHllT9IC4NGb6CpZC8BUvsUrA
+  gtm_id:       GTM-KPNJ6BB
   disqus_name:  rafaelllycan
   theme_color:  "#5fbffd"
-  hotjar_id:    617230
 
 webmaster_verifications:
   google: k0stkb4kdmJ6rf6o_WvHllT9IC4NGb6CpZC8BUvsUrA
@@ -61,7 +60,6 @@ twitter:
 
 facebook:
   app_id:       1160764874037367
-  pixel_id:     1881654748526380
 
 # Collections
 collections:

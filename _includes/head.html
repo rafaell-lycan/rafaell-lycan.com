@@ -44,8 +44,7 @@
   <![endif]-->
 
   {% if jekyll.environment == "production" %}
-    {% include head/fb-pixel.html %}
-    {% include head/hotjar.html %}
+    {% include head/gtm.html %}
   {% endif %}
 
   {% if site.tags != "" %}

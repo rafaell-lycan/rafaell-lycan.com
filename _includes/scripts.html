@@ -6,8 +6,6 @@
   {% endfor %}
 {% endif %}
 
-{% include analytics.html %}
-
 <script type="text/javascript" defer="defer">
   if( 'serviceWorker' in navigator && location.hostname !== 'localhost'){
     navigator.serviceWorker.register('/sw.js')
