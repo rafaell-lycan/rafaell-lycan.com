@@ -1,5 +1,5 @@
 ---
-title: Criando um simples `<Tabs/>` component em React
+title: 'Criando um simples {% raw %}`<Tabs/>`{% endraw %} component em React'
 description: >-
   Vamos ver na prática como criar um simples componente que e utilizar
   subcomponentes em sua composição.
