@@ -1,8 +1,9 @@
 ---
 title: Dicas que todo desenvolvedor React deveria saber
-date: '2018-08-08 01:09:19'
 description: Lorem Ipsum
+date: '2018-08-08 01:09:19'
 tags: react javascript
+keywords: react javascript
 ---
 
 
