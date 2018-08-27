@@ -1,0 +1,4 @@
+
+# Redirect default Netlify subdomain to primary domain
+https://nossa-agua.netlify.com/* https://nossa-agua.rafaell-lycan.com/:splat 301!
+/nossa-agua/* https://nossa-agua.netlify.com/:splat 200
