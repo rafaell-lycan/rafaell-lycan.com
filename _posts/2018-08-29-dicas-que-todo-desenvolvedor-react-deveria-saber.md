@@ -9,6 +9,17 @@ tags: 'react, javascript'
 4. Use uma função para `setState` ao invés de um objeto.
 5. Use Prop-Types sempre que possível.
 6. Use a extensão "React Developer Tools" para debugar sua app.
+7. Coding Style
+
+--- 
+- Property naming
+- isXXX for isDisabled, isEnabled, ...
+- canXXX for available actions, canSelect (avoid if possible)
+- hasXXX for visual states, hasPagination, hasBackButton
+- showXXX and hideXXX for visual states, showPagination, showBackButton
+- event handlers onXXX and handled in the component as handleXXX
+- passing handlers can activate a function: onAdd, onSelect. this removes the - need for another prop like canAdd (avoid if possible)
+---
 
 - https://www.youtube.com/watch?v=xa-_FIy2NgE
 - https://engineering.opsgenie.com/i-wish-i-knew-these-before-diving-into-react-301e0ee2e488
