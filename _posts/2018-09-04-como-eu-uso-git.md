@@ -4,8 +4,10 @@ description: >-
   Depois de algumas pessoas me verem utilizar Git e como eu o configuro para
   facilitar a minha vida, eu achei interessante compartilhar como eu utilizo no
   meu dia a dia, incluindo assim algumas praticas que você pode utilizar também.
-tags: 'git, productivity, development, tools'
-keywords: git
+tags: git productivity development tools
+keywords: >-
+  git, produtividade, atalhos git, workflow git, git rebase, git merge, git log,
+  git amend, git config
 ---
 Depois de algumas pessoas me verem utilizar Git e como eu o configuro para facilitar a minha vida, eu achei interessante compartilhar como eu utilizo no meu dia a dia, incluindo assim algumas praticas que você pode utilizar também.
 
