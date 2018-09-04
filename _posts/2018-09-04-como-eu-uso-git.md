@@ -11,7 +11,7 @@ keywords: >-
 ---
 Depois de algumas pessoas me verem utilizar Git e como eu o configuro para facilitar a minha vida, achei interessante compartilhar como utilizo no meu dia a dia, incluindo assim algumas práticas que você pode utilizar também.
 
-_Se você não esta familiarizado ou não conhece Git, escrevi [um artigo básico](/2012/git-github/) sobre Git e Github no passado, mas você também pode aprender com [este exemplo do Tableless](https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/) que também esta bem completo._
+> Se você não esta familiarizado ou não conhece Git, escrevi [um artigo básico](/2012/git-github/) sobre Git e Github no passado, mas você também pode aprender com [este exemplo do Tableless](https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/) que também esta bem completo.
 
 ## Obtendo Informação
 
@@ -33,7 +33,7 @@ Se por algum motivo você ainda pensar que precisa de toda aquela informação, 
 
 ## Trabalhando com Branches
 
-Para mudar rapidamente de branches, criei alguns atalhos. Como na maioria das empresas que trabalhei até hoje, utilizamos algo parecido com o **_git-flow_**, onde a branch `master` que contem nossa versão de release, e a `develop` como principal, onde ambas são protegidas contra commits. Tudo é adicionado através de **pull-requests** em nossa branch principal.
+Para mudar rapidamente de branches, criei alguns atalhos. Como na maioria das empresas que trabalhei até hoje, utilizamos algo parecido com o _**git-flow**_, onde a branch `master` que contem nossa versão de release, e a `develop` como principal, onde ambas são protegidas contra commits. Tudo é adicionado através de **pull-requests** em nossa branch principal.
 
 Eu criei atalhos como `git co` para `git checkout`  e `git br` para `git branch`:
 
