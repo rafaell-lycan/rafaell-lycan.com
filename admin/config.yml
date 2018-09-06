@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
 
-media_folder: "assets/images/"
+media_folder: "assets/images/posts"
 public_folder: "assets/"
 publish_mode: "editorial_workflow"
 display_url: https://rafaell-lycan.com
@@ -10,19 +10,19 @@ collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
+    sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-      - {label: "Description", name: "description", widget: "text", required: true}
+      - {label: "Description", name: "description", widget: "text", tagname: "blockquote", required: true}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "string", required: true}
       - {label: "Keywords", name: "keywords", widget: "string", required: false}
       - {label: "Cover", name: "image", widget: "string", required: false}
       - {label: "Related", name: "related", widget: "markdown", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
       - {label: "Last Update", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
 
   - name: "pages"
