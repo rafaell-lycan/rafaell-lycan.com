@@ -1,5 +1,6 @@
 ---
 title: Dicas que todo desenvolvedor React deveria saber
+date: '2018-08-08 12:58:08'
 description: Lorem Ipsum
 tags: 'react, javascript'
 ---
