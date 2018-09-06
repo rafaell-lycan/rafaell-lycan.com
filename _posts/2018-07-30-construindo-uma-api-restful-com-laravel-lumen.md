@@ -1,7 +1,8 @@
 ---
 title: Construindo uma API RESTful com Laravel Lumen
 description: lorem ipsum
-tags: 'laravel, php'
+date: '2018-09-06'
+tags: laravel php
 ---
 - [PHP: Convirtiendo a API una aplicación en Laravel
 ](https://www.video2brain.com/es/cursos/php-convirtiendo-a-api-una-aplicacion-en-laravel)
