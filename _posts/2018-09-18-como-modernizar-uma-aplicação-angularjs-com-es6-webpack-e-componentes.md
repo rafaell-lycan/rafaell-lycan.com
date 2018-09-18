@@ -26,3 +26,4 @@ keywords: 'angularjs, angular 1.x, webpack, es6, typescript'
 * https://medium.com/@HenryGBC/boilerplate-para-angular-1-5-con-webpack-y-es6-3d735dc8ac76
 * https://medium.com/@rajsek/angular-1-and-webpack-fe08f5a9052f
 * https://carlosrymer.com/configuring-webpack-3-for-an-angular-1-x-app-fa90a69f1de0
+* https://codematters.blog/upgrading-to-webpack-2-fc09bd8adbd4
