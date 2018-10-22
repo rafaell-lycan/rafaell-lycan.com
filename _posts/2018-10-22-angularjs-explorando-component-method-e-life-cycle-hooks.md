@@ -1,11 +1,8 @@
 ---
 title: 'AngularJS: Explorando component() method e Life Cycle Hooks'
 description: >-
-  Um conjunto de boas praticas sobre como usar AngularJS
-
-
-  A good practices guide about how to use Promises along with services
-  (especially the $http) in AngularJS world.
+  Um conjunto de boas praticas sobre como escrever seus componentes com
+  AngularJS e o novo método componente. Adeus diretivas :D
 tags: angularjs javascript development
 keywords: >-
   angularjs, component method, angular next, criando componentes com angular,
