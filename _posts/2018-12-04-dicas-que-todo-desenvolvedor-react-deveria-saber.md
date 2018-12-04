@@ -12,6 +12,17 @@ Mas por que? Bom, é até bem simples, uma vez que você trabalhe em uma equipe 
 Eu escolhi 7 boas práticas que ajudaram a mim e ao meu time a melhorar o padrão dos nossos projetos em React. Então deem uma boa olhada e sintam-se livre para utiliza-los também.
 
 ## 1 - Use componentes funcionais.
+
+Todos nós estamos muitos felizes e gratos que ES6 trouxe o suporte a classes e provavelmente você também ama isso. Em React nós podemos criar um componente apenas extendendo `React.Component`, onde podemos ter um **state**, **ciclo de vida**, **event handlers**, etc. Mas nem sempre precisamos de tudo isso, mas como sabemos que podemos utilizar.
+
+```javascript
+class MyComponent extends Component {
+  render() {
+    return <p>Hello {this.props.name}</p>
+  }
+}
+```
+
 ## 2 - Mantenha seus componentes pequenos.
 ## 3 - Entenda como lidar com `this`
 ## 4 - Use uma função para `setState` ao invés de um objeto.
