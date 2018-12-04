@@ -18,10 +18,24 @@ Todos nós estamos muitos felizes e gratos que ES6 trouxe o suporte a classes e 
 ```javascript
 class MyComponent extends Component {
   render() {
-    return <p>Hello {this.props.name}</p>
+    return <h1>Hello {this.props.name}</h1>
   }
 }
 ```
+
+Mas as vezes, muitos desenvolvedores se esquecem que talvez esse componente seja **dummy**, ou seja, não necessite de um **state** interno** ou **ciclo de vida**. Um componente funcional como o nome sugere, é uma função que recebe `props` como parâmetro e retorna um `React.Element`.
+
+```javascript
+const MyComponent = (props) => {
+    return <h1>Hello {props.name}</h1>
+};
+
+// Ou simplesmente 
+
+const MyComponent = (props) => <h1>Hello {props.name}</h1>;
+```
+
+Ok, mas por que eu deveria utilizar um componente funcional? Simples, eles são muito mais simples pois não precisam extender uma `classe`, alem de **facilidade para entender e testar** além de escrever **menos código** e garantir que seu componente será sempre **stateless** e não precisará lidar com `this` **binding** para métodos internos, o que ajuda na refatoração para componentes menores quando precise.
 
 ## 2 - Mantenha seus componentes pequenos.
 ## 3 - Entenda como lidar com `this`
