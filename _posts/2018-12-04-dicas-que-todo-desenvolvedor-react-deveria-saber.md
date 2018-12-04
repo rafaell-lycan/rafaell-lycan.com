@@ -108,7 +108,7 @@ E com isso você simplesmente utiliza `<Avatar user={props.user} />` em seu comp
 
 ## 3 - Entenda como lidar com `this`
 
-Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions**   In very short — arrow function get a scope from their direct parent, that there was declare.
+Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions** e sempre utilizam o **escopo pai**, o que evita `bind(this)`. 
 
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 ## 5 - Use Prop-Types sempre que possível.
