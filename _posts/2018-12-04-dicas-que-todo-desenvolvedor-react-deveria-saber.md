@@ -43,8 +43,7 @@ O que me leva ao seguinte tópico...
 
 ## 2 - Mantenha seus componentes pequenos.
 
-Componentes pequenos são mais fáceis de ler e testar além de reutilizar e manter.
-
+Componentes pequenos são mais fáceis de ler e testar além de reutilizar e manter. Aqui temos um simples exemplo de `Comments` onde exibimos as informações de um comentário bem como seu criador.
 
 ```javascript
 class Comment extends Component {
@@ -52,7 +51,7 @@ class Comment extends Component {
     return (
       <div className="comment">
         <div className="user-info">
-          <img
+          <img className="avatar"
             src={this.props.user.avatarUrl}
             alt={this.props.user.name}
           />
@@ -72,7 +71,45 @@ class Comment extends Component {
 }
 ```
 
+A primeira coisa que já percebemos é que os dados do usuário poderiam ser extraídos em um novo componente `UserInfo`, o qual receberia apenas as propriedades necessárias para renderizar e assim garantir um componente mais **simples**, **testavel** e **manutenivel**.
+
+Como o componente apenas renderiza os dados informados em `props` vamos utilizar um **componente funcional** como exemplo:
+
+```javascript
+const UserInfo = (props) => {
+  return (
+    <div className="user-info">
+      <img className="avatar"
+        src={props.user.avatarUrl}
+        alt={props.user.name}
+      />
+      <h4 className="user-info__name">
+        {props.user.name}
+      </h4>
+    </div>
+  );
+}
+```
+
+Pronto! E podemos substituir todo o bloco em `Comment` por nada mais que `<UserInfo user={this.props.user} />`. Muito bem! Mas ainda poderíamos ainda extrair a imagem para um componente `Avatar` para deixa-lo ainda menor e reutiliza-lo onde for necessário:
+
+```javascript
+const Avatar = (props) => {
+  return (
+    <img
+      src={props.user.avatarUrl}
+      alt={props.user.name}
+    />
+  );
+}
+```
+
+E com isso você simplesmente utiliza `<Avatar user={props.user} />` em seu componente `UserInfo`, o que novamente vai te garantir **simplicidade**, **testabilidade** e **manutenibilidade**. Melhor? Bom, sim e não, este foi apenas um exemplo, mas muitas vezes você vai se deparar com casos como esse onde você não vai precisar dar muita importância, tudo vai depender da complexidade que você tem.
+
 ## 3 - Entenda como lidar com `this`
+
+Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions**   In very short — arrow function get a scope from their direct parent, that there was declare.
+
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 ## 5 - Use Prop-Types sempre que possível.
 ## 6 - Utilize "React Developer Tools".
