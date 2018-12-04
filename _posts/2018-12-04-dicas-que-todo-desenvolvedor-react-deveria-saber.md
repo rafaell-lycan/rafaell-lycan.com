@@ -108,9 +108,7 @@ E com isso você simplesmente utiliza `<Avatar user={props.user} />` em seu comp
 
 ## 3 - Entenda como lidar com `this`
 
-Lembra da dica 1? Componente funcionais não precisam de `bind(this)` o que nos permite utilizar-los sempre que possível, mas no caso de classes, precisamos realizar o binding manualmente uma vez que o React não faz isso para nós automaticamente. Existem algumas maneiras de realizar o binding
-
-Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions** e sempre utilizam o **escopo pai**, o que evita `bind(this)`. A mais de uma forma de lidar com, um deles é fazer bind diretamente na função `render`:
+Lembra da dica 1? Componente funcionais não precisam de `bind(this)` o que nos permite utilizar-los sempre que possível, mas no caso de classes, precisamos realizar o binding manualmente uma vez que o React não faz isso para nós automaticamente. A mais de uma forma de realizar o binding, um deles é fazer bind diretamente na função `render`:
 
 ```javascript
 class MyComponent extends Component {
@@ -128,6 +126,47 @@ class MyComponent extends Component {
   }
 }
 ```
+
+Isso definitivamente funciona, mas o problema aqui é que uma nova função é chamada a cada vez que este componente é renderizado, o que pode te causar alguns pequenos problemas de performance dependendo de quantos compeontenes você possui na mesma view e quantas vezes esses componentes são atualizados.
+
+Uma outra maneira é utilizar [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) no método `render`, o que também é funciona.
+
+```javascript
+class MyComponent extends Component {
+  ...
+
+  render() {
+    return <input type="button" value="Log" onClick={() => this.logMessage()} />
+  }
+}
+```
+
+Aqui temos o mesmo problema, pois mesmo que não seja necessário realizar o `bind(this)` manualmente, estamos criando uma nova função para cada vez o componente for renderizado, logo é apenas uma questão de preferência, uma vez que ambos terão pequenos problemas de performance.
+
+Acredito que a maioria de vocês já esteja familiarizado com o método mais comum, onde realizamos o **bind** diretamente no **construtor**:
+
+```javascript
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { message: 'Hi' };
+    this.logMessage.bind(this);
+  }
+
+  logMessage() {
+    console.log(this.state.message);
+  }
+
+  render() {
+    return <input type="button" value="Log" onClick={this.logMessage} />
+  }
+}
+```
+
+Desta maneira não criamos o problema de performance como nos métodos anteriores, o que é perfeito para qualquer aplicação. O único problema para mim é a repetição, e com isso eu preciso dizer que amo **ES6**, em especial **arrow functions**, onde de maneira simples podemos utilizar diretamente no método da classe e evitar tanto o problema de performance quanto a repetição do binding no construtor. 
+
+
+Apenas tenha em mente que esta é uma feature em experimento e ainda não esta disponível oficialmente na especificação do ES6, mas você pode utilizar isso hoje utilizando [Babel](https://babeljs.io/) ou simplesmente utilizando [Create React App](/2016/entendendo-create-react-app/) que já possui várias features habilitadas.
 
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 ## 5 - Use Prop-Types sempre que possível.
