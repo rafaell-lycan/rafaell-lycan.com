@@ -183,8 +183,19 @@ Apenas tenha em mente que esta é uma feature em experimento e ainda não esta d
 
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 
-De acordo com o a [documentação oficial](https://reactjs.org/docs/react-component.html#setstate), o React não garante que as mudanças são aplicadas imediatamente, uma vez que o processo é assíncrono.
+De acordo com o a [documentação oficial](https://reactjs.org/docs/react-component.html#setstate), o React não garante que as mudanças são aplicadas imediatamente, uma vez que o processo é assíncrono, onde se você precisa ler uma propriedade de `state` logo após utilizar `setState()` pode gerar alguns efeitos colaterais uma vez que o dado pode ainda não ter sido atualizado.
 
+```javascript
+// Ao invés disso
+this.setState({showPagination: !this.state.showPagination})
+
+// Faça isso
+this.setState((state, props) => {
+  return { showPagination: !state.showPagination };
+))
+```
+
+Você pode utilizar uma função que recebe dois parâmetros `state` anterior e as `props` do seu componente, onde todo este processo ocorre de maneira síncrona, o que pode evitar potenciais bugs na sua aplicação.
 
 ## 5 - Use Prop-Types sempre que possível.
 ## 6 - Utilize "React Developer Tools".
