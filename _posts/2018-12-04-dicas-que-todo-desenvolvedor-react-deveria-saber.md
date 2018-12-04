@@ -165,9 +165,26 @@ class MyComponent extends Component {
 
 Desta maneira não criamos o problema de performance como nos métodos anteriores, o que é perfeito para qualquer aplicação. O único problema para mim é a repetição, e com isso eu preciso dizer que amo **ES6**, em especial **arrow functions**, onde de maneira simples podemos utilizar diretamente no método da classe e evitar tanto o problema de performance quanto a repetição do binding no construtor. 
 
+```javascript
+class MyComponent extends Component {
+  static state = { message: 'Hi' };
+
+  logMessage = () => {
+    console.log(this.state.message);
+  }
+
+  render() {
+    return <input type="button" value="Log" onClick={this.logMessage} />
+  }
+}
+```
 
 Apenas tenha em mente que esta é uma feature em experimento e ainda não esta disponível oficialmente na especificação do ES6, mas você pode utilizar isso hoje utilizando [Babel](https://babeljs.io/) ou simplesmente utilizando [Create React App](/2016/entendendo-create-react-app/) que já possui várias features habilitadas.
 
 ## 4 - Use uma função para `setState` ao invés de um objeto.
+
+De acordo com o a [documentação oficial](https://reactjs.org/docs/react-component.html#setstate), o React não garante que as mudanças são aplicadas imediatamente, uma vez que o processo é assíncrono.
+
+
 ## 5 - Use Prop-Types sempre que possível.
 ## 6 - Utilize "React Developer Tools".
