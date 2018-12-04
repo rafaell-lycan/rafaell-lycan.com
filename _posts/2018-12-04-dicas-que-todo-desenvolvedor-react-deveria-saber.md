@@ -37,7 +37,41 @@ const MyComponent = (props) => <h1>Hello {props.name}</h1>;
 
 Ok, mas por que eu deveria utilizar um componente funcional? Simples, eles são muito mais simples pois não precisam extender uma `classe`, alem de **facilidade para entender e testar** além de escrever **menos código** e garantir que seu componente será sempre **stateless** e não precisará lidar com `this` **binding** para métodos internos, o que ajuda na refatoração para componentes menores quando precise.
 
+Ok, então quando eu preciso extender componentes ou criar componentes funcionais? **A regra é clara**, quando você precisar de algo que um componente funcional não tem *(state interno, lifecycle, event handlers)* use uma classe para extender um componente!
+
+O que me leva ao seguinte tópico...
+
 ## 2 - Mantenha seus componentes pequenos.
+
+Componentes pequenos são mais fáceis de ler e testar além de reutilizar e manter.
+
+
+```javascript
+class Comment extends Component {
+  render() {
+    return (
+      <div className="comment">
+        <div className="user-info">
+          <img
+            src={this.props.user.avatarUrl}
+            alt={this.props.user.name}
+          />
+          <h4 className="user-info__name">
+            {this.props.user.name}
+          </h4>
+        </div>
+        <div className="comment__text">
+          {this.props.text}
+        </div>
+        <div className="comment__date">
+          {this.formatDate(this.props.date)}
+        </div>
+      </div>
+    );
+  }
+}
+```
+
 ## 3 - Entenda como lidar com `this`
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 ## 5 - Use Prop-Types sempre que possível.
