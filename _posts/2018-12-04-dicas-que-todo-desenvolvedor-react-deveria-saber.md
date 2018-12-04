@@ -197,5 +197,46 @@ this.setState((state, props) => {
 
 Você pode utilizar uma função que recebe dois parâmetros `state` anterior e as `props` do seu componente, onde todo este processo ocorre de maneira síncrona, o que pode evitar potenciais bugs na sua aplicação.
 
-## 5 - Use Prop-Types sempre que possível.
-## 6 - Utilize "React Developer Tools".
+## 5 - Use Prop Types e Default Props sempre que possível.
+
+Durante o desenvolvimento da sua aplicação, você provavelmente compartilha valores via propriedades entre seus componentes, logo se um de seus componentes recebe um texto, este texto deveria ser uma `string` correto. Digamos que você tem um componente que recebe um texto como parâmetro obrigatório e que você utiliza o método `toLocaleUpperCase()` o qual é exclusivo para strings, porem você se depara com um valor do tipo `number`? E quanto a `underfined`?
+
+**Prop-Types** é uma biblioteca para nos ajudar a previnir bugs garantindo que estamos informando o tipo certo de dado para um componente.
+
+```javascript
+import PropTypes from 'prop-types'
+
+class MyComponent extends Component {
+  render() {
+    return <h1>Hello {this.props.name.toLocaleUpperCase()}</h1>
+  }
+}
+
+MyComponent.propTypes = {
+  name: PropTypes.string.isRequired
+}
+```
+
+De maneira similar, mesmo garantindo que aceitamos um certo tipo de dado, talvez nossa API não retorne um valor que não é obrigatório em nossa aplicação, e sendo assim devemos adicionar `defaultProps` uma vez que nosso `propType` não é mais obrigatório o que vai garantir que você e seus companheiros desenvolvedores não esqueçam de fornecer algum dado para um componente ou simplesmente para previnir algum bug inesperado.
+
+```javascript
+import PropTypes from 'prop-types'
+
+class MyComponent extends Component {
+  render() {
+    return <h1>Hello {this.props.name.toLocaleUpperCase()}</h1>
+  }
+}
+
+MyComponent.defaultProps = {
+  name: 'World'
+}
+
+MyComponent.propTypes = {
+  name: PropTypes.string
+}
+```
+
+## 6 - Utilize React Fragments.
+
+## 7 - Utilize "React Developer Tools".
