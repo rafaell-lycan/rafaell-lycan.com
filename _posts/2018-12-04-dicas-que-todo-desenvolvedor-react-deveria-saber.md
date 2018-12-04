@@ -108,7 +108,26 @@ E com isso você simplesmente utiliza `<Avatar user={props.user} />` em seu comp
 
 ## 3 - Entenda como lidar com `this`
 
-Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions** e sempre utilizam o **escopo pai**, o que evita `bind(this)`. 
+Lembra da dica 1? Componente funcionais não precisam de `bind(this)` o que nos permite utilizar-los sempre que possível, mas no caso de classes, precisamos realizar o binding manualmente uma vez que o React não faz isso para nós automaticamente. Existem algumas maneiras de realizar o binding
+
+Eu preciso dizer que amo ES6, em especial [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), de maneira simples, **arrow functions** e sempre utilizam o **escopo pai**, o que evita `bind(this)`. A mais de uma forma de lidar com, um deles é fazer bind diretamente na função `render`:
+
+```javascript
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { message: 'Hi' };
+  }
+
+  logMessage() {
+    console.log(this.state.message);
+  }
+
+  render() {
+    return <input type="button" value="Log" onClick={this.logMessage.bind(this)} />
+  }
+}
+```
 
 ## 4 - Use uma função para `setState` ao invés de um objeto.
 ## 5 - Use Prop-Types sempre que possível.
