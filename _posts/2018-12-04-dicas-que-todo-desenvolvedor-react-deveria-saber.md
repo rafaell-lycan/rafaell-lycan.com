@@ -1,5 +1,5 @@
 ---
-title: Dicas que todo desenvolvedor React deveria saber
+title: 7 Dicas que todo desenvolvedor React deveria saber
 description: >-
   Se você é novo em React, você pode se beneficiar de algumas dicas valiosas de
   outras pessoas que aprenderam boas práticas entre acertos e erros.
@@ -127,7 +127,7 @@ class MyComponent extends Component {
 }
 ```
 
-Isso definitivamente funciona, mas o problema aqui é que uma nova função é chamada a cada vez que este componente é renderizado, o que pode te causar alguns pequenos problemas de performance dependendo de quantos compeontenes você possui na mesma view e quantas vezes esses componentes são atualizados.
+Isso definitivamente funciona, mas o problema aqui é que uma nova função é chamada a cada vez que este componente é renderizado, o que pode te causar alguns pequenos problemas de performance dependendo de quantos componentes você possui na mesma view e quantas vezes esses componentes são atualizados.
 
 Uma outra maneira é utilizar [Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) no método `render`, o que também é funciona.
 
@@ -199,7 +199,7 @@ Você pode utilizar uma função que recebe dois parâmetros `state` anterior e 
 
 ## 5 - Use Prop Types e Default Props sempre que possível.
 
-Durante o desenvolvimento da sua aplicação, você provavelmente compartilha valores via propriedades entre seus componentes, logo se um de seus componentes recebe um texto, este texto deveria ser uma `string` correto. Digamos que você tem um componente que recebe um texto como parâmetro obrigatório e que você utiliza o método `toLocaleUpperCase()` o qual é exclusivo para strings, porem você se depara com um valor do tipo `number`? E quanto a `underfined`?
+Durante o desenvolvimento da sua aplicação, você provavelmente compartilha valores via propriedades entre seus componentes, logo se um de seus componentes recebe um texto, este texto deveria ser uma `string` correto. Digamos que você tem um componente que recebe um texto como parâmetro obrigatório e que você utiliza o método `toLocaleUpperCase()` o qual é exclusivo para strings, porem você se depara com um valor do tipo `number`? E quanto a `undefined`?
 
 **Prop-Types** é uma biblioteca para nos ajudar a previnir bugs garantindo que estamos informando o tipo certo de dado para um componente.
 
@@ -239,4 +239,61 @@ MyComponent.propTypes = {
 
 ## 6 - Utilize React Fragments.
 
-## 7 - Utilize "React Developer Tools".
+Você recebeu ou criou um layout todo em HTML, com as melhores práticas de web semântica e tudo parece lindo. Agora tudo o que você precisa é implementa-lo em React, começando pela **header** até ficar perfeita... logo então o **bloco de conteúdo**... perfeito... oops... esquecemos que precisamos criar um **wrap** para isso... ah não... react... merda! 😢
+
+Isso é um problema bem comum na verdade, onde por um longo tempo, onde tínhamos que criar um **wrap** para tudo:
+
+```javascript
+class MyComponent extends Component {
+  render() {
+    return (
+      <div>
+        <header>Header 😐</header>
+        <main>Main Content 😢</main>
+      </div>
+    )
+  }
+}
+```
+
+E por conta disso sempre adicionávamos um novo elemento ao nosso DOM por conta disso, mas felizmente existe algo chamado "[React Fragments](https://reactjs.org/docs/fragments.html)" desde a versão 16, o que nos permite construir uma aplicação sem ter que adicionar um **wrap** para agrupar elementos no nosso DOM. A utilização é a mesma, porem ao invés de utilizarmos uma `div` nós usamos um `<React.Fragment></React.Fragment>` ou o shorthand `<></>`
+
+```javascript
+class MyComponent extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <header>Header 😎</header>
+        <main>Main Content 😝</main>
+      </React.Fragment>
+    )
+  }
+}
+```
+
+Ou simplesmente...
+
+```javascript
+class MyComponent extends Component {
+  render() {
+    return (
+      <>
+        <header>Header 😎</header>
+        <main>Main Content 😝</main>
+      </>
+    )
+  }
+}
+```
+
+Se você ainda não sabia disso, seu dia acaba de ficar mais bonito. De nada 😎
+
+## 7 - Utilize "React Developer Tools"
+
+Acho que essa dica todos já sabem e utilizam, mas por via das dúvidas, para você que chegou neste artigo e ainda não tem conhecimento sobre isso, [React Developer Tools](https://github.com/facebook/react-devtools) é uma extensão disponível para [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) e [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/react-devtools/) que nos permite inspecionar a hierarquia dos componentes em nossa aplicação bem como as `props` e o `state` de cada um dos seus componentes, que é sem dúvida uma ferramenta muito útil e valiosa para debugar e analisar o código da sua aplicação.
+
+## Conclusão
+
+Acredito que muitos destes 7 pontos já são de conhecimento comum, mas também acho importante compartilhar o que aprendi nestes últimos anos trabalhando com React em diferentes aplicações e como manter um padrão de código limpo e de fácil manutenção, sem contar que estes fazem parte de um conjunto de boas práticas adotadas por mim e pelo meu time.
+
+Sinta-se a vontade para comentar e compartilhar qualquer outra dica que você considera importante, uma vez que estes 7 pontos são apenas algumas coisas que julguei importante resaltar para aqueles que estão começando a trilhar seu caminho neste mundo. Não achei tão importante falar sobre **conditional rendering**, **absolute imports** ou **estrutura de projetos** pois acredito que isso varia muito de cada projeto e da mentalidade de cada time, mas tão pouco tiro a importância de cada um. Talvez vire um futuro artigo.
