@@ -10,7 +10,7 @@ keywords: >-
 ---
 Fala pessoal, tudo bem?
 
-Atualmente estou fazendo algumas coisas legais com [AngularJS](https://angularjs.org/), [TypeScript](https://www.typescriptlang.org/) e [Webpack](https://webpack.github.io/), e não sei como vocês estão sobre o cenário atual, a eterna escolha entre [Angular 2/4](https://angular.io/) (agora apenas Angular), [React](https://reactjs.org/), [Vue](https://vuejs.org/) e [Ember](https://www.emberjs.com/) (talvez?).
+Atualmente estou fazendo algumas coisas legais com [AngularJS](https://angularjs.org/), [TypeScript](https://www.typescriptlang.org/) e [Webpack](https://webpack.github.io/), e não sei como vocês estão sobre o cenário atual, a eterna escolha entre [Angular 2/6](https://angular.io/) (agora apenas Angular), [React](https://reactjs.org/), [Vue](https://vuejs.org/) e [Ember](https://www.emberjs.com/) (talvez?).
 
 Eu continuo trabalhando basicamente com AngularJS (1.x) e [Ionic](https://ionicframework.com/) (Angular) então sou suspeito para falar qualquer coisa.
 
