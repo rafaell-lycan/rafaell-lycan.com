@@ -11,7 +11,7 @@ Currently working at [Smart Focus][smartfocus], where I help to build a better m
 
 I use to speak about front-end stuff at some local meetup groups, and I've presented sessions at [The Developers Conference][tdc] in 2014 and 2015.
 
-Find me on [twitter][twitter], [github][github] or [linkedin][linkedin]
+Find me on [Twitter][twitter], [Github][github] or [Linkedin][linkedin]
 
 <!-- Feel free to contact me at [sonny.webdsg at gmail dot com][email]. -->
 
