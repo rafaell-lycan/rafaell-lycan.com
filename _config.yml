@@ -105,6 +105,7 @@ show_drafts:    false
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
   - jekyll-pagination
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -114,6 +115,7 @@ plugins:
 
 # Reading
 exclude:
+  - .jekyll-cache
   - Gemfile
   - Gemfile.lock
   - node_modules
