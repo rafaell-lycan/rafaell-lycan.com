@@ -1,5 +1,5 @@
 ---
-title: 'Node101: Começando com Node.js - Parte 0'
+title: 'Node101: Começando com Node.js'
 description: >-
   Este é o primeiro artigo de uma série sobre desenvolvimento de Apps utilizando
   Node.js. chamado Node101.
