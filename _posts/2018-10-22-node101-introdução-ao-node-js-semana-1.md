@@ -3,6 +3,17 @@ title: 'Node101: Introdução ao Node.js - Semana 1'
 description: lorem ipsum...
 tags: nodejs javascript development
 ---
+# DRAFT
+
+* Intro
+* O que é Node
+* Hello World from CLI (console.log)
+* ES6
+* NPM
+* Package.json
+* HTTP Server
+* Vantagens?
+
 Não é segredo que hoje em dia, podemos utilizar JavaScript em qualquer lugar: browser, servidor, apps para móveis ou desktops e até mesmo para Smart TV's. Todo este avanço aconteceu graças ao [Node.js](https://nodejs.org/), a tecnologia que mudou o mundo do JavaScript para o que temos hoje.
 
 Se você escreve código Front-End, já deve estar mais que familiarizado com ferramentas em Node como Grunt, Gulp, Webpack e outras.
@@ -46,7 +57,7 @@ Para executar este código, você deve criar um arquivo chamado `server.js` e ex
 
 Descrevendo o código, na primeira linha importamos o módulo `http` que já vem incluso na instalação do Node.js, depois definimos `hostname` e `port` que será servirá para informar onde a aplicação deve ser executada, em seguida criamos nosso `server` utilizando o método `createServer()` para criar um novo servidor HTTP.
 
-Quando o servidor recebe uma requisição, é executada uma função que nos fornece dois objetos `req` *(Request: um objeto `http.IncomingMessage`)* e `res` *(Response: um objeto `http.ServerResponse`)*. Esses dois objetos são essenciais para lidar com chamadas HTTP, onde o primeiro contém as informações sobre a requisição *(neste exemplo, não utilizamos nenhuma informação)*, e o segundo é responsável por retornar dados para a requisição em si *(neste exemplo, configuramos a header da resposta com um `Content-Type` e status `200` além de devolver a mensagem `Hello world`)*.
+Quando o servidor recebe uma requisição, é executada uma função que nos fornece dois objetos `req` _(Request: um objeto `http.IncomingMessage`)_ e `res` _(Response: um objeto `http.ServerResponse`)_. Esses dois objetos são essenciais para lidar com chamadas HTTP, onde o primeiro contém as informações sobre a requisição _(neste exemplo, não utilizamos nenhuma informação)_, e o segundo é responsável por retornar dados para a requisição em si _(neste exemplo, configuramos a header da resposta com um `Content-Type` e status `200` além de devolver a mensagem `Hello world`)_.
 
 * Módulos e NPM
 
