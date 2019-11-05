@@ -157,4 +157,4 @@ Eu não vou entrar mais afundo sobre como utilizar o NPM neste artigo, mas você
 
 Além de velocidade e escalabilidade, um dos pontos fortes do Node é a simplicidade para desenvolver aplicações web, onde você utiliza a mesma linguagem de programação, o que torna tudo mais produtivo. Uma outra vantagem é a possibilidade de compartilhar código entre cliente e servidor, além de muitas outras como o modo que o Node opera através do "Event-Loop", o qual eu não vou entrar muito a fundo aqui, mais você pode aprender mais sobre isso [aqui](https://www.youtube.com/watch?v=8aGhZQkoFbQ) e [aqui](https://nodejs.org/de/docs/guides/event-loop-timers-and-nexttick/).
 
-Até o próximo artigo.
+Isso é tudo, sei que tudo isso é bem básico, mas a proposta é transmitir o básico de conhecimento sobre aplicações com Node.js, criando uma aplicação do zero ao deploy. No próximo artigo, vamos aprender um pouco mais sobre aplicações web utilizando o framework **Express** juntamente com alguns outros módulos.
