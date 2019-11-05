@@ -1,6 +1,10 @@
 ---
 title: 'Node101: Introdução ao Node.js - Semana 1'
-description: lorem ipsum...
+description: >-
+  Não é segredo que hoje em dia, podemos utilizar JavaScript em qualquer lugar:
+  browser, servidor, apps para móveis ou desktops e até mesmo para Smart TV's.
+  Todo este avanço aconteceu graças ao Node.js, a tecnologia que mudou o mundo
+  do JavaScript para o que temos hoje.
 tags: nodejs javascript development
 ---
 Não é segredo que hoje em dia, podemos utilizar JavaScript em qualquer lugar: browser, servidor, apps para móveis ou desktops e até mesmo para Smart TV's. Todo este avanço aconteceu graças ao [Node.js](https://nodejs.org/), a tecnologia que mudou o mundo do JavaScript para o que temos hoje.
