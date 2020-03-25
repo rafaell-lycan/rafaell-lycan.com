@@ -3,8 +3,7 @@ title: As 5 novas features em React 16.6
 description: >-
   Por mais que tenha a aparência de um minor release, a versão 16.6 do React
   lançada na última semana, nos traz novos recursos, como o tão esperado
-  **Suspense API**, e também o novo HoC **memo** e a função **lazy**. Veremos um
-  pouco mais sobre os 5 novos recursos desta versão ✨
+  Suspense API, e também o novo HoC memo e a função lazy.
 tags: react
 ---
 Por mais que tenha a aparência de um minor release, a versão 16.6 do React lançada na última semana, nos traz novos recursos, como o tão esperado **Suspense API**, e também o novo HoC **memo** e a função **lazy**. Veremos um pouco mais sobre os 5 novos recursos desta versão ✨
