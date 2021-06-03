@@ -173,3 +173,105 @@ With this approach, when executing the query and sending it the `$manufacturer` 
 Also, as we can see we defined a default `$limit` to 20 directly in that query, and we could do the same for the manufacturer if needed. e.g.: always defaults to **ford** in the same way we did for `$limit`.
 
 Also, you can identify that we're using an exclamation on `$manufacturer` only as it's a mandatory variable on our query and there's no default value.
+
+## Directives
+
+So, if variables prevent us from writing more queries to carry out some default values in our query, in the same way, we have the directives which support dynamic modification of the data structure resolved on our query:
+
+```javascript
+query CarByManufacturer($manufacturer: String!, $includeYear: Bool = false) {
+    car(manufacturer: $manufacturer) {
+        model
+        manufacturer
+        year @include(if: $includeYear)
+    }
+}
+```
+
+If we execute the query with the following variables, we will obtain a car fix with the manufacturer's registration **dodge** but without including the manufacturer's year due to the default value of `$includeYear` is `false` and using the `@include` directive which will modify our output:
+
+```json
+// Variables
+{
+    "manufacturer": "dodge"
+}
+
+// Data resolved
+{
+    "data": {
+        "car": [
+            {
+                "model": "Charger R/T",
+                "manufacturer": "Dodge"
+            }
+        ]
+    }
+}
+```
+
+Now, let's use the `@skip` directive instead, which will be skipped only if `$excludeYear` is `true`:
+
+```javascript
+query CarByManufacturer($manufacturer: String!, $excludeYear: Bool = false) {
+    car(manufacturer: $manufacturer) {
+        model
+        manufacturer
+        year @skip(if: $excludeYear)
+    }
+}
+```
+
+```json
+# Variables
+{
+    "manufacturer": "dodge"
+}
+
+# Data resolved
+{
+    "data": {
+        "car": [
+            {
+                "model": "Charger R/T",
+                "manufacturer": "Dodge",
+                "year": 1969
+            }
+        ]
+    }
+}
+```
+
+Both `@include` and `@skip` alongside with `@deprecated` are part of the GraphQL specification so you can use it freely, but if needed you can also implement yours.
+
+## Mutations
+
+So far we have only seen how to fetch data, but GraphQL also supports data modification. Most requests in REST APIs allow data querying using the `GET` method, which by convention should not be used in an action that triggers the data modification, like `POST` for creation and `PUT/PATCH` for update. 
+
+As GraphQL uses `POST` by default, any operation that modifies data should be sent specifying that it is a `Mutation`.
+
+```javascript
+mutation CreateNewCar($model: String!, $year: Int! $manufacturer: String!) {
+    createCar(model: $model, year: $year, manufacturer: $manufacturer) {
+        model,
+        year,
+        manufacturer
+    }
+}
+```
+
+A `Mutation` can return the data of the resource created, which means that we can ask for any of the fields on the object we just created.
+
+## Pros & Cons (My vision)
+
+### Pros
+- It is based on type definition which can reduce the communication error between the client and the server.
+- It works as a single entry point for an API, which also makes it flexible to make requests and modifications.
+- Again talking about types, allows the request/response contract with your app seamless and type-safe especially when working with a strongly typed language.
+- It allows good scalability of the API and integration with different services reachable only via REST calls.
+
+### Cons
+
+- In addition to creating robust and typed backend code, developers also have to create and maintain those schemas which must be always updated and cohesive.
+- The learning curve for those who are used to working with REST APIs is higher.
+- Much of the processing of queries is done on the server, and therefore complex queries and mutations will cost more time to be processed.
+- Migrating from a REST API to GraphQL is usually difficult and quite expensive, which leads to adopting it as a proxy to existing APIs a common choice.
