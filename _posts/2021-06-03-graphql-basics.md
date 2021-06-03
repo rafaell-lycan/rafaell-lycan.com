@@ -1,11 +1,11 @@
 ---
 title: GraphQL Basics
+date: 2021-03-01 06:01:00
 description: GraphQL is a query language for APIs, it uses a type system that
   defines your information and runs on the server side. It's not tied to a
   database or some information storage system, instead, is managed by the code
   that defines it.
 tags: development
-date: 2021-03-01 06:01:00
 ---
 ## Introduction
 
@@ -76,4 +76,4 @@ At first glance, GraphQL seems like a good way to obtain data, but the arguments
 }
 ```
 
-Each query can have 0 or N number of arguments. In the previous example through an `id` argument it filters the information resolved to only those **cars** which has the `id` 10.
+Each query can have `0` or `N` number of arguments. In the example above, we can filter the information through an `id` argument which filters and resolve information to only those **cars** which have the `id` 10.
