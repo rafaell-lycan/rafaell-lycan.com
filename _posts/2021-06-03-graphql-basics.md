@@ -276,7 +276,7 @@ A `Mutation` can return the data of the resource created, which means that we ca
 - Much of the processing of queries is done on the server, and therefore complex queries and mutations will cost more time to be processed.
 - Migrating from a REST API to GraphQL is usually difficult and quite expensive, which leads to adopting it as a proxy to existing APIs a common choice.
 
-## Conclusion & Thoughts
+## Conclusion
 
 Definitely, the flexibility that GraphQL provides us for communication between the backend and frontend creates a rapid development of client-server applications. 
 
