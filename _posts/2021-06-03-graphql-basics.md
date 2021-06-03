@@ -261,7 +261,7 @@ mutation CreateNewCar($model: String!, $year: Int! $manufacturer: String!) {
 
 A `Mutation` can return the data of the resource created, which means that we can ask for any of the fields on the object we just created.
 
-## Pros & Cons (My vision)
+## Pros & Cons
 
 ### Pros
 - It is based on type definition which can reduce the communication error between the client and the server.
