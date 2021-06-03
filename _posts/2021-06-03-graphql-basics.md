@@ -275,3 +275,11 @@ A `Mutation` can return the data of the resource created, which means that we ca
 - The learning curve for those who are used to working with REST APIs is higher.
 - Much of the processing of queries is done on the server, and therefore complex queries and mutations will cost more time to be processed.
 - Migrating from a REST API to GraphQL is usually difficult and quite expensive, which leads to adopting it as a proxy to existing APIs a common choice.
+
+## Conclusion & Thoughts
+
+Definitely, the flexibility that GraphQL provides us for communication between the backend and frontend creates a rapid development of client-server applications. 
+
+The backend is entirely in charge of providing the type definitions and resolvers while the frontend only has to worry about knowing the data structure and how to perform queries and mutations from the client itself. In addition, by having a single entry point for making queries, the client can completely forget about the definition of urls and use a unique way to make those requests.
+
+GraphQL was created by Facebook initially in 2012 and released publicly in 2015, and from then the maturity and adoption have grown which allowed companies to experiment and take into account the migration to this type of API or simply use it as a proxy to their services.
