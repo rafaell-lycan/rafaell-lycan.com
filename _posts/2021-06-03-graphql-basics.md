@@ -1,6 +1,6 @@
 ---
 title: "GraphQL 101: The Basics"
-date: 2021-03-01 06:01:00
+date: 2021-06-03 07:51:06
 description: GraphQL is a query language for APIs, it uses a type system that
   defines your information and runs on the server side. It's not tied to a
   database or some information storage system, instead, is managed by the code
