@@ -14,21 +14,21 @@
     "build": "yarn webpack && yarn jekyll",
     "postbuild": "export NODE_ENV=production",
     "jekyll": "bundle exec jekyll build",
-    "jekyll:dev": "bundle exec jekyll serve jekyll serve --config _config.yml,_config_dev.yml --incremental",
-    "webpack": "webpack --progress --config webpack.config.js",
-    "webpack:dev": "webpack --progress --config webpack.config.js --colors --watch"
+    "jekyll:dev": "bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental --port 4000",
+    "webpack": "webpack --progress --config=webpack.config.js",
+    "webpack:dev": "webpack --progress --config=webpack.config.js --watch"
   },
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "compression-webpack-plugin": "^1.1.11",
-    "concurrently": "^3.5.0",
-    "rimraf": "^2.6.1",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "^8.0.0",
+    "concurrently": "^6.2.0",
+    "rimraf": "^3.0.2",
     "sw-precache-webpack-plugin": "^0.11.4",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "webpack": "^3.5.5"
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
   },
   "dependencies": {
     "webfontloader": "^1.6.28"
