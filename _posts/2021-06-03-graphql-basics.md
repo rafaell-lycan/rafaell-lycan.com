@@ -75,3 +75,5 @@ At first glance, GraphQL seems like a good way to obtain data, but the arguments
     }
 }
 ```
+
+Each query can have 0 or N number of arguments. In the previous example through an `id` argument it filters the information resolved to only those **cars** which has the `id` 10.
