@@ -172,7 +172,7 @@ With this approach, when executing the query and sending it the `$manufacturer` 
 
 Also, as we can see we defined a default `$limit` to 20 directly in that query, and we could do the same for the manufacturer if needed. e.g.: always defaults to **ford** in the same way we did for `$limit`.
 
-Also, you can identify that we're using an exclamation on `$manufacturer` only as it's a mandatory variable on our query and there's no default value.
+Also, you can identify that we're using an exclamation `(!)` on `$manufacturer` only as it's a mandatory variable on our query and there's no default value.
 
 ## Directives
 
