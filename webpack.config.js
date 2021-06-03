@@ -1,54 +1,30 @@
-const webpack = require('webpack');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-const CompressionPlugin = require('compression-webpack-plugin');
 const path = require('path');
+const { env } = require('process');
+
+const mode = env['NODE_ENV'] || env['JEKYLL_ENV'] || 'development';
 
 module.exports = {
+  mode,
   entry: {
     main: path.join(__dirname, '_scripts/main.js')
   },
   output: {
     path: path.join(__dirname, 'assets/scripts/'),
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    clean: true,
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: [/node_modules/],
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015']
+            presets: ['@babel/preset-env']
           }
         }
       }
     ]
   },
-  plugins: [
-    new UglifyJSPlugin({
-      compress: {
-        warnings: false,
-        screw_ie8: true,
-        conditionals: true,
-        unused: true,
-        comparisons: true,
-        sequences: true,
-        dead_code: true,
-        evaluate: true,
-        if_return: true,
-        join_vars: true,
-      },
-      output: {
-        comments: false,
-      },
-    }),
-    new CompressionPlugin({
-      asset: '[path].gz[query]',
-      algorithm: 'gzip',
-      test: /\.js$|\.json$|\.css$|\.html$|\.map$/,
-      threshold: 10240,
-      minRatio: 0,
-    })
-  ]
 };

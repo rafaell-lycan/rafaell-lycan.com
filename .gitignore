@@ -2,7 +2,5 @@ _site
 .DS_Store
 .sass-cache
 .jekyll-metadata
-package-lock.json
-npm-debug.log
 node_modules
 assets/scripts/*
