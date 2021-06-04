@@ -266,7 +266,7 @@ A `Mutation` can return the data of the resource created, which means that we ca
 ### Pros
 - It is based on type definition which can reduce the communication error between the client and the server.
 - It works as a single entry point for an API, which also makes it flexible to make requests and modifications.
-- Again talking about types, allows the request/response contract with your app seamless and type-safe especially when working with a strongly typed language.
+- Again talking about types, especially when working with a strongly typed language, it allows seamless and type-safe request/response contracts with your app.
 - It allows good scalability of the API and integration with different services reachable only via REST calls.
 
 ### Cons
@@ -278,8 +278,8 @@ A `Mutation` can return the data of the resource created, which means that we ca
 
 ## Conclusion
 
-Definitely, the flexibility that GraphQL provides us for communication between the backend and frontend creates a rapid development of client-server applications. 
+The flexibility that GraphQL provides us for communication between the backend and frontend definitely creates a rapid development of client-server applications.
 
 The backend is entirely in charge of providing the type definitions and resolvers while the frontend only has to worry about knowing the data structure and how to perform queries and mutations from the client itself. In addition, by having a single entry point for making queries, the client can completely forget about the definition of urls and use a unique way to make those requests.
 
-GraphQL was created by Facebook initially in 2012 and released publicly in 2015, and from then the maturity and adoption have grown which allowed companies to experiment and take into account the migration to this type of API or simply use it as a proxy to their services.
+GraphQL was created by Facebook initially in 2012 and released publicly in 2015, and since then the maturity and adoption have grown which allowed companies to experiment and take into account the migration to this type of API or simply use it as a proxy to their services.
