@@ -6,6 +6,7 @@ description: GraphQL is a query language for APIs, it uses a type system that
   database or some information storage system, instead, is managed by the code
   that defines it.
 tags: development
+keywords: graphql, api, software, coding, development, engineering
 ---
 ## Introduction
 
