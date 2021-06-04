@@ -288,6 +288,6 @@ GraphQL was created by Facebook initially in 2012 and released publicly in 2015,
 
 
 
-#### Credits
+## Credits
 
 A special thanks to [Anton Virtanen](https://www.instagram.com/anttipasti/) for reviewing this article so quickly.
