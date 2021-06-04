@@ -1,12 +1,11 @@
 ---
-title: 'AngularJS: Explorando component() method e Life Cycle Hooks'
-description: >-
-  Um conjunto de boas praticas sobre como escrever seus componentes com
-  AngularJS e o novo método componente. Adeus diretivas :D
+title: "AngularJS: Explorando component() method e Life Cycle Hooks"
+date: 2018-10-22 09:39:00
+description: Um conjunto de boas praticas sobre como escrever seus componentes
+  com AngularJS e o novo método componente. Adeus diretivas :D
 tags: angularjs javascript development
-keywords: >-
-  angularjs, component method, angular next, criando componentes com angular,
-  angularjs component
+keywords: angularjs, component method, angular next, criando componentes com
+  angular, angularjs component
 ---
 Fala pessoal, tudo bem?
 
