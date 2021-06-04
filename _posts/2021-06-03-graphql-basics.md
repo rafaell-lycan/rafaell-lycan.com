@@ -117,7 +117,7 @@ When making queries, you may need a way to distinguish the information returned 
 }
 ```
 
-Aliases can be added to the query and specify changes in the name of the property that it will have. Aliases are particularly useful when having to rename a key on your output and to avoid duplication which will lead to an error.
+Aliases can be added to the query and specify changes to the name of the property. Aliases are particularly useful when having to rename a key on your output and to avoid duplication which will lead to an error.
 
 ## Fragments
 
