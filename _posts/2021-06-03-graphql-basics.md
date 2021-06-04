@@ -179,7 +179,7 @@ Also, you can identify that we're using an exclamation `(!)` on `$manufacturer` 
 So, if variables prevent us from writing more queries to carry out some default values in our query, in the same way, we have the directives which support dynamic modification of the data structure resolved on our query:
 
 ```javascript
-query CarByManufacturer($manufacturer: String!, $includeYear: Bool = false) {
+query CarByManufacturer($manufacturer: String!, $includeYear: Boolean = false) {
     car(manufacturer: $manufacturer) {
         model
         manufacturer
@@ -212,7 +212,7 @@ If we execute the query with the following variables, we will obtain a car fix w
 Now, let's use the `@skip` directive instead, which will be skipped only if `$excludeYear` is `true`:
 
 ```javascript
-query CarByManufacturer($manufacturer: String!, $excludeYear: Bool = false) {
+query CarByManufacturer($manufacturer: String!, $excludeYear: Boolean = false) {
     car(manufacturer: $manufacturer) {
         model
         manufacturer
