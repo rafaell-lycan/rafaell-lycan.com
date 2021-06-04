@@ -286,8 +286,6 @@ The backend is entirely in charge of providing the type definitions and resolver
 
 GraphQL was created by Facebook initially in 2012 and released publicly in 2015, and since then the maturity and adoption have grown which allowed companies to experiment and take into account the migration to this type of API or simply use it as a proxy to their services.
 
-
-
-#### Credits
+## Credits
 
 A special thanks to [Anton Virtanen](https://www.instagram.com/anttipasti/) for reviewing this article so quickly.
