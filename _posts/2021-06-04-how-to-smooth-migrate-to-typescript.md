@@ -8,5 +8,8 @@ description: TypeScript is getting more and more popular in the Front-end
   sure.
 tags: typescript react
 ---
-- 👉  <https://www.premieroctet.com/blog/migration-typescript/>
+- 👉 <https://www.premieroctet.com/blog/migration-typescript/>
 - 👉 <https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164>
+- 👉 <https://blog.logrocket.com/a-simple-guide-for-migrating-from-javascript-to-typescript/>
+- 👉 <https://dropbox.tech/frontend/the-great-coffeescript-to-typescript-migration-of-2017>
+- 👉 <https://leanylabs.com/blog/migrate-javascript-to-typescript/>
