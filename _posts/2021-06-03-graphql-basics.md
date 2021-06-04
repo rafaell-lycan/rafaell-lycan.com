@@ -241,7 +241,7 @@ query CarByManufacturer($manufacturer: String!, $excludeYear: Boolean = false) {
 }
 ```
 
-Both `@include` and `@skip` alongside with `@deprecated` are part of the GraphQL specification so you can use it freely, but if needed you can also implement yours.
+Both `@include` and `@skip` alongside with `@deprecated` are part of the GraphQL specification so you can use it freely, but if needed you can also implement your own.
 
 ## Mutations
 
