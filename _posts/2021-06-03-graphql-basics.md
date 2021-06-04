@@ -9,9 +9,9 @@ tags: development
 ---
 ## Introduction
 
-GraphQL is a query language for APIs, it uses a type system that defines your information and runs on the server-side. It's not tied to a database or some information storage system, instead, is managed by the code that defines it.
+GraphQL is a query language for APIs, it uses a type system that defines your information and runs on the server-side. It is not tied to a database or some information storage system, instead, is managed by the code that defines it.
 
-It's based on the definition of types that allows consulting specific fields of objects and resolving the information required in the query.
+It is based on the definition of types that allows consulting specific fields of objects and resolving the information required in the query.
 
 ## Fields
 
@@ -48,23 +48,23 @@ type Car {
 }
 ```
 
-In this simple example, we have a query in GraphQL that needs a car object that contains three fields: `model` and `manufacturer`. A field in short is everything that is not an object and it's of a Scalar type, in this case, the fields within car resolve in Scalar types of type `String`.
+In this simple example, we have a query in GraphQL that needs a car object that contains three fields: `model`, `year` and `manufacturer`. In a nutshell a field is a Scalar type and everything that is not an object, in this case, the fields within car resolve in Scalar types of type `String`.
 
-The only object in this service is **car** which is composed of fields and defined as a type in the initial part of the query. For the context of this service, **car** is a type object that contains three fields that composes it.
+The only object in this service is **car** which is composed of fields and defined as a type in the initial part of the query. For the context of this service, **car** is a type object that is composed by three fields.
 
-In this way, we can write a query that checks inside the car object and returns both fields.
+In this way, we can write a query that checks inside the car object and returns all three fields.
 
 ## Scalar Types
 
-Since GraphQL is based on the definition of types, it provides us with some Scalar types. These types allow the information to be resolved to a specific value, for example:
+Since GraphQL is based on type definitions, it provides us with some Scalar types. These types allow the information to be resolved to a specific value, for example:
 
 - `Int`: A signed 32‐bit integer
 - `Float`: A signed double-precision floating-point value
 - `String`: A UTF‐8 character sequence
 - `Boolean`: `true` or `false`
-- `ID`: This Scalar Type represents a unique identifier of the object, this type is resolved in a `String`
+- `ID`: This Scalar Type represents a unique identifier of the object, this type is resolved as a `String`
 
-GraphQL provides us those established values above, but it's not restricted to their definition, some GraphQL services allow you to create your own Scalar Types with the condition that each one has to have defined the way to serialize and deserialize the information to communicate between the code that defines it, and the one who consults it.
+GraphQL provides us the above established values, but it's not restricting itself to these definitions only, some GraphQL services allow you to create your own Scalar Types with the condition that each one has to have defined the way to serialize and deserialize the information to communicate with the code that defines it, and the one who consults it.
 
 ## Arguments
 
