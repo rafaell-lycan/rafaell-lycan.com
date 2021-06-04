@@ -59,11 +59,11 @@ In this way, we can write a query that checks inside the car object and returns 
 
 Since GraphQL is based on type definitions, it provides us with some Scalar types. These types allow the information to be resolved to a specific value, for example:
 
-- `Int`: A signed 32‐bit integer
-- `Float`: A signed double-precision floating-point value
-- `String`: A UTF‐8 character sequence
-- `Boolean`: `true` or `false`
-- `ID`: This Scalar Type represents a unique identifier of the object, this type is resolved as a `String`
+* `Int`: A signed 32‐bit integer
+* `Float`: A signed double-precision floating-point value
+* `String`: A UTF‐8 character sequence
+* `Boolean`: `true` or `false`
+* `ID`: This Scalar Type represents a unique identifier of the object, this type is resolved as a `String`
 
 GraphQL provides us the above established values, but it's not restricting itself to these definitions only, some GraphQL services allow you to create your own Scalar Types with the condition that each one has to have defined the way to serialize and deserialize the information to communicate with the code that defines it, and the one who consults it.
 
@@ -265,17 +265,18 @@ A `Mutation` can return the data of the resource created, which means that we ca
 ## Pros & Cons
 
 ### Pros
-- It is based on type definition which can reduce the communication error between the client and the server.
-- It works as a single entry point for an API, which also makes it flexible to make requests and modifications.
-- Again talking about types, especially when working with a strongly typed language, it allows seamless and type-safe request/response contracts with your app.
-- It allows good scalability of the API and integration with different services reachable only via REST calls.
+
+* It is based on type definition which can reduce the communication error between the client and the server.
+* It works as a single entry point for an API, which also makes it flexible to make requests and modifications.
+* Again talking about types, especially when working with a strongly typed language, it allows seamless and type-safe request/response contracts with your app.
+* It allows good scalability of the API and integration with different services reachable only via REST calls.
 
 ### Cons
 
-- In addition to creating robust and typed backend code, developers also have to create and maintain those schemas which must be always updated and cohesive.
-- The learning curve for those who are used to working with REST APIs is higher.
-- Much of the processing of queries is done on the server, and therefore complex queries and mutations will cost more time to be processed.
-- Migrating from a REST API to GraphQL is usually difficult and quite expensive, which leads to adopting it as a proxy to existing APIs a common choice.
+* In addition to creating robust and typed backend code, developers also have to create and maintain those schemas which must be always updated and cohesive.
+* The learning curve for those who are used to working with REST APIs is higher.
+* Much of the processing of queries is done on the server, and therefore complex queries and mutations will cost more time to be processed.
+* Migrating from a REST API to GraphQL is usually difficult and quite expensive, which leads to adopting it as a proxy to existing APIs a common choice.
 
 ## Conclusion
 
@@ -284,3 +285,9 @@ The flexibility that GraphQL provides us for communication between the backend a
 The backend is entirely in charge of providing the type definitions and resolvers while the frontend only has to worry about knowing the data structure and how to perform queries and mutations from the client itself. In addition, by having a single entry point for making queries, the client can completely forget about the definition of urls and use a unique way to make those requests.
 
 GraphQL was created by Facebook initially in 2012 and released publicly in 2015, and since then the maturity and adoption have grown which allowed companies to experiment and take into account the migration to this type of API or simply use it as a proxy to their services.
+
+
+
+#### Credits
+
+A special thanks to [Anton Virtanen](https://www.instagram.com/anttipasti/) for reviewing this article so quickly.
